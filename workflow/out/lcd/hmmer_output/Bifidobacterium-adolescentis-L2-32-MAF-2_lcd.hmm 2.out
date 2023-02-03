@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bifidobacterium-adolescentis-L2-32-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.4e-09   34.0   0.0    1.4e-08   30.7   0.0    2.1  2  1_831     # 982880 # 984154 # 1 # ID=1_831;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_831  # 982880 # 984154 # 1 # ID=1_831;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.0   7.4e-12   1.4e-08     153     339 ..      68     254 ..      32     266 .. 0.82
+   2 !    0.7   0.0    0.0089        17     476     499 ..     392     415 ..     369     418 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 30.7 bits;  conditional E-value: 7.4e-12
+  K22207 153 ilksrtlikelinadd...vdevslvdnaTtaaaivlqqvawaF......aeg..kfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneei 244
+             + ++r+++++l++ad+    +e+++   aT++ +  + + + a       a +   +++gd +v+ +    +V   ++ ++ r g++     l     ++  +
+   1_831  68 FEDARAKVAKLVGADSaegEEEIVVTAGATAGLNLLATAFGNASlgrggeAAKrfALKPGDEIVVTKAEHHSVLLPFQELALRTGATLKWFDL----DEEGRV 166
+             668999999999999844457999999999999888888776541111112231146899*************************98776555....457777 PP
+
+  K22207 245 ieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrk 339
+              +   +++        r++++ + h+    + +  +  +++ ++e g    ++Da +++ +++vd +++++df +  +hK +++P++v fLy ++
+   1_831 167 RSDTANEVI-----TDRTKIVAVTHVGNTTGAITDIAPIIRRAHEVGA-VFVLDACQSVPHLKVDFHALDVDFAAWSAHK-MYGPTGVGFLYGKR 254
+             666666554.....457889*****************99998888888.3456***************************.9**********887 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.0089
+  K22207 476 gyvRiShqvYnkveDyeklrdAvn 499
+             +  R S  +Yn veD ++l +A  
+   1_831 392 ASNRASSGIYNSVEDAQALIEALG 415
+             55699**************99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       1931  (676471 residues searched)
+Passed MSV filter:                        64  (0.0331434); expected 38.6 (0.02)
+Passed bias filter:                       48  (0.0248576); expected 38.6 (0.02)
+Passed Vit filter:                         4  (0.00207147); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000517866); expected 0.0 (1e-05)
+Initial search space (Z):               1931  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 17650.58
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcd.sto
+[ok]

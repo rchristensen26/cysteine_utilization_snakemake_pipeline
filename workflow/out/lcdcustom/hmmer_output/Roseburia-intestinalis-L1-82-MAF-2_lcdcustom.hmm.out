@@ -1,0 +1,139 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Roseburia-intestinalis-L1-82-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Roseburia-intestinalis-L1-82-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Roseburia-intestinalis-L1-82-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Roseburia-intestinalis-L1-82-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.5e-19   67.2   0.0    4.3e-19   66.5   0.0    1.3  1  1_898     # 1001925 # 1003079 # 1 # ID=1_898;partial=00;start
+    2.9e-11   40.6   0.0    5.6e-11   39.7   0.0    1.4  1  1_372     # 406482 # 407618 # 1 # ID=1_372;partial=00;start_t
+    2.7e-08   30.9   0.2    3.2e-07   27.3   0.2    2.0  1  1_351     # 382195 # 383379 # 1 # ID=1_351;partial=00;start_t
+    0.00031   17.4   0.2     0.0014   15.2   0.1    1.9  1  1_3000    # 3261073 # 3262227 # -1 # ID=1_3000;partial=00;sta
+    0.00031   17.4   0.0    0.00067   16.3   0.1    1.4  2  1_2654    # 2866134 # 2867294 # -1 # ID=1_2654;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_898  # 1001925 # 1003079 # 1 # ID=1_898;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.430
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.5   0.0   5.3e-22   4.3e-19     129     312 ..      45     213 ..      18     219 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 66.5 bits;  conditional E-value: 5.3e-22
+  lcd_K22207_msa 129 lkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksnee 223
+                         i+++r++ik+l +addv ev+++  at A +++L  ++w+ +       D v +     +a  +++ +y ++ g ++ie+ l    +s e 
+           1_898  45 ASGLIESTRKQIKELAGADDVAEVVFTASATLACNVILGGLEWKQT-------DIVYVSPFEHNAMMRVLYHYQKQYGFKIIELAL--NRESLEL 130
+                     55668899**********************************9999.......***************************997655..5667777 PP
+
+  lcd_K22207_msa 224 ivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsv 312
+                       s++r  +++     ++  ++v+ H++ ++  +lP++e  +  ++ g   v VD+ +a+G v+v +ke g dfY+   HK ++ P +v
+           1_898 131 DLSQIRFQFTR-----EHPTVVVMSHVSNVTGYILPINEVAESAKQYGA-VVAVDGSQALGLVPVKLKESGIDFYVFAGHKTLYGPFGV 213
+                     78899888888.....68899***************************9.9******************************99999887 PP
+
+>> 1_372  # 406482 # 407618 # 1 # ID=1_372;partial=00;start_type=ATG;rbs_motif=4Base/6BMM;rbs_spacer=13-15bp;gc_cont=0.4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.7   0.0   6.9e-14   5.6e-11     132     478 ..      45     373 ..      36     377 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 39.7 bits;  conditional E-value: 6.9e-14
+  lcd_K22207_msa 132 gilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivs 226
+                      i+ +r+ +++l++a+d++ ++++ N+t   +i +q        g f++gD v++  +  ++V + +  y+ ++ g  +     +p  s+ +i  
+           1_372  45 IIYGTRERLAELFHAEDASRIAFTANVTESLNIAIQ--------GLFEPGDHVITSVCEHNSVLRPL--YLMEQRGVKV---TYLPADSKGRIAY 126
+                     577899******************************........669****************9876..4455555444...2689999999974 PP
+
+  lcd_K22207_msa 227 efrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks. 320
+                        + Le+  a + + + +vi H +  +  v   +++ +  +++     +VDaA+  G +++dv++ + d      HK +f P++++ +yvrk  
+           1_372 127 ---DELEN--AYEPETKAVVIMHASNLTGNVTDLEQIAAFTQKHHL-LFVVDAAQTAGVLPIDVQKQNIDVLCFTGHKGLFGPQGTGGIYVRKGv 215
+                     ...35666..567799*****************************9.899*********************9999******************52 PP
+
+  lcd_K22207_msa 321 kasdlhhpvV.....sheygnglaiesa...wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmi 407
+                     + + l           ++y    ++e+      Gt        + a+l ++++   gi++i  r   l+ +  + +++  g ++         ++
+           1_372 216 EIRPL----FaggtgVQSYSRTQPKEMPtllEAGTLNGHGIAGLYAALGYLQKT--GIDKIYGREMALAERFYNGVKDISGVKIYGDFTTKNRVA 304
+                     32322....222222455555555554322256777777777777777777764..777777777777777777777777777766666666677 PP
+
+  lcd_K22207_msa 408 mVgLPaklgissdedalkLrthLreefkvevpi..yyrapk.egevea.itgYvRiShqvYnkvddyyklrdavn 478
+                     +V L        d d  ++ ++L+e++++ v    ++ ap  ++ +++   g vR S    n+ +++    +av+
+           1_372 305 VVTLNI-----GDIDSGSVSDWLWEDYEIAVRAgaHC-APLmHEALGTkAQGAVRFSFSHLNTEEEVDTAVKAVR 373
+                     777662.....33344466777777777777663233.2321332222366777777777777776666555555 PP
+
+>> 1_351  # 382195 # 383379 # 1 # ID=1_351;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.463
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.3   0.2     4e-10   3.2e-07     126     321 ..      41     220 ..       3     228 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 27.3 bits;  conditional E-value: 4e-10
+  lcd_K22207_msa 126 fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvks 220
+                       e kk++ e+r+ +++lina+  +++ ++   +   +  L+++a + +    +kg  +++  +  +a+ +++ ay++++g +v  +     v +
+           1_351  41 AGESKKAVDEARANVAALINAR-TEDIYFTGGGSESDNWALKATAEAYE----SKGKHIITSRIEHHAILHTC-AYLEQKGYEVTYL----DVDE 125
+                     4577888899999999999988.68899999999999999998886666....78999999999999999887.4578888877643....4445 PP
+
+  lcd_K22207_msa 221 neei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAf 314
+                     + +i  +e++ka++       ++ + ++         + P+ke+ ki +++gv     Da +a G++++dv+e++ d   +  HK +  P++ ++
+           1_351 126 DGKIsLEELEKAIRP-----DTILISIMSAN-NEIGTIEPIKEIGKIAHDHGV-LFHTDAVQAFGHIPIDVEEMNIDMLSASGHK-INGPKGSGV 212
+                     555525666666655.....55655555543.3345577**************.889****************************.99******* PP
+
+  lcd_K22207_msa 315 Lyvrks.k 321
+                     +y+rk  k
+           1_351 213 MYIRKGvK 220
+                     ****9534 PP
+
+>> 1_3000  # 3261073 # 3262227 # -1 # ID=1_3000;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.45
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.1   1.8e-06    0.0014     256     321 ..     154     219 ..      36     238 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.8e-06
+  lcd_K22207_msa 256 vvlPVkeLvkicreegvdqvf.VDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrksk 321
+                      v P++e  ki++e++ ++++ VDa +a G+ ++  k++g d      HK + +P++++fLy+++++
+          1_3000 154 AVEPIAEAAKIVKEKNPNTIIhVDAIQAYGKYRICPKKLGIDLLSVSGHK-IHAPKGTGFLYIKDKT 219
+                     5679**********99877655****************************.99***********943 PP
+
+>> 1_2654  # 2866134 # 2867294 # -1 # ID=1_2654;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.0      0.83   6.8e+02     130     199 ..      51     115 ..      45     129 .. 0.64
+   2 !   16.3   0.1   8.3e-07   0.00067     259     320 ..     165     224 ..     161     236 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.83
+  lcd_K22207_msa 130 kkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksie 199
+                     +++++++r++i+  ++a+  +e++++   +   +  ++ +a + +    +kg  +++ ++  +a+ +s++
+          1_2654  51 RQALEKARKTIAGTLEAKP-SEIFFTSGGSESDNWAVKCIAGEYK----HKGKHIITSKIEHHAILNSCK 115
+                     6677777777777777774.5777776666666666665554444....566666666666666666665 PP
+
+  == domain 2  score: 16.3 bits;  conditional E-value: 8.3e-07
+  lcd_K22207_msa 259 PVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                     PV  + ki re++v     Da +a  qv++ v++  +d   +  HK f  P++v+fLy+r+ 
+          1_2654 165 PVFSIGKIAREKDV-LFHTDAVQAYAQVPISVRHYPVDLLSASAHK-FHGPKGVGFLYIREG 224
+                     999999********.889****************************.89***********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4063  (1323108 residues searched)
+Passed MSV filter:                       191  (0.0470096); expected 81.3 (0.02)
+Passed bias filter:                      133  (0.0327344); expected 81.3 (0.02)
+Passed Vit filter:                        13  (0.00319961); expected 4.1 (0.001)
+Passed Fwd filter:                         5  (0.00123062); expected 0.0 (1e-05)
+Initial search space (Z):               4063  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
+# Mc/sec: 14757.36
+//
+# Alignment of 5 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Roseburia-intestinalis-L1-82-MAF-2_lcdcustom.sto
+[ok]

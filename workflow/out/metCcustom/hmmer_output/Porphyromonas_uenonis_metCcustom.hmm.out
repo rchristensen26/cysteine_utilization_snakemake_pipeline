@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metCcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Porphyromonas_uenonis_prodigal.faa
+# output directed to file:         workflow/out/metCcustom/hmmer_output/Porphyromonas_uenonis_metCcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/metCcustom/hmmer_output/Porphyromonas_uenonis_metCcustom.sto
+# per-dom hits tabular output:     workflow/out/metCcustom/hmmer_output/Porphyromonas_uenonis_metCcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       metC_K01760_msa  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+   4.9e-139  460.7   0.1   6.3e-139  460.3   0.1    1.0  1  NZ_AXVC01000027.1_35  # 51394 # 52596 # -1 # ID=22_35;partial
+    8.2e-07   24.6   0.0    1.1e-06   24.3   0.0    1.2  1  NZ_KI535307.1_36      # 35473 # 36699 # 1 # ID=5_36;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_AXVC01000027.1_35  # 51394 # 52596 # -1 # ID=22_35;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  460.3   0.1  7.2e-142  6.3e-139      45     421 ..       9     398 ..       2     399 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 460.3 bits;  conditional E-value: 7.2e-142
+       metC_K01760_msa  45 kmkkkleTklvhagrdp..tgavnppiyraSTvlfksvael.arr.....geydYgrsgnptrealeeaiaeLeggarallfpSGlaAi 125
+                           +m   ++T+ +hag+++  +g++ +piy++ST++f+s+++  + r     + y Y+r gnpt +a e+++a+Legg++++ ++SG+ Ai
+  NZ_AXVC01000027.1_35   9 QMG--FATRAIHAGSEHnqHGTLATPIYQTSTFVFDSAEQGgR-RfaleeEGYIYTRLGNPTCTAAEQKVASLEGGEACVSASSGIGAI 94 
+                           465..9********965589******************99963.33454444************************************* PP
+
+       metC_K01760_msa 126 savllallkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt.iaeiealirpntklvylEsPgsptlevqDipaiaaiaka.hga 212
+                           ++++  l++aGDh+++++++Yg t+++le+ l+r+g+evtfvd++ ++ei+a++rpntklvy+E+P +p + ++Di+  a+ia++  g 
+  NZ_AXVC01000027.1_35  95 TSAIYPLVQAGDHIVAGKTLYGCTYSFLEHGLSRFGVEVTFVDARnLDEIKAAMRPNTKLVYIETPANPNMYLTDIEGAAKIAHSqEGT 183
+                           *********************************************77*************************************9458* PP
+
+       metC_K01760_msa 213 lvavDNTwatpllfkPlelGvDivihsaTKYlgGhsDvlaGlvvakdeelaeklke..lqnalGavlspddaylvlRglktLavRleqh 299
+                           +++vDNT+ tp++ +Pl+lG+D+v+hsaTKYl+Gh Dv+aG vv   +e++++++   +++++G+vl+p++ayl++Rg+ktL++R+e+h
+  NZ_AXVC01000027.1_35 184 VLMVDNTYCTPFITRPLDLGADVVVHSATKYLNGHGDVIAGFVVG-RKEYIDQVRLfaVKDMTGSVLGPFEAYLIARGIKTLEIRMERH 271
+                           *********************************************.6899999776448899*************************** PP
+
+       metC_K01760_msa 300 qenAlkiaewLeehpevarVlyPalpshpghelwkrdfkgagglfsfelk.seeavkafvdalklfgigvSwGGveSlv.lpakmlrsh 386
+                           ++nA+++ae+Le+hp+va + yP+l+s p++el+k++++  g+++ felk   ea ++++++l+l ++ vS+G  e+l+ +pa+m  +h
+  NZ_AXVC01000027.1_35 272 CANAQRVAEFLEKHPAVASIAYPGLKSFPQYELAKKQMRLPGAMIAFELKgGLEAGRKLMNSLHLATLCVSLGDAETLIeHPASM--TH 358
+                           **************************************************888********************************..** PP
+
+       metC_K01760_msa 387 asipk.eree.g.t..lvRlsvGlEdveDLiaDleqalar 421
+                           + +++ er++      +vRls+GlE+veD+iaDl+++l++
+  NZ_AXVC01000027.1_35 359 SPYTPeERAAsDiAegMVRLSIGLENVEDIIADLKAGLDA 398
+                           ***9989999644379*********************987 PP
+
+>> NZ_KI535307.1_36  # 35473 # 36699 # 1 # ID=5_36;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.58
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.3   0.0   1.2e-09   1.1e-06     172     242 ..     157     228 ..      48     247 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 24.3 bits;  conditional E-value: 1.2e-09
+   metC_K01760_msa 172 aeiealirpntklvylEsPgsptlevqDipaiaaiakahgalvavDNTwatpll.fkPlelGvDivihsaTK 242
+                        ++eal++++tk+v + + ++++  v  ++++a++a+++ga+++vD   ++p +  +  elG+D  + s  K
+  NZ_KI535307.1_36 157 PAFEALLSDRTKIVSVAHVSNVLGTVNPVAQLARLAHDKGAIIIVDGAQSAPHMsVNVQELGIDAYVCSSHK 228
+                       689********************************************99999762677799***99988777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (479 nodes)
+Target sequences:                       1769  (658735 residues searched)
+Passed MSV filter:                        61  (0.0344828); expected 35.4 (0.02)
+Passed bias filter:                       52  (0.0293951); expected 35.4 (0.02)
+Passed Vit filter:                         6  (0.00339175); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00113058); expected 0.0 (1e-05)
+Initial search space (Z):               1769  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 4847.83
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/metCcustom/hmmer_output/Porphyromonas_uenonis_metCcustom.sto
+[ok]

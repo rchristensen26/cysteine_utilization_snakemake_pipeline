@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Coprococcus-eutactus-ATCC-27759-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Coprococcus-eutactus-ATCC-27759-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Coprococcus-eutactus-ATCC-27759-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Coprococcus-eutactus-ATCC-27759-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.6e-19   65.2   0.7    4.1e-18   62.6   0.7    2.0  1  1_355     # 429225 # 430442 # 1 # ID=1_355;partial=00;start_t
+    2.2e-07   27.2   0.0    3.2e-06   23.4   0.0    2.0  2  1_1389    # 1640629 # 1641810 # -1 # ID=1_1389;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_355  # 429225 # 430442 # 1 # ID=1_355;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.495
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.6   0.7     3e-21   4.1e-18      77     410 ..       3     332 ..       1     401 [. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 62.6 bits;  conditional E-value: 3e-21
+  lcd_K22207_msa  77 eseirseFs.hhdpsvarinnGsfgscpasvleaqqrwqlkflrqPde.fyfnel..kkgilesrtaikdlinaddvdevslvdNattAaaivLq 167
+                     + + r++F  ++++++a+i+n +    p++v++a +++  k  ++P + fy  +l  +++ +++r++++d+i+ad+  e+ ++ N+t   + v  
+           1_355   3 DRNYREDFPlLRNNDTAYIDNAATAQKPQVVIDAEREFYEKSNANPLRgFYPLSLeaTEKYESARKVVRDFIHADSEKEIIFTRNTTESLNLVAY 97 
+                     556677775257889************************9999999653776665115789999*****************************99 PP
+
+  lcd_K22207_msa 168 qvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVke 262
+                     + a+    ++++ gD + ++ +  ++     +  +   g+++  ++ +   + ++e +       ++g   +++ +l  + H++ +   v PV++
+           1_355  98 SYAL----NNLKAGDEIAVTIMEHHSNMLPWQMAARVTGATLRYLDCEKDGTLTDETI-------NAG--INEHTKLLAVGHVSNVLGCVNPVRK 179
+                     8874....46799998766665555544334433333333333333333333344443.......333..3457899999*************** PP
+
+  lcd_K22207_msa 263 LvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpvVshey...........gnglaiesawiG 346
+                     +    ++ g   v+VD+A++  ++ +dv+e+gAdf++   HK ++ P ++++Ly r+ +  d   p +s                 l+++ +  G
+           1_355 180 MADRAHSFGA-VVVVDGAQSTPHMTIDVHELGADFFAFSGHK-LMGPMGIGVLYGRQ-ELLDAMPPFMSGGEmidsvsrdgavYAELPHK-FEAG 270
+                     *********9.9******************************.789**********9.44455555553222122222221222244433.3679 PP
+
+  lcd_K22207_msa 347 trDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVg 410
+                     t   +    + a++ +++++  g++ i+kr  el  +++e La+  + ++  +++      +V 
+           1_355 271 TVNAAGAAGLAAAIGYIKEV--GFDYIEKRELELTTRAMEGLAKIPHVHVIGSDKPENHTGIVA 332
+                     99999999999999999886..899999999999999999999888777544444444444454 PP
+
+>> 1_1389  # 1640629 # 1641810 # -1 # ID=1_1389;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.0     0.011        14     126     200 ..      41     110 ..       9     124 .. 0.86
+   2 !   23.4   0.0   2.4e-09   3.2e-06     259     320 ..     159     218 ..     155     227 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.011
+  lcd_K22207_msa 126 fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksiea 200
+                      ++ k+ i  +r++i+d ++a+  +e+ ++   +   +  L++v  +f+    +kg  ++++ +  +a+ ++++ 
+          1_1389  41 ASKNKDVINVARDIIADSLGAK-PEEIYFTGGGSESDNWALKSVVEAFQ----DKGKHIITTRIEHHAILHTCRY 110
+                     45667889999**********9.59********************9999....8999999999999999888764 PP
+
+  == domain 2  score: 23.4 bits;  conditional E-value: 2.4e-09
+  lcd_K22207_msa 259 PVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                     P+ ++ +i +e+g+     Da +a Gq+++dv++++ d   s  HK +  P++++fLy+r+ 
+          1_1389 159 PISRIGAIAHEHGI-LFHTDAVQAYGQIPLDVNAMNIDLLSSSGHK-LNGPKGIGFLYIRSG 218
+                     9999**********.8899***************************.89**********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2664  (906487 residues searched)
+Passed MSV filter:                       103  (0.0386637); expected 53.3 (0.02)
+Passed bias filter:                       70  (0.0262763); expected 53.3 (0.02)
+Passed Vit filter:                         8  (0.003003); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000750751); expected 0.0 (1e-05)
+Initial search space (Z):               2664  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
+# Mc/sec: 16681.97
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Coprococcus-eutactus-ATCC-27759-MAF-2_lcdcustom.sto
+[ok]

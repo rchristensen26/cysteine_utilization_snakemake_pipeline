@@ -1,0 +1,118 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Citrobacter_pasteurii_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Citrobacter_pasteurii_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Citrobacter_pasteurii_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Citrobacter_pasteurii_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    2.1e-19   67.7   0.0    3.9e-19   66.8   0.0    1.4  1  NZ_CP077262.1_2887  # 3026049 # 3027269 # -1 # ID=2_2887;part
+    9.1e-15   52.4   0.1    1.3e-06   25.5   0.0    2.6  2  NZ_CP077262.1_1213  # 1297466 # 1298740 # -1 # ID=2_1213;part
+    5.9e-10   36.5   0.0    9.1e-10   35.9   0.0    1.2  1  NZ_CP077262.1_1541  # 1651067 # 1652281 # 1 # ID=2_1541;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP077262.1_2887  # 3026049 # 3027269 # -1 # ID=2_2887;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.8   0.0   2.5e-22   3.9e-19     124     473 ..      60     394 ..      23     403 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 66.8 bits;  conditional E-value: 2.5e-22
+      lcd_K22207_msa 124 fyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievel 214
+                             + ++++++ r++ + +ina++++e ++v  +t +++ v ++++    +++ + gD +++ ++  +a     + +++r+g+++  ++l
+  NZ_CP077262.1_2887  60 TLSAQATEKMENVRKLASLFINARSAEELVFVRGTTEGINLVANSWG----NSNVRAGDNIIISEMEHHANIVPWQMLCARVGAELRVIPL 146
+                         5667788999999*******************************888....56789**************999************999999 PP
+
+      lcd_K22207_msa 215 pfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKW 305
+                         +   + + e    +   +      + + +l  i H++ +     P  e++++ ++ g  +v+VD+A+a+ + +vdv+++++dfY+   HK 
+  NZ_CP077262.1_2887 147 NADGTLQLETLPTL---F------DDRTQLLAITHVSNVLGTENPLPEMIALAHQYGA-KVLVDGAQAVMHHQVDVQALDCDFYVFSGHK- 226
+                         99888877776654...3......358899999************************9.9******************************. PP
+
+      lcd_K22207_msa 306 ffcPpsvAfLyvrkskasdlhh........pvVsheygnglaiesa..wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemge 386
+                         ++ P ++++Ly+r+s  +++            Vs + g+  a+       Gt      + + a++e+v+ +  g+ +i+++ + ++  + e
+  NZ_CP077262.1_2887 227 LYGPTGIGVLYARESLLQEMPPwegggsmiATVSLSQGTTWAKAPWrfEAGTPNTGGIIGLGAAIEYVSAL--GLAEISEYEQFMMRYALE 315
+                         9*************643444445556654455566655555443223257999999999999999999887..888888888888888888 PP
+
+      lcd_K22207_msa 387 mLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapk.egeveaitgYvRiShqvYnkvddyykl 473
+                          La+  +  +  p e    +i+ +L        +++a  + + L +++++ v + ++       +  + + +R S  +Yn  +++ +l
+  NZ_CP077262.1_2887 316 QLADVPDLTIYGP-ENRLGVIAFNLG-------KHHAYDVGSFL-DNYGIAVRTGHHCAMpLMAYYHVPAMCRASIAMYNSHEEVDRL 394
+                         8887777776444.344445555665.......34455555555.6666666663322221222334666777777777777776666 PP
+
+>> NZ_CP077262.1_1213  # 1297466 # 1298740 # -1 # ID=2_1213;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   0.0   2.5e-09   3.9e-06      94     216 ..      46     167 ..      13     181 .. 0.76
+   2 !   25.5   0.0     8e-10   1.3e-06     265     365 ..     207     314 ..     202     420 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 2.5e-09
+      lcd_K22207_msa  94 innGsfgscpasvleaqqrwqlkf...lrqPdefy.fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqk 180
+                         ++  +    p+ v+ea +++       ++  ++f   ++l+ + +++r+++++lina d  +++ +  +t A+++v q+ a    + ++q+
+  NZ_CP077262.1_1213  46 LDSAATALKPQAVIEATHQFYSLSagnVHR-SQFAeAQRLTARYEAAREKVARLINAPDDKTIVWTRGTTEAINMVAQSYA----RPRLQP 131
+                         555555556777777776655322121222.34441467999999*********************************887....7899** PP
+
+      lcd_K22207_msa 181 gDavlmlhyaYgaVkksieayvtraggsvievelpf 216
+                         gD +++     +a       ++++ g++vi+++l+ 
+  NZ_CP077262.1_1213 132 GDEIIVSVAEHHANLVPWLMVAEQTGAKVIKLPLNA 167
+                         ****99998898888888888999999999999875 PP
+
+  == domain 2  score: 25.5 bits;  conditional E-value: 8e-10
+      lcd_K22207_msa 265 kicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsheygnglaiesa....wiG 346
+                         ++ ++ g+  v+VD+A+++ + + dv++++ dfY+   HK ++ P ++++Ly +++  + +        ++s+    g+ ++ a      G
+  NZ_CP077262.1_1213 207 TLAHAAGM-VVMVDGAQGVVHFPADVQQLDIDFYAFSGHK-LYGPTGIGVLYGKPELLEAMSPwlgggKMISEVSFDGFTTQAApwklEAG 295
+                         56788888.8******************************.9**********999422333334444555555555555555554222346 PP
+
+      lcd_K22207_msa 347 trDysaqlvvpavleFvnr 365
+                         t   +  + ++a+le++++
+  NZ_CP077262.1_1213 296 TPNVAGVIGLSAALEWLDE 314
+                         6666666666666666555 PP
+
+>> NZ_CP077262.1_1541  # 1651067 # 1652281 # 1 # ID=2_1541;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.0   5.8e-13   9.1e-10     130     321 ..      48     222 ..      39     237 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 35.9 bits;  conditional E-value: 5.8e-13
+      lcd_K22207_msa 130 kkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvks 220
+                         ++++  +r++i+dl++ad   e++++  at   +  ++ +a +f     +kg  +++ ++  +aV  ++++ ++r g +v      +   +
+  NZ_CP077262.1_1541  48 EEAVDIARNQIADLVGADP-REIVFTSGATESDNLAIKGAA-NFY---QKKGKHIITSKTEHKAVLDTCRQ-LEREGFEVT-----YLAPQ 127
+                         6677779***********7.699***************887.555...488*******************9.678776644.....44555 PP
+
+      lcd_K22207_msa 221 neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPps 311
+                          + i++   k Le+  a   +  l+ i H+     vv  ++++ ++cr++g+    VDa +++G++++d+ ++ +d      HK ++ P++
+  NZ_CP077262.1_1541 128 RNGIIDL--KELEA--AMRDDTILVSIMHVNNEIGVVQDIATIGEMCRARGI-IYHVDATQSVGKLPIDLSQLKVDLMSFSGHK-IYGPKG 212
+                         6678876..56666..345577788999************************.99*****************************.9***** PP
+
+      lcd_K22207_msa 312 vAfLyvrksk 321
+                         ++ Lyvr++ 
+  NZ_CP077262.1_1541 213 IGALYVRRKP 222
+                         *******963 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4722  (1480508 residues searched)
+Passed MSV filter:                       140  (0.0296485); expected 94.4 (0.02)
+Passed bias filter:                      120  (0.025413); expected 94.4 (0.02)
+Passed Vit filter:                         9  (0.00190597); expected 4.7 (0.001)
+Passed Fwd filter:                         3  (0.000635324); expected 0.0 (1e-05)
+Initial search space (Z):               4722  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.04
+# Mc/sec: 18315.30
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Citrobacter_pasteurii_lcdcustom.sto
+[ok]

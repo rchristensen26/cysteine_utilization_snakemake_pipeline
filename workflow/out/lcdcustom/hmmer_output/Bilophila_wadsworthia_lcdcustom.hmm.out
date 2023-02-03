@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bilophila_wadsworthia_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bilophila_wadsworthia_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bilophila_wadsworthia_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bilophila_wadsworthia_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.6e-07   28.2   0.1    7.9e-07   25.9   0.0    1.8  2  NZ_KE150240.1_35    # 25251 # 26411 # 1 # ID=2_35;partial=00;
+    2.4e-05   21.0   0.9     0.0062   13.0   0.6    2.5  2  NZ_KE150239.1_554   # 640759 # 641985 # 1 # ID=3_554;partial=
+  ------ inclusion threshold ------
+       0.05   10.0   0.0      0.079    9.4   0.0    1.3  1  NZ_KE150238.1_1477  # 1678012 # 1679106 # -1 # ID=4_1477;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KE150240.1_35  # 25251 # 26411 # 1 # ID=2_35;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0      0.06        75     127     167 ..      41      84 ..      25     103 .. 0.72
+   2 !   25.9   0.0   6.2e-10   7.9e-07     256     319 ..     154     215 ..     141     222 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.06
+    lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNat....tAaaivLq 167
+                        ++ k+i+ +r++++++++a+  +e++++   t    tA+   Lq
+  NZ_KE150240.1_35  41 GQVGKSIQDAREKVAAMLGAQP-EEIVFTSCGTesdsTAVMSALQ 84 
+                       5677899999999999999996.6777665444111145555544 PP
+
+  == domain 2  score: 25.9 bits;  conditional E-value: 6.2e-10
+    lcd_K22207_msa 256 vvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                        v+P++++ ++++e+g+     Da +a G++++d+ ++ +df +   HK + +P+++++Lyvrk
+  NZ_KE150240.1_35 154 TVFPIQKIAEMVKERGI-LFHTDAVQAAGKLPIDLAKMPVDFLALSGHK-LHAPKGIGVLYVRK 215
+                       69***************.889****************************.99***********9 PP
+
+>> NZ_KE150239.1_554  # 640759 # 641985 # 1 # ID=3_554;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.6   4.9e-06    0.0062     239     307 ..     162     229 ..      59     239 .. 0.69
+   2 !    5.4   0.0   0.00099       1.2     448     481 ..     373     406 ..     346     408 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 4.9e-06
+     lcd_K22207_msa 239 grkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWff 307
+                        ++k rl+ + + +     +  V+++ + cre g     VDa h   +  +d+++igAd     ++K f 
+  NZ_KE150239.1_554 162 NAKTRLVAVGYASNAVGTINDVARISRRCREVGA-LLSVDAVHIAPHKAIDMDAIGADMLFCSVYKFFG 229
+                        4577788888877777888889999********9.99***********************999999875 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.00099
+     lcd_K22207_msa 448 geveaitgYvRiShqvYnkvddyyklrdavnqlv 481
+                          v+ i g++R+    Yn+ ++ + l  av++++
+  NZ_KE150239.1_554 373 VGVDRIGGWIRVGFAPYNTEEEAELLVRAVREIA 406
+                        235669************************9876 PP
+
+>> NZ_KE150238.1_1477  # 1678012 # 1679106 # -1 # ID=4_1477;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.0   6.2e-05     0.079     212     315 ..     108     206 ..      67     220 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 6.2e-05
+      lcd_K22207_msa 212 velpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNl 302
+                         v lp+  +  e+  +++++a+++     + v l  + H    +  + P+  L k+ ++ gv    VD   ++G  +v ++e ++d   +  
+  NZ_KE150238.1_1477 108 VSLPYDCSIRESDLAAVEEAIRR----VKPVMLTAV-HCETPSGTLNPIGLLGKLKKDLGVPLFYVDTVAGLGGAPVHMDEWNVDLMLGGS 193
+                         55555555555555555555555....233333322.66667778889999**********9999************************** PP
+
+      lcd_K22207_msa 303 HKWffcPpsvAfL 315
+                          K + cPps+++ 
+  NZ_KE150238.1_1477 194 QKCLSCPPSMSMV 206
+                         *********9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3788  (1226178 residues searched)
+Passed MSV filter:                        98  (0.0258712); expected 75.8 (0.02)
+Passed bias filter:                       88  (0.0232313); expected 75.8 (0.02)
+Passed Vit filter:                        13  (0.00343189); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.000791975); expected 0.0 (1e-05)
+Initial search space (Z):               3788  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 14826.19
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bilophila_wadsworthia_lcdcustom.sto
+[ok]

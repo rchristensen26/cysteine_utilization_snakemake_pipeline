@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Subdoligranulum-variabile-DSM-15176-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.1e-08   29.2   0.0    9.6e-08   28.6   0.0    1.2  1  1_1944    # 2138870 # 2140060 # 1 # ID=1_1944;partial=00;star
+    2.3e-07   27.3   0.0    3.3e-07   26.8   0.0    1.2  1  1_1102    # 1156578 # 1157726 # -1 # ID=1_1102;partial=00;sta
+    0.00017   17.8   0.0    0.00028   17.1   0.0    1.2  1  1_1271    # 1350723 # 1351874 # -1 # ID=1_1271;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1944  # 2138870 # 2140060 # 1 # ID=1_1944;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.670
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   0.0   9.7e-11   9.6e-08     276     339 ..     155     216 ..     148     224 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 9.7e-11
+  K22207 276 vvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrk 339
+              + P+ e+ ++cre gv     Da +a+G++++dvk+ + d     +hK f +Pk++  Lyvrk
+  1_1944 155 TIQPIAEIGRVCREAGV-LFHTDAVQAVGHLPIDVKAQNIDLLSLSAHK-FHGPKGTGALYVRK 216
+             578**************.5889***************************.99***********9 PP
+
+>> 1_1102  # 1156578 # 1157726 # -1 # ID=1_1102;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.0   3.3e-10   3.3e-07     259     339 ..     139     215 ..     111     237 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 3.3e-10
+  K22207 259 grrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrk 339
+             +r+ rL++i +     + +  + ++  +c+++gv    vDa +aiG+++v +     df  + +hK f +Pk++ fLy+r+
+  1_1102 139 ERQPRLVTIQYANNEVGTIQDIPTISTLCQKKGV-LLHVDAVQAIGHIPVVLDG--IDFLSASAHK-FGGPKGIGFLYARN 215
+             35679**************9999***********.69*************9995..59********.889*********99 PP
+
+>> 1_1271  # 1350723 # 1351874 # -1 # ID=1_1271;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   2.8e-07   0.00028     262     337 ..     140     214 ..     129     231 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 2.8e-07
+  K22207 262 vrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyv 337
+             ++L+v+ h + +++ +     + +ic ++gv+   +DaA+  G+++++ +e+g       +hK + +P++   L +
+  1_1271 140 TKLVVLAHASNVSGTLQDAAAVGRICAAHGVP-FCLDAAQTAGHLPLSFQELGLAALSVPAHKGLMGPQGLGALLL 214
+             7899****99999999999999*********8.779*********************************9866655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2961  (969825 residues searched)
+Passed MSV filter:                        90  (0.0303951); expected 59.2 (0.02)
+Passed bias filter:                       82  (0.0276933); expected 59.2 (0.02)
+Passed Vit filter:                        10  (0.00337724); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.00101317); expected 0.0 (1e-05)
+Initial search space (Z):               2961  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 18066.38
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_lcd.sto
+[ok]

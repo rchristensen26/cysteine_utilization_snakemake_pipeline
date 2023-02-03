@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Acidaminococcus-intestini-D21-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Acidaminococcus-intestini-D21-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Acidaminococcus-intestini-D21-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Acidaminococcus-intestini-D21-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.2e-13   45.2   0.3    1.4e-12   44.1   0.1    1.7  2  1_353     # 403551 # 404771 # 1 # ID=1_353;partial=00;start_t
+  ------ inclusion threshold ------
+      0.022   10.4   0.0      0.032    9.9   0.0    1.1  1  1_2110    # 2266134 # 2267360 # 1 # ID=1_2110;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_353  # 403551 # 404771 # 1 # ID=1_353;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.484
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   0.1   1.3e-15   1.4e-12     154     345 ..      66     239 ..      32     303 .. 0.87
+   2 ?   -2.3   0.0      0.14   1.5e+02     474     496 ..     371     393 ..     349     400 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 44.1 bits;  conditional E-value: 1.3e-15
+  K22207 154 lksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrkaLekgk 256
+              ++r++++++ina++ dev +v n+T+a + v+++ +    e +++ gd +v+      +     +++++r g++ + + l+     +   ++e  +++    
+   1_353  66 DSAREAVARFINAKSADEVIFVRNTTEALNLVARSYG----EANLHTGDKIVIPISEHHSDIVPWQRVASRTGAQLVYMYLDE----EGHFTDEDLAKI---D 157
+             468*****************************99999....9***********999999999999***********9998874....666665444444...3 PP
+
+  K22207 257 angrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrksskssd 345
+                ++++++ +  ++ + ++  P++++++ +++ g    ++D+A++  +++ dv++ ++dfy+   hK + +  ++ +Ly +k  k  +
+   1_353 158 ---EKTKIVAFAAVSNVLGMKRPIEKIIEKAHAVGA-IAVLDGAQSAPHMKSDVQKWDCDFYAFSGHK-MMGSAGTGVLYGKK--KLLN 239
+             ...3566777777777788888*************9.5789***************************.7788999****999..5444 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.14
+  K22207 474 vtgyvRiShqvYnkveDyeklrd 496
+             v +  R S  +Yn++e++  + d
+   1_353 371 VEASNRASFYIYNTIEEVDYFLD 393
+             5566799*********9987765 PP
+
+>> 1_2110  # 2266134 # 2267360 # 1 # ID=1_2110;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.53
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0     3e-05     0.032     245     305 ..     171     230 ..     164     232 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 3e-05
+  K22207 245 ieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGq 305
+             ++ ++++L+  ++n+  v+L v D + Sm + +    eL+++   +g    +vD AHa G 
+  1_2110 171 MTDLEQKLAAYASNQTAVKLIVTDGVFSMDGDLCRLPELAALKNRYGT-LLMVDDAHAEGV 230
+             5678999*999***99*****************9999**********9.7********885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2149  (668376 residues searched)
+Passed MSV filter:                        64  (0.0297813); expected 43.0 (0.02)
+Passed bias filter:                       51  (0.023732); expected 43.0 (0.02)
+Passed Vit filter:                         6  (0.002792); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000930665); expected 0.0 (1e-05)
+Initial search space (Z):               2149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 20624.57
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Acidaminococcus-intestini-D21-MAF-2_lcd.sto
+[ok]

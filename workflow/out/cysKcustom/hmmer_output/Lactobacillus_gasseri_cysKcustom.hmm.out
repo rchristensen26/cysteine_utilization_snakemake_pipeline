@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus_gasseri_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Lactobacillus_gasseri_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Lactobacillus_gasseri_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Lactobacillus_gasseri_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    1.4e-10   37.3   0.7    5.3e-10   35.4   0.7    1.8  1  NZ_WBOA01000001.1_134  # 139133 # 140314 # 1 # ID=13_134;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_WBOA01000001.1_134  # 139133 # 140314 # 1 # ID=13_134;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.4   0.7   2.9e-13   5.3e-10     126     291 ..     105     282 ..      21     304 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 35.4 bits;  conditional E-value: 2.9e-13
+        cysK_K01738_msa 126 lkpgttivEpTsGnTGiglAlvAaakGyklilvmPetmsierrkllral.GAelvltpgaegmkgaiekaeelaaetpnaflldQFe. 211
+                            l +  t   +T Gn G g+A++A   G + ++ mP++  + r + +r     e++ t++  +++  +++++el +++pn+++ +  + 
+  NZ_WBOA01000001.1_134 105 LAEEITFYTATDGNHGRGIAWAASKLGTHAVIKMPKGSKEIRADHIRKIqNTEVEITDK--NYDNTVKEVKELCEKDPNGIMIQDTAw 190
+                            444557789**************999******************999874699999994..4567789******************97 PP
+
+        cysK_K01738_msa 212 .....NpaNpeaHyettgpeIweqt.egkvdaf.VagvGT..GGTitGvgryLkekn.pdikivavePeespvl..s..ggepgphki 285
+                                  p      y  + +e ++q+ e++ ++f  agvG+   G i G+ + +k +  p   i  vePe  + +  s  +g+ + h +
+  NZ_WBOA01000001.1_134 191 egyekIPGWIIKGYGLIVDEFLHQIkEKPTHIFlQAGVGSlaAGIILGLEERMKPEElP--VITIVEPETVACYylSaqKGDGKRHHL 276
+                            7755422222234666779999***4445888877888876677777777777766656..677899999998745553477788*** PP
+
+        cysK_K01738_msa 286 qGiGag 291
+                            +G+   
+  NZ_WBOA01000001.1_134 277 EGLTKT 282
+                            **9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       1809  (566218 residues searched)
+Passed MSV filter:                        53  (0.029298); expected 36.2 (0.02)
+Passed bias filter:                       41  (0.0226645); expected 36.2 (0.02)
+Passed Vit filter:                         6  (0.00331675); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000552792); expected 0.0 (1e-05)
+Initial search space (Z):               1809  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10926.12
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Lactobacillus_gasseri_cysKcustom.sto
+[ok]

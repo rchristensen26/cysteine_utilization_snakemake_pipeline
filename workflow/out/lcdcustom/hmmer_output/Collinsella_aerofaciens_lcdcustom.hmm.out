@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Collinsella_aerofaciens_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Collinsella_aerofaciens_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Collinsella_aerofaciens_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Collinsella_aerofaciens_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.5e-18   63.6   0.0    2.5e-18   62.9   0.0    1.3  1  NZ_CP024160.1_758  # 878920 # 880245 # 1 # ID=1_758;partial=0
+      2e-07   26.9   0.2    6.2e-07   25.3   0.2    1.7  1  NZ_CP024160.1_351  # 400700 # 401842 # 1 # ID=1_351;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP024160.1_758  # 878920 # 880245 # 1 # ID=1_758;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.9   0.0   2.6e-21   2.5e-18      87     388 ..      49     347 ..      20     364 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 62.9 bits;  conditional E-value: 2.6e-21
+     lcd_K22207_msa  87 hdpsvarinnGsfgscpasvleaqqrwqlkflrqPdef...yfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfae 175
+                        ++p++a ++  +    pa+vl+a +++ +++ ++P +       e +++i++ r++i+d+i+a +++ev+++ N++   + v +++a     
+  NZ_CP024160.1_758  49 QHPEIAFLDSAATAQRPACVLDAERDFYQRMNANPLRGlysLSVEATEAIAKVRQQIADVIGAPQANEVVFTRNTSESLNLVAKSFA----P 136
+                        4578999999999999**********99999888876511144578899*********************************99666....6 PP
+
+     lcd_K22207_msa 176 gkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkic 267
+                          +++gD v+++ +  ++     ++++ + g++++     +p k+ +   +e+   L+k    g k ++  +  ++ +  v  PVk+L k++
+  NZ_CP024160.1_758 137 TVLEPGDEVVITIMEHHSNLIPWQQVCRETGAKLVY---LYPTKTGQLTTEEV---LSK---VGPKTKILAVGQVSNVLGVENPVKNLGKLV 219
+                        6679**************999999999999999884...36777777666665...666...5999999999******************** PP
+
+     lcd_K22207_msa 268 reegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks..ka.s......dlhhpvVsheygnglaiesawiGtrDy 350
+                        ++ g    +VD+A+++ +++v+v ++gAdf++   HK  + P ++++L+ + +  +a        ++ ++v  ++       e +  Gt+D 
+  NZ_CP024160.1_758 220 HKYGG-YLVVDGAQSLPHMPVNVADLGADFFAFSAHK-AMGPMGIGVLWGKMDllNAmPpmltggEMIDSVTEQDAVWAPVPEKFEAGTQDA 309
+                        ****9.9******************************.779********99953222212222333444666666666777788899***** PP
+
+     lcd_K22207_msa 351 saqlvvpavleFvnrfeggiegirkrnhelvve.mgemL 388
+                        +  ++  a+l+++ +   g+e+i+ r + lv+  mge++
+  NZ_CP024160.1_758 310 AGIFATGAALDYLVNT-VGYENIQVREQALVHYlMGELM 347
+                        ***********98775.799****999999974255555 PP
+
+>> NZ_CP024160.1_351  # 400700 # 401842 # 1 # ID=1_351;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   0.2   6.4e-10   6.2e-07     132     315 ..      45     210 ..      39     279 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 6.4e-10
+     lcd_K22207_msa 132 gilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksnee 223
+                         i+  r+++++l++  ++d+v+++ N t+A ++ ++ v         ++gD v+++ +  ++V + +++++++ g +     ++    +++ 
+  NZ_CP024160.1_351  45 TIHGCRAKLARLLGCPRADHVCFTPNSTAALNTAINGV--------VRPGDRVVTTVLEHNSVLRPLNRLAAERGVT-----VEHAGCDANG 123
+                        6777899***************************9966........59*********************98888855.....4556666666 PP
+
+     lcd_K22207_msa 224 ivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfL 315
+                        + +   + Le+        r +v+ H + ++   + +++  ++ ++ g   v++Da ++ G  ++d++++g d      HK ++ P++++ L
+  NZ_CP024160.1_351 124 VLDY--DKLER--LVTPGTRAVVVTHASNVTGNAVDIARVAALAHAAGA-LVIIDASQSAGTAHIDMQAMGLDVVCFTGHKGLMGPQGTGGL 210
+                        6654..55677..556789*****************************9.9*************************9********9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1930  (668590 residues searched)
+Passed MSV filter:                        76  (0.0393782); expected 38.6 (0.02)
+Passed bias filter:                       69  (0.0357513); expected 38.6 (0.02)
+Passed Vit filter:                         7  (0.00362694); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00103627); expected 0.0 (1e-05)
+Initial search space (Z):               1930  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 11699.39
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Collinsella_aerofaciens_lcdcustom.sto
+[ok]

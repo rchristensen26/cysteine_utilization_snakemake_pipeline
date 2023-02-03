@@ -1,0 +1,24 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NZ_KB907724.1_9      -            295 cysM_K12339_msa      -            366  1.7e-155  515.1   0.8   1   1    3e-158  1.8e-155  514.9   0.8    28   321     1   294     1   294 1.00 # 7315 # 8199 # -1 # ID=60_9;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.548
+NZ_KB907707.1_29     -            325 cysM_K12339_msa      -            366   6.3e-94  312.5   0.1   1   1   3.4e-96   2.1e-93  310.8   0.1    36   324    11   316     1   323 0.92 # 28952 # 29926 # -1 # ID=77_29;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.508
+NZ_KB907726.1_28     -            523 cysM_K12339_msa      -            366   2.5e-18   63.8   0.1   1   2     1e-20   6.4e-18   62.4   0.0    33   233    29   222     4   226 0.90 # 29992 # 31560 # 1 # ID=58_28;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.507
+NZ_KB907726.1_28     -            523 cysM_K12339_msa      -            366   2.5e-18   63.8   0.1   2   2      0.46   2.9e+02   -2.3   0.0   253   302   261   310   258   312 0.84 # 29992 # 31560 # 1 # ID=58_28;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.507
+NZ_KB907719.1_58     -            405 cysM_K12339_msa      -            366   1.4e-13   48.1   1.9   1   2   4.4e-11   2.7e-08   30.7   0.2    32   229    49   258    21   265 0.68 # 61200 # 62414 # 1 # ID=65_58;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.532
+NZ_KB907719.1_58     -            405 cysM_K12339_msa      -            366   1.4e-13   48.1   1.9   2   2   1.7e-06     0.001   15.6   0.1   257   318   324   386   316   403 0.82 # 61200 # 62414 # 1 # ID=65_58;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.532
+NZ_KB907708.1_8      -            427 cysM_K12339_msa      -            366   7.3e-05   19.4   0.0   1   2     5e-07   0.00031   17.4   0.0    80   162   113   196   103   204 0.82 # 7756 # 9036 # -1 # ID=76_8;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.514
+NZ_KB907708.1_8      -            427 cysM_K12339_msa      -            366   7.3e-05   19.4   0.0   2   2       0.2   1.3e+02   -1.1   0.0    88   126   233   272   224   285 0.80 # 7756 # 9036 # -1 # ID=76_8;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.514
+NZ_KB907705.1_44     -            416 cysM_K12339_msa      -            366    0.0015   15.1   5.5   1   3     0.015       9.2    2.6   0.1   272   316     3    62     1   145 0.71 # 40654 # 41901 # -1 # ID=79_44;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.533
+NZ_KB907705.1_44     -            416 cysM_K12339_msa      -            366    0.0015   15.1   5.5   2   3   1.2e-05    0.0075   12.8   0.1    78   119   195   236   191   241 0.91 # 40654 # 41901 # -1 # ID=79_44;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.533
+NZ_KB907705.1_44     -            416 cysM_K12339_msa      -            366    0.0015   15.1   5.5   3   3     0.056        35    0.7   0.2   252   300   245   293   237   305 0.84 # 40654 # 41901 # -1 # ID=79_44;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.533
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      config/profileHMMs/cysMcustom.HMM
+# Target file:     workflow/out/prodigal/proteinSeq/Rheinheimera_perlucida_prodigal.faa
+# Option settings: hmmsearch -o workflow/out/cysMcustom/hmmer_output/Rheinheimera_perlucida_cysMcustom.hmm.out -A workflow/out/cysMcustom/hmmer_output/Rheinheimera_perlucida_cysMcustom.sto --domtblout workflow/out/cysMcustom/hmmer_output/Rheinheimera_perlucida_cysMcustom.domtblout config/profileHMMs/cysMcustom.HMM workflow/out/prodigal/proteinSeq/Rheinheimera_perlucida_prodigal.faa 
+# Current dir:     /Users/rebeccachristensen/Desktop/Cremer_Lab_2022/cysteine_utilization_project/main
+# Date:            Mon Aug  8 16:25:58 2022
+# [ok]

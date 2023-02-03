@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alloscardovia_omnicolens_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Alloscardovia_omnicolens_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Alloscardovia_omnicolens_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Alloscardovia_omnicolens_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    8.6e-29   97.1   2.7    1.1e-28   96.7   2.7    1.1  1  NZ_PKGT01000010.1_25   # 32656 # 33978 # 1 # ID=5_25;partial=
+    7.2e-14   47.9   3.7    3.5e-12   42.4   3.7    2.7  1  NZ_PKGT01000001.1_158  # 171440 # 172717 # 1 # ID=14_158;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_PKGT01000010.1_25  # 32656 # 33978 # 1 # ID=5_25;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.7   2.7   1.5e-31   1.1e-28      71     343 ..      32     311 ..       2     335 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 96.7 bits;  conditional E-value: 1.5e-31
+       cysK_K01738_msa  71 adnitelignTplvrlnrlse..gaeiyaKlEflnPggSvKdRialsmiedAekkGllkpgttivEpTsGnTGiglAlvAaakGyklil 157
+                           a+ +t    +T+l + + lse  ga++++K E l+ +gS K R a++ i   + + +l+ g  i+ +++Gn + g A++A+ +G + ++
+  NZ_PKGT01000010.1_25  32 AERLTSVARHTHLEESQILSEmtGARVLLKPENLQKTGSFKLRGAYNKIA-SLSQDELDRG--IITASAGNHAQGVAYAARERGAHATI 117
+                           566677778899999999997779*************************5.6666689999..************************** PP
+
+       cysK_K01738_msa 158 vmPetmsierrkllralGAelvltpgaegmkgaiekaeelaaetpnaflldQFeNpaNpeaHyettgpeIweqtegkvdafVagvGTGG 246
+                           vmP+ + + +++  ralGA++ l      ++++ + a    a+t++  +++ F++   +   + t++ eI+e++  +v  + +  G GG
+  NZ_PKGT01000010.1_25 118 VMPRITPPIKVDATRALGATVALEGDV--FDESSAYAANA-ARTQGLTFVHPFND-YEVLTGQGTIAMEILEDCP-EVTDILVPLGGGG 201
+                           **********************97422..35443456565.556588******98.888999************7.455555679**** PP
+
+       cysK_K01738_msa 247 TitGvgryLkeknpdikivavePeespvls....gge....p...gphkiqGi...GagfipenldteliDeviqvsdeeaiamarrla 321
+                             +Gv+ ++k   p++++++v Pe+s  +     +ge    +     +  +G+    +g ++  l  + +D+ ++vs+ +  +m   ++
+  NZ_PKGT01000010.1_25 202 LGAGVAMAVKTFAPHVRVIGVTPEGSVAFGqsfaAGEhrvhAadaVHTAAEGVavrEPGSLTFALLEKYLDGFVTVSERDISEMILLML 290
+                           ***********99*************9995224334433331332224557764444446777777889**************999999 PP
+
+       cysK_K01738_msa 322 reeGllvGiSsGanlaaAlkla 343
+                           +++ l v   +Ga  +aAl + 
+  NZ_PKGT01000010.1_25 291 EKHKLVVE-AAGAVSLAALNVL 311
+                           99999874.4555555666554 PP
+
+>> NZ_PKGT01000001.1_158  # 171440 # 172717 # 1 # ID=14_158;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   3.7   4.6e-15   3.5e-12      78     350 ..      84     400 ..      16     412 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 42.4 bits;  conditional E-value: 4.6e-15
+        cysK_K01738_msa  78 ign.Tplvrlnrlse...gaeiyaKlEflnPggSvKdRialsmiedAekkGllkpgttivEpTsGnTGiglAlvAaakGyklilvmPe 161
+                             g+ Tpl + ++l+    ga++y+K E ln  gS+K    l  i+ A + G+     +i E  +G  G++ A +Aa  G+++ ++m +
+  NZ_PKGT01000001.1_158  84 AGReTPLYYAESLTRylgGARVYLKREDLNHLGSHKLNNVLGQILLAKRMGKT---RVIAETGAGQHGVATAAAAARFGMQCDIYMGA 168
+                            3446*********955756*************************999999988...49***************99888****999997 PP
+
+        cysK_K01738_msa 162 tmsierrkl....lralGAelvlt.pgaegmkgaieka.eelaaetpnaflldQFe..........NpaNpeaHyettgpeIweqt.. 231
+                             +  +r++l    ++ +GA+++ + +g+  +k a+++a    +++  +af++   +                  ++ +  e  +q+  
+  NZ_PKGT01000001.1_158 169 -VDAQRQQLnvfrMELMGATVHAVeDGTATLKNAVDAAfAAWMNDL-DAFYVLGSAvgphpypsivH-----EFQKIISVESRRQIle 249
+                            .55566554334499*********6666668989888513333444.66555555567766444431.....3334455554455443 PP
+
+        cysK_K01738_msa 232 .egk.vdafVagvGTGGTitGv.gryLkeknpdikivavePeespvls........gge.....pgp................hkiqG 287
+                             eg+ +da++a vG G    G+ ++y+    +++ +++ve ++  + +        +g                         ++   
+  NZ_PKGT01000001.1_158 250 qEGRlPDAVIACVGGGSNAIGAfSQYIDD--ENVSLIGVEATGKGLDTplhaatmeKGRigiidG-MktyslfddngeiaevySISA- 333
+                            35666*********998665542677775..569******8887643222222111233333330.133333333344433333333. PP
+
+        cysK_K01738_msa 288 iGag.....fipe..nldteliDeviqvsdeeaiamarrlareeGllvGiSsGanlaaAlklakr..peagk 350
+                               g       pe  +l+ +   e    +d+ea+++   l ++eG+l  i s  +la A+k a    p  ++
+  NZ_PKGT01000001.1_158 334 ---GldypgVGPEhaFLKDSGRVEYTGATDDEAVDALVTLSKTEGILPAIESSHALAEAIKRAPHmsP--DQ 400
+                            ...1444453333335555667789999*******99***********************99876333..55 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       1503  (521068 residues searched)
+Passed MSV filter:                        56  (0.0372588); expected 30.1 (0.02)
+Passed bias filter:                       35  (0.0232868); expected 30.1 (0.02)
+Passed Vit filter:                         4  (0.00266134); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00133067); expected 0.0 (1e-05)
+Initial search space (Z):               1503  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8022.89
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Alloscardovia_omnicolens_cysKcustom.sto
+[ok]

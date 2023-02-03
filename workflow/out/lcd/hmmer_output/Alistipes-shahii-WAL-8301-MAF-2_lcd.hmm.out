@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-shahii-WAL-8301-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.2e-11   39.2   0.0    7.3e-10   35.7   0.0    2.4  1  1_178     # 192520 # 193740 # -1 # ID=1_178;partial=00;start_
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_178  # 192520 # 193740 # -1 # ID=1_178;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=11bp;gc_cont=0.663
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.0   2.3e-13   7.3e-10     110     502 ..      22     401 ..       2     405 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 35.7 bits;  conditional E-value: 2.3e-13
+  K22207 110 gvariNnGSFGscpksvleaqqewqlkf...lrqPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhy 209
+              +++++ G+    p++v+e   ++++++   +++  +f  +e +    ++r+ i+ +++a   +e+++   aT+  + v+ + + aF    +  gd +++ ++
+   1_178  22 PLVYLDSGATAQKPRTVIETVDRLHRELnanIHRGVHFLSEEATVLYEAARERIAAFVGAAAKEEIVFTAGATASLNTVAYAWGDAF----VGAGDNILVSEM 120
+             4578888999999999999988888776222457889999999999999******************98888888777777777555....678********* PP
+
+  K22207 210 aYgaVKksieayvtraggeVievelpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvke 312
+                +     + +++r+g+e+    l  P  ++ ++ + +  +L +     +r+r++ +   +   +     +++v+ ++  g   v+vD+ +++ +  vdv++
+   1_178 121 EHHSNIVPWQMLAERKGAEIRV--L--PFDEAGALRTDLLPSLVD-----ERTRVVAVTQASNTLGTRPDLRTVVEAAHTAGA-VVVVDGCQGVVHGGVDVRA 213
+             ****9999**********9864..3..447888888888888864.....467788777777777777779************.6****************** PP
+
+  K22207 313 igadfytsnlhKWffcPksvAfLyvrksskssdlh.........hPvvshe..YgnglaiesawiGtrDysaqlvvpealeFvnrfegGiegikkrnhelvve 404
+             +++dfy+   hK +++P+++ +Ly +++   +++          + v+  +  Y   ++ ++   Gt  +   + + ea++F++rf  +  +i++    l  +
+   1_178 214 MDCDFYAFSGHK-LYGPTGIGVLYGKREL-LERMPpfmgggdmvDTVTFAKttY-APVPLKFE-AGTANFVGAIGLGEAVKFMQRF--DPAEIEAHEETLLRR 310
+             ************.9***********9932.222225666665545554444224.55555554.7*********************..7899*********** PP
+
+  K22207 405 mgemLaeawgtel.gappemcasmvmvgLPaalgissdddalkLrthLreefkveVpi..yyrapkdgeveqvtgyvRiShqvYnkveDyeklrdAvnkLv 502
+             + e L    g ++ g++p  ca++         g++  d       ++ ++ ++ V +  +  +p + ++  +tg +R S ++Yn+  +  +l   v++ v
+   1_178 311 ATERLEGIGGLRIyGTAPGKCAILSF----NVEGVHPYDMG-----MILDKLGIAVRTgqHCAEPVMDHY-GTTGMCRASFALYNTLAEADALAAGVERAV 401
+             *****999999988999999997654....23355555543.....344556777777333333334444.788999999999999999999988887655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3197  (1128781 residues searched)
+Passed MSV filter:                        88  (0.0275258); expected 63.9 (0.02)
+Passed bias filter:                       77  (0.0240851); expected 63.9 (0.02)
+Passed Vit filter:                         9  (0.00281514); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000312793); expected 0.0 (1e-05)
+Initial search space (Z):               3197  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 18791.40
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_lcd.sto
+[ok]

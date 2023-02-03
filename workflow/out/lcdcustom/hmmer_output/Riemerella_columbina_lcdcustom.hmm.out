@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Riemerella_columbina_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Riemerella_columbina_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Riemerella_columbina_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Riemerella_columbina_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.1e-19   67.7   0.0    1.5e-19   67.3   0.0    1.1  1  NZ_KB894225.1_5  # 3256 # 4476 # 1 # ID=59_5;partial=00;start
+    0.00016   17.7   0.1    0.00024   17.0   0.1    1.2  1  NZ_KB894232.1_7  # 10598 # 11854 # 1 # ID=52_7;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB894225.1_5  # 3256 # 4476 # 1 # ID=59_5;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=8bp;gc_cont=0.411
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.3   0.0   1.2e-22   1.5e-19      96     473 ..      28     394 ..       3     403 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 67.3 bits;  conditional E-value: 1.2e-22
+   lcd_K22207_msa  96 nGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlm 186
+                      n +    p svl+a +++  k    ++   +   +  +++++e+r++++++ina++  ev ++  +t +++ +  +++     ++++++D v++
+  NZ_KB894225.1_5  28 NAATSQKPLSVLKACENYYTKLnanVHRGIHTLSQWATEAMEEARKKVQHFINAQHDYEVIFTKGTTEGINLIAYALT-----SQIKQDDEVII 116
+                      555555566666666655544322233345555666778999*******************************99886.....56779****** PP
+
+   lcd_K22207_msa 187 lhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaA 280
+                        +  ++     + +++r g+++  ++++   + + ++ +e    L++      k +l+ +  ++    ++ P+ ++++  re     +++D+A
+  NZ_KB894225.1_5 117 SYLEHHSNIVPWQMLCERTGAKLKVIPMDEQGRLQTQVLDEW---LSE------KTKLVAVNQVSNALGIINPIDTIIQKTRELSNAFILIDGA 201
+                      999999999999**********99999999999999999887...665......89************************************** PP
+
+   lcd_K22207_msa 281 haiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks..ka.sdlhh..pvV.shey....gnglaiesawiGtrDysaqlvvpavleFvn 364
+                      ++i + +vdv+++++df++   HK +++P ++++Ly +++  ++ s  h    ++ + ++      gl+ ++   Gt      +++ a+++F+ 
+  NZ_KB894225.1_5 202 QSIPHFKVDVQAMDCDFFVFSGHK-MYAPMGTGILYGKEKvlETlSPFHGggEMIaTCSFdgttYAGLPFKF-EAGTPNVGGNIALGAAVDFML 293
+                      ************************.9************9632224444548844435555544455999766.58*****************99 PP
+
+   lcd_K22207_msa 365 rfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLP.aklgissdedalkLrthLreefkvevpiyyrapk.egeveaitgY 456
+                      ++  g e+++++ + l+  +++ L+   g ++    e  + + +V +  + +gi+sd        ++ ++ ++ v + ++ ++   ++ +i g 
+  NZ_KB894225.1_5 294 EI--GHETLQSHETALIDYAQKQLKTIEGLRIY--GEKAPRVGAVSFNlEGVGIASD------VGMILDKIGIAVRTGHHCTQpIMDYFNIAGT 377
+                      87..88*******************99999975..5566666666666457888888......4578899999999955433322334469*** PP
+
+   lcd_K22207_msa 457 vRiShqvYnkvddyykl 473
+                      vR S  +Yn+++++  l
+  NZ_KB894225.1_5 378 VRASFAIYNTLEEVDTL 394
+                      ************98777 PP
+
+>> NZ_KB894232.1_7  # 10598 # 11854 # 1 # ID=52_7;partial=00;start_type=ATG;rbs_motif=AAATAA;rbs_spacer=10bp;gc_cont=0.3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1     2e-07   0.00024     235     286 ..     189     239 ..     180     241 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 2e-07
+   lcd_K22207_msa 235 gkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                      g +++ + +++++D + S    + P +++v++c++ +    +VD Ah+iG +
+  NZ_KB894232.1_7 189 GVKDKYRTKMVIVDGVYSQDGDIAPLRDIVSLCKQYNA-VLMVDDAHGIGVI 239
+                      34556799****************************99.8**********75 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2439  (736658 residues searched)
+Passed MSV filter:                       103  (0.0422304); expected 48.8 (0.02)
+Passed bias filter:                       71  (0.0291103); expected 48.8 (0.02)
+Passed Vit filter:                        10  (0.00410004); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000820008); expected 0.0 (1e-05)
+Initial search space (Z):               2439  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 18395.45
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Riemerella_columbina_lcdcustom.sto
+[ok]

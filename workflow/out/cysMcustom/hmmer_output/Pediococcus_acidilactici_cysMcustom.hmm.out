@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Pediococcus_acidilactici_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Pediococcus_acidilactici_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Pediococcus_acidilactici_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Pediococcus_acidilactici_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.2e-29  100.1   1.8    1.5e-27   93.2   0.2    2.0  2  NZ_CP053421.1_692  # 735378 # 736430 # 1 # ID=1_692;partial=0
+     0.0068   12.0   0.1       0.01   11.5   0.1    1.3  1  NZ_CP053421.1_827  # 871369 # 872559 # 1 # ID=1_827;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP053421.1_692  # 735378 # 736430 # 1 # ID=1_692;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.2   0.2   1.5e-30   1.5e-27      32     235 ..      25     226 ..       4     232 .. 0.90
+   2 !    6.4   0.1   0.00036      0.35     253     296 ..     263     305 ..     255     324 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 93.2 bits;  conditional E-value: 1.5e-30
+    cysM_K12339_msa  32 tledliGn....TPLvrlqrlagk.kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvkl 118
+                        +  ++iG+    TPLv+   l+++  ++++++KlE ++ +GS K R a + i++     + ++++ +i a+ GN +  +a+ +++ g++ ++
+  NZ_CP053421.1_692  25 EARKVIGKyarrTPLVQSMFLSNNvAHADVYLKLENMQLTGSFKFRGANNKINHL---SDEEKKHGVITASAGNHAQGVALTGKLSGIDTTV 113
+                        455677777777******999988679*************************988...44467899************************** PP
+
+    cysM_K12339_msa 119 vmpenaseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimG 210
+                        vmp++a + +++a r yGAe+       +++ a d ++e a+++   ++d f++   + a   t g Ei+++    v+ ++  +G +G i G
+  NZ_CP053421.1_692 114 VMPDEAPQMKRDATRGYGAEVDIHG--ATFDDAHDWMHERAEKEGKTIVDPFNDSL-VCAGQGTIGLEILEDLV-DVETIIVPVGGGGLISG 201
+                        *********************9985..79***************99******9988.99*************96.7999999********** PP
+
+    cysM_K12339_msa 211 vsryLkeqnpavqivglqPeegssi 235
+                        ++++ k+ np++++vg+q+e+ +++
+  NZ_CP053421.1_692 202 IATAVKSINPSIHVVGVQSENVHGM 226
+                        *******************997765 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.00036
+    cysM_K12339_msa 253 srvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrla 296
+                        ++vD+++ vs+ee  +++++l+++ +i++   +G+  +aal+  
+  NZ_CP053421.1_692 263 KLVDEIVLVSEEEISKAMKDLMQRTKIVA-EGAGALPTAALEAG 305
+                        78************************765.56777777777643 PP
+
+>> NZ_CP053421.1_827  # 871369 # 872559 # 1 # ID=1_827;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.1     1e-05      0.01      80     133 ..     189     243 ..     169     279 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1e-05
+    cysM_K12339_msa  80 eaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvm.penaseerkaamr 133
+                        +  +r+ i+p + + + +SG  G ALa  aa+ g  v+l++ p+n s  + + ++
+  NZ_CP053421.1_827 189 AGGTREAIDPVRFIGNRSSGKMGFALAQQAAAAGATVTLITgPTNLSLDTHSKIK 243
+                        445788999999999************************9878888887776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       1949  (589029 residues searched)
+Passed MSV filter:                        78  (0.0400205); expected 39.0 (0.02)
+Passed bias filter:                       55  (0.0282196); expected 39.0 (0.02)
+Passed Vit filter:                         9  (0.00461775); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00102617); expected 0.0 (1e-05)
+Initial search space (Z):               1949  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 15028.45
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Pediococcus_acidilactici_cysMcustom.sto
+[ok]

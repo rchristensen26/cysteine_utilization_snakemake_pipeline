@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Adlercreutzia_equolifaciens_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Adlercreutzia_equolifaciens_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Adlercreutzia_equolifaciens_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Adlercreutzia_equolifaciens_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+     0.0046   12.9   0.0     0.0068   12.3   0.0    1.2  1  NC_022567.1_2102  # 2641689 # 2642729 # 1 # ID=1_2102;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_022567.1_2102  # 2641689 # 2642729 # 1 # ID=1_2102;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=3-4bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0     3e-06    0.0068     201     227 ..     152     178 ..     151     179 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 3e-06
+   tnaA_K01677_msa 201 SmaNlravaeiakkygipvvlDaARFA 227
+                       S+a l + ++++++y+ip++lD AR A
+  NC_022567.1_2102 152 SLAELEELSALCRRYQIPLYLDGARLA 178
+                       99***********************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       2278  (840621 residues searched)
+Passed MSV filter:                        69  (0.0302897); expected 45.6 (0.02)
+Passed bias filter:                       43  (0.0188762); expected 45.6 (0.02)
+Passed Vit filter:                         7  (0.00307287); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000438982); expected 0.0 (1e-05)
+Initial search space (Z):               2278  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 28757.70
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Adlercreutzia_equolifaciens_tnaA.sto
+[ok]

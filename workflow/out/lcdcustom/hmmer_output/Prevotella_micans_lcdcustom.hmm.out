@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_micans_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Prevotella_micans_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Prevotella_micans_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Prevotella_micans_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    4.5e-20   68.7   0.1    2.1e-19   66.5   0.1    2.0  1  NZ_JH594522.1_54   # 72373 # 73611 # 1 # ID=11_54;partial=00;
+     0.0014   14.4   0.0     0.0021   13.7   0.0    1.2  1  NZ_JH594521.1_188  # 246238 # 247425 # 1 # ID=12_188;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JH594522.1_54  # 72373 # 73611 # 1 # ID=11_54;partial=00;start_type=ATG;rbs_motif=AATAA;rbs_spacer=12bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.5   0.1   2.1e-22   2.1e-19     102     477 ..      34     405 ..      17     409 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 66.5 bits;  conditional E-value: 2.1e-22
+    lcd_K22207_msa 102 cpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaY 191
+                        p +vl+a ++  l++   ++   +++ ++ ++  +++r+ ++++ina+ ++e++++  +t  ++ +  ++     e  ++ gD v++  +  
+  NZ_JH594522.1_54  34 KPIVVLDAMRDEYLNVnanVHRGVHWMSQQATELHEAARERVRKFINARTAEEIVFTRGTTESINLIASSFV----ERFMRAGDEVIISTLEH 122
+                       55556665555444443334556899****************************************988666....55559******999988 PP
+
+    lcd_K22207_msa 192 gaVkksieayvtrag.gsvievelpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAha 282
+                       ++  +++ + ++ +  g v++v   +p+ +  +   +e+++ ++       + +l+ i H++ +  ++ PV+e+++i +++ v  v +D+A++
+  NZ_JH594522.1_54 123 HS--NIVPWQLQAQRnGIVLQV---IPIDDdGSLRLDEYERLFSP------RTKLVSIAHVSNVLGIINPVTEIIRIAHNHSV-PVALDGAQS 203
+                       87..555555444441333333...35554134557788777655......9*******************************.9******** PP
+
+    lcd_K22207_msa 283 iGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.eygnglaiesa....wiGtrDysaqlvvpavleFvnr 365
+                       + + +vd++++++df++   HK ++ P ++++Ly +++  ++l        ++ h ++ +    e        Gt Dy a   + +++++++ 
+  NZ_JH594522.1_54 204 VPHFKVDIQALNCDFFAFSGHK-LYGPTGIGVLYGKEEWLDKLPPyqgggEMIEHvSFLEQTTFERPplkfEAGTPDYIATHGLATAIDYLES 295
+                       **********************.9***********9963333333444555554313332222222122337899999999999999999999 PP
+
+    lcd_K22207_msa 366 feggiegirkrnhelvvemgemLaeawgte.lgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitg 455
+                       +  g+++i+++  +l   + + L +  + + +g++   ++s  +     +  +  + + + L t+L +  ++ v +  ++ +p  +++  i g
+  NZ_JH594522.1_54 296 L--GMDSIEAHERHLTEYAVDQLRDISDMRfFGISTLKHTSATTHDAVISF-LVGNIHPMDLGTIL-DTLGIAVRTghHCAQPLMQRL-GISG 383
+                       7..899999888888888888877777666434444333333333322222.23344556677766.666777766322222333333.4777 PP
+
+    lcd_K22207_msa 456 YvRiShqvYnkvddyyklrdav 477
+                        vR S   Yn+ +++  l  a+
+  NZ_JH594522.1_54 384 TVRASFGLYNTESEVDLLVSAI 405
+                       7777777777777776666666 PP
+
+>> NZ_JH594521.1_188  # 246238 # 247425 # 1 # ID=12_188;partial=00;start_type=ATG;rbs_motif=AAAAA;rbs_spacer=10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0     2e-06    0.0021     225     286 ..     157     215 ..     151     243 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 2e-06
+     lcd_K22207_msa 225 vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                        ++e++k L++  a+ ++ r+ v D + Sm   v P+ +++ + ++ +   v+VD  h+ G v
+  NZ_JH594521.1_188 157 MAELEKCLQE--AQAQRFRIIVTDGVFSMDGNVAPIDKICDLAEKYDA-LVMVDESHSAGVV 215
+                        5688899999..67899******************************9.9*******98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2072  (717954 residues searched)
+Passed MSV filter:                        84  (0.0405405); expected 41.4 (0.02)
+Passed bias filter:                       61  (0.0294402); expected 41.4 (0.02)
+Passed Vit filter:                         6  (0.00289575); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000965251); expected 0.0 (1e-05)
+Initial search space (Z):               2072  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10797.75
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Prevotella_micans_lcdcustom.sto
+[ok]

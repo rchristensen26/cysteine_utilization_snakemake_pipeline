@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Parabacteroides-merdae-ATCC-43184-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Parabacteroides-merdae-ATCC-43184-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Parabacteroides-merdae-ATCC-43184-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Parabacteroides-merdae-ATCC-43184-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.1e-24   84.7   0.0    7.8e-24   82.0   0.0    1.9  1  1_3445    # 4145282 # 4146496 # 1 # ID=1_3445;partial=00;star
+    2.4e-07   27.6   0.0    3.1e-07   27.2   0.0    1.1  1  1_3044    # 3630074 # 3631171 # 1 # ID=1_3044;partial=00;star
+    6.7e-07   26.1   0.0      1e-06   25.5   0.0    1.2  1  1_327     # 417290 # 418477 # -1 # ID=1_327;partial=00;start_
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_3445  # 4145282 # 4146496 # 1 # ID=1_3445;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_cont=0.497
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.0   0.0   6.5e-27   7.8e-24     111     500 ..      23     399 ..       4     403 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 82.0 bits;  conditional E-value: 6.5e-27
+  K22207 111 variNnGSFGscpksvleaqqe...wqlkflrqPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhya 210
+             + + +nG+    p++v+e+ ++     +  +++  +f  +  +++  ++r+++++++na++ +e+ +   +T+a++ ++    ++F++  ++ gd v++  + 
+  1_3445  23 LIYFDNGATTQKPRCVVEKIESgyyNVNANIHRGVHFLSQAATEAHEDARKTVQQFLNARSSNEIIFTRGTTEAINLIA----SSFTDECMSAGDEVIVSVME 121
+             55666777777777776665541111233456678999999999999********************999999999875....67889**********97777 PP
+
+  K22207 211 Yga..VKksieayvtraggeVievelpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvk 311
+               +  V   i+a  +r+g +        P++++ e+     ++L      ++r++L+ + h++ + + + Pvke+++ ++++ v+ v++D+A+a+ +++vdv+
+  1_3445 122 HHSniVPWQIQA--ARKGITLKV----IPMNEKGELCMDTFRSLF-----SERTKLVSVTHVSNVLGTINPVKEIIEEAHNHEVP-VLIDGAQAVPHLKVDVQ 212
+             655114444444..666654433....378889888655444453.....46889*****************************8.***************** PP
+
+  K22207 312 eigadfytsnlhKWffcPksvAfLyvrkssk.ssdlh......hPvvsheYgnglaiesaw...iGtrDysaqlvvpealeFvnrfegGiegikkrnhelvve 404
+             +++a+fy+   hK +++P+++ +Ly ++  +  ++l       + ++s ++ +    e  +    Gt Dy    ++ eal +v r+  G+++i ++  el   
+  1_3445 213 DLDAEFYVFSGHK-IYGPTGIGVLYGKE--EwLDKLPpyqgggEMIASVSFEKTTFNELPFkfeAGTPDYIGSTALAEALRYVGRL--GMDNIAAYEDELLRY 310
+             *************.9***********99..33555557779888899999998888887653347*********************..9************99 PP
+
+  K22207 405 mgemLaeawgtel.gappemcasmvmvgLPaalgissdddalkLrthLreefkveVpi..yyrapkdgeveqvtgyvRiShqvYnkveDyeklrdAvnk 500
+             + + L +  g ++ g +++  +  v+  L    +i++ d       +L ++ ++ V +  +  +p + ++  + g vR S   Yn+ e++ ++   +++
+  1_3445 311 ATDKLNAIDGMRIfGQAAH--KGAVLSFLV--GNIHHYDM-----GMLLDRLGIAVRTghHCAQPLMQDL-GIEGTVRASFSFYNTKEEIDAFAAGIER 399
+             9999999999888343333..333333332..24555543.....4566667777777422333336665.7888899999999999998888877765 PP
+
+>> 1_3044  # 3630074 # 3631171 # 1 # ID=1_3044;partial=00;start_type=ATG;rbs_motif=AATAA;rbs_spacer=7bp;gc_cont=0.479
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.0   2.6e-10   3.1e-07     273     340 ..     146     212 ..      97     232 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 2.6e-10
+  K22207 273 mpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrks 340
+               +++ P++e++++++ + + + +vDa  ++G v++d+k+++ df +s + K + + ++  f+ ++k+
+  1_3044 146 TTGLLNPIEEVAEVLKGRNI-TFIVDAMSSFGGVPIDMKKLDIDFLVSSANKCIQGVPGFGFIIAKKD 212
+             567889**************.79***************************************999984 PP
+
+>> 1_327  # 417290 # 418477 # -1 # ID=1_327;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=7bp;gc_cont=0.454
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.5   0.0   8.5e-10     1e-06     240     305 ..     153     215 ..     136     218 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 25.5 bits;  conditional E-value: 8.5e-10
+  K22207 240 sneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGq 305
+              +++ +e+++k+L+  k +  +v+L viD + Sm + +    e+v++++++    ++vD AH++G 
+   1_327 153 YKHNDMESLEKQLQ--KCEPDKVKLIVIDGVFSMEGDIAKLPEIVALAKKYNA-SIMVDEAHGLGV 215
+             56667889999997..566679****************9999***********.5*********96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3631  (1306535 residues searched)
+Passed MSV filter:                       128  (0.035252); expected 72.6 (0.02)
+Passed bias filter:                      102  (0.0280914); expected 72.6 (0.02)
+Passed Vit filter:                        14  (0.00385569); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.000826219); expected 0.0 (1e-05)
+Initial search space (Z):               3631  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.05
+# Mc/sec: 14324.40
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Parabacteroides-merdae-ATCC-43184-MAF-2_lcd.sto
+[ok]

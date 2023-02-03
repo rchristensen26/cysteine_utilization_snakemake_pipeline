@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Ruminococcus-torques-ATCC-27756-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Ruminococcus-torques-ATCC-27756-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Ruminococcus-torques-ATCC-27756-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Ruminococcus-torques-ATCC-27756-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.5e-09   34.2   0.7    2.4e-08   30.3   0.7    2.0  1  1_1020    # 1151610 # 1152797 # 1 # ID=1_1020;partial=00;star
+    4.3e-08   29.4   0.0      3e-07   26.7   0.0    2.1  1  1_2032    # 2203803 # 2204939 # -1 # ID=1_2032;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1020  # 1151610 # 1152797 # 1 # ID=1_1020;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.437
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.3   0.7   1.9e-11   2.4e-08     148     345 ..      43     223 ..       3     233 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 30.3 bits;  conditional E-value: 1.9e-11
+  K22207 148 elkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpf.Pvksneeiieefr 249
+               k+ i k+r++i+ +i+a++ +e+ +    T+a + +l ++a    e    kg  ++  ++   aV ++ e y+++ g eV    ++   v + + +    +
+  1_1020  43 ANKEVISKQRETIAGVIGAKE-NEIYFTAGGTEADNWALTATA----EAYGAKGKHIITTKIEHHAVLHTCE-YLQKRGYEVTYLDVDEyGVVDPKSV----E 135
+             4578899*************8.********************9....677899****************998.59999*****999975144444433....4 PP
+
+  K22207 250 kaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrksskssd 345
+             +a++       ++ L  + +     + v P+ke+ +i++e+g+     Da +a+ q+++dv e   d   +  hK + +Pk++ fLy+rk  k + 
+  1_1020 136 AAIR-----PDTI-LISVMFANNEIGTVEPIKEIGAIAHEKGI-LFHTDAVQAFCQIPIDVDECHIDMLSASGHK-LNGPKGIGFLYIRKGVKIRS 223
+             4442.....2334.4444477778899****************.5889***************************.99************877433 PP
+
+>> 1_2032  # 2203803 # 2204939 # -1 # ID=1_2032;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7   0.0   2.4e-10     3e-07     153     503 ..      46     377 ..      41     378 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 2.4e-10
+  K22207 153 ilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneei.ieefrkaLek 254
+             ++++r+++++l +a++  e+++  n T+a +i+++ +         ++gd v+   +  ++V + +   + r+g e    +    + +  +i  ee++ka++ 
+  1_2032  46 VYDAREALARLFHAENASEIVFTANSTEALNIAIKGIL--------DPGDHVITTVLEHNSVLRPLYE-CRRKGVEMTILT----CDEYANIsYEEMEKAVR- 134
+             7899****************************999887........9***************999877.888886554433....55555551455555553. PP
+
+  K22207 255 gkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk.ssdlh...hPvvsh 353
+                  +++r  +  h + m + ++  + + ki+ ++g+   +vDa +  G  ++dv++ g        hK + +P+++  +yv++  k           + s 
+  1_2032 135 -----KNTRAIICTHASNMTGNMISLESVGKIAAKYGI-LFIVDASQTAGVWEIDVQKYGISVLCFTGHKGLMGPQGTGGMYVKSGVKiRPL-LsggSGIDSY 230
+             .....34788999*************************.699*******************************************7774333.3465445554 PP
+
+  K22207 354 e.YgnglaiesawiGtrDysaqlvvpealeFvnrfegGiegikkrnhelvvemgemLaeawgtelgappemcasmvmvgLPaalgissdddalkLrthLreef 455
+             + ++     e +  Gt     +  + +al+F++r   G+e+++kr  el+ +  + +ae    ++    +     ++v L        d d +++   L  ++
+  1_2032 231 NmHHTSQMPEALEAGTLNGHGIAGLRAALSFLERE--GMERLRKRELELMRRFYNGVAEIPNVKVYGDFRTDRRAAIVSLN-----IGDYDSAEISDELSGRY 326
+             43345555688889****99*************99..99*********999999999999998886666677788888887.....46777788889999999 PP
+
+  K22207 456 kveVpi.yyrapkdge.ve.qvtgyvRiShqvYnkveDyeklrdAvnkLve 503
+             ++      + ap + e ++ ++ g vR S   Yn+ e++ +  +Av++L+e
+  1_2032 327 GIVTRPgAHCAPLMHEaLGtKIQGAVRFSFSHYNTEEEIDEAIRAVKELAE 377
+             886543244455444422248899999999999999999999999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2461  (809209 residues searched)
+Passed MSV filter:                        90  (0.0365705); expected 49.2 (0.02)
+Passed bias filter:                       69  (0.0280374); expected 49.2 (0.02)
+Passed Vit filter:                         5  (0.00203169); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000812678); expected 0.0 (1e-05)
+Initial search space (Z):               2461  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 12871.61
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Ruminococcus-torques-ATCC-27756-MAF-2_lcd.sto
+[ok]

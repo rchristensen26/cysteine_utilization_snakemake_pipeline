@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_baroniae_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Prevotella_baroniae_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Prevotella_baroniae_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Prevotella_baroniae_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    1.7e-24   83.6   0.0    2.5e-24   83.0   0.0    1.2  1  NZ_AWEY01000007.1_158  # 177161 # 178393 # -1 # ID=38_158;par
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_AWEY01000007.1_158  # 177161 # 178393 # -1 # ID=38_158;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   83.0   0.0     1e-27   2.5e-24     103     481 ..      34     407 ..      16     409 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 83.0 bits;  conditional E-value: 1e-27
+         lcd_K22207_msa 103 pasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlml 187
+                            p +vl+a ++  l++   ++   ++  ++ ++  + +r++++++ina++  e++++  +t + + +       f +  +q+gD v++ 
+  NZ_AWEY01000007.1_158  34 PLCVLNAMRDEYLNVnanVHRGVHWLSQQATELHEGARETVRRFINARSTTEIVFTRGTTEGLNLIAS----CFCDACMQEGDEVIIS 117
+                            555665555544443223455678999999999999************************99999877....5667788********9 PP
+
+         lcd_K22207_msa 188 hyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqv 275
+                             +  ++  +++ + ++ a   ++   +p+  + +    ++fr++L+       k +++ i H++ +   v PV+e ++i +++++  v
+  NZ_AWEY01000007.1_158 118 TVEHHS--NIVPWQLQTARKGIVLRVIPMDENGTL-DLQAFRRMLSP------KTKIVSISHVSNVLGTVNPVEEVIRIAHQHDI-PV 195
+                            998886..778888888876666555666666644.4799****988......899*****************************.9* PP
+
+         lcd_K22207_msa 276 fVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.eygnglaie...sawiGtrDysaql 354
+                            +VD+A++  + +vd++++++df++   HK ++ P ++++Ly ++   ++l        ++ h +++++  +     +  Gt Dy a +
+  NZ_AWEY01000007.1_158 196 VVDGAQSAPHFKVDMQSLDCDFFVFSGHK-VYGPTGIGVLYGKEAWLDRLPPyqgggEMIEHvSFEKSTFERpplKFEAGTPDYIATT 282
+                            *****************************.9************963333333445665664424555433331114589********* PP
+
+         lcd_K22207_msa 355 vvpavleFvnrfeggiegirkrnhelvvemgemLaeawgte.lgsppemca....smimVgLPaklgissdedalkLrthLreefkve 437
+                             + ++l++v+ +  g+++i+++  +l   + + L +  g + +g+p ++ +      ++V +     +  d + + + t+L ++ +v 
+  NZ_AWEY01000007.1_158 283 GLAKALDYVSAI--GMDTIQRYEEDLTRYAVSQLQQIDGMRiFGIPADVDTtvlrHDAVVSFQ----L-RDIHHMDMGTLL-DRLGVA 362
+                            ***********8..*************************997799988887433323333333....3.333445555554.777777 PP
+
+         lcd_K22207_msa 438 vpi..yyrapkegeveaitgYvRiShqvYnkvddyyklrdavnqlv 481
+                            + +  ++ +p  +++  + g +R S   Yn+++++  l  av++++
+  NZ_AWEY01000007.1_158 363 IRTghHCAQPLMERL-GVLGTARASFALYNTREEVDVLVAAVKRVA 407
+                            777323333444444.699**********************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2404  (895640 residues searched)
+Passed MSV filter:                        78  (0.0324459); expected 48.1 (0.02)
+Passed bias filter:                       68  (0.0282862); expected 48.1 (0.02)
+Passed Vit filter:                         5  (0.00207987); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000415973); expected 0.0 (1e-05)
+Initial search space (Z):               2404  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 16708.71
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Prevotella_baroniae_lcdcustom.sto
+[ok]

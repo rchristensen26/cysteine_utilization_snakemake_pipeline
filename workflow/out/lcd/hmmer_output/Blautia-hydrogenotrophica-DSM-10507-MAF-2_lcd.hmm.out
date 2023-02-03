@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Blautia-hydrogenotrophica-DSM-10507-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Blautia-hydrogenotrophica-DSM-10507-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Blautia-hydrogenotrophica-DSM-10507-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Blautia-hydrogenotrophica-DSM-10507-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      8e-13   45.5   0.1    1.9e-12   44.2   0.2    1.5  1  1_2012    # 2176842 # 2178026 # -1 # ID=1_2012;partial=00;sta
+    4.6e-10   36.3   0.5    3.2e-07   27.0   0.1    2.2  2  1_1310    # 1423543 # 1424727 # 1 # ID=1_1310;partial=00;star
+    8.8e-05   18.9   0.0    0.00012   18.5   0.0    1.2  1  1_2543    # 2725282 # 2726376 # -1 # ID=1_2543;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2012  # 2176842 # 2178026 # -1 # ID=1_2012;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.45
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.2   0.2   1.8e-15   1.9e-12     149     342 ..      44     221 ..       7     234 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 44.2 bits;  conditional E-value: 1.8e-15
+  K22207 149 lkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrka 251
+              k++i+k+r+ i+ +i+a+   e+ +    T+a + +l+++     e   +kg+ ++  ++   a+ ++ e++ ++ g++V    ++      + i+ +  + 
+  1_2012  44 SKEAITKAREQIAAVIGAEP-KEIYFTAGGTEADNWALEATY----ELLCKKGNHIITTKIEHHAILHTCEYLEKNRGARVTYLDVDE-----NGIV-K-LED 134
+             5899***************6.********************9....8999*******************************9988764.....5555.2.344 PP
+
+  K22207 252 LekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk 342
+             Lek+ +  +++ + v+ +     + + P+ke+ +i++e+g+     Da +a+Gqv++dv e   d   s +hK + +Pk++ fLy+rk  k
+  1_2012 135 LEKAIT-PETILISVM-FANNEIGSIQPIKEIGQIAKEHGI-YFHTDAVQAFGQVPIDVDEYHIDMLSSSAHK-INGPKGIGFLYIRKGVK 221
+             554433.345555554.556666669***************.699****************************.99************766 PP
+
+>> 1_1310  # 1423543 # 1424727 # 1 # ID=1_1310;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.459
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.1     3e-10   3.2e-07     267     348 ..     162     241 ..     151     291 .. 0.85
+   2 !    7.7   0.0   0.00021      0.23     467     499 ..     358     390 ..     332     392 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 3e-10
+  K22207 267 iDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk.ssdlhh 348
+             ++++ S  ++ +   e+ + cr +g+    vD+ +a+G + vdv+  + df ++n +KW+    +    y+++  k  ++lhh
+  1_1310 162 VNYVESTTGFRVDAAEIGAWCRRKGI-WFAVDGVQALGILSVDVERDQIDFLVGNDYKWMMHYSGLGYAYIHP--KlREHLHH 241
+             678999999999999999********.699*******************************999999999999..33677775 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.00021
+  K22207 467 kdgeveqvtgyvRiShqvYnkveDyeklrdAvn 499
+             +dg +      +RiS + Yn+ eD+++l +A++
+  1_1310 358 QDGALYGADRSMRISFHYYNNWEDVKALCQAIQ 390
+             566665666789*******************96 PP
+
+>> 1_2543  # 2725282 # 2726376 # -1 # ID=1_2543;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.0   1.1e-07   0.00012     280     343 ..     149     212 ..     118     282 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.1e-07
+  K22207 280 vkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk.s 343
+             +  + k++++ g  + +vDa  ++  vd++v+e+g df +s + K + + ++  ++ +++++  +
+  1_2543 149 IASVSKVVKAAGK-TMIVDAMSSFAGVDIQVEELGIDFLISSANKCIQGVPGFSLILCNRKKLiE 212
+             6677799999998.79***************************************9999844343 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3248  (1031221 residues searched)
+Passed MSV filter:                       101  (0.0310961); expected 65.0 (0.02)
+Passed bias filter:                       80  (0.0246305); expected 65.0 (0.02)
+Passed Vit filter:                        13  (0.00400246); expected 3.2 (0.001)
+Passed Fwd filter:                         3  (0.000923645); expected 0.0 (1e-05)
+Initial search space (Z):               3248  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 12488.20
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Blautia-hydrogenotrophica-DSM-10507-MAF-2_lcd.sto
+[ok]

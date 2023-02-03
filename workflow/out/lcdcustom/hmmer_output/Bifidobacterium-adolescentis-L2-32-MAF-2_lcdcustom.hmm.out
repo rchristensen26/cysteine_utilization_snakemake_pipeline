@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bifidobacterium-adolescentis-L2-32-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.4e-10   36.5   0.0    2.9e-09   33.0   0.0    2.1  2  1_831     # 982880 # 984154 # 1 # ID=1_831;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_831  # 982880 # 984154 # 1 # ID=1_831;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.0   1.5e-12   2.9e-09     123     320 ..      58     255 ..       6     279 .. 0.75
+   2 !    1.1   0.0    0.0066        13     453     479 ..     390     416 ..     367     418 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 1.5e-12
+  lcd_K22207_msa 123 efyfnelkkgilesrtaikdlinadd...vdevslvdNattAaaivLqqvaw........sfaegkfqkgDavlmlhyaYgaVkksieayvtrag 206
+                     +    + + +++ +r+++++l++ad+    +e++++  at++ +    +++         + ++  +++gD +++++   ++V   +++++ r g
+           1_831  58 HELAARSTMAFEDARAKVAKLVGADSaegEEEIVVTAGATAGLNLLATAFGNaslgrggeAAKRFALKPGDEIVVTKAEHHSVLLPFQELALRTG 152
+                     44455556677889*********99966678**********777666655541111111144555679*************************** PP
+
+  lcd_K22207_msa 207 gsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsN 301
+                     +++      f + ++ ++ s   +   +      + +++ + H+  ++  +  ++ +++  +e g    ++Da +++ +++vd++++++df +  
+           1_831 153 ATLKW----FDLDEEGRVRSDTANEVIT-----DRTKIVAVTHVGNTTGAITDIAPIIRRAHEVGA-VFVLDACQSVPHLKVDFHALDVDFAAWS 237
+                     *9654....5555555555555444444.....6899999******************99999998.5556************************ PP
+
+  lcd_K22207_msa 302 lHKWffcPpsvAfLyvrks 320
+                      HK ++ P +v+fLy +++
+           1_831 238 AHK-MYGPTGVGFLYGKRE 255
+                     ***.9**********9983 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.0066
+  lcd_K22207_msa 453 itgYvRiShqvYnkvddyyklrdavnq 479
+                     + +  R S  +Yn v+d ++l +a  +
+           1_831 390 VYASNRASSGIYNSVEDAQALIEALGK 416
+                     5556799*************9999765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1931  (676471 residues searched)
+Passed MSV filter:                        55  (0.0284827); expected 38.6 (0.02)
+Passed bias filter:                       42  (0.0217504); expected 38.6 (0.02)
+Passed Vit filter:                         5  (0.00258933); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000517866); expected 0.0 (1e-05)
+Initial search space (Z):               1931  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 17541.99
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bifidobacterium-adolescentis-L2-32-MAF-2_lcdcustom.sto
+[ok]

@@ -1,0 +1,98 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Veillonella_parvula_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Veillonella_parvula_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Veillonella_parvula_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Veillonella_parvula_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.3e-20   70.4   1.1    3.6e-20   68.9   1.1    1.7  1  NZ_LT906445.1_1029  # 1189817 # 1191046 # -1 # ID=1_1029;part
+    1.2e-12   44.1   0.0    6.5e-12   41.7   0.0    1.9  1  NZ_LT906445.1_343   # 423655 # 424812 # -1 # ID=1_343;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_LT906445.1_1029  # 1189817 # 1191046 # -1 # ID=1_1029;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.9   1.1   3.9e-23   3.6e-20      86     383 ..      18     309 ..       9     402 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 68.9 bits;  conditional E-value: 3.9e-23
+      lcd_K22207_msa  86 hhdpsvarinnGsfgscpasvleaqqrwqlkflrqPd...efyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsf 173
+                         h+ ++v++++ G+   +p+sv+++  ++  +   +P+   +    e  +  +++r+ + ++ina++ +ev ++ N t  ++ + ++ +++ 
+  NZ_LT906445.1_1029  18 HNGHRVIYLDSGATAQIPQSVIDRVVEHMTQRNGNPHrgsHILAIEASEDYENARDRVVEFINAREREEVIFTRNSTESMNLIAHSYGLHN 108
+                         677799*****************99888888876665222789999***************************************999655 PP
+
+      lcd_K22207_msa 174 aegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkan..grkvrlAviDHitSmpsvvlPVke 262
+                              +kgD ++++    +a   + + ++++ g++     l++ + +++         L++g  n  ++k +++ + H++ +  + +PVke
+  NZ_LT906445.1_1029 109 ----VKKGDKIVITVAEHHANLVTWQYVAEQTGAT-----LEYMYLDEH-------GHLKDGEINkiDEKTKIVAFAHVSNVLGMEFPVKE 183
+                         ....59*******9999999888887777777776.....444444433.......2333333332268999******************* PP
+
+      lcd_K22207_msa 263 LvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpvV....shey.......gnglaies 342
+                         L++  ++ g   v++D+A++  + ++dv+++++df++   HK +++ +++++Ly +++   +   p +      ey        n l+ ++
+  NZ_LT906445.1_1029 184 LTEKAHSVGA-IVVLDGAQSTPHKKIDVQALDCDFFVFSGHK-MCASQGIGVLYGKRD-LLETMPPFLlggdMIEYvkeqtatFNELPYKF 271
+                         *********9.9******************************.9**********9993.32333333334444444322111223343333 PP
+
+      lcd_K22207_msa 343 awiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvve 383
+                            Gt      +++ a++++++ f  g+++i+++  elv  
+  NZ_LT906445.1_1029 272 -EAGTPNADGAVSLHAAIDYLESF--GMDAIEAYEEELVAY 309
+                         .57888888888888888888888..888888888888765 PP
+
+>> NZ_LT906445.1_343  # 423655 # 424812 # -1 # ID=1_343;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.0   6.9e-15   6.5e-12     127     482 ..      43     382 ..      34     385 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 41.7 bits;  conditional E-value: 6.9e-15
+     lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtrag.gsvievelpfp 217
+                        +++++ i+ +r+ +++++n++d ++v +++N+t   ++v++          ++ gD vl+ ++  +aV + +++++++    +       +p
+  NZ_LT906445.1_343  43 YDVEDIIYTTRQRLNNVFNSHDPSHVIFTQNVTMSLNMVIKG--------LLKAGDHVLISSMEHNAVIRPLTQLLNEDItFD------TIP 120
+                        567888999*******************************94........5789**************988888755543122......236 PP
+
+     lcd_K22207_msa 218 vksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcP 309
+                          ++ +i     + L +      +    +i H + ++  + PVke+  ic+e++  + +VDaA+  G +++dvke + d      HK +  P
+  NZ_LT906445.1_343 121 CDTTGSIKLDAIESLIR-----PNTVAIIINHASNVCGTIQPVKEIGIICKEHNL-HFIVDAAQTAGIMPIDVKESQIDALCFTGHKGLLGP 206
+                        66666665555555666.....45556799*************************.9*****************98777777778******* PP
+
+     lcd_K22207_msa 310 psvAfLyvrkskasdlhhpvV.....sheygnglaiesa...wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawg 393
+                        ++++ +  +k ++++   p++     s +  + +++++      Gt      + + + l F++    g+e+i+++   l     + L    g
+  NZ_LT906445.1_343 207 QGIGGMILTK-EMAQSLTPLIaggtgSFSHLETMPTNMPdafESGTLNLPGIIGLNEGLAFIES--KGMENIHNHELALTEAFLKGLRPIDG 295
+                        ***9999888.44566678884543322222233332213335677777777777777777777..47777776666666666677777777 PP
+
+     lcd_K22207_msa 394 telgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkege.vea.itgYvRiShqvYnkvddyyklrdavnqlv 481
+                         ++   ++ +   ++V +    g+ +++ a +L++     +++ + +  ++ ap+  + +++   g vR S    n+ +d++    a +++v
+  NZ_LT906445.1_343 296 INIIGKQDIQDRTAVVSITI-DGMDAASIAYELES----TYHIMTRVglHC-APRAHQtLGTyPEGTVRFSFGYANTHKDVESALSALHKIV 381
+                        77766777777777777762.44444444444443....334333332122.4443321322356677777777777777776666666666 PP
+
+     lcd_K22207_msa 482 e 482
+                        +
+  NZ_LT906445.1_343 382 K 382
+                        5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1865  (621070 residues searched)
+Passed MSV filter:                        69  (0.0369973); expected 37.3 (0.02)
+Passed bias filter:                       52  (0.027882); expected 37.3 (0.02)
+Passed Vit filter:                         7  (0.00375335); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00107239); expected 0.0 (1e-05)
+Initial search space (Z):               1865  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 10206.54
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Veillonella_parvula_lcdcustom.sto
+[ok]

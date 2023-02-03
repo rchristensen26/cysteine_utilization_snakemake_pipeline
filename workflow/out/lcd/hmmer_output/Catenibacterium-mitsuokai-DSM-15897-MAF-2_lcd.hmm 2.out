@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Catenibacterium-mitsuokai-DSM-15897-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Catenibacterium-mitsuokai-DSM-15897-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Catenibacterium-mitsuokai-DSM-15897-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Catenibacterium-mitsuokai-DSM-15897-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    9.3e-12   41.6   0.6    1.1e-10   38.1   0.2    2.0  2  1_708     # 748193 # 749425 # 1 # ID=1_708;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_708  # 748193 # 749425 # 1 # ID=1_708;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.1   0.2   4.2e-14   1.1e-10     112     338 ..      26     240 ..      17     250 .. 0.77
+   2 !    1.6   0.0    0.0048        12     472     499 ..     372     399 ..     344     400 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 38.1 bits;  conditional E-value: 4.2e-14
+  K22207 112 ariNnGSFGscpksvleaqqewqlkfl...rqPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaY 211
+              + +nG+    p++v++a  e+   +    ++ d    ++   +  ++r++++++i+a++ +ev++   aT   + +++  a    + +++ gd ++ L++a 
+   1_708  26 IYFDNGATTLKPQCVIDAVCEYLSSYSgnaHRGDYDLSHQVDVAYEEAREVVQHFIHAKRKEEVVFTSGATDSLNLIANGYA----KTHLKAGDEIL-LNVAE 123
+             55666666666777777766666655411134444455666777789******************99999988887776655....89*******87.66776 PP
+
+  K22207 212 gaVKks.ieayvtraggeVievelpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkei 313
+              a        ++++ g+ V  +el+    + +  +e+++ka+    +n + + La++   t + +  +P+ke+++ ++++g+  v+ D+A+++ ++  dv   
+   1_708 124 HASNTLpWFDVAEETGAVVKYIELDE---EGRMTLENVKKAVT---ENTKIISLAIV---TNVLGYEVPIKEITEYAHSKGI-IVVADGAQSVPHIVTDVVRD 216
+             66555514456666666666699986...66667777788884...44455999996...66667889**************.7******************* PP
+
+  K22207 314 gadfytsnlhKWffcPksvAfLyvr 338
+             ++df +   hK +++P++v +Ly +
+   1_708 217 DVDFLAFSGHK-MCGPTGVGVLYGK 240
+             ***********.***********76 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.0048
+  K22207 472 eqvtgyvRiShqvYnkveDyeklrdAvn 499
+              +v   +R+S   Yn+ e++ ++ +A +
+   1_708 372 LKVRTTCRVSFYFYNTEEEIDQFIEACK 399
+             3778889****************99976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2586  (779101 residues searched)
+Passed MSV filter:                       108  (0.0417633); expected 51.7 (0.02)
+Passed bias filter:                       69  (0.0266821); expected 51.7 (0.02)
+Passed Vit filter:                         5  (0.00193349); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000386698); expected 0.0 (1e-05)
+Initial search space (Z):               2586  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 17824.28
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Catenibacterium-mitsuokai-DSM-15897-MAF-2_lcd.sto
+[ok]

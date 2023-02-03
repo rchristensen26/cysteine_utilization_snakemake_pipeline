@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Blautia-obeum-ATCC-29174-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Blautia-obeum-ATCC-29174-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Blautia-obeum-ATCC-29174-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Blautia-obeum-ATCC-29174-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.9e-12   42.9   0.0    1.1e-11   41.7   0.0    1.5  1  1_913     # 1005826 # 1007013 # 1 # ID=1_913;partial=00;start
+    1.9e-10   37.7   0.0    2.6e-10   37.3   0.0    1.1  1  1_745     # 837858 # 839039 # -1 # ID=1_745;partial=00;start_
+    1.2e-05   21.9   0.1    1.7e-05   21.3   0.1    1.3  1  1_2344    # 2496962 # 2498116 # -1 # ID=1_2344;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_913  # 1005826 # 1007013 # 1 # ID=1_913;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.412
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.0     1e-14   1.1e-11     125     347 ..      18     227 ..       2     243 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 41.7 bits;  conditional E-value: 1e-14
+  K22207 125 svleaqqewqlkflrqPdefy..fnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtra 225
+              vl+a   +  ++   P + y   ++ k++++k r+ i++ +n+++ +++ +    ++a + +l+++     e   +kg+ ++  ++   a+ ++ e++ ++ 
+   1_913  18 EVLDAMLPYFSEYYGNPSSIYdfAQKSKEAVTKGRQQIADALNTRK-EDIYFTAGGSEADNWALKATF----EAYKSKGNHIITTKIEHHAILHTCEYLEKER 115
+             566666666677777777665324678999***************8.*******************99....666789************************* PP
+
+  K22207 226 ggeVievelpfPvksneei.ieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWff 327
+             g+++    ++     n  + ++e++ka+       +++ L  + +     + + P+ke+ +i++e+g+     Da +a+Gqv++dv e + d   s  hK + 
+   1_913 116 GAKITYLDVDE----NGVVrLDELEKAIT-----PETI-LISVMFANNEIGTIQPIKEIGRIAKEHGI-LFHTDAVQAFGQVPIDVDEYNIDMLSSSGHK-IN 206
+             ****9888764....33331445555553.....2344.4444577888899****************.5889***************************.99 PP
+
+  K22207 328 cPksvAfLyvrkssk.ssdlh 347
+             +Pk++ fLy+rk  k +s +h
+   1_913 207 GPKGIGFLYIRKGVKiKSFVH 227
+             ************877555555 PP
+
+>> 1_745  # 837858 # 839039 # -1 # ID=1_745;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.46
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.0   2.3e-13   2.6e-10     151     339 ..      47     218 ..      41     238 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 2.3e-13
+  K22207 151 kgilksrtlikelin..addvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrka 251
+             ++i + r+ + +l +  + +  +v +  n+Tt  +i l+ +         + gd v++ ++  +aV + + + +tr g +   +    P++ +  ++ e  ++
+   1_745  47 EQIFETREQLLRLFHftSGKGKNVIFTPNITTSLNILLKGLL--------KSGDHVLVSSMEHNAVMRPLVQ-LTRHGVTFDRI----PCSADGSLLIEKAEE 136
+             666666666666554114446788888999999999998777........7999999999999999888877.78888777665....788888877555555 PP
+
+  K22207 252 LekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrk 339
+             L   k n   +rL v  h + + + ++Pv+eL k c+++g    ++D A+  G v++d+++++ d  +   hK + +P+++  + +r+
+   1_745 137 L--LKPN---TRLLVCLHASNVCGTMMPVQELGKFCKKHGL-LFILDTAQTAGTVPIDMEALQLDALAFTGHKGLRGPQGTGGFLIRN 218
+             5..3666...79*****************************.6899********************************9997666666 PP
+
+>> 1_2344  # 2496962 # 2498116 # -1 # ID=1_2344;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.3   0.1   1.5e-08   1.7e-05     275     340 ..     153     218 ..      82     226 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 21.3 bits;  conditional E-value: 1.5e-08
+  K22207 275 svvlPvkeLvkicreegvdq.vfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrks 340
+             + v+Pv+e++k+++e++  +   vDa +++G+ ++  k +g d  +   hK + +Pk+v fLy++++
+  1_2344 153 GAVMPVEEIAKMVHEKSPKAlYHVDAIQGFGKYHIYPKRMGIDLLAVSGHK-IHGPKGVGFLYINEK 218
+             579***************99557****************************.99**********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3414  (1083803 residues searched)
+Passed MSV filter:                       128  (0.0374927); expected 68.3 (0.02)
+Passed bias filter:                       98  (0.0287053); expected 68.3 (0.02)
+Passed Vit filter:                        12  (0.00351494); expected 3.4 (0.001)
+Passed Fwd filter:                         3  (0.000878735); expected 0.0 (1e-05)
+Initial search space (Z):               3414  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 15393.53
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Blautia-obeum-ATCC-29174-MAF-2_lcd.sto
+[ok]

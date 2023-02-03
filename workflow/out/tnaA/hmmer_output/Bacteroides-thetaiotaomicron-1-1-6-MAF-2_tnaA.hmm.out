@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-thetaiotaomicron-1-1-6-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Bacteroides-thetaiotaomicron-1-1-6-MAF-2_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Bacteroides-thetaiotaomicron-1-1-6-MAF-2_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Bacteroides-thetaiotaomicron-1-1-6-MAF-2_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   2.2e-257  855.4   0.9   2.5e-257  855.3   0.9    1.0  1  1_4369    # 5531376 # 5532755 # 1 # ID=1_4369;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_4369  # 5531376 # 5532755 # 1 # ID=1_4369;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.466
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  855.3   0.9  4.4e-261  2.5e-257      11     465 ..       3     457 ..       1     459 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 855.3 bits;  conditional E-value: 4.4e-261
+  tnaA_K01677_msa  11 ip..epfrikvvepiklttreeReeaLkeagyNpFlLksedVfiDllTDSGTgAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyeyviP 102
+                      +p  e+++ik+vepi+++treeRe+++kea+yN+F+Lkse+V+iDl+TDSGTgAmsdrqwA++m GDE+Yag+ s+++L++++++i+g+ey+iP
+           1_4369   3 LPfaESWKIKMVEPIRKSTREEREQWIKEAHYNVFQLKSEQVYIDLITDSGTGAMSDRQWAGMMLGDESYAGATSFFKLKDTITRITGFEYIIP 96 
+                      5555****************************************************************************************** PP
+
+  tnaA_K01677_msa 103 tHQGRgAEqiLfpvlikregkvvisNthFDTTrahvelagaeavdlvikeafdteseapFKGNfDleklealieevgaenvplivlTiTnNsaG 196
+                      tHQGR+AE++Lf+ l++ eg++v++N+hFDTT++h+e ++a a+d++i+ea++t+ e pFKGN+D +kle++++e+ a+++p+i++TiTnN+aG
+           1_4369  97 THQGRAAENVLFSYLVH-EGNIVPGNSHFDTTKGHIEGRHAIALDCTIDEAKNTQLEIPFKGNVDPAKLEKALSEY-ADRIPFIIVTITNNTAG 188
+                      *****************.*********************************************************9.59*************** PP
+
+  tnaA_K01677_msa 197 GQPVSmaNlravaeiakkygipvvlDaARFAENAyFIkqrEegyadksikeIvremfsyaDgltmSaKKDglvniGGliafrddeelfeevktr 290
+                      GQPVSm+Nlr+v++ia+ky+ pv++D+ARFAENAyFIk+rEegy+dksikeI+remf++aDg+tmSaKKDg+vn+GG+ia+r ++e++e +k +
+           1_4369 189 GQPVSMQNLREVRAIADKYNKPVLFDSARFAENAYFIKMREEGYQDKSIKEITREMFDLADGMTMSAKKDGIVNMGGFIATR-RKEWYEGAKGF 281
+                      **********************************************************************************.558******** PP
+
+  tnaA_K01677_msa 291 cilmeGFptYGGlaGrDlealAvGLeEgvdedyLayRieqveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaLaceLYleaG 384
+                      c+ +eG+ tYGG++GrD++alA+GL+E +++d L++Ri+qveyL+++L+e+++p+q+P+GgHA+fvDa k+l+h+p+e+Fpaq+L++eLYleaG
+           1_4369 282 CVQYEGYLTYGGMNGRDMNALAIGLDENTEFDNLETRIKQVEYLAQKLDEYEIPYQRPAGGHAIFVDASKVLTHVPKEEFPAQTLTVELYLEAG 375
+                      ********************************************************************************************** PP
+
+  tnaA_K01677_msa 385 iRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtqehmdyvaealkevkeraesik.glrityeppvLRhFtarLepv 465
+                      iR++EiG +l++rdp t+e++ + l+L+RLaiPRrvYt++hm+++a+al++v+er+e+i+ g+ri +e+p++RhFt++Le++
+           1_4369 376 IRGCEIGYILADRDPITHENRFNGLDLLRLAIPRRVYTDNHMNVIAAALRNVFERRETITrGVRIAWEAPLMRHFTVQLERL 457
+                      ***********************************************************99******************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       5577  (2054818 residues searched)
+Passed MSV filter:                       222  (0.0398063); expected 111.5 (0.02)
+Passed bias filter:                      130  (0.02331); expected 111.5 (0.02)
+Passed Vit filter:                        13  (0.002331); expected 5.6 (0.001)
+Passed Fwd filter:                         1  (0.000179308); expected 0.1 (1e-05)
+Initial search space (Z):               5577  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.06
+# Mc/sec: 28277.76
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Bacteroides-thetaiotaomicron-1-1-6-MAF-2_tnaA.sto
+[ok]

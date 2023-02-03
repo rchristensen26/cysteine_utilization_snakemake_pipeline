@@ -1,0 +1,117 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Anaerostipes-caccae-DSM-14662-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Anaerostipes-caccae-DSM-14662-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Anaerostipes-caccae-DSM-14662-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Anaerostipes-caccae-DSM-14662-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.2e-08   31.8   0.0    5.9e-08   29.5   0.0    1.8  2  1_2233    # 2326760 # 2327938 # -1 # ID=1_2233;partial=00;sta
+    0.00038   16.9   0.0     0.0017   14.7   0.0    2.1  2  1_1095    # 1146479 # 1147612 # 1 # ID=1_1095;partial=00;star
+    0.00046   16.6   0.0    0.00062   16.2   0.0    1.2  1  1_1149    # 1209827 # 1210924 # 1 # ID=1_1149;partial=00;star
+     0.0073   12.7   0.2       0.27    7.5   0.0    2.8  3  1_1479    # 1548003 # 1549145 # 1 # ID=1_1479;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2233  # 2326760 # 2327938 # -1 # ID=1_2233;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.48
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0     0.083        71     127     209 ..      42     118 ..      12     125 .. 0.79
+   2 !   29.5   0.0   6.9e-11   5.9e-08     258     321 ..     158     220 ..     154     229 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.083
+  lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsv 209
+                      e kk++ e r+ i+  +++++ +++ ++   + A +  ++++a + a    +kg  +++ ++  +aV ++++  ++r g +v
+          1_2233  42 AEAKKAVNEVRDRIAGSLGTQS-QDIYFTAGGSEADNWAIKETAEAYA----SKGKHIITSKIEHHAVLHTCQY-LERNGYEV 118
+                     4678888899999999999884.6899999999999999998886665....8999999999999999999985.67777666 PP
+
+  == domain 2  score: 29.5 bits;  conditional E-value: 6.9e-11
+  lcd_K22207_msa 258 lPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks.k 321
+                      PVke+ +i +e+gv     Da +a Gqv+++v+e++ d   +  HK +  P++++f+y+rk  k
+          1_2233 158 QPVKEIGAIAKEHGV-LFHTDAVQAYGQVPINVDEMNIDMLSASGHK-LNGPKGIGFMYIRKGlK 220
+                     5**************.889****************************.89***********9544 PP
+
+>> 1_1095  # 1146479 # 1147612 # 1 # ID=1_1095;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.532
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0     2e-06    0.0017     239     319 ..     133     212 ..      38     220 .. 0.81
+   2 ?   -2.5   0.0      0.34   2.9e+02     453     481 ..     347     375 ..     318     377 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2e-06
+  lcd_K22207_msa 239 grkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                     +++ r +v  H +  +  +  ++e+ ++ +e+g+  ++VD+A+  G  +vd+ +  +d +    HK +  P++++ + vrk
+          1_1095 133 QNNTRAVVCTHASNLTGNLTDIREIGRLAHERGI-LMIVDGAQTAGVFPVDLFKDHVDVFCFTGHKSLLGPQGTGGMAVRK 212
+                     457899999999999999999*************.9***********************************9988776666 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.34
+  lcd_K22207_msa 453 itgYvRiShqvYnkvddyyklrdavnqlv 481
+                       g vR S   +n+ ++ ++  +av++++
+          1_1095 347 EQGMVRFSFSSFNTGEQTEQAVEAVKEIA 375
+                     46889999999999999999999999886 PP
+
+>> 1_1149  # 1209827 # 1210924 # 1 # ID=1_1149;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.0   7.2e-07   0.00062     261     325 ..     150     213 ..     119     280 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 7.2e-07
+  lcd_K22207_msa 261 keLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdl 325
+                     + + ++++e +  + +VDa  + G v+++v ++g df +s   K +   p+ +f+ + k+k sd 
+          1_1149 150 EAIASVVKEYNK-TLIVDAMSSFGGVDIEVGQLGIDFLISSANKCIQGVPGFSFIIADKKKLSDS 213
+                     566666666664.99*****************************************999765544 PP
+
+>> 1_1479  # 1548003 # 1549145 # 1 # ID=1_1479;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.471
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.12     1e+02     129     194 ..      42     102 ..       5     106 .. 0.75
+   2 !    7.5   0.0   0.00031      0.27     259     321 ..     157     219 ..     153     241 .. 0.85
+   3 ?    1.4   0.0     0.021        18     455     481 ..     345     371 ..     326     376 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.12
+  lcd_K22207_msa 129 lkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaV 194
+                      ++ ++++r++i+  ++a++  e++++   t   +  +  +a++ +    ++g  ++++++  ++V
+          1_1479  42 AENIVKKARQIIAGTLKAKE-KEIVFTSGGTESNNFAILGTAMANK----RRGKHIITTKIEHASV 102
+                     45678899999999999995.6888888888888877776665555....6777777776666665 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00031
+  lcd_K22207_msa 259 PVkeLvkicreegvdqvf.VDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrksk 321
+                     P++ + k+ ++++   vf VDa ++ G+++v  k+ g d      HK +  P++v+fLyv++++
+          1_1479 157 PIEVIGKMIKSRNPAVVFhVDAIQGYGKIPVVPKNEGIDLLSMSGHK-IHGPKGVGFLYVKEKT 219
+                     7777777777777777777****************************.99***********953 PP
+
+  == domain 3  score: 1.4 bits;  conditional E-value: 0.021
+  lcd_K22207_msa 455 gYvRiShqvYnkvddyyklrdavnqlv 481
+                     g +R S  vYn+++++ ++  a ++lv
+          1_1479 345 GTLRFSFSVYNTKEEVDQVIAALEELV 371
+                     5589************99999999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3440  (1083594 residues searched)
+Passed MSV filter:                       154  (0.0447674); expected 68.8 (0.02)
+Passed bias filter:                      118  (0.0343023); expected 68.8 (0.02)
+Passed Vit filter:                        19  (0.00552326); expected 3.4 (0.001)
+Passed Fwd filter:                         4  (0.00116279); expected 0.0 (1e-05)
+Initial search space (Z):               3440  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.05
+# Mc/sec: 11037.56
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Anaerostipes-caccae-DSM-14662-MAF-2_lcdcustom.sto
+[ok]

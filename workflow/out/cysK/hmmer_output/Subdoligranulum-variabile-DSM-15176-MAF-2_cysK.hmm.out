@@ -1,0 +1,141 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysK.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Subdoligranulum-variabile-DSM-15176-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysK/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_cysK.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysK/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_cysK.sto
+# per-dom hits tabular output:     workflow/out/cysK/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_cysK.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01139  [M=298]
+Accession:   TIGR01139
+Description: cysK: cysteine synthase A
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   2.2e-137  454.6   1.1   2.6e-137  454.4   1.1    1.0  1  1_1011    # 1056053 # 1056985 # -1 # ID=1_1011;partial=00;sta
+    1.1e-61  206.1   0.0    1.3e-61  205.8   0.0    1.0  1  1_2492    # 2739235 # 2740128 # -1 # ID=1_2492;partial=00;sta
+    1.8e-21   74.1   0.5    2.9e-21   73.4   0.5    1.3  1  1_2015    # 2227190 # 2228395 # 1 # ID=1_2015;partial=00;star
+    1.2e-11   41.8   0.0    4.5e-10   36.6   0.0    2.7  1  1_1913    # 2102559 # 2103941 # -1 # ID=1_1913;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1011  # 1056053 # 1056985 # -1 # ID=1_1011;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.66
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  454.4   1.1  3.4e-140  2.6e-137       2     298 .]       9     308 ..       8     308 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 454.4 bits;  conditional E-value: 3.4e-140
+  TIGR01139   2 seliGntPlvrLn...laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkl 98 
+                ++liG+tPl++L     ae+ ka+vl+kle++nP++svkdr+a ami dae +g+lk+g++i+e+tsGntGi+la vaaargy++i++mpetms+err l
+     1_1011   9 EQLIGHTPLLELThieAAEGLKARVLAKLEYFNPAGSVKDRVAKAMIDDAEATGKLKPGSVIIEPTSGNTGIGLASVAAARGYRVIIVMPETMSVERRLL 108
+                689********99765678999****************************************************************************** PP
+
+  TIGR01139  99 lkayGaelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvaveP 198
+                +kayGaelvLt+ga+gm+gai+ka+el+++tp ++ ++ qf npanp++hr+tt+pei++d+dg++d+fvag GtGGtitGvg +lkekkp +++vaveP
+     1_1011 109 MKAYGAELVLTEGAKGMAGAIAKADELAAQTPGSF-VAGQFVNPANPAAHRATTGPEIWEDTDGQVDIFVAGAGTGGTITGVGGYLKEKKPGVRIVAVEP 207
+                ********************************888.9*************************************************************** PP
+
+  TIGR01139 199 aespvlsggkpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakkle.kdkkivvilpdtgerYlstaL 297
+                a+s+vlsggk+gphk+qGigagf+P+vLd++v+dev++++ e+a++ +r + ++eG+lvGissGaa++aal+ ak++e ++k+ivv+lpdtg+rYlst++
+     1_1011 208 ADSAVLSGGKAGPHKLQGIGAGFVPEVLDTSVYDEVMTITTEQAYDAGRMMGRKEGVLVGISSGAALYAALEQAKRPEnEGKTIVVLLPDTGDRYLSTPM 307
+                *****************************************************************************999******************99 PP
+
+  TIGR01139 298 f 298
+                f
+     1_1011 308 F 308
+                8 PP
+
+>> 1_2492  # 2739235 # 2740128 # -1 # ID=1_2492;partial=00;start_type=GTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  205.8   0.0   1.8e-64   1.3e-61       7     274 ..      13     280 ..       8     293 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 205.8 bits;  conditional E-value: 1.8e-64
+  TIGR01139   7 ntPlvrLn...laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkllkayG 103
+                + P+vrL+    +++ ++++l+ l++   ++  kd +a +m+  a ++g lk+g  +vea sG  G ala+ +a+ g+  il++p ++ + rrk l+ +G
+     1_2492  13 RSPVVRLDgysGRHNLSSSILAYLDFGGATGTSKDGLAETMLALATERGALKPGMPVVEASSGSFGAALAVSCATTGHPCILVVPSSLPIARRKRLQDLG 112
+                68*****986556778899********************************************************************************* PP
+
+  TIGR01139 104 aelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvavePaespv 203
+                a++v+  +a g +++ + aee +++ +  y +++ f+n  npe+hr+ t+p ilk+  +++da+v gvG GGt+tGvge++k  ++ i++vaveP+e + 
+     1_2492 113 ARIVVSSSA-GRRAMDRIAEETAQRYG-GY-FTHYFANDDNPEYHRRVTGPQILKAAGDAVDAIVIGVGSGGTVTGVGEYIKAWNSMIRIVAVEPTECAA 209
+                ***998655.6677888899***9999.66.69******************************************************************* PP
+
+  TIGR01139 204 lsggkpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakk 274
+                +sgg  g+h i Gig+gf+P++ +  v+d+v++v+  +a + a+++   +G+ +  s+Ga++aaa+++   
+     1_2492 210 ISGGFIGQHGIAGIGPGFVPENYNPYVVDTVLTVTTADAERAAQEVLFFDGVPACASAGATLAAAVQLIGT 280
+                ******************************************************************98655 PP
+
+>> 1_2015  # 2227190 # 2228395 # 1 # ID=1_2015;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   73.4   0.5   3.9e-24   2.9e-21      21     286 ..      33     300 ..      16     304 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 73.4 bits;  conditional E-value: 3.9e-24
+  TIGR01139  21 aevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkllkayGaelvLtdgaegmkgaie 120
+                +++++k e l+ ++s k r a+  i++  +++     k ++   +Gn   ++a+ a   g k +++mp+   + + +  k +Gae+ L +g+     a +
+     1_2015  33 TDLYLKTENLQVTGSFKVRGAYYKISQLTEAER---AKGVIACSAGNHAQGVALAATRMGIKSVVCMPDGAPIMKVESTKRLGAEVELVKGTY--DDAHD 127
+                689*******************99998776654...55699************************************************9986..5789* PP
+
+  TIGR01139 121 kaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvavePaespvlsgg............k 208
+                +a el +et+ ++  ++ ++++    + + t + eil +l  ++da++  vG GG i+Gv+ ++k+ +p++kv++v  a +p ++++            +
+     1_2015 128 RAVELQQETGMTF--IHPYDDEL-VIAGQGTIGLEILDQLP-DVDAVIVPVGGGGLISGVAFAIKSLRPEVKVYGVQAAGAPSMARAfhdhhyetldrvD 223
+                **********777..77788776.456799*******9996.69*****************************************998888888887665 PP
+
+  TIGR01139 209 pgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakklekdkkivvilp 286
+                + +  i   ++g +   + ++ +d+v++vs++e  +    l++++  lv   +Ga+ +aa    k + ++kk+v++++
+     1_2015 224 TFADGIAVKTPGELTYQMVENYVDDVVTVSEDEIAAAILSLMENQK-LVAEGAGATPVAAALFGKLPLAGKKVVCLIS 300
+                66667777788889999999999********999999999998865.667789999999999999999******9875 PP
+
+>> 1_1913  # 2102559 # 2103941 # -1 # ID=1_1913;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.65
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.0   6.1e-13   4.5e-10       9     282 ..      86     414 ..      81     427 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 36.6 bits;  conditional E-value: 6.1e-13
+  TIGR01139   9 Plvr...LnlaeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmsle....rrkllka 101
+                Plvr   L+ + ++ a+++ k e +n s+s k   a+a    a+++  lk   +  e+ +G  G al+m +a  g+   + m++    e    rr++++ 
+     1_1913  86 PLVRaycLEKKLGTPAKIYYKFEGNNTSGSHKLNSAIAQAYYAKQQR-LK--GVTTETGAGQWGTALSMACAYLGLDCKVYMVKCS-YEqkpfRREVMRV 181
+                7777333446677889*****************99998888887665.43..35689*************************9754.33356699***** PP
+
+  TIGR01139 102 yGael.............vLt..dgaegmkg.aiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgk...ldafvagvGtGGtitGvge 182
+                yGa +             +L   +g++g  g ai++a e++++tp   ++l    n+     h++  + e   +ld+     d+++   G G  + G  +
+     1_1913 182 YGASVtpspspetevgrrILAehPGTTGSLGcAISEAVEVATTTPGYRYVLGSVLNQ--VLLHQSIIGVETKTALDKYgvkPDIIIGCAGGGSNLGGLIS 279
+                ***982222222222222232223455554447***********9765566665554..5789**9**9999998876544799**99999999999644 PP
+
+  TIGR01139 183 .vlkekkp...dikvvavePaespvlsgg..............................kpgphkiqGigagfiPkvLdkevidevikvsdeeaietarr 248
+                  + +k +   d + +avePa+ p +++g                              ++g  +  G+++  + + L ++ + e ++v++ + +e a +
+     1_1913 280 pFMGQKLRgeaDYRFIAVEPASCPSFTRGrfaydfcdtgmvcplakmytlgsnfipsanHAGGLRYHGMSP--VLAQLYHDGLMEAVAVEQTKVFEAAEQ 377
+                1444433344599**************999******99987777777777777665544444444444444..33455555556778999999******* PP
+
+  TIGR01139 249 lakeeGilvGissGaavaaalkvakkle...kdkkiv 282
+                 a+ eGil    s  a+  a+  a + +   ++k+i+
+     1_1913 378 FARVEGILPAPESSHAIRVAIDEALRCKetgEEKTIL 414
+                ********99988888888877665444312445554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (298 nodes)
+Target sequences:                       2961  (969825 residues searched)
+Passed MSV filter:                       119  (0.0401891); expected 59.2 (0.02)
+Passed bias filter:                       97  (0.0327592); expected 59.2 (0.02)
+Passed Vit filter:                        10  (0.00337724); expected 3.0 (0.001)
+Passed Fwd filter:                         4  (0.00135089); expected 0.0 (1e-05)
+Initial search space (Z):               2961  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
+# Mc/sec: 10261.45
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/cysK/hmmer_output/Subdoligranulum-variabile-DSM-15176-MAF-2_cysK.sto
+[ok]

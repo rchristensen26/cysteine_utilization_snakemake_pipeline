@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Rheinheimera_texasensis_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Rheinheimera_texasensis_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Rheinheimera_texasensis_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Rheinheimera_texasensis_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+     0.0019   14.9   0.6     0.0043   13.8   0.0    1.8  2  NZ_JONU01000007.1_313  # 375765 # 376844 # 1 # ID=9_313;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JONU01000007.1_313  # 375765 # 376844 # 1 # ID=9_313;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.1     0.033   1.3e+02      52      99 ..       2      51 ..       1      55 [. 0.75
+   2 !   13.8   0.0   1.1e-06    0.0043     192     233 ..     136     177 ..     130     274 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.033
+        tnaA_K01677_msa 52 iDllTDSGT...gAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyey 99
+                           iD+ +D  T    Am +++ Aa   GD+ ++   s  +L++   +++g+e 
+  NZ_JONU01000007.1_313  2 IDFRSDTVTqptAAMRAAM-AAAPLGDDVFGDDPSVNALQQYAAELLGFEA 51
+                           6777776552215665555.66678***********************986 PP
+
+  == domain 2  score: 13.8 bits;  conditional E-value: 1.1e-06
+        tnaA_K01677_msa 192 nNsaGGQPVSmaNlravaeiakkygipvvlDaARFAENAyFI 233
+                             N++GGQ  S++ + +++e+ak+ +  + +D AR    A  I
+  NZ_JONU01000007.1_313 136 ENTTGGQVLSLDYMAQMSELAKSNQLACHIDGARIFNAAVAI 177
+                            59********************************76666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       3961  (1397462 residues searched)
+Passed MSV filter:                       158  (0.0398889); expected 79.2 (0.02)
+Passed bias filter:                       76  (0.0191871); expected 79.2 (0.02)
+Passed Vit filter:                         7  (0.00176723); expected 4.0 (0.001)
+Passed Fwd filter:                         1  (0.000252461); expected 0.0 (1e-05)
+Initial search space (Z):               3961  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# Mc/sec: 25078.06
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Rheinheimera_texasensis_tnaA.sto
+[ok]

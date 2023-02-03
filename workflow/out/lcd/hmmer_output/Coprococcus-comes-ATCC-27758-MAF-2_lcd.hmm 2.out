@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Coprococcus-comes-ATCC-27758-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Coprococcus-comes-ATCC-27758-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Coprococcus-comes-ATCC-27758-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Coprococcus-comes-ATCC-27758-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.8e-09   33.0   0.5    4.6e-08   29.7   0.5    1.9  1  1_1316    # 1389244 # 1390428 # 1 # ID=1_1316;partial=00;star
+    0.00019   17.8   0.0     0.0012   15.2   0.0    2.3  1  1_464     # 455869 # 457008 # 1 # ID=1_464;partial=00;start_t
+      0.001   15.4   0.0     0.0018   14.6   0.0    1.3  1  1_949     # 990165 # 991361 # 1 # ID=1_949;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1316  # 1389244 # 1390428 # 1 # ID=1_1316;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   0.5   4.4e-11   4.6e-08     132     346 ..      25     225 ..       2     233 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 4.4e-11
+  K22207 132 ewqlkflrqPdefy..fnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeViev 232
+              +  +    P + y   ++ k+ ++++r+ i++ ++a++ +e+ +    ++  + +l+++a    e   +kg  ++  ++   a+ ++ +ay+++ g eV   
+  1_1316  25 PYFTEQYGNPSAIYsfASHNKDVVAEQRERIANALGAKS-NEIYFTAGGSESDNWALKATA----EAYQNKGKHIITTKIEHHAILHT-AAYLEERGFEVTYL 121
+             555555555655442134556677888888888888886.888888888888888888888....56667888888888888888876.57788888888888 PP
+
+  K22207 233 elpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfL 335
+              ++   k n    + +++a++       ++ L  + +     + + P+ke+ +i++++g+     Da +a+Gqv+++v e   d   +  hK + +Pk++ fL
+  1_1316 122 DVDEYGKVNP---ADVEAAIR-----PDTI-LISVMYANNEIGTIEPIKEIGEIAHKHGI-LFHTDAVQAFGQVPINVDECHIDMLSASGHK-LNGPKGIGFL 213
+             7765222222...23345553.....3334.444447777788999**************.5889***************************.99******** PP
+
+  K22207 336 yvrkssk.ssdl 346
+             y+rk  k  s +
+  1_1316 214 YIRKGVKiRSFV 225
+             ****77655444 PP
+
+>> 1_464  # 455869 # 457008 # 1 # ID=1_464;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.465
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.0   1.1e-06    0.0012     280     502 ..     155     376 ..      42     379 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.1e-06
+  K22207 280 vkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk.ssdlhhPvvsheYgnglaies...awiGtrDysaqlvvp 378
+             v+ + +i+++++    +vDa +  G  ++dv+++  d      hK + +P+++  +yvrk  +    l     ++ Y +  + e+   +  Gt     +  ++
+   1_464 155 VERIGEIAKKHDL-LFVVDASQTAGVFPIDVQKMHIDILCFTGHKGLLGPQGTGGMYVRKGVHvRPLLSGGTGVQTYSKTQPEEMptaLEAGTLNGHGIAGLD 256
+             6667778888888.589*******************************************6553334445566666777777765222335777777777777 PP
+
+  K22207 379 ealeFvnrfegGiegikkrnhelvvemgemLaeawgtel.gappemcasmvmvgLPaalgissdddalkLrthLreefkveVpi..yyrapkdge.ve.qvtg 476
+             +a+ ++++   Gi+ i++  ++l+ +  e + e  g ++ g  + m  + ++v L        d d  ++  +L  ++++      +  ap + e ++    g
+   1_464 257 AAIGYLEET--GIDTIRAKEQALMKRFYEGIKEIPGVKIyGDFSSMDRC-AVVSLN-----IRDYDSGEVSDALLTDYGISTRSggHC-APLMHEaLGtVEQG 350
+             777777777..77777777777777777777777777775666666554.455665.....345556666666666777666553222.23222212234566 PP
+
+  K22207 477 yvRiShqvYnkveDyeklrdAvnkLv 502
+              vR S   Yn+ e++    +A+ +L+
+   1_464 351 AVRFSFSHYNTEEEVDTAIRAICELA 376
+             77777777777777777777777765 PP
+
+>> 1_949  # 990165 # 991361 # 1 # ID=1_949;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.429
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   1.7e-06    0.0018     242     306 ..     157     220 ..     152     223 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.7e-06
+  K22207 242 eeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqv 306
+             ++ +e ++++L+ + a g rv+L   D + Sm +++   k +  ++ ++    v+vD  Ha+G v
+   1_949 157 NNNMEDLEAQLQAADAAGARVKLIATDGVFSMDGIICNLKGVCDLADKYNA-LVMVDDSHAVGFV 220
+             5668899***************************************99999.6**********87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3172  (981215 residues searched)
+Passed MSV filter:                       107  (0.0337327); expected 63.4 (0.02)
+Passed bias filter:                       73  (0.0230139); expected 63.4 (0.02)
+Passed Vit filter:                         5  (0.00157629); expected 3.2 (0.001)
+Passed Fwd filter:                         3  (0.000945776); expected 0.0 (1e-05)
+Initial search space (Z):               3172  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 16998.37
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Coprococcus-comes-ATCC-27758-MAF-2_lcd.sto
+[ok]

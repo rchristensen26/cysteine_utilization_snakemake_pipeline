@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bifidobacterium_adolescentis_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Bifidobacterium_adolescentis_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Bifidobacterium_adolescentis_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Bifidobacterium_adolescentis_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.1e-08   31.0   0.1    1.2e-07   27.5   0.0    2.1  2  NZ_CP028341.1_808  # 953266 # 954540 # 1 # ID=1_808;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP028341.1_808  # 953266 # 954540 # 1 # ID=1_808;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.0   6.7e-11   1.2e-07     153     339 ..      68     254 ..      35     261 .. 0.80
+   2 !    0.7   0.0    0.0089        16     476     499 ..     392     415 ..     369     418 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 6.7e-11
+             K22207 153 ilksrtlikelinadd...vdevslvdnaTtaaaivlqqvawaF......aeg..kfqkgdavvmLhyaYgaVKksieayvtraggeVieve 233
+                        + ++r+++++l++ad+    +e+++   aT++ +  + + + a       a +   +++gd +v+ +    +V   ++ ++ r g++     
+  NZ_CP028341.1_808  68 FEDARAKVAKLVGADSaegEEEIVVTAGATAGLNLLATAFGNASlgrggeAAKrfALKPGDEIVVTKAEHHSVLLPFQELALRTGATLKWFD 159
+                        56789999999999984445799999999999888888877654111111223114689999999999999999999999999999877655 PP
+
+             K22207 234 lpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfv.DaAHaiGqvdvdvkeigadfytsnlhK 324
+                        l     ++  + +   +++        r++++ + h+    + +     +++ ++e g   vfv Da +++ +++vd +++++df +  +hK
+  NZ_CP028341.1_808 160 L----DEEGRVRSDTANEVI-----TDRTKIVAVTHVGNTTGAITDTAPIIRRAHEVGA--VFVlDACQSVPHLKVDFHALDVDFAAWSAHK 240
+                        5....457777666665554.....457889999********99998888887777776..6644*************************** PP
+
+             K22207 325 WffcPksvAfLyvrk 339
+                         +++P++v fLy ++
+  NZ_CP028341.1_808 241 -MYGPTGVGFLYGKR 254
+                        .9**********887 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.0089
+             K22207 476 gyvRiShqvYnkveDyeklrdAvn 499
+                        +  R S  +Yn veD ++l +A  
+  NZ_CP028341.1_808 392 ASNRASSGIYNSVEDAQALIEALG 415
+                        55699**************99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       1798  (645977 residues searched)
+Passed MSV filter:                        74  (0.0411568); expected 36.0 (0.02)
+Passed bias filter:                       55  (0.0305895); expected 36.0 (0.02)
+Passed Vit filter:                         4  (0.00222469); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000556174); expected 0.0 (1e-05)
+Initial search space (Z):               1798  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 8246.45
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Bifidobacterium_adolescentis_lcd.sto
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lachnospira_pectinoschiza_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Lachnospira_pectinoschiza_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Lachnospira_pectinoschiza_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Lachnospira_pectinoschiza_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    3.3e-18   62.7   0.0    5.4e-18   62.0   0.0    1.2  1  NZ_FNHZ01000003.1_160  # 192891 # 194132 # -1 # ID=10_160;par
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_FNHZ01000003.1_160  # 192891 # 194132 # -1 # ID=10_160;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.0   0.0   2.4e-21   5.4e-18      79     480 ..      14     405 ..       5     408 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 62.0 bits;  conditional E-value: 2.4e-21
+         lcd_K22207_msa  79 eirseFshhdpsvarinnGsfgscpasvleaqqrwqlkflrqPdefyfn...elkkgilesrtaikdlinaddvdevslvdNattAaa 163
+                             +r++F   + s  +++n +    p++v+ea +++  +  ++P +  ++   + +++ + +r+a++++ina +++e++++ Nat   +
+  NZ_FNHZ01000003.1_160  14 SLRKDFPIINDSASYLDNSATSQKPRQVIEAVKNYYEESNANPLRGLYDlsvKATDAYEDAREAVRKFINAGKISEIVFTRNATESLN 101
+                            4788888889999999999999999*****9999998888888765443111566788999*************************** PP
+
+         lcd_K22207_msa 164 ivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneei.vsefrkaLekgkangrkvrlAviDHi 250
+                             + ++ + +f     ++gD +l+  +  ++     +++++  g+++      + + +n  i v+ + ka++k      + +l+ i  +
+  NZ_FNHZ01000003.1_160 102 LIANSYGKAFL----KEGDEILVSIMEHHSNMLPWQEVAKATGAKIKY----LDIDENGAItVDVLAKAITK------NTKLVAITQV 175
+                            *******9998....99******9999999888888866666666432....34444444415556666655......89******** PP
+
+         lcd_K22207_msa 251 tSmpsvvlPVkeLvkicreegvdqvfV.DaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh........pv 329
+                            + +  +   +k L k+ +e+g   vfV D+A+++ +++vdvk++++df +   HK + +P ++++Ly +++  +++            
+  NZ_FNHZ01000003.1_160 176 SNVLGIKNDIKALAKLAHENGA--VFVcDGAQSVPHMKVDVKDLDVDFLAFSGHK-MLAPMGIGVLYGKEELLEKMPPflyggemiE- 259
+                            *********************9..5555***************************.89***********953344443333443332. PP
+
+         lcd_K22207_msa 330 Vshey.......gnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgte.lgsp.pemcasmim 408
+                                y          l++++   Gt   s  + + a+++++n++  g++ i++r  +l   + e ++   + + +gs+ p+ +  + +
+  NZ_FNHZ01000003.1_160 260 ----YvtlegatYAELPHKF-EAGTVNASGAVGLHAAIDYMNKV--GFDYIEERENQLTAYAFEKMKAIPHVNiVGSQdPADHHGILT 340
+                            ....2222211133566554.68********************7..9*****998888777777666666666356541344446667 PP
+
+         lcd_K22207_msa 409 VgLPaklgissdedalkLrthLreefkvevpiyyrapkegeveaitgYvRiShqvYnkvddyyklrdavnql 480
+                              +  + +    e + +L  ++r  ++   p+ ++              R S   Yn+  d  ++ da  q+
+  NZ_FNHZ01000003.1_160 341 FTIDGCHPHDVSEIMNSLDVMVRAGHHCAQPL-TKYLGL------NSTTRASLGFYNNEADIDRFIDALSQI 405
+                            77778888888888888888888888888888.322322......233699999999999999999999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2284  (785587 residues searched)
+Passed MSV filter:                        98  (0.0429072); expected 45.7 (0.02)
+Passed bias filter:                       69  (0.0302102); expected 45.7 (0.02)
+Passed Vit filter:                         5  (0.00218914); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000437828); expected 0.0 (1e-05)
+Initial search space (Z):               2284  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 21815.95
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Lachnospira_pectinoschiza_lcdcustom.sto
+[ok]

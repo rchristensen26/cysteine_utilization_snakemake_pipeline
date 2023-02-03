@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella-buccalis-ATCC-35310-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.7e-23   80.5   0.0    2.3e-23   80.1   0.0    1.1  1  1_1947    # 2218506 # 2219720 # -1 # ID=1_1947;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1947  # 2218506 # 2219720 # -1 # ID=1_1947;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.560
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1   0.0     8e-27   2.3e-23      92     479 ..      24     399 ..       3     403 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 8e-27
+  lcd_K22207_msa  92 arinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDa 183
+                     ++++n +    p +vl+a ++  l++   ++   +++ ++ ++  +++r++++++ina+++ ev+++  +t + + +  + + +f     ++gD 
+          1_1947  24 IYLDNAATTQKPLCVLDAMRDEYLNVnanVHRGVHWMSQQATELHEAARETVRRFINARSAAEVVFTRGTTEGLNLIAATYCQAFM----REGDE 114
+                     56777777777888888877666555334566899**********************************************99998....99*** PP
+
+  lcd_K22207_msa 184 vlmlhyaYgaVkksieayvtrag.gsvievelpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvf 276
+                     v++  +  ++  +++ + ++ +  g v++v   +p+++  e   +e++k +++      k +l+ +  ++ +   v PVk+++++ +++gv  v+
+          1_1947 115 VIVSAMEHHS--NIVPWQLQAQQrGIVLKV---VPMTDaGELMLDEYEKLFTN------KTKLVSLTQVSNVLGTVNPVKQMTATAHAHGV-PVV 197
+                     *998887776..566665444441555554...45555157778999998887......899*****************************.9** PP
+
+  lcd_K22207_msa 277 VDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.eygn.glaie..sawiGtrDysaqlvvpavleF 362
+                     +D+A++  + +vd+++i++df++   HK  + P ++++Ly +++  ++l        ++sh ++++ ++      +  Gt Dy a   +  +l++
+          1_1947 198 IDGAQSAPHFKVDMQDIDCDFFVFSGHK-AYGPTGIGVLYGKEEWLDRLPPyqgggEMISHvSFDKvSFERPplKFEAGTPDYIATHGLAVALDY 291
+                     ****************************.99***********963344433556779999834544344333114589***************** PP
+
+  lcd_K22207_msa 363 vnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapkegeveaitgYv 457
+                     ++ +  g+++i k+ hel   + e +    g ++    +   ++i  +     ++   +   +L   +r+ ++   p+ +r      +  + g +
+          1_1947 292 LSSL--GMDNIAKHEHELTTYALERMQTIPGMHIFGEAAHRDAVISFQVGHIHHMDMGTLLDRLGIAIRTGHHCAQPLMQR------L-GVLGTA 377
+                     ***8..***************************987777777888888887666666666666666677777766666333......2.467999 PP
+
+  lcd_K22207_msa 458 RiShqvYnkvddyyklrdavnq 479
+                     R S   Yn+++++ +l   +++
+          1_1947 378 RASFALYNTREEVDQLVAGIER 399
+                     ************9998777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2849  (965468 residues searched)
+Passed MSV filter:                       114  (0.040014); expected 57.0 (0.02)
+Passed bias filter:                       78  (0.027378); expected 57.0 (0.02)
+Passed Vit filter:                         6  (0.002106); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000351); expected 0.0 (1e-05)
+Initial search space (Z):               2849  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 24758.22
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_lcdcustom.sto
+[ok]

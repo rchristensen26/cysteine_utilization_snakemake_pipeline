@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Leuconostoc_pseudomesenteroides_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Leuconostoc_pseudomesenteroides_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Leuconostoc_pseudomesenteroides_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Leuconostoc_pseudomesenteroides_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+     0.0052   12.6   0.1     0.0073   12.1   0.1    1.1  1  NZ_CP065993.1_1960  # 2005571 # 2006257 # 1 # ID=1_1960;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP065993.1_1960  # 2005571 # 2006257 # 1 # ID=1_1960;partial=00;start_type=ATG;rbs_motif=AGGAG(G)/GGAGG;rbs_spacer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.1   3.5e-06    0.0073     236     269 ..      22      57 ..      14      71 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 3.5e-06
+     cysK_K01738_msa 236 dafVagvGTGGTitGvgryLkek..npdikivaveP 269
+                         d +V+g+G+G Ti+ v  +L e+  n+++kiv+v  
+  NZ_CP065993.1_1960  22 DDMVVGIGSGSTIAHVITALGERvaNENLKIVGVPT 57 
+                         678*****************9987689******965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       2064  (627666 residues searched)
+Passed MSV filter:                        69  (0.0334302); expected 41.3 (0.02)
+Passed bias filter:                       46  (0.0222868); expected 41.3 (0.02)
+Passed Vit filter:                         7  (0.00339147); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000484496); expected 0.0 (1e-05)
+Initial search space (Z):               2064  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 19706.15
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Leuconostoc_pseudomesenteroides_cysKcustom.sto
+[ok]

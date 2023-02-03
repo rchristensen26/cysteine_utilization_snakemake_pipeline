@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metC.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-onderdonkii-DSM-19147-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/metC/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_metC.hmm.out
+# MSA of all hits saved to file:   workflow/out/metC/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_metC.sto
+# per-dom hits tabular output:     workflow/out/metC/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_metC.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01324  [M=377]
+Accession:   TIGR01324
+Description: cysta_beta_ly_B: cystathionine beta-lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.2e-42  141.3   0.0    2.1e-23   80.1   0.0    2.0  2  1_3085    # 3782428 # 3783714 # 1 # ID=1_3085;partial=00;star
+     0.0033   13.7   0.0     0.0048   13.1   0.0    1.2  1  1_215     # 238087 # 239307 # -1 # ID=1_215;partial=00;start_
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_3085  # 3782428 # 3783714 # 1 # ID=1_3085;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=11bp;gc_cont=0.628
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1   0.0   1.3e-26   2.1e-23       2     210 ..      11     224 ..      10     233 .. 0.93
+   2 !   59.4   0.0   2.7e-20   4.2e-17     221     376 ..     267     426 ..     253     427 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 1.3e-26
+  TIGR01324   2 rlihsGrekrrlqgsvnPpvqrastvllds..daasara..kdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallafvkaGdevlvvds 97 
+                  ih G ++ + +g+   ++  +++  ++s  +aa++ +  ++  +y +   +tt+  ++ +a+l Ga g++++ sG++a+ +a+l++   Gd+++ +  
+     1_3085  11 LQIHGGLQPDDPTGARGVAIYPTAAYRFKSceHAAKLFDlsEGGNIYTRLQNPTTTVYEQRIAALYGAVGALAVSSGMSAILIAVLSLAAEGDNIVASPF 110
+                5689999999999999999999999999988899988762266789****************************************************** PP
+
+  TIGR01324  98 aykPtrrfcdivlkrlgveveyydPkigediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidntw.aagllfkalehgvdisiqaatk 196
+                 y  t     i l+rlg++ +    +  ed  ali   tk ++ e+ +  +  v d+ a+ k a+  +v  ++dnt+ aag l +++e g +i +++atk
+     1_3085 111 LYGGTFTQFRISLRRLGIDCRIARSERPEDFEALIDGRTKAIYAESMGNPSCTVSDMEALGKLAKRYDVPFIVDNTFgAAGYLCNPFEWGANIVVDSATK 210
+                *****99999******************************************************************95689999**************** PP
+
+  TIGR01324 197 ylaGhsdvllGtva 210
+                ++ Gh   + G ++
+     1_3085 211 WINGHGTAMGGVIV 224
+                *****998877665 PP
+
+  == domain 2  score: 59.4 bits;  conditional E-value: 2.7e-20
+  TIGR01324 221 ealyllGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdfs.GssGlfsvvlkrlsqkevhafldalklf 319
+                + + +lG++ ++ d y +  Gl tl+ r+++  esa ++a++ +++++v+rv    + s+p ++  k+ f  Gss +f+++lk++ +    +f+++l+l 
+     1_3085 267 DGVRDLGCCPSPFDSYLMTLGLETLSLRVRHEVESARRLAEYCRNHPKVERVSFVGFESHPSYANAKKYFRfGSSAVFTIELKGTLD-STVRFVESLNLA 365
+                77889***************************************************************9955**********98665.5568*****999 PP
+
+  TIGR01324 320 glgyswGGyesl....alnvqpelairrsikrdleGplirlhiGledvddlkadlkaGlea 376
+                +     G   ++    a +++ +l+++  + + ++ +++r+ +Gle+ ddl+ d+ + ++ 
+     1_3085 366 AHMVMIGDSVTVvthpASTTHKQLGDADLAAAGVTPTMLRISVGLENTDDLIDDFEQAFAH 426
+                87777765444411114456778999999**************************999986 PP
+
+>> 1_215  # 238087 # 239307 # -1 # ID=1_215;partial=00;start_type=ATG;rbs_motif=AAAAA;rbs_spacer=8bp;gc_cont=0.640
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.0   3.1e-06    0.0048      84     173 ..     107     201 ..      50     219 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 3.1e-06
+  TIGR01324  84 afvkaGdevlvvdsaykPtrrfcdivlkrlgvevey..yd..Pkig.ediaalikpntkvvfleaPasltlev.qdiPaiakaaraagvvvlidnt 173
+                 fv+aGd++lv++  ++      +++ +r g e++   +d   ++  e + +l+  +t++v +   as+tl   +d+  ++ aa+a g++ ++d  
+      1_215 107 KFVRAGDNILVSEMEHHSNIVPWQMLAERKGAEIRVlpFDdeGRLCtELLPSLLDDKTRIVAVT-QASNTLGTrPDLRPVIDAAHAVGAIAVVDGC 201
+                59**********9998877777777777777666642255224566478889*******98875.5777776538*****************9964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (377 nodes)
+Target sequences:                       3154  (1154124 residues searched)
+Passed MSV filter:                        72  (0.0228282); expected 63.1 (0.02)
+Passed bias filter:                       62  (0.0196576); expected 63.1 (0.02)
+Passed Vit filter:                         6  (0.00190235); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000634115); expected 0.0 (1e-05)
+Initial search space (Z):               3154  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 19852.09
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/metC/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_metC.sto
+[ok]

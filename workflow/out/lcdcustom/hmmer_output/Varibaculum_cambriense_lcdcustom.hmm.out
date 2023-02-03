@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Varibaculum_cambriense_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Varibaculum_cambriense_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Varibaculum_cambriense_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Varibaculum_cambriense_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+     0.0002   16.9   0.1     0.0013   14.2   0.1    1.9  1  NZ_ATUF01000002.1_92  # 90849 # 92117 # -1 # ID=9_92;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_ATUF01000002.1_92  # 90849 # 92117 # -1 # ID=9_92;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.1   7.4e-07    0.0013     103     319 ..      42     251 ..      28     263 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 7.4e-07
+        lcd_K22207_msa 103 pasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaiv...LqqvawsfaegkfqkgDavl 185
+                           p+sv++a +++  +    ++   +   +e  + ++ +r +++ +++a+  de++ + Nat A +     L + +         +gD v+
+  NZ_ATUF01000002.1_92  42 PRSVIQAESSFYENSngaVHRGTHLLADESSQYFEDARLKLAGFVGAS-PDEIVWTKNATEALNLLayaLSNPGITGGAPLVGEGDRVV 129
+                           666666665555333233455566677777788888899999999998.5899999999999876511144445555555678999999 PP
+
+        lcd_K22207_msa 186 mlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdq 274
+                           ++    +a     + + +r g ++  ++l+   + + e  +++           ++ +++ + H + ++  +  ++ ++++ ++ g   
+  NZ_ATUF01000002.1_92 130 TTRAEHHANLVPWQLLSQRTGCEFAYLDLDPQGRIDLETLDAI----------TANTKVVAVTHASNVSGAITDITPIIQAAHAVGA-W 207
+                           9999999988889999999999988888887777666666555..........3467899999***********************9.9 PP
+
+        lcd_K22207_msa 275 vfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                           v++D  ++  ++++dvk++++df     HK +  P +++ Ly r+
+  NZ_ATUF01000002.1_92 208 VVLDTCQSSAHMPLDVKALEVDFACFSGHK-MAGPTGIGALYGRR 251
+                           ******************************.899********998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1713  (608249 residues searched)
+Passed MSV filter:                        72  (0.0420315); expected 34.3 (0.02)
+Passed bias filter:                       60  (0.0350263); expected 34.3 (0.02)
+Passed Vit filter:                         7  (0.0040864); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000583771); expected 0.0 (1e-05)
+Initial search space (Z):               1713  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 15214.72
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Varibaculum_cambriense_lcdcustom.sto
+[ok]

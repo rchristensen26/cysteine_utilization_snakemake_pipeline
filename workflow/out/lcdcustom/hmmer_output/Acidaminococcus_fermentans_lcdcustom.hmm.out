@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Acidaminococcus_fermentans_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Acidaminococcus_fermentans_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Acidaminococcus_fermentans_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Acidaminococcus_fermentans_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    6.9e-17   58.2   0.7    2.6e-16   56.3   0.7    1.9  1  NC_013740.1_455  # 533848 # 535068 # 1 # ID=1_455;partial=00;
+    1.7e-05   20.6   0.0    2.4e-05   20.1   0.0    1.3  1  NC_013740.1_37   # 47121 # 48272 # -1 # ID=1_37;partial=00;st
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_013740.1_455  # 533848 # 535068 # 1 # ID=1_455;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.3   0.7   2.5e-19   2.6e-16     134     470 ..      66     388 ..      55     398 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 56.3 bits;  conditional E-value: 2.5e-19
+   lcd_K22207_msa 134 lesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivse 227
+                       ++r+a++++ina++ +ev +v N t + + + ++ +    e +++kgD v++     ++     ++ + + g++++ + l+          + 
+  NC_013740.1_455  66 DKAREAVRKFINAKHFEEVIFVRNSTEGLNLIARSYG----ETHLKKGDKVVIPISEHHSNLVPWQRACRKTGAELVYMYLDETG-------HF 148
+                      689****************************999887....999******9999999999888999999******9987775444.......44 PP
+
+   lcd_K22207_msa 228 frkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrksk 321
+                       ++ L+k    +++ +++ +  ++ +  +v PVke v+  ++ g    +VD+A++  +++ dv+++++dfY+   HK +    ++++ y +k  
+  NC_013740.1_455 149 TEEDLAKI---DERTKIVSFAAVSNVLGMVRPVKEVVERAHKVGA-IAIVDGAQSTPHMKTDVQDLDCDFYVFSGHK-MLGSTGTGVVYGKKAL 237
+                      55666664...445555555566667788***************9.89*****************************.6778899999999944 PP
+
+   lcd_K22207_msa 322 asdlhhpvV...shey.......gnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcas 405
+                       ++++  ++     ey        n l+ ++   G +     +++ a+++++n +  g+++++++  el  +  e + +  + ++  + +    
+  NC_013740.1_455 238 LEEMEPFLLggdMIEYvqeqttsFNELPYKF-EAGSQNVEGAVALHAAIDYLNDI--GMDQVEEHERELTDRCLEGMLKMPHIHILGSTDPKEK 328
+                      3666654444443444222212223333332.46777777778888888888876..7777777777777777776666666664444445555 PP
+
+   lcd_K22207_msa 406 mimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYvRiShqvYnkvddy 470
+                        ++ +    g++ ++ a+ L     +++++ +    ++ +p  g    + +  R+S  +Yn+++++
+  NC_013740.1_455 329 TGVISFT-IDGVHPHDAATIL-----DSYGIAIRSghHCAQP-LGAHLHVEASNRVSFYIYNTLEEV 388
+                      5555665.3556555544333.....4444444442122222.222224566667777777777665 PP
+
+>> NC_013740.1_37  # 47121 # 48272 # -1 # ID=1_37;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.1   0.0   2.4e-08   2.4e-05     257     319 ..     156     216 ..      35     224 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 20.1 bits;  conditional E-value: 2.4e-08
+  lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                     + P+++L ++ +++g      Da +a+G++++ +k+ + df  +  HK f  P++v++L++r+
+  NC_013740.1_37 156 IQPIARLAAMAHARGA-LFHTDAVQALGHIPLTLKDTDIDFLSGSAHK-FHGPKGVGILFARR 216
+                     66*************9.8899***************************.89*********998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2063  (680518 residues searched)
+Passed MSV filter:                        81  (0.0392632); expected 41.3 (0.02)
+Passed bias filter:                       72  (0.0349006); expected 41.3 (0.02)
+Passed Vit filter:                         9  (0.00436258); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8500.41
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Acidaminococcus_fermentans_lcdcustom.sto
+[ok]

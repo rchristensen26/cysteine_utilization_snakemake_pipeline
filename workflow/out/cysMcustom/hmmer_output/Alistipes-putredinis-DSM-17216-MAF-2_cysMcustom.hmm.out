@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-putredinis-DSM-17216-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.5e-12   42.2   0.1    2.6e-09   33.4   0.0    2.6  2  1_2024    # 2194715 # 2196076 # 1 # ID=1_2024;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2024  # 2194715 # 2196076 # 1 # ID=1_2024;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_cont=0.568
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.4   0.0   1.1e-12   2.6e-09      30     231 ..      70     297 ..      36     302 .. 0.74
+   2 !    5.8   0.0   0.00027      0.63     254     322 ..     355     429 ..     331     450 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 33.4 bits;  conditional E-value: 1.1e-12
+  cysM_K12339_msa  30 yktledliGnTPLvrlqrlagk..kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmp 121
+                      +++l ++  +TPLvr   l+++  + ++i+ K E   P GS K  +a+       ++g i+  +   E   G  G A++m+ +  g+++k++m 
+           1_2024  70 VQDLYKIYRSTPLVRAYGLEKAldTPAKIYFKNESVSPVGSHKTNTAIPQAYYNYKQG-IR--HLTTETGAGQWGAAMSMATQHFGIDLKVFMV 160
+                      3356666668********99954489********************988776666665.33..34459999*********************97 PP
+
+  cysM_K12339_msa 122 e...naseerkaamrayGAelilt................dkeegmegardlaeelaaeg....kyfvldQfaNpdNpkaHyetTgpEiwrqte 192
+                      +   n+  +rk +m+  GA++                   + +++   a+  a e+a ++    +y+ l    N+   + H +  g+E ++q+e
+           1_2024 161 KvsfNQKPYRKLMMNTWGADVYASpseitaagraalaknpNDSGSLGMAISEAVEMALQNpqdtRYC-LGSVLNHV--LLHQTIIGEEAVKQME 251
+                      644478899***************9999999999999986334445555666666655555552554.44445554..8999**********88 PP
+
+  cysM_K12339_msa 193 ...gkvthfVsgmGTtGTimGvs.ryLk...eqnpavqivglqPee 231
+                         +  + ++ ++G +  + G+s  +L+   ++ ++ ++++++P++
+           1_2024 252 lfgEYPDVVIGCFGGGSNFAGISfSFLRdnlTKGKNTRVIAVEPQS 297
+                      8868889999999********9944566222345789999999976 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.00027
+  cysM_K12339_msa 254 rvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea....viVaivcDrgdr..Ylstgvfe 322
+                      +v +  +v q+e  ++    ar+egi+  + s+ a+a a+r a++ +e+    +i + ++ +g+   Y  +++f+
+           1_2024 355 KVIEAQSVPQTETLAAGVLFARTEGIIPAPESAHAIAQAIREAKRAKEEgvskTILFNLSGHGQIdlYAYEQYFA 429
+                      3334567899999999999************************99865445556666666555433355555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2367  (733584 residues searched)
+Passed MSV filter:                        90  (0.0380228); expected 47.3 (0.02)
+Passed bias filter:                       74  (0.0312632); expected 47.3 (0.02)
+Passed Vit filter:                         6  (0.00253485); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000422476); expected 0.0 (1e-05)
+Initial search space (Z):               2367  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12958.56
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysMcustom.sto
+[ok]

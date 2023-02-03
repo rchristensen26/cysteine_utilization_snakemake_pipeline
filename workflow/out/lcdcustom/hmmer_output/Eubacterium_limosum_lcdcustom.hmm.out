@@ -1,0 +1,106 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Eubacterium_limosum_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Eubacterium_limosum_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Eubacterium_limosum_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Eubacterium_limosum_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    4.9e-11   39.9   0.0    1.1e-10   38.8   0.0    1.4  1  NZ_CP019962.1_3718  # 3992356 # 3993507 # -1 # ID=1_3718;part
+    6.3e-11   39.5   0.0    7.9e-11   39.2   0.0    1.2  1  NZ_CP019962.1_868   # 934525 # 935691 # -1 # ID=1_868;partial
+    9.3e-09   32.4   0.0    5.2e-08   29.9   0.0    1.9  1  NZ_CP019962.1_1531  # 1662103 # 1663311 # 1 # ID=1_1531;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP019962.1_3718  # 3992356 # 3993507 # -1 # ID=1_3718;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.8   0.0   7.9e-14   1.1e-10     130     315 ..      46     213 ..      41     226 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 38.8 bits;  conditional E-value: 7.9e-14
+      lcd_K22207_msa 130 kkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvks 220
+                          ++++e+r++++ l++a+d  +v ++ N+t+A+++vL+ +        +++gD vl+  +  +aV + +e++ ++ g +     +p     
+  NZ_CP019962.1_3718  46 SRKVYETREKLRCLFDAEDNKNVIFTANVTQAINTVLKGF--------LRRGDHVLISGLEHNAVVRPLEHL-KQTGVT--YDVIPCDNLG 125
+                         678999********************************44........69********************95.555522..2225666666 PP
+
+      lcd_K22207_msa 221 neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPps 311
+                         n e+   ++k+++       + r +v+ H + ++  +lPV+   +ic ++g    +VD A+  G  ++ +k+ +        HK ++ P++
+  NZ_CP019962.1_3718 126 NLEVTC-IEKMIK------PETRAVVMTHGSNVSGNILPVEAVGRICTSRGL-YFIVDTAQTAGLHDISMKKANISALCFTGHKGLMGPQG 208
+                         767654.455554......589******************************.9*****************977776666679*9999999 PP
+
+      lcd_K22207_msa 312 vA.fL 315
+                         ++ fL
+  NZ_CP019962.1_3718 209 IGgFL 213
+                         96244 PP
+
+>> NZ_CP019962.1_868  # 934525 # 935691 # -1 # ID=1_868;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.2   0.0   5.7e-14   7.9e-11     132     393 ..      47     293 ..      26     380 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 39.2 bits;  conditional E-value: 5.7e-14
+     lcd_K22207_msa 132 gilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvks.ne 222
+                         + ++r++ ++++n  d  +v+++ N+t A++i L+ +        ++ gD v++  +  +aV ++++ + +++ g  i+v   +p  +  +
+  NZ_CP019962.1_868  47 LVFQARSKTARFFNHPDPKTVVFTKNVTEAVNIALKGF--------LKSGDQVVTSAVEHNAVWRCLKMLEKNK-GVCINV---VPADKnGQ 126
+                        46789*******************************44........589******************9965555.555544...23333033 PP
+
+     lcd_K22207_msa 223 eivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAf 314
+                           +++++aL+       k +l v+ H + +   v P++ + ++   + +   +VD A+  G+ ++d+++   d  +   HK ++ P +++ 
+  NZ_CP019962.1_868 127 TSPESVERALTF------KTKLIVFNHASNVLGTVQPIQAIGEMANLRHI-PLMVDTAQTAGHFPIDMQDSHIDILAFTGHKGLMGPMGIGG 211
+                        445667788888......89******************************.9*******************999999999*********999 PP
+
+     lcd_K22207_msa 315 LyvrkskasdlhhpvV........sheygnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawg 393
+                        L   ++   d  +p++        +  y+ ++  + +  Gt      + +++ ++F+n+   g+egi++  + l   + + L    g
+  NZ_CP019962.1_868 212 LVLSPN--LD-IEPLIsggtggdsAYPYQPDYYPNHLEAGTLNVPGIIGLSSGIDFINET--GLEGIHSKIKMLYNYAVHQLDTIPG 293
+                        988883..12.3466623223322223355555666677777777777777777777774..7777776666655555555555555 PP
+
+>> NZ_CP019962.1_1531  # 1662103 # 1663311 # 1 # ID=1_1531;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.0   3.8e-11   5.2e-08     121     320 ..      33     217 ..       4     226 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 3.8e-11
+      lcd_K22207_msa 121 Pdefyfn..elkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsv 209
+                         P+  y +  e k+g++++r ++++ inad   e+ ++   +   +  ++ va++ +    +kg+ ++++++  +aV +++e  +++ g +v
+  NZ_CP019962.1_1531  33 PSSIYQEgrEAKRGVEAARLQLAQAINADP-KEIYFTAGGSESDNWAIKGVALKNR----KKGNHIITTEIEHHAVLHTCEY-LEKEGFEV 117
+                         555555322688999999999999999996.7999999999999999999997777....8999999999999999999986.67777776 PP
+
+      lcd_K22207_msa 210 ievelpfpvksneei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYt 299
+                               +pv ++  i  + +++a+++      +  l+ i +       + P+ke+ +i++++g+     Da +a G+v++dvk++++d   
+  NZ_CP019962.1_1531 118 T----YLPVDKDGLIsLDDLKNAIKD------ETILVSIMFANNEIGTIEPIKEIGEIVKAKGI-IFHTDAVQAFGNVPIDVKDLNVDLLS 197
+                         6....577877777734566666665......566777889999999999**************.7779********************** PP
+
+      lcd_K22207_msa 300 sNlHKWffcPpsvAfLyvrks 320
+                            HK ++ P++++ Ly+rk 
+  NZ_CP019962.1_1531 198 LSSHK-IYGPKGIGALYIRKG 217
+                         *****.9************94 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4129  (1310136 residues searched)
+Passed MSV filter:                       166  (0.0402034); expected 82.6 (0.02)
+Passed bias filter:                      132  (0.031969); expected 82.6 (0.02)
+Passed Vit filter:                         9  (0.0021797); expected 4.1 (0.001)
+Passed Fwd filter:                         3  (0.000726568); expected 0.0 (1e-05)
+Initial search space (Z):               4129  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
+# Mc/sec: 14811.28
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Eubacterium_limosum_lcdcustom.sto
+[ok]

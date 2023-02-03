@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Butyrivibrio-crossotus-DSM-2876-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Butyrivibrio-crossotus-DSM-2876-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Butyrivibrio-crossotus-DSM-2876-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Butyrivibrio-crossotus-DSM-2876-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      1e-10   38.1   0.1      3e-09   33.2   0.1    2.1  1  1_1185    # 1231713 # 1232819 # 1 # ID=1_1185;partial=00;star
+    2.3e-08   30.3   0.1    2.7e-06   23.5   0.0    2.1  2  1_2014    # 2113276 # 2114463 # -1 # ID=1_2014;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1185  # 1231713 # 1232819 # 1 # ID=1_1185;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.371
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.1   2.5e-12     3e-09     256     320 ..     144     206 ..      16     213 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 2.5e-12
+  lcd_K22207_msa 256 vvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                      + PV e+ ++ +e ++     Da +a G++++dvk+igAd   +  HK f  P++++fLy+ k+
+          1_1185 144 TLQPVDEIGRLAKEYNI-IFHTDAVQAFGHIKIDVKKIGADMLSASSHK-FHGPKGCGFLYADKN 206
+                     567**************.6779***************************.89*********9985 PP
+
+>> 1_2014  # 2113276 # 2114463 # -1 # ID=1_2014;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.7   0.0    0.0011       1.3     127     200 ..      42     110 ..       4     128 .. 0.80
+   2 !   23.5   0.0   2.2e-09   2.7e-06     259     322 ..     159     221 ..     154     229 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.0011
+  lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksiea 200
+                      + +++++++r+ i+d+i+ad ++e+ ++   +   +  L+++a + a    +kg  +++ ++  +a+ +++++
+          1_2014  42 GKSTSAVTKARENIADFIGAD-ASEIYFTAGGSESDNWALKATAEAYA----SKGKHIIISKIEHHAILHTADW 110
+                     45667899************9.68****************99986666....8999999999888888777766 PP
+
+  == domain 2  score: 23.5 bits;  conditional E-value: 2.2e-09
+  lcd_K22207_msa 259 PVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks.ka 322
+                     PVkeL +i +e+gv     D  +a G+++++v++++ d   +  HK +  P++++++y+rk  k 
+          1_2014 159 PVKELGRIAHEHGV-LFHTDSVQAFGHIPINVNDMNIDMLSASGHK-LNGPKGIGIMYIRKGvKI 221
+                     **************.889****************************.89***********96444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2438  (766853 residues searched)
+Passed MSV filter:                       122  (0.050041); expected 48.8 (0.02)
+Passed bias filter:                       84  (0.0344545); expected 48.8 (0.02)
+Passed Vit filter:                         6  (0.00246103); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000820345); expected 0.0 (1e-05)
+Initial search space (Z):               2438  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 17422.45
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Butyrivibrio-crossotus-DSM-2876-MAF-2_lcdcustom.sto
+[ok]

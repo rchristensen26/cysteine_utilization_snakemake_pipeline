@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_veroralis_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Prevotella_veroralis_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Prevotella_veroralis_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Prevotella_veroralis_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+   1.3e-165  548.9   1.6   1.5e-165  548.8   1.6    1.0  1  NZ_CP072330.1_244  # 285023 # 285970 # -1 # ID=3_244;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP072330.1_244  # 285023 # 285970 # -1 # ID=3_244;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  548.8   1.6  5.8e-169  1.5e-165      67     373 ..       1     311 [.       1     315 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 548.8 bits;  conditional E-value: 5.8e-169
+    cysK_K01738_msa  67 msriadnitelignTplvrlnrls..eg..aeiyaKlEflnPggSvKdRialsmiedAekkGllkpgttivEpTsGnTGiglAlvAaakGyk 154
+                        m++ia+++telignTpl++ln++s  +g    i+aK+E++nPggSvKdR+al+miedAe+kGllkpg+ti+EpTsGnTG+glAlvAa+kGyk
+  NZ_CP072330.1_244   1 MTKIAKKLTELIGNTPLLELNKFSslKGleQPIIAKIESFNPGGSVKDRVALAMIEDAEDKGLLKPGATIIEPTSGNTGVGLALVAAVKGYK 92 
+                        889********************965577789************************************************************ PP
+
+    cysK_K01738_msa 155 lilvmPetmsierrkllralGAelvltpgaegmkgaiekaeelaaetpnaflldQFeNpaNpeaHyettgpeIweqtegkvdafVagvGTGG 246
+                        lil+mPetmsierr+l +a+GA++ lt+g+egmkgai++aeel +++p++++l+QFeN+aNp+ Hy ttg+eIw++t+g vd+fVagvGTGG
+  NZ_CP072330.1_244  93 LILTMPETMSIERRNLVKAYGATVKLTSGKEGMKGAIKAAEELRDSIPGSIILQQFENQANPQKHYATTGKEIWRDTDGSVDIFVAGVGTGG 184
+                        ******************************************************************************************** PP
+
+    cysK_K01738_msa 247 TitGvgryLkeknpdikivavePeespvlsggepgphkiqGiGagfipenldteliDeviqvsdeeaiamarrlareeGllvGiSsGanlaa 338
+                        Ti+Gvg+yLke+np++k+vaveP+ spvlsgg++gphkiqGiGagfip++++ + +De++qv+++eai + r+la+ eGllvGiSsGa+++a
+  NZ_CP072330.1_244 185 TISGVGKYLKEQNPNVKVVAVEPATSPVLSGGQSGPHKIQGIGAGFIPSTYNSKYVDEIFQVDNDEAILTGRQLAQSEGLLVGISSGAAVFA 276
+                        ******************************************************************************************** PP
+
+    cysK_K01738_msa 339 Alklakrpe.agktivtilpDsgeRYlstelfnewa 373
+                        A++lakrpe +gk ivt+lpD+geRYlst l+ +++
+  NZ_CP072330.1_244 277 AIELAKRPEnKGKHIVTLLPDTGERYLSTVLY-AFE 311
+                        *******************************9.553 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       2508  (838246 residues searched)
+Passed MSV filter:                        80  (0.0318979); expected 50.2 (0.02)
+Passed bias filter:                       65  (0.0259171); expected 50.2 (0.02)
+Passed Vit filter:                         5  (0.00199362); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000398724); expected 0.0 (1e-05)
+Initial search space (Z):               2508  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 15142.77
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Prevotella_veroralis_cysKcustom.sto
+[ok]

@@ -1,0 +1,116 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Dysgonomonas_capnocytophagoides_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Dysgonomonas_capnocytophagoides_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Dysgonomonas_capnocytophagoides_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Dysgonomonas_capnocytophagoides_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    3.1e-27   93.3   0.2    4.6e-27   92.7   0.2    1.2  1  NZ_SOML01000007.1_215  # 221882 # 223102 # -1 # ID=21_215;par
+    2.2e-24   83.9   0.0    4.8e-24   82.8   0.0    1.4  1  NZ_SOML01000001.1_536  # 679224 # 680810 # 1 # ID=27_536;part
+    0.00071   16.2   0.0     0.0011   15.6   0.0    1.2  1  NZ_SOML01000003.1_239  # 290865 # 292076 # -1 # ID=25_239;par
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_SOML01000007.1_215  # 221882 # 223102 # -1 # ID=21_215;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.7   0.2   3.5e-30   4.6e-27      90     481 ..      23     402 ..       3     405 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 92.7 bits;  conditional E-value: 3.5e-30
+         lcd_K22207_msa  90 svarinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfa 174
+                            s+++ +nG+    p++v+++  ++   +   ++   +   +e ++  +++r++++++ina+++ e+ ++  +t  ++ v  +++++f 
+  NZ_SOML01000007.1_215  23 SLVYFDNGATTQKPQCVIDKITEIYSTVnanIHRGVHHLSQEATELTENARKIVQQFINAKHSHEIIFTKGTTESINLVASSFCRQFC 110
+                            566788999999999999998888744433477789999999********************************************99 PP
+
+         lcd_K22207_msa 175 egkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpf.pvksnee.ivsefrkaLekgkangrkvrlAviDHitSmpsvvlPV 260
+                                ++gD +++ ++  ++  +++ + +     ++  v+l++ p++++ e i++ef+k ++       k rl+ + +++ +  v+ PV
+  NZ_SOML01000007.1_215 111 ----KEGDEIIVSEMEHHS--NIVPWQI---QEDISAVNLKViPINDKGEiIIEEFEKLITP------KTRLVSVTYVSNVMGVINPV 183
+                            ....99******9998876..4444432...3333345555338888766257899888776......9******************* PP
+
+         lcd_K22207_msa 261 keLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvV.sheygnglaies 342
+                            ++ ++i +++++  v++DaA+a+ ++e+dv+++++d  +   HK ++ P ++++Ly +++  ++l        ++   ++ +   +e 
+  NZ_SOML01000007.1_215 184 EKVIEIAHKHNI-PVLIDAAQAVQHIEIDVQKLDCDLLVFSGHK-IYGPTGTGVLYGKEDLLNQLPPyqgggEMIgKVSFTKTTFNEL 269
+                            ************.9******************************.9************953344444566775554555555544444 PP
+
+         lcd_K22207_msa 343 a...wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgte.lgsppemcasmimVgLPaklgissdedalkL 426
+                                  Gt  y  ++++ ++le+v+ +  g+++i+++  el+  + + L e  g + +g++++  +s ++  L    gi++ +     
+  NZ_SOML01000007.1_215 270 PfkfEAGTPNYVDFIALGTALEYVQSL--GLNNIKAYEDELLEYATKRLLEIEGLKiFGTSKH--KSAVISFLV--KGIHHYD----- 346
+                            312258********************8..*************************993444443..344444444..4776554..... PP
+
+         lcd_K22207_msa 427 rthLreefkvevpiyyrapk.egeveaitgYvRiShqvYnkvddyyklrdavnqlv 481
+                            + +L +++++ v + ++  +   +v  i g vR S   Yn++++  +l + v+++v
+  NZ_SOML01000007.1_215 347 MGMLLDKMGIAVRTGHHCAEpLMDVLGIEGTVRASLVFYNTKEEIDRLVEGVKRVV 402
+                            57899999*****96543332233445***********************999987 PP
+
+>> NZ_SOML01000001.1_536  # 679224 # 680810 # 1 # ID=27_536;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=12bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.8   0.0   3.6e-27   4.8e-24     122     481 ..     176     520 ..      74     526 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 82.8 bits;  conditional E-value: 3.6e-27
+         lcd_K22207_msa 122 defyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsv 209
+                             +    + +++ +++r++++++ina++++e+ +v  +t +++ + q+++w+      q+gD +++  +  +a     +++++++ +++
+  NZ_SOML01000001.1_536 176 AHTLAGRSTDAYENAREKVQKFINASSSEEIIFVRGTTEGINLITQTFGWKYI----QEGDEIIVSTLDHHANIVPWQQLAKEKKAKL 259
+                            555556667788899***********************************998....9**************9999**********95 PP
+
+         lcd_K22207_msa 210 ievelpfpvksneeiv.sefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAd 296
+                                l++pv+++ +i+ +e++++++       + +++ i  +  +   + PVk+ ++i ++ +  +v++D+A++i +++vdv+++++d
+  NZ_SOML01000001.1_536 260 ----LAIPVNDKGDIIlEEYERMIS------PRTKIVSIGQVNNTFGTISPVKTVIEIAKRYNA-RVVIDGAQSIAHTKVDVQNLDCD 336
+                            ....799999998887245555544......69******************************9.9********************** PP
+
+         lcd_K22207_msa 297 fYtsNlHKWffcPpsvAfLyvrks.ka..s......dlhhpvVsheygnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirk 375
+                            f++   HK ++ P+++++ y +k+  +         ++ + v  +e +   +   +  Gt   +  + +  +l++v+++  g+e+i+k
+  NZ_SOML01000001.1_536 337 FFVFSGHK-VYGPNGIGIVYGKKElLSilPpwqgggNMIKDVTLEETQFNAPPARFEAGTPNVADAVGLGIALDYVKKI--GLEKIEK 421
+                            ********.9*************6322341333444555566677777788888999*********************9..******* PP
+
+         lcd_K22207_msa 376 rnhelvvemgemLaeawgte.lgsppemca..smimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYvR 458
+                            + hel   +++ L+e  g + +g p+e  +  s i+ g+P+   i+         + L ++ ++ v    ++ +p+  +   + + vR
+  NZ_SOML01000001.1_536 422 YEHELTEYARKRLSEIPGLNlIGNPKERISvvSFILEGIPT---IEVG-------Q-LLDKEGIAVRSghHCAQPSLRRF-GLEATVR 497
+                            ********************668888887766667777883...3333.......2.34556666665213333332222.367789* PP
+
+         lcd_K22207_msa 459 iShqvYnkvddyyklrdavnqlv 481
+                             S   Yn++++  +l +a+ ++ 
+  NZ_SOML01000001.1_536 498 PSFSFYNTKQEIDQLVKAIIKIQ 520
+                            ******************99986 PP
+
+>> NZ_SOML01000003.1_239  # 290865 # 292076 # -1 # ID=25_239;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=6bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0   8.3e-07    0.0011     226     285 ..     159     215 ..     145     229 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 8.3e-07
+         lcd_K22207_msa 226 sefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGq 285
+                            ++++k L+k   +  kv+l v+D + Sm   v    e+v++ ++ +  ++++D Ah++G 
+  NZ_SOML01000003.1_239 159 ESLEKQLQK--CEPDKVKLIVVDGVFSMEGDVTNLPEIVRLSKKYNA-NIMIDEAHGLGV 215
+                            566677766..789*******************************99.9*********96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3980  (1392071 residues searched)
+Passed MSV filter:                       139  (0.0349246); expected 79.6 (0.02)
+Passed bias filter:                      111  (0.0278894); expected 79.6 (0.02)
+Passed Vit filter:                        12  (0.00301508); expected 4.0 (0.001)
+Passed Fwd filter:                         3  (0.000753769); expected 0.0 (1e-05)
+Initial search space (Z):               3980  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
+# Mc/sec: 15581.68
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Dysgonomonas_capnocytophagoides_lcdcustom.sto
+[ok]

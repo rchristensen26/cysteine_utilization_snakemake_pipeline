@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-pectinophilus-ATCC-43243-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Bacteroides-pectinophilus-ATCC-43243-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Bacteroides-pectinophilus-ATCC-43243-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Bacteroides-pectinophilus-ATCC-43243-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.1e-14   50.5   0.3    2.5e-13   46.9   0.3    2.1  1  1_921     # 1005906 # 1007129 # 1 # ID=1_921;partial=00;start
+    7.6e-08   28.8   0.0    5.5e-07   26.0   0.0    1.9  2  1_1202    # 1302850 # 1304034 # 1 # ID=1_1202;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_921  # 1005906 # 1007129 # 1 # ID=1_921;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.453
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.9   0.3   1.8e-16   2.5e-13     109     339 ..      18     236 ..       5     249 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 46.9 bits;  conditional E-value: 1.8e-16
+  K22207 109 pgvariNnGSFGscpksvleaqqewqlkflrqPde.fy.fn.elkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLh 208
+             ++  +i+n +    p+sv++a+ ++ ++  + P +  y ++ e ++   ++r ++k++ina++ +e+ +  n+T++ + v+ + +      +++ gd +v+  
+   1_921  18 DRTIYIDNAATSQRPQSVIDAEMDFYRNHNANPLRgSYpLSvEATDIYENARVTVKNFINASSTEEIIFTRNTTEGLNLVAYSYGL----TNISAGDEIVVSI 116
+             56678999999999*******************762231221334455679*****************************999996....89*********99 PP
+
+  K22207 209 yaYgaVKksieayvtraggeVievelpf.PvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdv 310
+             +   +     + +  + g+      l+f  ++++  +     +aL        +++L+ + h++ + +   P+ e++++++++g    +vD+A++  ++ +dv
+   1_921 117 MEHHSNLLPWQMVSRQTGA-----ALKFiECEQDGSVDLDKVAALI-----TDKTKLVAMTHVSNVLGRENPIAEVAALAHAKGA-VMVVDGAQSTPHMAIDV 208
+             9998877777776666665.....5666223344444433334444.....45678*****************************.699************** PP
+
+  K22207 311 keigadfytsnlhKWffcPksvAfLyvrk 339
+             +++gadf++   hK + +P ++ +Ly r+
+   1_921 209 RALGADFFAFSGHK-LMGPMGIGVLYGRR 236
+             **************.99*********987 PP
+
+>> 1_1202  # 1302850 # 1304034 # 1 # ID=1_1202;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=3-4bp;gc_cont=0.447
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.0      0.02        28     148     176 ..      45      72 ..       3     127 .. 0.66
+   2 !   26.0   0.0   3.9e-10   5.5e-07     276     344 ..     158     225 ..     154     241 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.02
+  K22207 148 elkkgilksrtlikelinaddvdevslvd 176
+             + k++++++r++i++ ina+  + + +  
+  1_1202  45 KAKQAVAQARQTIASTINAKP-ECIYFTA 72 
+             45788999*********9985.5555555 PP
+
+  == domain 2  score: 26.0 bits;  conditional E-value: 3.9e-10
+  K22207 276 vvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk.ss 344
+              + Pv+++ ki+re gv     Da +a  q+++dv++++ d   +  hK + +Pk++ fLy+r+  k +s
+  1_1202 158 TIQPVEQIGKIAREAGV-LFHTDAVQAYTQIPIDVQAMNIDLMSTSGHK-INGPKGIGFLYIREGVKiHS 225
+             578**************.5889***************************.99***********9766444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2842  (930704 residues searched)
+Passed MSV filter:                       117  (0.0411682); expected 56.8 (0.02)
+Passed bias filter:                       81  (0.0285011); expected 56.8 (0.02)
+Passed Vit filter:                         6  (0.00211119); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.00070373); expected 0.0 (1e-05)
+Initial search space (Z):               2842  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 17613.77
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Bacteroides-pectinophilus-ATCC-43243-MAF-2_lcd.sto
+[ok]

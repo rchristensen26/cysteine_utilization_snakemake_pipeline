@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_bivia_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Prevotella_bivia_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Prevotella_bivia_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Prevotella_bivia_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.4e-20   70.5   0.0    2.6e-20   69.5   0.0    1.5  1  NZ_JH660660.1_791  # 961380 # 962597 # -1 # ID=1_791;partial=
+     0.0056   12.4   0.0     0.0082   11.8   0.0    1.2  1  NZ_JH660660.1_449  # 541569 # 542756 # 1 # ID=1_449;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JH660660.1_791  # 961380 # 962597 # -1 # ID=1_791;partial=00;start_type=ATG;rbs_motif=TATAA;rbs_spacer=3bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.5   0.0   2.5e-23   2.6e-20      92     396 ..      24     323 ..       7     404 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 69.5 bits;  conditional E-value: 2.5e-23
+     lcd_K22207_msa  92 arinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqk 180
+                        ++++nG+    p svl+a ++  l++   ++   ++  ++ ++  +++r+++++++na++ +e++++  +t   + +      sf++g ++ 
+  NZ_JH660660.1_791  24 VYLDNGATTQKPLSVLNAMRDEYLNVnanVHRGVHWLSQQATDLHEAARETVRKFLNARSTSEIVFTRGTTESLNLIAS----SFTDGFLKA 111
+                        5789999999999999999887766644457789********************************9999998888766....6778888** PP
+
+     lcd_K22207_msa 181 gDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreeg 271
+                        gD v++  +  ++  +++ + ++ a    i +++ +p+++nee  ++++ + +++      + +l+ + H++ +   + P+ke++++ +++g
+  NZ_JH660660.1_791 112 GDEVIISTMEHHS--NIVPWQLQAAKKG-IALKV-IPLTENEELdIEAYANLFST------HTKLVSVTHVSNVLGTINPIKEMIRMAHDHG 193
+                        ******9998887..4555544444432.33333.46677666636666666555......89***************************** PP
+
+     lcd_K22207_msa 272 vdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.eygn...glaiesawiGtrDysaql 354
+                        v  v++D+A+++ + +vdv+e++++f +   HK ++ P ++++Ly +++  ++l        ++ h ++++     +   +  Gt Dy a  
+  NZ_JH660660.1_791 194 V-PVMIDGAQSVPHFKVDVQELDCEFLAFSGHK-VYGPTGIGVLYGKEEWLDKLPPyqgggEMIEHvSFEKttfERPPLKFEAGTPDYVATH 283
+                        *.9******************************.9************963344433445665554423443102333344578********* PP
+
+     lcd_K22207_msa 355 vvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtel 396
+                         +  +l++v+ +  g+++i ++ + l + + + L e  g ++
+  NZ_JH660660.1_791 284 GLAIALDYVSAL--GMDNIFAHEQALTHYALQQLREIEGIHI 323
+                        ********9998..9999999999888888888888777775 PP
+
+>> NZ_JH660660.1_449  # 541569 # 542756 # 1 # ID=1_449;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=9bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   7.6e-06    0.0082     228     286 ..     160     215 ..     152     243 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 7.6e-06
+     lcd_K22207_msa 228 frkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                        +++ L++  a+ ++ r+ v D + Sm   v P+ +++ + ++ +   v+VD  h+ G v
+  NZ_JH660660.1_449 160 LERCLKE--AQAQRFRIIVTDGVFSMDGNVAPIDKICDLAEKYDA-LVMVDESHSAGVV 215
+                        4555555..6789*******************************9.9*******99877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2145  (728215 residues searched)
+Passed MSV filter:                       101  (0.0470862); expected 42.9 (0.02)
+Passed bias filter:                       70  (0.032634); expected 42.9 (0.02)
+Passed Vit filter:                         5  (0.002331); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000932401); expected 0.0 (1e-05)
+Initial search space (Z):               2145  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9249.98
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Prevotella_bivia_lcdcustom.sto
+[ok]

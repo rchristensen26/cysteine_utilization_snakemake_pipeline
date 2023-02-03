@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Eubacterium_rectale_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Eubacterium_rectale_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Eubacterium_rectale_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Eubacterium_rectale_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    5.1e-08   29.6   0.1    1.9e-07   27.8   0.1    1.7  1  CP092643.1_271   # 285469 # 286662 # 1 # ID=1_271;partial=00;
+    1.8e-07   27.8   0.0    6.8e-05   19.3   0.0    2.6  2  CP092643.1_2798  # 3012982 # 3014145 # -1 # ID=1_2798;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> CP092643.1_271  # 285469 # 286662 # 1 # ID=1_271;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   0.1   1.1e-10   1.9e-07     145     343 ..      40     222 ..       3     241 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 1.1e-10
+          K22207 145 yfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvk 239
+                     + +e ++++ ++r  +++li+a++ de+ +    ++  + +l+++a    e    kg  ++   +   a+ ++ +  +++ g eV  v ++    
+  CP092643.1_271  40 FADEAERAVDHARGEVADLIGAKK-DEIYFTGGGSESDNWALKATA----EAYAAKGKHIITSAIEHHAILHTAQW-LEKHGFEVTYVGVDE--- 125
+                     4577889999*************8.********************9....677789**************999876.9999****9998775... PP
+
+          K22207 240 sneei.ieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvA 333
+                      + +i ++e+++a++       ++ + v+       + + P ke+ +i++e+g+     Da +a+G+++++v ++  d   +  hK + +Pk++ 
+  CP092643.1_271 126 -DGKIkLDELKAAIR-----PDTILISVMAAN-NEIGTIQPLKEIGEIAKEHGI-LFHTDAVQAFGHIPINVDDMHIDMLSASGHK-LNGPKGIG 211
+                     .66663566666663.....345555555443.335679***************.5889***************************.99****** PP
+
+          K22207 334 fLyvrkssk.s 343
+                     ++y+rk  k  
+  CP092643.1_271 212 VMYIRKGVKiR 222
+                     ******77644 PP
+
+>> CP092643.1_2798  # 3012982 # 3014145 # -1 # ID=1_2798;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   4.1e-08   6.8e-05     151     340 ..      44     218 ..      38     228 .. 0.81
+   2 !    5.2   0.0   0.00079       1.3     441     501 ..     320     383 ..     312     386 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 4.1e-08
+           K22207 151 kgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtra.ggeVievelpfPvksnee 243
+                      ++i+++r  ++e+ + dd  ++++  naT+a +i+++        g f++g+ v+  ++  ++V + +  y++r+ g  V  v+       ++ 
+  CP092643.1_2798  44 RKIYEARMCLAEFFGGDDAARLVFTANATEALNIAIH--------GLFEPGEHVITTQLEHNSVLRPL--YMQRErGVGVDIVPCSDAG-IKRG 126
+                      6899999999999999999999999999999998875........55799999999999999998865..6666514556556655533.3344 PP
+
+           K22207 244 iie.efrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLy 336
+                      ii+ +  +aL +       ++  v  h +   + v+ +k + +i+r++     +vDa +  G ++++++e++ d      hK + +P+++  Ly
+  CP092643.1_2798 127 IISpSDIEALIRPD-----TKAIVCTHASNLTGNVVDIKSIGQIARKYNL-LFIVDASQTAGVLPINIREMNIDVLCFTGHKGLMGPQGTGGLY 214
+                      44314445555444.....456899*************************.699**************************************** PP
+
+           K22207 337 vrks 340
+                      v ++
+  CP092643.1_2798 215 VGER 218
+                      9884 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.00079
+           K22207 441 dddalkLrthLreefkveVp..iyyrapkdgeve..qvtgyvRiShqvYnkveDyeklrdAvnkL 501
+                      d d +++  +L++e+++     i+  ap + +    q  g vR S   Yn+v+++++  +A  ++
+  CP092643.1_2798 320 DMDSAEVSDILMNEYGIATRsgIHC-APLMHKFFgtQKQGMVRFSFSYYNTVDEINEAAEALMQI 383
+                      6678888999999999986533655.4444442123899***************99999998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3269  (1013435 residues searched)
+Passed MSV filter:                       128  (0.0391557); expected 65.4 (0.02)
+Passed bias filter:                       82  (0.0250841); expected 65.4 (0.02)
+Passed Vit filter:                         8  (0.00244723); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000611808); expected 0.0 (1e-05)
+Initial search space (Z):               3269  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 15929.53
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Eubacterium_rectale_lcd.sto
+[ok]

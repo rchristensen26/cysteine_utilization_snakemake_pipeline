@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus_gasseri_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Lactobacillus_gasseri_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Lactobacillus_gasseri_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Lactobacillus_gasseri_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    6.4e-05   18.6   0.1    0.00019   17.0   0.1    1.8  1  NZ_WBOA01000001.1_362  # 362296 # 363450 # 1 # ID=13_362;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_WBOA01000001.1_362  # 362296 # 363450 # 1 # ID=13_362;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   1.1e-07   0.00019     256     320 ..     157     219 ..      18     227 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 1.1e-07
+         lcd_K22207_msa 256 vvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                             ++P ke+ +++++ +     VD  ++ G++e+dvk+++ d   +  HK +  P+  +fLy ++ 
+  NZ_WBOA01000001.1_362 157 SIMPLKEIGELVKDSNA-YFHVDDVQGFGNIEIDVKDMNIDLLSTSAHK-VNGPKFLGFLYEKNG 219
+                            589*************9.899****************************.89*********9884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1809  (566218 residues searched)
+Passed MSV filter:                        86  (0.0475401); expected 36.2 (0.02)
+Passed bias filter:                       53  (0.029298); expected 36.2 (0.02)
+Passed Vit filter:                         3  (0.00165837); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000552792); expected 0.0 (1e-05)
+Initial search space (Z):               1809  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12526.66
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Lactobacillus_gasseri_lcdcustom.sto
+[ok]

@@ -1,0 +1,150 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Megasphaera-elsdenii-14-14-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Megasphaera-elsdenii-14-14-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Megasphaera-elsdenii-14-14-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Megasphaera-elsdenii-14-14-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    6.3e-19   65.2   1.3    1.6e-18   63.8   1.3    1.6  1  1_333     # 348528 # 349748 # 1 # ID=1_333;partial=00;start_t
+    4.8e-12   42.5   0.0    7.1e-12   41.9   0.0    1.2  1  1_1885    # 2058016 # 2059167 # 1 # ID=1_1885;partial=00;star
+    1.3e-06   24.5   0.0    3.3e-06   23.2   0.0    1.6  2  1_1872    # 2041944 # 2043092 # -1 # ID=1_1872;partial=00;sta
+     0.0014   14.6   0.1      0.018   10.9   0.0    2.3  3  1_1652    # 1803789 # 1804868 # -1 # ID=1_1652;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_333  # 348528 # 349748 # 1 # ID=1_333;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   63.8   1.3   2.7e-21   1.6e-18      92     473 ..      21     391 ..      13     401 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 63.8 bits;  conditional E-value: 2.7e-21
+  lcd_K22207_msa  92 arinnGsfgscpasvleaqqrwqlkflrq.......PdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfq 179
+                     ++++n +    p++v++a     + fl++         +    e  ++  ++r+a++++ina++ +ev +v Nat +++ + ++ +    e ++q
+           1_333  21 VYLDNAATTQKPRQVIQAV----VDFLENhngnphrGAHILSVEASEAYDQAREAVRRFINARSGEEVIFVRNATEGMNLIARSYG----ETHLQ 107
+                     5556666666666666665....334433333322223556677888999*******************************99887....999** PP
+
+  lcd_K22207_msa 180 kgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdq 274
+                     kgD +++     +a   + ++++   g++++ + l+       e  +  ++ L+k    +r+ +++ +  ++ +  + +P +++++  ++ g   
+           1_333 108 KGDKIVIPISEHHANLVTWQRVCRVTGAELVYMYLD-------ETGHFTEDDLAK---IDRSAKIVAFAGVSNVLGMKVPAEKIIERAHAVGA-V 191
+                     *******99999999999999988899998866664.......555667778888...46777888888888899999*************99.8 PP
+
+  lcd_K22207_msa 275 vfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpvV...sheygnglaiesa......wiGtrDysaqlvvpavl 360
+                     v+ D+A+a+ +++vdv+++++df +   HK +    ++++ y +k+  +d++  ++     ey +   + +         Gt      +++ a++
+           1_333 192 VVYDGAQAVPHMKVDVQALDCDFMVFSGHK-MLGSAGTGVVYGKKELLNDMEPFLLggdMIEYVQEQTTTFNvlpfkfEAGTENVEGAVALHAAI 285
+                     999***************************.77889*********54589998666555555643333333333444479*************** PP
+
+  lcd_K22207_msa 361 eFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapk.egeveait 454
+                     e+++r+  g e+i+++ h lvv++ e +++  + ++  + +      ++ +    g++ ++ a+ L     +++++ +   ++  +  g      
+           1_333 286 EYLERL--GWEAIEEHEHALVVRALEGMKKIPHIRIIGSTDPEEKTGVIAFM-IDGVHPHDAATIL-----DSYGIAIRSGHHCAQpFGAHIGAE 372
+                     *****8..9*********************9999965555666666666666.3678777665544.....555555555332222122222356 PP
+
+  lcd_K22207_msa 455 gYvRiShqvYnkvddyykl 473
+                     +  RiS  +Yn+++++  +
+           1_333 373 ASNRISFYIYNTIEEVDYF 391
+                     7789999999999988776 PP
+
+>> 1_1885  # 2058016 # 2059167 # 1 # ID=1_1885;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.40
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.9   0.0   1.2e-14   7.1e-12     127     470 ..      43     371 ..      18     382 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 41.9 bits;  conditional E-value: 1.2e-14
+  lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksn 221
+                     +++++ ++ +r+ + +l++ ++  +v +++N+t   ++v++        g +++gD vl+ ++  +aV + + +    +  + i+ +l     + 
+          1_1885  43 YDIEEIVYTTRKWLCELFHFSEYKNVIFTQNVTMSLNMVIK--------GLLKPGDHVLISSMEHNAVVRPLVQ---LQR-ENIKFNLIPCSVDG 125
+                     5677888999******************************9........5579**************9755544...333.44777776555566 PP
+
+  lcd_K22207_msa 222 eeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLy 316
+                     e   +e++k ++       + r  ++ H + ++  ++P k+  +icr+ +    +VD A+  G ++++++e++ d      HK +  P++++ + 
+          1_1885 126 ELCTEEIHKLIQP------NTRAIIMTHASNVCGTIMPLKKVGEICRQYEL-LFIVDSAQTAGVLPINMDEMNIDVLCFTGHKGLLGPQGIGGFL 213
+                     7777777777665......89******************************.89*************************************9888 PP
+
+  lcd_K22207_msa 317 vrkskasdlhhpvV.......sheygn.glaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemc 403
+                     v+    +d   p++       sh      +  + +  Gt      + + a+l+++++   g  +i k   +l ++  + L+   +t   + ++ c
+          1_1885 214 VKT-PIADTMLPLIcggtgsvSHLETMpEFLPDKFEAGTLNLPGIIGLHAALRYLKE--KGTATIYKKELDLTSHFLKGLSTLSDTLHVTGKSDC 305
+                     887.56677777775554422332222245555568899999999999999999887..588999999999999999999999998766667777 PP
+
+  lcd_K22207_msa 404 a.smimVgLPaklgissdedalkLrthLreefkvevpi..yyrapk.egevea.itgYvRiShqvYnkvddy 470
+                     +   ++V +      s+++d++++   L  e+++ + +  ++ ap  ++ +++   g +R S   Yn++ + 
+          1_1885 306 TnRTAVVSIT-----STKKDNAEVAFQLESEYGILTRVglHC-APVaHKTLGTyPNGTIRFSFSHYNTLTEI 371
+                     6477777777.....577788888888999999987774244.45424444444788899999999998775 PP
+
+>> 1_1872  # 2041944 # 2043092 # -1 # ID=1_1872;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.62
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   0.0   5.5e-09   3.3e-06     125     293 ..      40     190 ..      15     224 .. 0.80
+   2 ?   -4.0   0.0      0.98   5.9e+02     423     471 ..     317     368 ..     313     377 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 5.5e-09
+  lcd_K22207_msa 125 yfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvk 219
+                     y  +  + +l+++++ik+l++a ++ +v+++ N t+A ++vL+          + +gD vl++    +aV + + + ++++g+      ++f  +
+          1_1872  40 YSLQAYRVVLQAKELIKTLFHAGEAYDVAFTHNSTAALNMVLKG--------LLGPGDHVLTTTWEHNAVLRPLYQ-LEQQGTA-----VDFIGS 120
+                     6666778899*********************************5........579***************998877.4555554.....466554 PP
+
+  lcd_K22207_msa 220 sneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkei 293
+                     + +   +   + Le+  +   + + +v  H + ++  v+  ++  + cr++     +VDa ++ G  ++d+ + 
+          1_1872 121 E-AGTGALRYDELEQ--KLRPSTKAVVCNHASNVTGNVMDLERVKAFCRKHSL-MLVVDASQSAGAYPIDLSDG 190
+                     4.4444444466777..456799******************************.9***************9874 PP
+
+  == domain 2  score: -4.0 bits;  conditional E-value: 0.98
+  lcd_K22207_msa 423 alkLrthLreefkvevpi.yyrapk.ege.veaitgYvRiShqvYnkvddyy 471
+                      + + ++L+++++  +   ++ ap  +++  ++  g vR S   + + dd+ 
+          1_1872 317 SALVSDILWDQYGMATRSgFHCAPLmHEQlHTEQRGAVRFSFSRFTTEDDVA 368
+                     5556677777777776664444453233323347788888888888888875 PP
+
+>> 1_1652  # 1803789 # 1804868 # -1 # ID=1_1652;partial=00;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.569
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.27   1.6e+02     448     486 ..      86     124 ..      65     148 .. 0.71
+   2 !   10.9   0.0   2.9e-05     0.018     267     320 ..     150     202 ..     139     215 .. 0.87
+   3 ?    0.6   0.0     0.039        23     218     239 ..     234     255 ..     231     261 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.27
+  lcd_K22207_msa 448 geveaitgYvRiShqvYnkvddyyklrdavnqlvedgft 486
+                     +++++i  Y R+ + v  +  d +   da+++ ++    
+          1_1652  86 KRMAEICRYHRLPYAVVETAYDTIPQADAIEEALKADPA 124
+                     445568899999999999999999999999887765544 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 2.9e-05
+  lcd_K22207_msa 267 creegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                      ++ g  + +VDa  + G v++dv ++g  + +s   K +   p+ +f+ +++ 
+          1_1652 150 AKKYGK-KFIVDAMSSFGGVDIDVPALGIMYLISSANKCIQGVPGFSFIIAKEA 202
+                     556665.899**************************************999884 PP
+
+  == domain 3  score: 0.6 bits;  conditional E-value: 0.039
+  lcd_K22207_msa 218 vksneeivsefrkaLekgkang 239
+                      +s+ ++v++frkaLe+ +a+g
+          1_1652 234 FTSPTHVVAAFRKALEELRAEG 255
+                     578999***********98886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2402  (769037 residues searched)
+Passed MSV filter:                        82  (0.0341382); expected 48.0 (0.02)
+Passed bias filter:                       70  (0.0291424); expected 48.0 (0.02)
+Passed Vit filter:                         6  (0.00249792); expected 2.4 (0.001)
+Passed Fwd filter:                         4  (0.00166528); expected 0.0 (1e-05)
+Initial search space (Z):               2402  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.05
+# Mc/sec: 7412.18
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Megasphaera-elsdenii-14-14-MAF-2_lcdcustom.sto
+[ok]

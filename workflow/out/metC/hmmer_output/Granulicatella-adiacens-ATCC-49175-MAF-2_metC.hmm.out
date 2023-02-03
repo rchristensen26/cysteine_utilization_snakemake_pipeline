@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metC.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Granulicatella-adiacens-ATCC-49175-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/metC/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_metC.hmm.out
+# MSA of all hits saved to file:   workflow/out/metC/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_metC.sto
+# per-dom hits tabular output:     workflow/out/metC/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_metC.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01324  [M=377]
+Accession:   TIGR01324
+Description: cysta_beta_ly_B: cystathionine beta-lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.6e-06   23.8   0.0      2e-06   23.5   0.0    1.1  1  1_465     # 450056 # 451234 # 1 # ID=1_465;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_465  # 450056 # 451234 # 1 # ID=1_465;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.5   0.0   1.1e-09     2e-06      67     175 ..      93     207 ..      78     273 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 23.5 bits;  conditional E-value: 1.1e-09
+  TIGR01324  67 gvilyPsGlaavtnallafvkaGdevlvvds...aykPtrrfcdivlkrlgveveyydPkigediaalikpntkvvfle...aPasltlevqdiPaiaka 160
+                ++++   G  av +++  +++ Gdev++ d     y P+  ++d     l ++ e    +  ed+ a+i+p+tk ++++    P+   +e +d+ a+  +
+      1_465  93 ECVITVGGSEAVDISMRVLLNPGDEVIICDPgyvSYVPAVTMADGTPVILPLKEENQFRLTPEDLEAVITPKTKAILMNfpnNPTGAIMEREDLEAVCDV 192
+                577888999********************96222578*******988888888777666777*************9887111556677************ PP
+
+  TIGR01324 161 araagvvvlidntwa 175
+                 + ++++v+ d+ + 
+      1_465 193 LKRHDIIVVSDELYG 207
+                *********998775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (377 nodes)
+Target sequences:                       1870  (575268 residues searched)
+Passed MSV filter:                        53  (0.0283422); expected 37.4 (0.02)
+Passed bias filter:                       44  (0.0235294); expected 37.4 (0.02)
+Passed Vit filter:                         3  (0.00160428); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000534759); expected 0.0 (1e-05)
+Initial search space (Z):               1870  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17508.50
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/metC/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_metC.sto
+[ok]

@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Blautia-hansenii-DSM-20583-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.5e-12   44.4   0.3      2e-11   40.7   0.3    2.0  1  1_2040    # 2073107 # 2074291 # -1 # ID=1_2040;partial=00;sta
+     0.0016   14.6   0.1     0.0025   14.0   0.1    1.2  1  1_2822    # 2887099 # 2888523 # -1 # ID=1_2822;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2040  # 2073107 # 2074291 # -1 # ID=1_2040;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.38
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.7   0.3   1.3e-14     2e-11     129     321 ..      44     220 ..      39     228 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 40.7 bits;  conditional E-value: 1.3e-14
+  lcd_K22207_msa 129 lkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksnee 223
+                      k++i+ +r++i+++++a+  +e+ ++   + A +  L+++  +      +kg+ ++++++  +a+ +++e  ++++g+++  ++    v +n  
+          1_2040  44 SKEAITTAREDIAKVLGAK-TEEIYFTAGGSEADNWALKAAFEAY----SKKGNHIITTKIEHHAILHTCEY-LEKKGAEITYLD----VDENGL 128
+                     578999***********99.79*****************776444....599*****************986.899999987444....444444 PP
+
+  lcd_K22207_msa 224 i.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyv 317
+                     +  +e++ka++       +  l  i +       + PVke+  i +e+gv     Da +a Gqv++dv+e++ d   s  HK +  P++++fLy+
+          1_2040 129 VnLDELQKAIRP------ETILISIMFANNEIGTIEPVKEIGMIAKEHGV-LFHTDAVQAFGQVPIDVDEMNIDMLSSSAHK-INGPKGIGFLYI 215
+                     425677777666......455666678999999999**************.889****************************.99********** PP
+
+  lcd_K22207_msa 318 rks.k 321
+                     rk  k
+          1_2040 216 RKGvK 220
+                     *9644 PP
+
+>> 1_2822  # 2887099 # 2888523 # -1 # ID=1_2822;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.1   1.7e-06    0.0025     250     320 ..     156     232 ..     137     243 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 1.7e-06
+  lcd_K22207_msa 250 itSmp..svvlPVkeLvkicreegvdqvfVDaAhai.....GqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                     itS +   +v  Vk + +i+++ ++   +VD Ah+         +v   ++gAd  +  lHK + +P  +A+L+v+ +
+          1_2822 156 ITSPTyeGIVSDVKSIAEIVHKYNI-SLIVDEAHGAhfsfhDGFPVSALDLGADVVIHSLHKTLPSPTQTALLHVKGK 232
+                     4554322677889************.8****999862222234799999**************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2960  (919803 residues searched)
+Passed MSV filter:                       128  (0.0432432); expected 59.2 (0.02)
+Passed bias filter:                       87  (0.0293919); expected 59.2 (0.02)
+Passed Vit filter:                        13  (0.00439189); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000675676); expected 0.0 (1e-05)
+Initial search space (Z):               2960  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11949.20
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_lcdcustom.sto
+[ok]

@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysM.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella-buccalis-ATCC-35310-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysM/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysM.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysM/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysM.sto
+# per-dom hits tabular output:     workflow/out/cysM/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysM.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01138  [M=290]
+Accession:   TIGR01138
+Description: cysM: cysteine synthase B
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.4e-91  302.7   0.2    5.1e-91  302.5   0.2    1.0  1  1_1751    # 1988805 # 1989752 # 1 # ID=1_1751;partial=00;star
+    1.2e-06   25.6   0.0    2.3e-05   21.4   0.0    2.1  2  1_2680    # 3099657 # 3101021 # -1 # ID=1_2680;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1751  # 1988805 # 1989752 # 1 # ID=1_1751;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=11bp;gc_cont=0.528
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  302.5   0.2   3.6e-94   5.1e-91       2     290 .]       8     308 ..       7     308 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 302.5 bits;  conditional E-value: 3.6e-94
+  TIGR01138   2 ilklvGntplvrlkrllpe..edsevlvklegnnpaGsvkdrpalsmiveaekrGeikeGdvlieatsGntGialamvaalkGykvkllmpdnvseerka 99 
+                +++l+G tplv l++ ++    ++ +++k+e +np+Gsvkdr al m+  aek G +k+G ++ie tsGntG+ la+vaa+kGyk++l mp+ +s er++
+     1_1751   8 MTDLIGKTPLVALNKYSAFrgLKTPLVAKVEFFNPGGSVKDRIALGMVEAAEKDGTLKPGATIIEPTSGNTGVGLALVAAVKGYKLILTMPETMSVERRN 107
+                5799***********99873456789************************************************************************** PP
+
+  TIGR01138 100 alkayGaelilvdkeeGmeGardlarelvrkgeek.lldqfnnpdnpkahytstGieiwqqtkGrithfvsslGttGtimGvsrflkeqnpavqivGlqp 198
+                 +kayGa++ l+  +eGm+Ga++ a++l +  e+  +l qf+np+np+ hy +t +e+w+ t+G i  fv+++Gt+Gt+ G++++lke++p+v+iv ++p
+     1_1751 108 LVKAYGAKVELTPGKEGMNGAIKAAEKLRDSIEGAvILGQFTNPANPQKHYDTTAVELWNDTDGDIDIFVAGVGTGGTLSGIGKYLKEKKPDVKIVAVEP 207
+                **********************************9889************************************************************** PP
+
+  TIGR01138 199 aegsaieG.......lrrieseylpgifdaslvdrvvdveqedaediarelakkegifvGvssGgavaaalrla..relekavvvaiicdrGdrylstgv 289
+                  +  + G       ++ i + + p+ ++a +vd+++ v+++da  + r+la++eg++vG+ssG+a +aa +la   e+++  +v++++d G+rylst++
+     1_1751 208 STSPVLSGgksgphkIQGIGAGFIPQTYHAEVVDEILTVDNDDAIRTGRQLAQQEGLLVGISSGAAAFAAAELAlrPENKDKKIVTLLPDTGERYLSTAL 307
+                998877772333333555667789*****************************************9987766652168888******************9 PP
+
+  TIGR01138 290 f 290
+                +
+     1_1751 308 Y 308
+                8 PP
+
+>> 1_2680  # 3099657 # 3101021 # -1 # ID=1_2680;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=11bp;gc_cont=0.512
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.0   1.6e-08   2.3e-05       8     108 ..      82     184 ..      77     201 .. 0.82
+   2 ?    2.0   0.0     0.013        19     223     270 ..     357     404 ..     332     419 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 1.6e-08
+  TIGR01138   8 ntplvrlkrllpe..edsevlvklegnnpaGsvkdrpalsmiveaekrGeikeGdvlieatsGntGialamvaalkGykvkllmpd...nvseerkaalk 102
+                 tplvr   l     + ++++ k e+ np Gs k  +al+     ++ G     +v  e+ +G  G al+ +a + G++  +   +        r  +++
+     1_2680  82 STPLVRAYALEKAldTPAHIYFKNESVNPLGSHKLNSALAQCYYCKQEGT---TNVTTETGAGQWGAALSYAAKIFGLEAAVYQVKismQQKPYRSSIMR 178
+                69****988876544889***************************99997...57999*****************9977654433300034456999*** PP
+
+  TIGR01138 103 ayGael 108
+                ++Ga +
+     1_2680 179 TFGATV 184
+                ***975 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.013
+  TIGR01138 223 lvdrvvdveqedaediarelakkegifvGvssGgavaaalrlarelek 270
+                 + + vd+ q +a d    +++ egi     s  a+aa++r a++ ++
+     1_2680 357 KLMHGVDIPQLEAFDAGILFSRTEGIIPAPESCHAIAATIREAQKCKE 404
+                4556789999999999999**********************9988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (290 nodes)
+Target sequences:                       2849  (965468 residues searched)
+Passed MSV filter:                        71  (0.024921); expected 57.0 (0.02)
+Passed bias filter:                       50  (0.01755); expected 57.0 (0.02)
+Passed Vit filter:                         3  (0.001053); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000702001); expected 0.0 (1e-05)
+Initial search space (Z):               2849  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9950.73
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysM/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysM.sto
+[ok]

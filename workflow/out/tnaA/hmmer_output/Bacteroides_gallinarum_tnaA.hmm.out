@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides_gallinarum_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Bacteroides_gallinarum_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Bacteroides_gallinarum_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Bacteroides_gallinarum_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+     1e-257  856.2   0.3   1.2e-257  856.0   0.3    1.0  1  NZ_KB894141.1_40  # 46939 # 48312 # -1 # ID=76_40;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB894141.1_40  # 46939 # 48312 # -1 # ID=76_40;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  856.0   0.3  2.6e-261  1.2e-257      11     464 ..       3     456 ..       1     457 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 856.0 bits;  conditional E-value: 2.6e-261
+   tnaA_K01677_msa  11 ip..epfrikvvepiklttreeReeaLkeagyNpFlLksedVfiDllTDSGTgAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyeyvi 101
+                       +p  e ++ik+vepi+++tr+eRe++Lkea+yN+F+Lkse+V+iDl+TDSGTgAmsdrqwA++m GDE+Yag++s+++L+e++++++g+ey+i
+  NZ_KB894141.1_40   3 LPfaEAWKIKMVEPIRKSTRQEREQWLKEAHYNVFQLKSEQVYIDLITDSGTGAMSDRQWAGMMLGDESYAGASSFFKLKEVITRLTGFEYII 95 
+                       55559**************************************************************************************** PP
+
+   tnaA_K01677_msa 102 PtHQGRgAEqiLfpvlikregkvvisNthFDTTrahvelagaeavdlvikeafdteseapFKGNfDleklealieevgaenvplivlTiTnNs 194
+                       PtHQGR+AE++Lf+ l++ eg++v++N+hFDTT++h+e ++a+a+d++i+ea++t+ e pFKGN+D +kle++++e+g +++p+i++T+TnN+
+  NZ_KB894141.1_40  96 PTHQGRAAENVLFSYLVH-EGDIVPGNSHFDTTKGHIEGRKATALDCTIDEARQTQLEIPFKGNVDPAKLEKALQEYG-DRIPFIIVTVTNNT 186
+                       ******************.**********************************************************9.99************ PP
+
+   tnaA_K01677_msa 195 aGGQPVSmaNlravaeiakkygipvvlDaARFAENAyFIkqrEegyadksikeIvremfsyaDgltmSaKKDglvniGGliafrddeelfeev 287
+                       aGGQPVSm+Nlr+v++ia++yg pv++D+ARFAENAyFIk+rEegy+dksikeI+remf +aDg+tmSaKKDg+vn+GG+ia+r +++++e +
+  NZ_KB894141.1_40 187 AGGQPVSMQNLREVRSIADRYGKPVLFDSARFAENAYFIKTREEGYRDKSIKEITREMFALADGMTMSAKKDGIVNMGGFIATR-RQDWYEGA 278
+                       ************************************************************************************.669***** PP
+
+   tnaA_K01677_msa 288 ktrcilmeGFptYGGlaGrDlealAvGLeEgvdedyLayRieqveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaLaceLY 380
+                       k +c+ +eG+ tYGG++GrD++alAvGL+E +++d L++Ri+qveyL+++L+e+G+p+q+P+GgHA+fvDa k+l+h+p+e+Fpaq+L++eLY
+  NZ_KB894141.1_40 279 KGFCVQFEGYLTYGGMNGRDMNALAVGLDENTEFDNLETRIRQVEYLARKLDEYGIPYQRPAGGHAIFVDAPKVLTHVPKEEFPAQTLTVELY 371
+                       ********************************************************************************************* PP
+
+   tnaA_K01677_msa 381 leaGiRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtqehmdyvaealkevkeraesik.glrityeppvLRhFtarLep 464
+                       leaGiR++EiG ll++rdp t+e++ + l+L+RLaiPRrvYt++hm+++a+alk+v++r+ +i+ g+ri +e+p++RhFt++Le+
+  NZ_KB894141.1_40 372 LEAGIRGCEIGYLLADRDPVTRENRFNGLDLLRLAIPRRVYTDNHMNVIAAALKNVYDRRGTITrGVRIAWEAPLMRHFTVQLER 456
+                       ***************************************************************99******************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       4346  (1459640 residues searched)
+Passed MSV filter:                       171  (0.0393465); expected 86.9 (0.02)
+Passed bias filter:                      102  (0.0234699); expected 86.9 (0.02)
+Passed Vit filter:                        12  (0.00276116); expected 4.3 (0.001)
+Passed Fwd filter:                         1  (0.000230097); expected 0.0 (1e-05)
+Initial search space (Z):               4346  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.05
+# Mc/sec: 24174.86
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Bacteroides_gallinarum_tnaA.sto
+[ok]

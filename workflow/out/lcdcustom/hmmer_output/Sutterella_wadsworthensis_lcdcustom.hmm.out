@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Sutterella_wadsworthensis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Sutterella_wadsworthensis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Sutterella_wadsworthensis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Sutterella_wadsworthensis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    6.5e-10   35.5   0.0      2e-05   20.7   0.0    2.1  2  NZ_CP068055.1_9    # 10865 # 12076 # 1 # ID=1_9;partial=00;st
+     0.0019   14.1   0.0     0.0054   12.6   0.0    1.6  2  NZ_CP068055.1_517  # 607871 # 608992 # 1 # ID=1_517;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP068055.1_9  # 10865 # 12076 # 1 # ID=1_9;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.0   4.4e-06    0.0054     126     201 ..      42     112 ..      29     126 .. 0.85
+   2 !   20.7   0.0   1.6e-08     2e-05     260     321 ..     161     220 ..     156     232 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 4.4e-06
+   lcd_K22207_msa 126 fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieay 201
+                        e +k+++e rt+i++li+ad   e++++  at A +  ++ +a+  +    +kg  ++++++  +aV  s++++
+  NZ_CP068055.1_9  42 GWEAEKAVEEGRTQIAALIGADP-REIVFTSGATEADNLAIKGAAHFYR----DKGKHLITVKTEHKAVLDSMRHL 112
+                      55778999**************7.699***************8885444....899*************9999884 PP
+
+  == domain 2  score: 20.7 bits;  conditional E-value: 1.6e-08
+   lcd_K22207_msa 260 VkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrksk 321
+                      ++++ ++cre+g+     Da +a G+++++v+++ +d      HK ++ P++++ Lyvr++ 
+  NZ_CP068055.1_9 161 IARIGELCRERGI-VFHCDATQAAGKIDLNVDHLKVDLMSLSAHK-VYGPKGIGALYVRRKP 220
+                      5667789******.6679***************************.9************963 PP
+
+>> NZ_CP068055.1_517  # 607871 # 608992 # 1 # ID=1_517;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.0   4.4e-06    0.0054     274     321 ..     171     218 ..     154     236 .. 0.88
+   2 ?   -1.7   0.0     0.094   1.2e+02     218     239 ..     249     270 ..     246     282 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 4.4e-06
+     lcd_K22207_msa 274 qvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrksk 321
+                          +VDa  + G ve+ v+++g df +s   K +   p+ +f+ +rks 
+  NZ_CP068055.1_517 171 LFIVDAMSSFGGVEIPVESLGIDFLVSSANKCIQGVPGFSFIIARKSA 218
+                        568*****************************************9964 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.094
+     lcd_K22207_msa 218 vksneeivsefrkaLekgkang 239
+                         +s+ ++v++f++aL++ ka+g
+  NZ_CP068055.1_517 249 FTSPTHVVAAFDEALRELKAEG 270
+                        578999***********99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2454  (871302 residues searched)
+Passed MSV filter:                        72  (0.0293399); expected 49.1 (0.02)
+Passed bias filter:                       61  (0.0248574); expected 49.1 (0.02)
+Passed Vit filter:                         5  (0.00203749); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000814996); expected 0.0 (1e-05)
+Initial search space (Z):               2454  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 23605.53
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Sutterella_wadsworthensis_lcdcustom.sto
+[ok]

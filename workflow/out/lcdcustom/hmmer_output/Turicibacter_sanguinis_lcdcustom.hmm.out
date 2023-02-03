@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Turicibacter_sanguinis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Turicibacter_sanguinis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Turicibacter_sanguinis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Turicibacter_sanguinis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    3.6e-22   76.1   0.1    6.9e-22   75.2   0.1    1.4  2  NZ_CP053187.1_1656  # 1829795 # 1831024 # 1 # ID=1_1656;parti
+    9.2e-07   25.2   0.2    1.2e-06   24.8   0.2    1.2  1  NZ_CP053187.1_1826  # 2015687 # 2016832 # 1 # ID=1_1826;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP053187.1_1656  # 1829795 # 1831024 # 1 # ID=1_1656;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.2   0.1   4.9e-25   6.9e-22     124     319 ..      60     240 ..       6     249 .. 0.83
+   2 ?   -3.2   0.0      0.28   3.9e+02     457     476 ..     377     396 ..     368     399 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 75.2 bits;  conditional E-value: 4.9e-25
+      lcd_K22207_msa 124 fyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievel 214
+                            n+ ++  + +r+++k+l+na++v+e++++  at+A + v q+ ++     ++++gD v++ ++  ++     ++ v+r+ g v++  +
+  NZ_CP053187.1_1656  60 QLSNDATELYEGAREKVKNLLNAKKVEEIVFTKGATQALNLVAQSYGL----YNLKPGDEVIVSELEHHSSFLPWQH-VARVTGAVLKF-I 144
+                         4566777778889*******************************9984....4679************998878877.89999998743.3 PP
+
+      lcd_K22207_msa 215 pfpvksn.eeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHK 304
+                           p+ ++ +  v++f+k L++      k r++ i +++ +   + P+ke++++ +e g   v VDaA+a+ ++++dv+++++df     HK
+  NZ_CP053187.1_1656 145 --PLDETgHITVENFKKVLSD------KTRVVAINYVSNVMGYISPIKEITALAHEVGA-IVSVDAAQAVPHMKIDVQDLDCDFLSFSGHK 226
+                         ..444440456899*****99......99*****************************9.9****************************** PP
+
+      lcd_K22207_msa 305 WffcPpsvAfLyvrk 319
+                          ++ P +v+ Ly + 
+  NZ_CP053187.1_1656 227 -MCGPTGVGALYGKY 240
+                         .9**********775 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 0.28
+      lcd_K22207_msa 457 vRiShqvYnkvddyyklrda 476
+                         +R S   Yn+++++ ++ +a
+  NZ_CP053187.1_1656 377 LRASFYLYNTKEEVDAFIEA 396
+                         6999999****999998877 PP
+
+>> NZ_CP053187.1_1826  # 2015687 # 2016832 # 1 # ID=1_1826;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.8   0.2   8.9e-10   1.2e-06      93     304 ..       3     201 ..       1     215 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 24.8 bits;  conditional E-value: 8.9e-10
+      lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwqlkflrqPd..efyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkg 181
+                         +++n +  s+   vl+a  +++++f  +P+  + +  + ++ + ++ ++  +l+na+ + +v ++  at   +  ++ v+++ +    ++g
+  NZ_CP053187.1_1826   3 YLDNSATTSVDPEVLTAFTKVNQNFWGNPSslHAFGARAEQLLIQAEKQTLSLLNAK-QHKVIFTSGATESNNLAIRGVCHAYK----NRG 88 
+                         567777788888888888888888988887223455677788889999999*****9.57999*****************9999....99* PP
+
+      lcd_K22207_msa 182 DavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegv 272
+                           ++++ +  ++V +++e  +++ g +v  ++++   ks+ ei +++++a+ +      +  l    H+     +++P+ e+ ++ ++   
+  NZ_CP053187.1_1826  89 CHIITTPVEHASVYETAED-LEQEGFRVTFIDVK---KSKTEILKQIEEAICE------DTILISCMHVNNEMGMIFPIYEIGQLIKKYPK 169
+                         *****************99.67888777767665...899**********999......44455566*********************998 PP
+
+      lcd_K22207_msa 273 dqvfVDaAhaiGqvevdvkeigAdfYtsNlHK 304
+                          +  VDa +++G+++vd+++++ d      HK
+  NZ_CP053187.1_1826 170 IKFHVDAVQSVGKIPVDMDKMNIDLLSFSAHK 201
+                         8*********************9988777777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2785  (841513 residues searched)
+Passed MSV filter:                       111  (0.0398564); expected 55.7 (0.02)
+Passed bias filter:                       93  (0.0333932); expected 55.7 (0.02)
+Passed Vit filter:                         7  (0.00251346); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000718133); expected 0.0 (1e-05)
+Initial search space (Z):               2785  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 18955.10
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Turicibacter_sanguinis_lcdcustom.sto
+[ok]

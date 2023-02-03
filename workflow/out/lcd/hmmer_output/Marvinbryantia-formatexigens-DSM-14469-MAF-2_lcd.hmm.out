@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Marvinbryantia-formatexigens-DSM-14469-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Marvinbryantia-formatexigens-DSM-14469-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Marvinbryantia-formatexigens-DSM-14469-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Marvinbryantia-formatexigens-DSM-14469-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.3e-08   31.1   0.0    5.2e-08   30.0   0.0    1.4  1  1_513     # 483133 # 484320 # -1 # ID=1_513;partial=00;start_
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_513  # 483133 # 484320 # -1 # ID=1_513;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.54
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0   0.0   1.2e-11   5.2e-08     150     342 ..      45     220 ..      41     233 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 1.2e-11
+  K22207 150 kkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneei.ieefrka 251
+             kk++ ++r++i+ +++a++ +e+ +    ++  + +l+++a    e    kg+ ++  ++   aV ++ e y+++ g eV  v ++     n +i + e++ka
+   1_513  45 KKAMNEARETIAGILGAQE-NEIYFTAGGSESDNWALKATA----EAYRAKGNHIITSKIEHHAVLHTCE-YLEKNGFEVTYVDVDE----NGKIkLGELEKA 137
+             678999************8.9*******************9....666789***************9997.59*********99875....777735566666 PP
+
+  K22207 252 LekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk 342
+             ++       ++ L  + +     + + P++e+ +i++++g+     Da +a+Gq++++v e   d   +  hK + +Pk++ fLy+rk  k
+   1_513 138 IR-----PTTI-LISVMFANNEIGTIQPIREIGEIAHKHGI-LFHTDAVQAFGQLPINVDEYHIDMLSASGHK-LNGPKGIGFLYIRKGVK 220
+             64.....2334.4445577788899****************.5889***************************.99************766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       4199  (1352188 residues searched)
+Passed MSV filter:                       145  (0.034532); expected 84.0 (0.02)
+Passed bias filter:                      116  (0.0276256); expected 84.0 (0.02)
+Passed Vit filter:                         8  (0.00190522); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000238152); expected 0.0 (1e-05)
+Initial search space (Z):               4199  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 21646.22
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Marvinbryantia-formatexigens-DSM-14469-MAF-2_lcd.sto
+[ok]

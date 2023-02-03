@@ -1,0 +1,127 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metC.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-coprophilus-DSM-18228-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/metC/hmmer_output/Bacteroides-coprophilus-DSM-18228-MAF-2_metC.hmm.out
+# MSA of all hits saved to file:   workflow/out/metC/hmmer_output/Bacteroides-coprophilus-DSM-18228-MAF-2_metC.sto
+# per-dom hits tabular output:     workflow/out/metC/hmmer_output/Bacteroides-coprophilus-DSM-18228-MAF-2_metC.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01324  [M=377]
+Accession:   TIGR01324
+Description: cysta_beta_ly_B: cystathionine beta-lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    9.3e-66  219.7   0.3    6.1e-34  115.0   0.1    2.0  2  1_1965    # 2345856 # 2347142 # -1 # ID=1_1965;partial=00;sta
+      5e-55  184.4   0.0    5.9e-33  111.7   0.0    2.0  2  1_1205    # 1452819 # 1454102 # -1 # ID=1_1205;partial=00;sta
+    9.8e-05   18.8   0.1    0.00014   18.4   0.1    1.1  1  1_270     # 331562 # 332755 # 1 # ID=1_270;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1965  # 2345856 # 2347142 # -1 # ID=1_1965;partial=00;start_type=ATG;rbs_motif=AATAA;rbs_spacer=10bp;gc_cont=0.570
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.0   0.1   5.2e-37   6.1e-34       4     207 ..      13     221 ..      10     234 .. 0.88
+   2 !  103.1   0.0     2e-33   2.4e-30     224     377 .]     271     428 ..     246     428 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 115.0 bits;  conditional E-value: 5.2e-37
+  TIGR01324   4 ihsGrek.rrlqgsvnPpvqrastvllds..daasa..rakdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallafvkaGdevlvvdsa 98 
+                +h+G+e+    +g+   p+ ++++ ++++  +aa +   ++   +yG+   +t++ +++ +a+leG+++++++ sG aa+t a+l + + Gd+++ + ++
+     1_1965  13 LHAGQEQpDPATGARAVPIYQTTSYVFRDsaHAAARfsLEDAGNIYGRLTNPTQDVFEQRMAALEGGTAALALASGAAAITYAFLNIARQGDHIVAARTI 112
+                688876414455655555655555555544745544114567789******************************************************* PP
+
+  TIGR01324  99 ykPtrrfcdivlkrlgveveyydPkigediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidntwaagllfkalehgvdisiqaatkyl 198
+                y  + ++    l   g+++++ dP    +    i  +tk +f+e+ +    ++ d+ a+a++a+ +++ +++dnt+ ++ l +++ehg di +++atk++
+     1_1965 113 YGGSYNLLAHTLPEYGITTTFVDPSDPSNFEQAIGKETKALFVETLGNPNSNITDLEAVAEIAHRHQIPLIVDNTFGTPFLIRPIEHGADIVVHSATKFI 212
+                **************************************************************************************************** PP
+
+  TIGR01324 199 aGhsdvllG 207
+                +Gh   l G
+     1_1965 213 GGHGTSLGG 221
+                ***877655 PP
+
+  == domain 2  score: 103.1 bits;  conditional E-value: 2e-33
+  TIGR01324 224 yllGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdfs.GssGlfsvvlkrlsqkevhafldalklfglg 322
+                 + G ++++ +a+ +l+Gl tl+ r++rh  +al++a +l+ +++v+rv hP+lP++p+h  ++r f  G   +f++ l  ++q+e h+f+d l++f+l 
+     1_1965 271 RDTGAAISPFNAFLLLQGLETLSLRVERHVSNALRVAAFLDRHPKVKRVNHPSLPGHPDHGRYQRYFPhGGGSIFTI-LIDGGQEEAHRFIDRLQIFSLL 369
+                578999*************************************************************7255557776.667899**************** PP
+
+  TIGR01324 323 yswGGyeslaln....vqpelairrsikrdleGplirlhiGledvddlkadlkaGleal 377
+                      +sl++     ++ +l+ ++++ +++    irl iG e++ddl adlk+ lea+
+     1_1965 370 ANVADSKSLVIHpastTHAQLTPQEQAVQEIFPGTIRLSIGTEHIDDLLADLKQALEAV 428
+                *********996222245567756666666667789*******************9985 PP
+
+>> 1_1205  # 1452819 # 1454102 # -1 # ID=1_1205;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=12bp;gc_cont=0.511
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.7   0.0     5e-36   5.9e-33      17     223 ..      25     236 ..       9     258 .. 0.85
+   2 !   70.9   0.0   1.3e-23   1.5e-20     221     376 ..     267     426 ..     255     427 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 111.7 bits;  conditional E-value: 5e-36
+  TIGR01324  17 vnPpvqrastvlldsdaasar....akdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallafvkaGdevlvvdsaykPtrrfcdivlkr 112
+                v P + +++t  +d++  +ar    ++  ++y +   +t++a++  +a+leG+ g++l  sG aa   a++ + +aGd+ + + ++y  t ++  + +k+
+     1_1205  25 VLP-IYQSTTFKYDTSEQMARlfdlENSGYFYTRLQNPTNDAVASKIAALEGGVGAMLTSSGQAANFYAVFNICEAGDHFVCSSTIYGGTFNLFAVTMKK 123
+                544.45566777776333332122256789********************************************************************** PP
+
+  TIGR01324 113 lgveveyydPkig.ediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidntwaagllfkalehgvdisiqaatkylaGhsdvllGtvaa 211
+                lg+e ++ d     e+i    +pntk +f e+ +  +++v di   a++a+++gv +++dnt+a+++  +++e g di  +++tky+ Gh+ ++ G+++ 
+     1_1205 124 LGIECTFVDADAPeEEISKAFRPNTKCLFGETISNPSINVLDIEKFARIAHKHGVPLIVDNTFATPINCRPFEWGADIVTHSTTKYMDGHATCVGGAIVD 223
+                **********998799******************************************************************************999876 PP
+
+  TIGR01324 212 n.esaveklleal 223
+                + +  ++   +++
+     1_1205 224 SgNFDWDAHADKF 236
+                5144677666665 PP
+
+  == domain 2  score: 70.9 bits;  conditional E-value: 1.3e-23
+  TIGR01324 221 ealyllGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdf.sGssGlfsvvlkrlsqkevhafldalklf 319
+                + + +lG + ++++a+ +  Gl tl  r++rh e+a ++a+wle +++v+ v +  l s+  +el ++ +  Gs+G+ ++ lk+  ++e  +f+d+lkl 
+     1_1205 267 QLMRDLGSIQSPENAFLLNLGLETLHLRVPRHCENAQKVAEWLEANPKVKWVNYCGLKSSKYYELAQKYMpNGSCGVIAFGLKGS-RDEAIKFMDSLKLA 365
+                45789************************************************************9887647**********975.666789******** PP
+
+  TIGR01324 320 glgyswGGyeslaln....vqpelairrsikrdleGplirlhiGledvddlkadlkaGlea 376
+                ++        + +l     ++ +l++ + i++ +   lirl +G+e+ +d++adl + +++
+     1_1205 366 CIVTHVADARTCVLHpashTHRQLTDEQLIEAGVAPDLIRLSVGIENANDIIADLEQAMNQ 426
+                99988888887777422214567999*****************************998876 PP
+
+>> 1_270  # 331562 # 332755 # 1 # ID=1_270;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.507
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.1   1.2e-07   0.00014      62     172 ..      87     205 ..      50     213 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 1.2e-07
+  TIGR01324  62 leGaagvilyPsG.laavtnallafvkaGdevlvvds...aykPtrrfcd..ivlkrlgveveyydPkig.ediaalikpntkvvfleaPasltlev... 151
+                le +a+ i    G   +v n++la+v+ Gdev+v       y    ++++   v+ r g+e    d ki+ e++ a i+p+t+v++l +P+  t  v   
+      1_270  87 LEYTAAQISCANGaKQSVCNTILALVNKGDEVIVPAPywvSYPEMVKLAEgtPVIVRAGIEQ---DFKITpEQLEAAITPKTRVLILCSPSNPTGSVysq 183
+                454454444444415689**************997652214555667776325888999986...668988*******************9988665221 PP
+
+  TIGR01324 152 qdiPaiaka.araagvvvlidn 172
+                +++  +a++ a+ + v+v+ d+
+      1_270 184 EELAGLAAVlAKHERVIVVADE 205
+                4566666553557777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (377 nodes)
+Target sequences:                       3550  (1228391 residues searched)
+Passed MSV filter:                        85  (0.0239437); expected 71.0 (0.02)
+Passed bias filter:                       73  (0.0205634); expected 71.0 (0.02)
+Passed Vit filter:                        10  (0.0028169); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.00084507); expected 0.0 (1e-05)
+Initial search space (Z):               3550  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 14966.43
+//
+# Alignment of 5 hits satisfying inclusion thresholds saved to: workflow/out/metC/hmmer_output/Bacteroides-coprophilus-DSM-18228-MAF-2_metC.sto
+[ok]

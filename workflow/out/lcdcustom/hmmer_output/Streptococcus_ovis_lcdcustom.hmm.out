@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Streptococcus_ovis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Streptococcus_ovis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Streptococcus_ovis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Streptococcus_ovis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+      2e-20   70.1   0.0    4.4e-20   69.0   0.0    1.5  1  NZ_KB904582.1_23  # 21942 # 23174 # 1 # ID=4_23;partial=00;st
+      2e-10   37.1   0.1    5.8e-10   35.6   0.1    1.7  1  NZ_KB904581.1_91  # 95586 # 96728 # 1 # ID=5_91;partial=00;st
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB904582.1_23  # 21942 # 23174 # 1 # ID=4_23;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.0   0.0   3.7e-23   4.4e-20      87     479 ..      21     401 ..       4     405 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 69.0 bits;  conditional E-value: 3.7e-23
+    lcd_K22207_msa  87 hdpsvarinnGsfgscpasvleaqqrwq...lkflrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaeg 176
+                       hd+ +++++n +    p +vl+a  ++       ++   +   ++ +++ ++ r++++d+i+a++  e+ ++  +tt+ + v +     fa  
+  NZ_KB904582.1_23  21 HDEPLVYLDNAATTQKPVQVLQALGNYYktdNANVHRGVHTLAERATTSYEAVRQKVADFIHARSTKEILFTRGTTTGLNWVAH-----FAAE 108
+                       45555566666666666666666655543332335556777788888999999*****************************87.....6667 PP
+
+    lcd_K22207_msa 177 kfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicre 269
+                        +q++D vl+  +  ++     ++ + + g+++  v l+    +    ++++++ L++      k r++ + H++ +  vv P+ke+ +++++
+  NZ_KB904582.1_23 109 ILQPNDEVLLSIMEHHSNIIPWQEACRKTGAKLRYVYLKNGELD----MESLQSSLNE------KTRFVSLAHVSNVLGVVNPIKEIAQLVHQ 191
+                       789*****999888888666777777788887555555443333....7778888877......89999999********************* PP
+
+    lcd_K22207_msa 270 egvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsheygn.glaiesaw...iGtrDysaq 353
+                        g    +VD+A++  ++ +dv++++Adf++   HK +++P ++++Ly +++  +++        ++    ++    +e  w    Gt   +  
+  NZ_KB904582.1_23 192 VGA-YLVVDGAQSTPHMVIDVQDLDADFFAFSGHK-MMAPTGIGVLYGKEELLEQMSPvefggEMIEFVHEQsATWKELPWkfeAGTPNIAGV 282
+                       **9.9******************************.89**********9943344443333443332222221233333342227******** PP
+
+    lcd_K22207_msa 354 lvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyra 444
+                       + + a++++++++  g+++i+++  elv+     L e  g  l  ++e+ +   ++ +       +d +   L t L +  +v v    ++ +
+  NZ_KB904582.1_23 283 IGLGAAIDYLTEI--GMDAIHAYEAELVSYVFPKLQEIPGLTLYGSQELAKRTGVISFNL-----DDLHPHDLATAL-DYEGVAVRAghHCAQ 367
+                       **********998..****************************9999**99999999983.....555666788888.666788877213333 PP
+
+    lcd_K22207_msa 445 pkegeveaitgYvRiShqvYnkvddyyklrdavnq 479
+                       p   ++  + + +R S   Yn+++d  kl +a ++
+  NZ_KB904582.1_23 368 PLI-SYLGTAATARASFYLYNTKEDCDKLVEALLK 401
+                       322.22247889*****************999876 PP
+
+>> NZ_KB904581.1_91  # 95586 # 96728 # 1 # ID=5_91;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.6   0.1   4.9e-13   5.8e-10     125     319 ..      37     214 ..       1     223 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 35.6 bits;  conditional E-value: 4.9e-13
+    lcd_K22207_msa 125 yfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfp 217
+                       + ++  + ++++r+ i+  ++a+  +++ ++   + A +  +q  a++ +    ++g  ++++ +  +aV +++e + +r g ++       p
+  NZ_KB904581.1_91  37 FGRKASQTLRQARQEIAIALHAKP-NQIIFTSGGSEADTLAIQGYALAHQ----HQGKHLITTAIEHHAVLHTMEYLEKRFGFDIT---YLTP 121
+                       456778899999999999999995.7999999999999999999988777....89999999999999999999999999998854...4567 PP
+
+    lcd_K22207_msa 218 vksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPp 310
+                       v++ +  v+++++aL+       +  l+   +    +  +lP+ke+  +++e+      VDa +aiG+v++  +e+g df  +  HK f  P+
+  NZ_KB904581.1_91 122 VNQ-KITVQQVKEALRP------DTVLVSAMFANNETGDLLPIKEIGDLLQEHQA-VFHVDAVQAIGKVPIHPEELGIDFLSASGHK-FHGPK 205
+                       776.5678999999998......3334444577888999**************99.677****************************.89*** PP
+
+    lcd_K22207_msa 311 svAfLyvrk 319
+                       +v+fLy + 
+  NZ_KB904581.1_91 206 GVGFLYSKL 214
+                       ******986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2372  (705479 residues searched)
+Passed MSV filter:                        84  (0.0354132); expected 47.4 (0.02)
+Passed bias filter:                       54  (0.0227656); expected 47.4 (0.02)
+Passed Vit filter:                         5  (0.00210793); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.00084317); expected 0.0 (1e-05)
+Initial search space (Z):               2372  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10761.75
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Streptococcus_ovis_lcdcustom.sto
+[ok]

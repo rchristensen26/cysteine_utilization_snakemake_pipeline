@@ -1,0 +1,97 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus-ruminis-ATCC-25644-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.6e-17   60.3   0.1      6e-17   58.4   0.1    1.8  1  1_1443    # 1497862 # 1499100 # -1 # ID=1_1443;partial=00;sta
+     0.0015   14.2   0.1      0.044    9.4   0.1    2.3  3  1_1378    # 1428548 # 1429702 # -1 # ID=1_1378;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1443  # 1497862 # 1499100 # -1 # ID=1_1443;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.43
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.4   0.1   5.9e-20     6e-17      88     478 ..      21     401 ..       4     408 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 58.4 bits;  conditional E-value: 5.9e-20
+  lcd_K22207_msa  88 dpsvarinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfq 179
+                     d+++++++n +    p+ v++a +++ l+    ++   +   ++ +++++++r ++k+lina++  e++ +  +t + + v  +++ ++     +
+          1_1443  21 DERLVYLDNAATSQKPKEVIDAVSNYFLRDnanVHRGVHTLAERATEQFEQTRFKVKNLINAKSEREIVNTKGTTEGLNWVAVSFGTQVV----K 111
+                     456777888888888999999888886544333555788899999************************999999999999887776555....9 PP
+
+  lcd_K22207_msa 180 kgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdq 274
+                      gD +++  +  ++     + ++++ g+++  v+l    +        f++a ek     +k +++ i   + +  vv P+keL k+ +e+g   
+          1_1443 112 SGDEIVVSYMEHHSNIVPWQILCEKTGARLKYVKLTKNGEL------DFEDAKEK---ITAKTKIVSIAQASNVMGVVNPIKELAKLAHENGA-Y 196
+                     9******99999998889999999***99888887544443......56666333...35688889999999999*****************9.9 PP
+
+  lcd_K22207_msa 275 vfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvV.sheygnglaiesawi...GtrDysaqlvvpavl 360
+                     ++VD+A+++ +++vdv+++++df +   HK +  P ++++L+ + +  +++        ++   e +++  +e+ w    Gt+  +  + + a++
+          1_1443 197 MVVDGAQSLPHMKVDVQDLDVDFLAFSGHK-MLGPTGIGILFGKMELLERMSPleyggEMIdFVELDHSTFKEVPWKfegGTQNIAGVIGLGAAI 290
+                     ******************************.89*********99952233333334666665678899999999996666*************** PP
+
+  lcd_K22207_msa 361 eFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapkegeveaitg 455
+                     ++++ +  g+e+i+k  helv      L +  g  +  p+e  +   ++ +    gi+ ++ a+ L     e + v    ++ +p  +   +i +
+          1_1443 291 DYLQDV--GYEEIEKKEHELVEYVLPKLLQIDGLTVYGPKEPDKHTGVISFN-LDGIHPHDVATALDM---EGVAVRAGHHCAQPLMKY-LKIPA 378
+                     ****97..**************999999999999988899888888888887.468877766666542...334444444555454443.47889 PP
+
+  lcd_K22207_msa 456 YvRiShqvYnkvddyyklrdavn 478
+                      vR S   Yn++ d  +l +a++
+          1_1443 379 TVRASFYFYNTKADADQLIEAIL 401
+                     99999999******999999997 PP
+
+>> 1_1378  # 1428548 # 1429702 # -1 # ID=1_1378;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.4   0.1   4.3e-05     0.044     127     197 ..      41     107 ..      13     124 .. 0.82
+   2 !    2.2   0.0    0.0064       6.6     259     319 ..     159     217 ..     157     225 .. 0.86
+   3 ?   -3.7   0.0      0.38   3.9e+02     454     478 ..     350     374 ..     340     379 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 4.3e-05
+  lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkks 197
+                     +e ++ + esr++i++ ina++ +e++++   t   ++ + q+a  f   + ++g  ++++ +  +aV k 
+          1_1378  41 REARRVLDESRHVIAESINAKSDNEIVFTSGGTESDNTAIMQTA--FL--RRNEGRHIITTAIEHEAVLKP 107
+                     56778899**************************9999888887..44..446777888888888888665 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.0064
+  lcd_K22207_msa 259 PVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                     P+ e+ +i+ e +      D  +a G ++vdv++   d   +  HK +  P+  +fLy r+
+          1_1378 159 PIHEIGEIVSESNA-WFHTDCVQAYGILDVDVQKDKIDLLSTSAHK-LNGPKFLGFLYERE 217
+                     67777777777776.67789999***********************.899********987 PP
+
+  == domain 3  score: -3.7 bits;  conditional E-value: 0.38
+  lcd_K22207_msa 454 tgYvRiShqvYnkvddyyklrdavn 478
+                        +R S   Yn+ ++++++ ++  
+          1_1378 350 SESLRFSFGRYNTEEEVERIIEVLS 374
+                     5568999999999999998877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2053  (609007 residues searched)
+Passed MSV filter:                        88  (0.0428641); expected 41.1 (0.02)
+Passed bias filter:                       55  (0.0267901); expected 41.1 (0.02)
+Passed Vit filter:                         5  (0.00243546); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000974184); expected 0.0 (1e-05)
+Initial search space (Z):               2053  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9524.40
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_lcdcustom.sto
+[ok]

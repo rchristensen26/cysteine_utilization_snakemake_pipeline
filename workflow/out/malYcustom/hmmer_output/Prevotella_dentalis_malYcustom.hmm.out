@@ -1,0 +1,288 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/malYcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_dentalis_prodigal.faa
+# output directed to file:         workflow/out/malYcustom/hmmer_output/Prevotella_dentalis_malYcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/malYcustom/hmmer_output/Prevotella_dentalis_malYcustom.sto
+# per-dom hits tabular output:     workflow/out/malYcustom/hmmer_output/Prevotella_dentalis_malYcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       malY_K14155_msa  [M=493]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   2.5e-168  557.6   0.0   2.8e-168  557.5   0.0    1.0  1  NC_019960.1_182  # 262327 # 263493 # -1 # ID=4_182;partial=00
+     2e-159  528.2   0.0   2.3e-159  528.1   0.0    1.0  1  NC_019968.1_107  # 142000 # 143190 # 1 # ID=3_107;partial=00;
+    1.7e-61  205.2   0.0    2.1e-61  205.0   0.0    1.0  1  NC_019960.1_283  # 364940 # 366133 # -1 # ID=4_283;partial=00
+    3.5e-45  151.4   0.0    4.5e-45  151.1   0.0    1.0  1  NC_019960.1_793  # 1010844 # 1012046 # -1 # ID=4_793;partial=
+    3.8e-45  151.3   0.0    5.1e-45  150.9   0.0    1.0  1  NC_019960.1_508  # 668010 # 669209 # -1 # ID=4_508;partial=00
+    3.2e-20   69.1   0.0    4.1e-20   68.8   0.0    1.1  1  NC_019960.1_647  # 825833 # 826891 # 1 # ID=4_647;partial=00;
+    5.5e-14   48.6   0.0    7.6e-14   48.1   0.0    1.1  1  NC_019960.1_814  # 1033002 # 1034312 # 1 # ID=4_814;partial=0
+     0.0026   13.4   0.0     0.0039   12.8   0.0    1.2  1  NC_019960.1_72   # 115493 # 116701 # 1 # ID=4_72;partial=00;s
+     0.0039   12.8   0.0     0.0057   12.2   0.0    1.2  1  NC_019960.1_151  # 209347 # 210489 # -1 # ID=4_151;partial=00
+  ------ inclusion threshold ------
+      0.011   11.3   0.0      0.018   10.6   0.0    1.4  1  NC_019960.1_429  # 561874 # 563130 # 1 # ID=4_429;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_019960.1_182  # 262327 # 263493 # -1 # ID=4_182;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=12bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  557.5   0.0    1e-170  2.8e-168      55     439 ..       4     386 ..       1     388 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 557.5 bits;  conditional E-value: 1e-170
+  malY_K14155_msa  55 ydfdevidrrgtnsvKwdkleefgedvlplwvADmDfktppaviealkkrvehgvfGYteppdelyeaiadwlkrrhgweidpewivfvpgvvp 148
+                      + fd++i+rr+t+s+Kwd+   ++ed lplwvADmDf+++p++++al +rv+hgvfGYt+ ++++yeai++w++rrh+w+i+++wi++++gvvp
+  NC_019960.1_182   4 QPFDQIINRRHTGSYKWDS---IPEDALPLWVADMDFQAAPPIRRALAERVAHGVFGYTQIDESYYEAIISWFHRRHQWDIRRDWILYTSGVVP 94 
+                      45***************87...678********************************************************************* PP
+
+  malY_K14155_msa 149 alslairaftepgdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCnPhNPtGrvwtreeLeklaelce 242
+                      a+s +i+a+t  g++VlvqtPvY+ F+++i+n+g+e+ e++l+ e + y+iD++d+e+k++++k++++llCnPhNP GrvwtreeLe+++ +c+
+  NC_019960.1_182  95 AISCCIKALTLLGERVLVQTPVYNCFFSCIRNQGCELAENELHREGDSYSIDWDDFESKCSDEKTTVFLLCNPHNPAGRVWTREELERMGTICA 188
+                      *******************************************99889********************************************** PP
+
+  malY_K14155_msa 243 khdvlvisDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglsspnvlglvateaAYreg 336
+                      +h+v visDEIH++l++pgh++tpfa+++++ ++ +itl+spsK+FN+aGl+++++++++ e r++++r ++  ++ ++n++g va++aAY+e+
+  NC_019960.1_182 189 RHHVHVISDEIHCELIMPGHTFTPFAAVNSRNRDICITLNSPSKSFNTAGLQIANIVCSDSETRRRIDRVINIYEVCDVNPFGPVALKAAYNES 282
+                      ***********************************************************************999******************** PP
+
+  malY_K14155_msa 337 eeWldellayleenrdllaeflaeelpglkvvkpeaTYLaWlDcralglddeelkefllekakvalsdGstFg.eegegfvRlNlAcprevlee 429
+                      e+Wld+l+ay++ n++ l++fla++lp+l+ v++e+TYLaW+D++algl+++e  ++ll+++kv +s+G+ +g ++geg++R+NlAcpre+l +
+  NC_019960.1_182 283 EDWLDALNAYIHVNYETLKHFLANRLPQLRPVRLEGTYLAWVDISALGLTSDEAAKRLLHEGKVLVSSGTLYGqKAGEGYLRINLACPRELLHQ 376
+                      *************************************************99999999***************6257****************** PP
+
+  malY_K14155_msa 430 alerlkkalk 439
+                      +l+ ++++++
+  NC_019960.1_182 377 GLKHMAEVFA 386
+                      ******9986 PP
+
+>> NC_019968.1_107  # 142000 # 143190 # 1 # ID=3_107;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=7bp;gc_cont=0.6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  528.1   0.0  8.5e-162  2.3e-159      52     442 ..       2     394 ..       1     396 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 528.1 bits;  conditional E-value: 8.5e-162
+  malY_K14155_msa  52 kmkydfdevidrrgtnsvKwdklee.fg.edvlplwvADmDfktppaviealkkrvehgvfGYteppdelyeaiadwlkrrhgweidpewivfv 143
+                      + +ydf++vi+rrgt+ +  ++l   +g +d+lp+wvADm f+++p ++eal++r++h++fGYt  p +++ ai dw+  +h+w++++ew+ f+
+  NC_019968.1_107   2 MANYDFSTVIERRGTGDLMHEALLPrWGrNDLLPMWVADMGFAVCPDIVEALRRRLDHPIFGYTVEPADYFPAIHDWVLGHHQWDVRREWVSFI 95 
+                      4569****************9965558888**************************************************************** PP
+
+  malY_K14155_msa 144 pgvvpalslairaftepgdkVlvqtPvYppFlkaienngrevvevplvle.dgryeiDfedleaklaepkvkllllCnPhNPtGrvwtreeLek 236
+                      pg+v+++ ++++ f++p++kV+v++PvY+pF+ ++++ngrevv +pl+l+ dg y +Dfe le+ +  +k+++l+lCnPhNP+G +wtre Le+
+  NC_019968.1_107  96 PGIVKGIGMVCNLFVQPDEKVIVMPPVYHPFFLTPRANGREVVWNPLRLReDGGYDMDFEGLERVCD-DKCRVLILCNPHNPGGICWTRETLER 188
+                      ***********************************************99779**************7.79************************ PP
+
+  malY_K14155_msa 237 laelcekhdvlvisDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglsspnvlglvate 330
+                      la++c  h++lv+sDEIHad+ l ghkh+pfas+s++aa+ +it+ +p+KtFN+aG+  syai+p++e+rekf   lka++l+++++++ +at+
+  NC_019968.1_107 189 LADFCCDHHLLVVSDEIHADMALFGHKHIPFASVSDRAASISITFQAPTKTFNIAGIVSSYAIVPQAEIREKFYGWLKANELDEAHIFAHIATI 282
+                      ********************************************************************************************** PP
+
+  malY_K14155_msa 331 aAYregeeWldellayleenrdllaeflaeelpglkvvkpeaTYLaWlDcralglddeelkefllekakvalsdGstFgeegegfvRlNlAcpr 424
+                      aA+r+geeW +++la +e+n++++++f++e++pg++  +p+a++L+WlDcr+l+l+++ l +++++ka++al+dG++Fg++gegf+RlN++ pr
+  NC_019968.1_107 283 AAFRKGEEWRRQMLAAVESNIRFVEDFCREHIPGVRPLRPQASFLVWLDCRDLHLTHDRLIDLFVDKARLALNDGEMFGPGGEGFMRLNVGAPR 376
+                      ********************************************************************************************** PP
+
+  malY_K14155_msa 425 evleealerlkkalkalk 442
+                      +++e++++rl+ a++a++
+  NC_019968.1_107 377 AYVEQGVRRLAGAVAACR 394
+                      *************98865 PP
+
+>> NC_019960.1_283  # 364940 # 366133 # -1 # ID=4_283;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  205.0   0.0   7.8e-64   2.1e-61      68     438 ..      20     393 ..       6     397 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 205.0 bits;  conditional E-value: 7.8e-64
+  malY_K14155_msa  68 svKwdkleefgedvlplwvADmDfktppaviealkkrvehgvfGYtep..pdelyeaiadwlkrrhgweidpewivfvpgvvpalslairafte 159
+                      s K +++++ g dv+ ++v + Df tp+ +++a kk+++++   Y+ +   ++l++ai+d l+r+ ++e    +i++ +g  +++  ++ a+++
+  NC_019960.1_283  20 SQKSNEMKAQGIDVINMSVGEPDFNTPEHIKAAGKKAIDDNYSKYSPVpgYPALRKAIVDKLRRENQLEYTDGEILVGTGGKQGVCNTVLALVN 113
+                      667777777678******************************99*87579889***************************************** PP
+
+  malY_K14155_msa 160 pgdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCnPhNPtGrvwtreeLeklaelcekh.dvlvisDE 252
+                      pgd+V+++ P +    ++++ +g e v v+   e++ +++  e+lea+++ p++k+l+lC+P NPtG v+++eeL +la++  +h dv+v++DE
+  NC_019960.1_283 114 PGDEVIIPAPYWVSYPQMVKLAGGEPVVVRAGFEQD-FKMTPEQLEAAIT-PRTKMLILCSPSNPTGSVYSQEELDELARVILRHeDVFVLADE 205
+                      *******************************87655.************8.9******************************99989******* PP
+
+  malY_K14155_msa 253 IHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglsspnvlglvateaAYregeeWldellay 346
+                      I+  + + g kh ++as  + ++erti+++  sK++ + G + +++ +p+  + + +++ l+ +  s +  ++  a+ aAY+ +++ ++++++ 
+  NC_019960.1_283 206 IYEHINYVG-KHASIASY-PGMKERTIICNGVSKAYAMTGWRLGWVAAPE-WIVKGINK-LQGQYTSGTCDVSQMAALAAYESSQACVEDMRRA 295
+                      *******99.9******9.799***********************99886.55666777.665544558889999******************* PP
+
+  malY_K14155_msa 347 leenrdllaeflaeelpglkvvkpeaTYLaWlDcral.....g....lddeelkefllekakvalsdGstFgeegegfvRlNlAcprevleeal 431
+                       e+ r+l+ +  ++ +pgl+v  p++ + ++  c+++     g    l++ ++  +lle ++va   G+ Fg+   +++R+  A++ + ++ea+
+  NC_019960.1_283 296 FERRRNLIVSLAKD-IPGLEVNVPQGAFYLFPKCSSFfgkknGshviLNSTDFAMYLLEVGRVATVAGDAFGDP--DCFRMSYATSDDNIREAM 386
+                      *********98876.*********************643332133323568999******************76..9***************** PP
+
+  malY_K14155_msa 432 erlkkal 438
+                      +r+k++ 
+  NC_019960.1_283 387 RRIKEVT 393
+                      ***9875 PP
+
+>> NC_019960.1_793  # 1010844 # 1012046 # -1 # ID=4_793;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.1   0.0   1.7e-47   4.5e-45      68     437 ..      17     386 ..       6     397 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 151.1 bits;  conditional E-value: 1.7e-47
+  malY_K14155_msa  68 svKwdkleefg.e..dvlplwvADmDfktppaviealkkrveh.gvfGYtep..pdelyeaiadwlkrrhgweid.pewivfvpgvvpalslai 154
+                      s+K +++++ + e  d++ l +   D++  p+ +++l + +++ +  GY+ +   +el++a+a +++r +g+e+d + ++  + g   ++ +a 
+  NC_019960.1_793  17 SRKLKEVARLNaEglDIISLAIGSPDMPPSPQTVDKLCAVAHDpKAHGYQPTagLPELRRAMAGFYRRVYGVEVDwATELQPIIGSKEGIMYAT 110
+                      6677777774443349*********************9998661578**86588779*****************96678999************ PP
+
+  malY_K14155_msa 155 raftepgdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCnPhNPtGrvwtreeLeklaelcekhdvlv 248
+                       af++pgd+Vl++ P Yp  + + +  g ++v+ +l++++  ++ Df++le+    ++vk++    P  PtG   +re Le+l+++++ hd++v
+  NC_019960.1_793 111 LAFCNPGDEVLIPDPGYPTYTAINKIFGTRIVNYDLREDN-GWQPDFDRLEQM-DLSRVKVMWTNYPNMPTGGNARRETLERLVQFARDHDIVV 202
+                      ************************************9555.5*********76.5589************************************ PP
+
+  malY_K14155_msa 249 isDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkae.glsspnvlglvateaAYregeeWld 341
+                      + D  ++ l+l+ ++  +++++ + a++ +i ++s sK+ N++G ++++++ + + +   fk + + e g      + l+a+ea   + e+W  
+  NC_019960.1_793 203 VNDNPYS-LILN-RRPQSIMQV-PGAKDCCIEFNSMSKSHNMPGWRVAMMVSNAKYISWMFKIQSNIEnG--MFRGIQLAAAEALNANDEAWHL 291
+                      ****998.6664.578899999.789*******************************9999987554325..588899999999999*****99 PP
+
+  malY_K14155_msa 342 ellayleenrdllaeflaeelpglkvvkpeaTYLaWlDcralglddeelkefllekakvalsdGstFgeegegfvRlNlAcprevleealerlk 435
+                      + +    + r+ +ae++ ++l g+++ + +   ++W  + +   d eel+e++l++a+v++++G  Fg++g++++R+ l  + e+++eal+r++
+  NC_019960.1_793 292 ANNIENYARRRAIAEQIMTAL-GCTFDPTQVGMFLWGRIPDACRDVEELTERVLHEARVFITPGFIFGRNGARYIRISLCAKDEKVQEALARIQ 384
+                      999999999999999999866.9******************98788***********************************************9 PP
+
+  malY_K14155_msa 436 ka 437
+                      + 
+  NC_019960.1_793 385 RL 386
+                      75 PP
+
+>> NC_019960.1_508  # 668010 # 669209 # -1 # ID=4_508;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=5bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  150.9   0.0   1.9e-47   5.1e-45      78     441 ..      30     394 ..      18     398 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 150.9 bits;  conditional E-value: 1.9e-47
+  malY_K14155_msa  78 gedvlplwvADmDfktppaviealkkrvehgvfGYtep..pdelyeaiadwlkrrhgweidpewivfvpgvvpalslairaftepgdkVlvqtP 169
+                      g++v  l +   D++tp+  ++alk+ ++++v+ Y+      ++++ ++ +++ +++++i+p++i++++g   a+  a     +pgd+++v++P
+  NC_019960.1_508  30 GTKVYHLNIGQPDLPTPQVALDALKH-IDRKVLEYSPSqgYLSYRKKLVGYYE-KYNIHISPDDIIITSGGSEAVLFAFMSCLNPGDEIIVPEP 121
+                      468889999999************75.89******854566678889999886.79************************************** PP
+
+  malY_K14155_msa 170 vYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCnPhNPtGrvwtreeLeklaelcekhdvlvisDEIHadlvlpghk 263
+                      +Y   + ++ ++g ++ ++  + e+g     +e++e+ ++ ++++++++CnP NPtG  +tr e++++ +l++k+d++++sDE++ + +++g+ 
+  NC_019960.1_508 122 AYANYMAFAISAGAKIRTIATTIEEGFSLPKVEKFEELIN-ERTRAIMICNPNNPTGYLYTRREMNQIRDLVAKYDLYLFSDEVYREYIYTGSP 214
+                      *********************99999666679*******7.79*************************************************** PP
+
+  malY_K14155_msa 264 htpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglsspnvlglvateaAYregeeWldellayleenrdllaef 357
+                      ++++++l+  ++++++++ s sK +   G++++++i+ n e+r+++ + ++a +l sp ++g + +ea     ee+ +++ +   e r+ l + 
+  NC_019960.1_508 215 YISAMHLK-GIEQNVVLIDSVSKRYSECGIRIGALITRNSEIRKAVMKFCQA-RL-SPPLIGQIVAEASLDAPEEYYRDVYDEYVERRKCLIDG 305
+                      *******5.89*************************************8764.43.599*********************************** PP
+
+  malY_K14155_msa 358 laeelpglkvvkpeaTYLaWlDcralgldd......eelkefllekakvalsdGstF.gee..gegfvRlNlAcprevleealerlkkalkal 441
+                      l++ +pg+    p +    +  + +l +dd        l+ef  e + v++ + + F  +   g + vR+    +r+ le+al  l+kal+++
+  NC_019960.1_508 306 LNR-IPGVYSPIPMGA---FYTVAQLPVDDaenfcrWCLEEFSYEGETVMMAPAAGFyTTPgaGINQVRIAYVLKRKDLERALLVLRKALETY 394
+                      *97.****99999996...66788888877522332235566666899********96444235556999999****************9875 PP
+
+>> NC_019960.1_647  # 825833 # 826891 # 1 # ID=4_647;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=13bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.8   0.0   1.5e-22   4.1e-20     134     343 ..      65     262 ..      40     291 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 68.8 bits;  conditional E-value: 1.5e-22
+  malY_K14155_msa 134 eidpewivfvpgvvpalslairaftepg.dkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCnPhNPtG 226
+                      ++ +e+i++ +g    + l+ r+f++pg d+V+  +P+Y   + ++  n+ e   vpl   d++y++D  +l  ++  +++k++ +C+P NPtG
+  NC_019960.1_647  65 KVPAENIFLGNGSDEPIDLVYRVFCRPGiDNVVAIEPTYGMYAVCADINDVEYRPVPL---DEHYQMDARALLDACD-ENTKVIWICSPNNPTG 154
+                      4788999999999999***********99*****************************...578************6.89************** PP
+
+  malY_K14155_msa 227 rvwtreeLeklaelcekhdvlvisDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglss 320
+                      +  ++e +e++   +++ + +v+ DE ++d+   +   t +a        ++i+++  sK++  a+++ ++a+++ e   e f++  k     +
+  NC_019960.1_647 155 NSMQQEAIETV---VREFEGMVVVDEAYSDFSSAELFRTKIARY-----PNLIVFNTMSKAWGCAAIRLGMAFASREC-VELFNKV-KYPY--N 236
+                      **999887776...689999*************99777777776.....59*********************998765.5568884.3222..4 PP
+
+  malY_K14155_msa 321 pnvlglvateaAYr...egeeWldel 343
+                      +n+l  + +  A +   + e+W+  l
+  NC_019960.1_647 237 VNLLTQQQALEALNgreDVEKWVTLL 262
+                      88888877777775223444444444 PP
+
+>> NC_019960.1_814  # 1033002 # 1034312 # 1 # ID=4_814;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=8bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.1   0.0   2.9e-16   7.6e-14     116     327 ..      82     296 ..      61     303 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 48.1 bits;  conditional E-value: 2.9e-16
+  malY_K14155_msa 116 pdelyeaiadwlkrrhgweidpewivfvpgvvpalslairaftep...gdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedlea 206
+                       +el+ea  +++k   ++++++ + v ++g v +   a  a t+    +dkVl   P +p   + ++  g +  e ++    g  e   ++le 
+  NC_019960.1_814  82 VRELKEAAHEFVKAFVNVDVSARSCVPTTGSVAGSFGAFIATTQRipgKDKVLFIDPGFPIQKSQLRVLGIKWKEFDIYPYRG--EKLKAKLED 173
+                      5689****************************99999998888876668***********99999999999999998864444..444678999 PP
+
+  malY_K14155_msa 207 klaepkvkllllCnPhNPtGrvwtreeLeklaelcekhdvlvisDEIHadlvlp...ghkhtp.faslseeaaertitltspsKtFNlaGlkas 296
+                      +l++ +v +++ +nP NP   + ++ eL+ ++el+ k+d++v+ D  +  + +    gh + p +     ++ e+ +++ s sK F  aG +++
+  NC_019960.1_814 174 ELKDGDVAAIVYSNPNNPAWICLEEPELQVIGELATKYDAVVLEDLAYFCMDYRrdlGHPYRPpYVPTVARYTENYVLMLSSSKIFSYAGQRMA 267
+                      9999*****************************************9987666655577877652454557899********************* PP
+
+  malY_K14155_msa 297 yaiipneelrekfkralkaeglsspnvlglv 327
+                       + i+++   +++ + l+ ++++++ v+g +
+  NC_019960.1_814 268 LVCISDALFDKHYPA-LQ-QRYHDAGVFGST 296
+                      ******999998887.54.455678888865 PP
+
+>> NC_019960.1_72  # 115493 # 116701 # 1 # ID=4_72;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.59
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   1.5e-05    0.0039     135     251 ..      81     198 ..      60     199 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 1.5e-05
+  malY_K14155_msa 135 idpewivfvpgvvpalslai....raftepgdkVlvqtPvYppFlkaienngr....evvevplvledgryeiDfedleaklaepkvkllllCn 220
+                        + +ivf+ g+  +l+l+     +af+e+gd+V+v t   +      +  gr     +  +p++ +dg   +D+e+ e+ ++ pk+k++ + +
+   NC_019960.1_72  81 AGTTEIVFTRGTTEGLNLVAssygEAFMEEGDEVIVSTMEHHSNIVPWQLLGRrkgtVLKVIPMT-DDG--VLDLEAYERFFT-PKTKIVSIAH 170
+                      556789999999999998874444799*********99888865554444444111055556776.788..***********8.9********* PP
+
+  malY_K14155_msa 221 PhNPtGrvwtreeLeklaelcekhdvlvisD 251
+                        N +G+v      +++++++++h+v v+ D
+   NC_019960.1_72 171 VSNVLGTVNP---VKEMVRIAHAHGVPVVVD 198
+                      ******9965...5667888999***99998 PP
+
+>> NC_019960.1_151  # 209347 # 210489 # -1 # ID=4_151;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   2.1e-05    0.0057     200     255 ..     157     213 ..     104     227 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 2.1e-05
+  malY_K14155_msa 200 Dfedleaklaepk.vkllllCnPhNPtGrvwtreeLeklaelcekhdvlvisDEIHa 255
+                      D+e+ e++la+ + + ++l C     +  v t e  + la++c++h++++++DEI +
+  NC_019960.1_151 157 DLEAWERELAKGDvCACMLECIQGIGGCVVATPEFAQGLAAVCKRHGAVLVCDEIQC 213
+                      77888888877655666777776666777889999999*****************77 PP
+
+>> NC_019960.1_429  # 561874 # 563130 # 1 # ID=4_429;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=12bp;gc_cont=0.6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   6.9e-05     0.018     158     251 ..      76     160 ..      16     162 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 6.9e-05
+  malY_K14155_msa 158 tepgdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCnPhNPtGrvwtreeLeklaelcekhdvlvisD 251
+                       ++gd+V+v+  +Y +   ai +ng + v v+     g+ ++D  ++e++++ +++++ll  +     Gr+   +  e + ++c +h++++i D
+  NC_019960.1_429  76 LHEGDEVIVPANTYIASILAISENGLRPVLVEP--SPGTLQLDETRIEEAVT-ERTRALLSVHL---YGRC---AWTEGISDICTRHHLRLIED 160
+                      579*************************99998..5899************9.78999998773...4654...33357888888888888877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (493 nodes)
+Target sequences:                       2647  (991361 residues searched)
+Passed MSV filter:                       108  (0.0408009); expected 52.9 (0.02)
+Passed bias filter:                       98  (0.037023); expected 52.9 (0.02)
+Passed Vit filter:                        21  (0.00793351); expected 2.6 (0.001)
+Passed Fwd filter:                        10  (0.00377786); expected 0.0 (1e-05)
+Initial search space (Z):               2647  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 6595.49
+//
+# Alignment of 9 hits satisfying inclusion thresholds saved to: workflow/out/malYcustom/hmmer_output/Prevotella_dentalis_malYcustom.sto
+[ok]

@@ -1,0 +1,130 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides_thetaiotaomicron_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Bacteroides_thetaiotaomicron_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Bacteroides_thetaiotaomicron_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Bacteroides_thetaiotaomicron_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    2.3e-22   77.6   0.0    2.9e-21   73.9   0.0    2.0  1  NZ_CP040530.1_1293  # 1693324 # 1694535 # 1 # ID=1_1293;parti
+    0.00042   17.3   0.0    0.00066   16.6   0.0    1.2  1  NZ_CP040530.1_3587  # 4648012 # 4649196 # -1 # ID=1_3587;part
+    0.00066   16.6   0.0     0.0011   16.0   0.0    1.2  1  NZ_CP040530.1_4104  # 5277925 # 5279112 # 1 # ID=1_4104;parti
+     0.0055   13.6   0.0     0.0088   12.9   0.0    1.3  1  NZ_CP040530.1_4458  # 5693438 # 5694559 # -1 # ID=1_4458;part
+  ------ inclusion threshold ------
+      0.023   11.5   0.2      0.059   10.2   0.0    1.6  2  NZ_CP040530.1_3873  # 5008066 # 5010915 # 1 # ID=1_3873;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP040530.1_1293  # 1693324 # 1694535 # 1 # ID=1_1293;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=15bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   73.9   0.0   2.9e-24   2.9e-21     140     500 ..      54     398 ..       6     403 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 73.9 bits;  conditional E-value: 2.9e-24
+              K22207 140 qPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVi 230
+                         +  ++  ++ ++   +sr++++++ina + +ev++   +T+ ++  + + +    +  +q+gd v++  +   +     + +++r+g  + 
+  NZ_CP040530.1_1293  54 RGVHYLSQQATELHEASRETVRQFINAGSTNEVVFTRGTTESINLLVSSFG----DEFMQEGDEVILSVMEHHSNIVPWQLLAARKGIAIK 140
+                         44556666666666789***********************99999887777....66689******9999999988899999999997765 PP
+
+              K22207 231 evelpfPvksneeii.eefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfyts 320
+                          +    P++++ e++ +e++k         +r++++ +  ++ + + v Pvke++++++++gv+  +vDaA++i +++vdv++++adf + 
+  NZ_CP040530.1_1293 141 VI----PMNDKGELLlDEYEKLF------TERTKIVSVVQVSNVLGTVNPVKEMIATAHAHGVP-FLVDAAQSIPHMKVDVQDLDADFLVF 220
+                         55....67788887615555544......3466777778899999******************8.************************** PP
+
+              K22207 321 nlhKWffcPksvAfLyvrksskssdlh..........hPvvsheYgnglaiesawiGtrDysaqlvvpealeFvnrfegGiegikkrnhel 401
+                          +hK +++P++v +Ly +++   +++           h    +   n+l+ ++   Gt Dy     + +al++vn +  G++ i +  hel
+  NZ_CP040530.1_1293 221 SAHK-VYGPTGVGVLYGKEEW-LDRMPpyqgggemiqHVSFEKTTFNELPFKFE-AGTPDYIGTTGLAKALDYVNGI--GLDPIAAHEHEL 306
+                         ****.9***********9933.23332455654443244444444577777775.7*********************..9*********** PP
+
+              K22207 402 vvemgemLaeawgtelgappemcasmvmvgLPaalgissdddalkLrthLreefkveVpi..yyrapkdgeveqvtgyvRiShqvYnkveD 490
+                            + + L e    ++    e     +++ +        d +   L t+L  + ++ V +  +  +p + ++  + g vR S ++Yn++++
+  NZ_CP040530.1_1293 307 TTYALKRLKEIPNMRI--FGEAADRGAVISFL-----VGDIHHFDLGTLLD-RLGIAVRTghHCAQPLMQRL-GIEGTVRASFAMYNTRSE 388
+                         *999999999877776..44444445555543.....34555566766654.45888888423333346666.788899999999999999 PP
+
+              K22207 491 yeklrdAvnk 500
+                         + +l   +++
+  NZ_CP040530.1_1293 389 VDALVAGIER 398
+                         9888877776 PP
+
+>> NZ_CP040530.1_3587  # 4648012 # 4649196 # -1 # ID=1_3587;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=9bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.0   6.7e-07   0.00066     244     304 ..     157     214 ..     140     217 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 6.7e-07
+              K22207 244 iieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiG 304
+                          ++ ++k+L+  k n  +v+L ++D + Sm + +    e+v++ +++   +++vD AH++G
+  NZ_CP040530.1_3587 157 DMADLEKQLQ--KCNPDSVKLIIVDGVFSMEGDLANLPEIVRLKHKYNA-TIMVDEAHGLG 214
+                         5677889996..667779****************9999**********9.7********99 PP
+
+>> NZ_CP040530.1_4104  # 5277925 # 5279112 # 1 # ID=1_4104;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=13bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   1.1e-06    0.0011     248     322 ..     160     239 ..     153     246 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 1.1e-06
+              K22207 248 frkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkei........gadfytsnl 322
+                         +++ L++++a  +r+r++v D + Sm + v P  ++  ++ +++   v+vD  H+ G v    + +        ++d yt+ l
+  NZ_CP040530.1_4104 160 LERCLQEAQA--QRFRIVVTDGVFSMDGNVAPMDQICDLAEKYDA-LVMVDESHSAGVVGATGHGVselyktygRVDIYTGTL 239
+                         5566665555..59*****************************99.6*******99988544333322266666666666665 PP
+
+>> NZ_CP040530.1_4458  # 5693438 # 5694559 # -1 # ID=1_4458;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=12bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0     9e-06    0.0088     269     335 ..     141     206 ..     106     221 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 9e-06
+              K22207 269 hitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfL 335
+                         h     +++ P++e+ +i++++   + +vD   ++G ++ d+++ ++df ++ + K + + ++  f+
+  NZ_CP040530.1_4458 141 HHETGTGILNPIREMGAIAHKYQA-KFVVDTTSSLGMIPFDIEKDNVDFCMASAQKGLQAMTGLSFI 206
+                         5555567889**************.79**************************99988888887776 PP
+
+>> NZ_CP040530.1_3873  # 5008066 # 5010915 # 1 # ID=1_3873;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=15bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0      0.39   3.8e+02     169     190 ..     134     155 ..      92     170 .. 0.75
+   2 ?   10.2   0.0   5.9e-05     0.059     280     331 ..     660     711 ..     650     713 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.39
+              K22207 169 vdevslvdnaTtaaaivlqqva 190
+                         + + sl+d aT+aa++v    a
+  NZ_CP040530.1_3873 134 LANCSLLDEATAAAEAVTMMYA 155
+                         678899*******999976555 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 5.9e-05
+              K22207 280 vkeLvkicreegvdqvfvDaAHaiGqvdvdvke.igadfytsnlhKWffcPks 331
+                         +ke+ +i+++ g  qv +D+A    qv +     igad    nlhK f +P++
+  NZ_CP040530.1_3873 660 IKEICEIIHACGA-QVYMDGANMNAQVGLTNPGfIGADVCHLNLHKTFASPHG 711
+                         89***********.8************88666527***************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       4930  (1889129 residues searched)
+Passed MSV filter:                       154  (0.0312373); expected 98.6 (0.02)
+Passed bias filter:                      123  (0.0249493); expected 98.6 (0.02)
+Passed Vit filter:                        20  (0.0040568); expected 4.9 (0.001)
+Passed Fwd filter:                         5  (0.0010142); expected 0.0 (1e-05)
+Initial search space (Z):               4930  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.07
+# Mc/sec: 14130.31
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Bacteroides_thetaiotaomicron_lcd.sto
+[ok]

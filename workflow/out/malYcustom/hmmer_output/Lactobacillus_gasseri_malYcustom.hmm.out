@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/malYcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus_gasseri_prodigal.faa
+# output directed to file:         workflow/out/malYcustom/hmmer_output/Lactobacillus_gasseri_malYcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/malYcustom/hmmer_output/Lactobacillus_gasseri_malYcustom.sto
+# per-dom hits tabular output:     workflow/out/malYcustom/hmmer_output/Lactobacillus_gasseri_malYcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       malY_K14155_msa  [M=493]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    2.4e-59  197.6   0.0    2.6e-59  197.5   0.0    1.0  1  NZ_WBOA01000001.1_291  # 294490 # 295056 # 1 # ID=13_291;part
+      4e-57  190.3   0.0    4.8e-57  190.0   0.0    1.0  1  NZ_WBOA01000001.1_426  # 422766 # 423950 # -1 # ID=13_426;par
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_WBOA01000001.1_291  # 294490 # 295056 # 1 # ID=13_291;partial=00;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  197.5   0.0   2.9e-62   2.6e-59     257     442 ..       1     186 [.       1     188 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 197.5 bits;  conditional E-value: 2.9e-62
+        malY_K14155_msa 257 lvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglsspnvlglvateaAYregeeWldell 344
+                            +v ++ k+tp+ s+se++++++i l+spsKtFN+a+l+a+++iip+e+lr  ++r l++++l++pn+l++ at+aAY+eg  Wl+ell
+  NZ_WBOA01000001.1_291   1 MVRDNVKYTPAFSVSEALRDNIISLVSPSKTFNVAALHAATVIIPDENLRYIVNRGLNSDELAEPNLLAIPATIAAYTEGFSWLHELL 88 
+                            578899********************************************************************************** PP
+
+        malY_K14155_msa 345 ayleenrdllaeflaeelpglkvvkpeaTYLaWlDcralglddeelkefllekakvalsdGstFgeegegfvRlNlAcprevleeale 432
+                              +++n+++++++++++l+++k+v   aTYL+WlD+++++ +++el +++++++++++s+Gs +  +g++f+RlNlA p +++e++++
+  NZ_WBOA01000001.1_291  89 VIINRNFNYAEKEITNNLEDVKIVSGPATYLLWLDVSKVSSNSQELADYIRKETGLIVSPGSIYRGNGNKFLRLNLASPISMVEDGIK 176
+                            ***************************************9999*********************99********************** PP
+
+        malY_K14155_msa 433 rlkkalkalk 442
+                            rl + +k+++
+  NZ_WBOA01000001.1_291 177 RLISGIKKYS 186
+                            *****99976 PP
+
+>> NZ_WBOA01000001.1_426  # 422766 # 423950 # -1 # ID=13_426;partial=00;start_type=ATG;rbs_motif=AGGAG/GGAGG;rbs_spacer=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  190.0   0.0   5.3e-60   4.8e-57      78     440 ..      33     393 ..      13     394 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 190.0 bits;  conditional E-value: 5.3e-60
+        malY_K14155_msa  78 g.edvlplwvADmDfktppaviealkkrvehgvfGYtep..pdelyeaiadwlkrrhgweidpe.wivfvpgvvpalslairaftepg 161
+                            + + ++ l++ + D+ tp+ v++a  + ++ ++  Y  +  ++el++ai+++l+r  +++ dp  +i+++ g   al+ +   + +pg
+  NZ_WBOA01000001.1_426  33 QiPGIIKLTIGEPDLNTPDHVKDAAIADIKANDSHYAPQagKPELQDAISKYLNRSLNIKYDPAtEICVTVGATGALNDVFMSILNPG 120
+                            35789*******************************8658999*****************99863799999***************** PP
+
+        malY_K14155_msa 162 dkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklae..pkvkllllCnPhNPtGrvwtreeLeklaelcekhdvl 247
+                            dk+lv+tPv+   +++i+ +g   v+++   +dg + +  e+le+ l++  +++k+++l  P NPtGrv+ +e L++lae+  k++++
+  NZ_WBOA01000001.1_426 121 DKILVPTPVWALYFQLIKLTGAIPVQMDTS-KDG-FILTPEHLEKVLQNegKGAKAIILTDPSNPTGRVYPEETLKALAEIITKYHLF 206
+                            *********************999999996.777.************984445*********************************** PP
+
+        malY_K14155_msa 248 visDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrekfkralkaeglsspnvlglvateaAYre 335
+                             + DEI+ +lv++++ h+++++    + er i+++  sK++ + G + +y+ +p +   +++++ ++a  ++s++    +a++ A ++
+  NZ_WBOA01000001.1_426 207 SVTDEIYGELVYDNNVHHSLSQY---IPERNILISGLSKAYAMTGWRLGYIAAPADI-MKTIQK-VNAFLVTSVTDNVQAAAIEALNN 289
+                            **************999887666...67799*******************9998765.555777.67666778888899999****** PP
+
+        malY_K14155_msa 336 geeWldellayleenrdllaeflaeelpglkvvkpeaTYLaWlDcra.lglddeelkefllekakvalsdGstFgeegegfvRlNlAc 422
+                            g++   e ++  e+ ++++++ l++   g ++  p++ + ++  + + +g dde++ + l +kakv++++G+ Fg++g+g+vR+  A 
+  NZ_WBOA01000001.1_426 290 GQADPLESRKIYEDRLKFMKAGLEK--LGFEMSTPQGAFYIFAKIPDaFGTDDEAFANELATKAKVGVTPGRYFGQGGQGYVRMSYAS 375
+                            ***********************98..49****************98579999*********************************** PP
+
+        malY_K14155_msa 423 prevleealerlkkalka 440
+                            ++e l+eal+r+++ +k+
+  NZ_WBOA01000001.1_426 376 STEQLKEALKRIAEFVKN 393
+                            *************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (493 nodes)
+Target sequences:                       1809  (566218 residues searched)
+Passed MSV filter:                        66  (0.0364842); expected 36.2 (0.02)
+Passed bias filter:                       49  (0.0270868); expected 36.2 (0.02)
+Passed Vit filter:                         7  (0.00386954); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00110558); expected 0.0 (1e-05)
+Initial search space (Z):               1809  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 14043.30
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/malYcustom/hmmer_output/Lactobacillus_gasseri_malYcustom.sto
+[ok]

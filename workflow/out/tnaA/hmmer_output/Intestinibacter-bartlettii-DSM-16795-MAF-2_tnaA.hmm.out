@@ -1,0 +1,51 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Intestinibacter-bartlettii-DSM-16795-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.011   11.8   0.1      0.019   11.0   0.1    1.3  1  scaffold_Scaffolds_0.cp.600_1757  # 1970140 # 1971276 # -1 # ID=1_
+
+
+Domain annotation for each sequence (and alignments):
+>> scaffold_Scaffolds_0.cp.600_1757  # 1970140 # 1971276 # -1 # ID=1_1757;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.1   7.3e-06     0.019     174     225 ..     131     178 ..     127     182 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 7.3e-06
+                   tnaA_K01677_msa 174 lieevgaenvplivlTiTnNsaGGQPVSmaNlravaeiakkygipvvlDaAR 225
+                                        i+++ +++ +liv T  +N  G     ++ +r++ +ia++++ip++ D+A 
+  scaffold_Scaffolds_0.cp.600_1757 131 DIKKYIKKDTALIVFTQASNVLGT----IQPIREIGAIAREHNIPFLVDSAQ 178
+                                       578888888999999999999995....7889******************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       2668  (843986 residues searched)
+Passed MSV filter:                       191  (0.0715892); expected 53.4 (0.02)
+Passed bias filter:                       68  (0.0254873); expected 53.4 (0.02)
+Passed Vit filter:                         9  (0.00337331); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000374813); expected 0.0 (1e-05)
+Initial search space (Z):               2668  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 23447.09
+//
+# No hits satisfy inclusion thresholds; no alignment saved
+[ok]

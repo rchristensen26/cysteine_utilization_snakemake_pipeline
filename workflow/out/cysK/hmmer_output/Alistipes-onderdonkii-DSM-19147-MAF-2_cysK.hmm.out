@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysK.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-onderdonkii-DSM-19147-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysK/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_cysK.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysK/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_cysK.sto
+# per-dom hits tabular output:     workflow/out/cysK/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_cysK.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01139  [M=298]
+Accession:   TIGR01139
+Description: cysK: cysteine synthase A
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.5e-94  311.6   0.2      1e-93  311.3   0.2    1.1  1  1_588     # 695408 # 696313 # -1 # ID=1_588;partial=00;start_
+    3.1e-11   40.5   0.0    5.6e-10   36.4   0.0    2.5  1  1_2998    # 3680734 # 3682095 # 1 # ID=1_2998;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_588  # 695408 # 696313 # -1 # ID=1_588;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.592
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  311.3   0.2   6.5e-97     1e-93       4     298 .]       9     296 ..       6     296 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 311.3 bits;  conditional E-value: 6.5e-97
+  TIGR01139   4 liGntPlvrLn.laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkllkay 102
+                +iG tP+vr+n l  + ++++++kle +nP++s+kdrial+mie+ae++g l++gkti+e+tsGntGi+la+v+  +gy + ++m  ++s+errk++++y
+      1_588   9 TIGGTPMVRINrLCPNPNVNIYAKLEGFNPTGSIKDRIALRMIEEAEQDGRLTPGKTIIEPTSGNTGIGLAIVGIVKGYPVEIVMSSAVSVERRKIIRSY 108
+                8**********889999*********************************************************************************** PP
+
+  TIGR01139 103 GaelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvavePaesp 202
+                Ga+++Lt+++eg  gai+ a++ v+ +p+ky+++ qf+n  n  +h ++ta ei++++ g++d +v ++Gt Gt+ G ++ lk +kpdi+vv + P +  
+      1_588 109 GAKVILTPAEEGTDGAIRLARSKVAGDPDKYFMPDQFANAGNYLAHYQSTALEIWQQTGGRIDYLVCAIGTSGTLMGLSRFLKVMKPDIRVVCAQPIRGH 208
+                **************************************************************************************************99 PP
+
+  TIGR01139 203 vlsggkpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakklekdkkivvilpdtgerYlstaLf 298
+                 ++g k+ +          +P++ d + id    v++eeai++ar+++++e i++G+ssGaa+ aa+++a++ e++ +ivv++pd +e+Ylst++f
+      1_588 209 YIQGLKNMEE-------AIVPDIYDPSQIDMQEMVESEEAIAMAREIIAREAIFAGMSSGAAMLAAVRTAQRIERG-NIVVVFPDRAEKYLSTTMF 296
+                9999877655.......569*****************************************************776.68999***********998 PP
+
+>> 1_2998  # 3680734 # 3682095 # 1 # ID=1_2998;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=5bp;gc_cont=0.648
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   0.0   3.5e-13   5.6e-10       8     276 ..      80     401 ..      74     418 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 36.4 bits;  conditional E-value: 3.5e-13
+  TIGR01139   8 tPlvrLn...laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmsle....rrkllk 100
+                tPlvr      a ++ a+++ k es+ P++s k  +a+       k+g     +   e+ +G  G a+a+ a + g+ + + m++  s e    rr +++
+     1_2998  80 TPLVRATgleKALGTPAKIYFKNESVSPAGSHKPNTAVPQAYYNYKQGI---RHLTTETGAGQWGAAIAFAAKHFGLDVQVFMVKV-SYEqkpyRRLMMN 175
+                9999965533677889******************999887777776665...3456899**********************99974.5443455899*** PP
+
+  TIGR01139 101 ayGaelvLtdgaegmkg................aiekaeelveetpnkylllkqfenpan.peihrkttapeilkdldgk...ldafvagvGtGGtitGv 180
+                ++Gae +  +++   +g                ai++a e++ ++p+            n    h++  ++e + +++ +    d+++  +G G   +G 
+     1_2998 176 TWGAECIASPSTITASGraalerdpdcsgslglAISEAVEMALQHPEDT--RYCLGSVLNhVILHQTVIGQEAVAQMEMAgaePDVVIGCFGGGSNFAGL 273
+                ******9887654333322222233333344457999999999999865..33444444514579999******9998765569**************** PP
+
+  TIGR01139 181 ge.vlkekkp...dikvvavePaespvlsgg............................kpgphkiqGigagfiPkvLdkevidevikvsdeeaietarr 248
+                g   l+++     +i++vaveP++ p l++g                            +  +  ++  gag i + L k+ + e  ++ + e+++ +  
+     1_2998 274 GFpFLRRNLVegrNIRIVAVEPSSCPKLTRGtfqydfgdvagftpllpmytlghdfqpsDIHAGGLRYHGAGSIVSQLLKDGLVEARSLPQTETLAAGIL 373
+                9626666543456****************99899999999999999999999887754433333455567887777777777777888888999999999 PP
+
+  TIGR01139 249 lakeeGilvGissGaavaaalkvakkle 276
+                 ak eGi+    s  a+aaa++ a +++
+     1_2998 374 FAKTEGIIPAPESTHAIAAAIREALQAK 401
+                9999999999999999999988776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (298 nodes)
+Target sequences:                       3154  (1154124 residues searched)
+Passed MSV filter:                        99  (0.0313887); expected 63.1 (0.02)
+Passed bias filter:                       79  (0.0250476); expected 63.1 (0.02)
+Passed Vit filter:                        11  (0.00348763); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000634115); expected 0.0 (1e-05)
+Initial search space (Z):               3154  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 11904.60
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysK/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_cysK.sto
+[ok]

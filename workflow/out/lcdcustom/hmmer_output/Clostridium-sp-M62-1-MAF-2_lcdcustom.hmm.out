@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Clostridium-sp-M62-1-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Clostridium-sp-M62-1-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Clostridium-sp-M62-1-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Clostridium-sp-M62-1-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.2e-09   33.0   0.2    4.5e-08   29.9   0.2    2.0  1  1_2585    # 2886333 # 2887514 # -1 # ID=1_2585;partial=00;sta
+    0.00059   16.3   0.0     0.0011   15.4   0.0    1.6  1  1_2732    # 3061084 # 3062232 # -1 # ID=1_2732;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2585  # 2886333 # 2887514 # -1 # ID=1_2585;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.2   2.6e-11   4.5e-08     130     322 ..      45     221 ..      23     231 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 2.6e-11
+  lcd_K22207_msa 130 kkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneei 224
+                     kk+i+++r++i++ ++a+  +e+ ++   t   +  L ++a + +    +kg+ +++ ++  +a+ +++e  +++ g +v  +++     +++ +
+          1_2585  45 KKAIAHARETIAKALGAK-TNEIYFTAGGTESDNWALVATAEAYR----AKGNHIITSKIEHHAILHTCEY-LEKRGFEVTYLDV-----DENGV 128
+                     667777777777777777.56777777777777777776664444....7777777777777777777765.5666666553222.....22333 PP
+
+  lcd_K22207_msa 225 v..sefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyv 317
+                     v  +e++ka++       +  l  i +       + PV+++ +i +e+g+     Da +a G+v++dv+e g d   +  HK f  P++++fLy+
+          1_2585 129 VklEELKKAIR------PETILISIMFANNEIGTIEPVRQIGAIAKEHGI-LFHTDAVQAFGHVPIDVDECGIDMLSASGHK-FNGPKGIGFLYI 215
+                     30133333333......3444555556677777788**************.889****************************.89********** PP
+
+  lcd_K22207_msa 318 rks.ka 322
+                     r   k+
+          1_2585 216 RTGvKS 221
+                     *96343 PP
+
+>> 1_2732  # 3061084 # 3062232 # -1 # ID=1_2732;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   6.4e-07    0.0011     133     391 ..      46     288 ..      36     382 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 6.4e-07
+  lcd_K22207_msa 133 ilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivse 227
+                     i ++r++i++l++a +  + +++ Nat   ++ +           + ++D v+++ +  ++V + + + ++++g++v  v+ +   + +    +e
+          1_2732  46 IFSTREKIARLFHAGEPRQTAFTCNATESLNTAICG--------LIGPQDHVITTVLEHNSVLRPLFH-LAEQGTDVSFVTCDSLGRLK---YEE 128
+                     566677777777777777777777777777766653........345667777777777777766666.46666665555554444433...457 PP
+
+  lcd_K22207_msa 228 frkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks.k 321
+                     f++ L+k      + + ++  H + ++  v+  k+  + c+++g    + D  +  G  +vd++  +Ad      HK ++ P++++ L+vr+  +
+          1_2732 129 FEANLKK------NTKAVICTHASNVTGNVVDLKRVGEFCKKHGL-LFIADISQTAGAYPVDMEVFQADVLCFTGHKGLMGPQGTGGLCVREGvD 216
+                     7777777......7899999*************************.7888*****************************************9634 PP
+
+  lcd_K22207_msa 322 asdlhh..pvVsheygnglaiesa...wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaea 391
+                      + l++  +   h++ +  ++e+      Gt        + a+l+F+++   g+e+i++r   l+++  e +   
+          1_2732 217 IAPLKRggSG-VHSFLKEHPSEMPvrlEAGTLNGHGIAGLNAALDFIDKT--GVENIHSRENALLMQFYEGVRGI 288
+                     4555553222.466666666665433367888888888888888888884..88888888877777766665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3477  (1104519 residues searched)
+Passed MSV filter:                       126  (0.0362381); expected 69.5 (0.02)
+Passed bias filter:                      102  (0.0293356); expected 69.5 (0.02)
+Passed Vit filter:                         8  (0.00230083); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000575209); expected 0.0 (1e-05)
+Initial search space (Z):               3477  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 9215.46
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Clostridium-sp-M62-1-MAF-2_lcdcustom.sto
+[ok]

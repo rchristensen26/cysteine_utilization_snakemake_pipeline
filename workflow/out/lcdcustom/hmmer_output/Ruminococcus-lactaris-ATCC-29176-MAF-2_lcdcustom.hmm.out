@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Ruminococcus-lactaris-ATCC-29176-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Ruminococcus-lactaris-ATCC-29176-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Ruminococcus-lactaris-ATCC-29176-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Ruminococcus-lactaris-ATCC-29176-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.6e-09   34.2   0.0    4.4e-08   29.4   0.0    2.1  2  1_1393    # 1538841 # 1540022 # -1 # ID=1_1393;partial=00;sta
+    3.3e-08   29.8   0.0    7.9e-08   28.6   0.0    1.5  1  1_247     # 274077 # 275213 # 1 # ID=1_247;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1393  # 1538841 # 1540022 # -1 # ID=1_1393;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.43
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.5   0.0    0.0052       6.4     128     199 ..      43     109 ..       9     130 .. 0.81
+   2 !   29.4   0.0   3.6e-11   4.4e-08     259     322 ..     159     221 ..     155     229 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 2.5 bits;  conditional E-value: 0.0052
+  lcd_K22207_msa 128 elkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksie 199
+                     + k+ i+++r++i++ ++a+  de+ ++   +   +  L+++a + +    +kg  ++++++  +a+ ++ e
+          1_1393  43 SNKEVITKQRETIAKALGAK-TDEIYFTAGGSESDNWALKATAEAYE----SKGKHIITTKIEHHAILHTGE 109
+                     4578899***********99.79*****9999999999999986666....789999999888888876654 PP
+
+  == domain 2  score: 29.4 bits;  conditional E-value: 3.6e-11
+  lcd_K22207_msa 259 PVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks.ka 322
+                     P+ke+ +i +++g+     Da +a Gqv+++v+e++ d   s  HK +  P++++fLy+rk  k 
+          1_1393 159 PIKEIGEIAHKHGI-LFHTDAVQAFGQVPINVDEMNIDMLSSSGHK-LNGPKGIGFLYIRKGvKI 221
+                     **************.889****************************.89***********96444 PP
+
+>> 1_247  # 274077 # 275213 # 1 # ID=1_247;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   0.0   6.4e-11   7.9e-08     131     481 ..      44     376 ..      35     377 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 6.4e-11
+  lcd_K22207_msa 131 kgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeiv 225
+                     + i+ +r ++ ++++ d++++v+++ N t   +  ++        g f +gD ++++ +  ++V + + + ++++g++     l +  ++++  +
+           1_247  44 RIIYDTRVKLVEFFGGDHAEQVAFTANSTESLNLAIK--------GLFYPGDHIITTALEHNSVLRPLYE-MEEKGTE-----LTILKSDEKGCI 124
+                     56788899999**********************9998........6699***************988877.4555555.....556556666555 PP
+
+  lcd_K22207_msa 226 s..efrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvr 318
+                     s  e+++a        ++ r  +  H + ++  +l  +++ ki + +g    +VDa +  G  +++vk+++ d      HK +  P++++ Lyv+
+           1_247 125 SyeEMENA------IRENTRAIICTHGSNVTGNLLDLTKIGKIAKMHGL-LFIVDASQTAGVFPINVKQMQIDVLCFTGHKGLLGPQGTGGLYVK 212
+                     41144444......45589999***************************.89******************************************* PP
+
+  lcd_K22207_msa 319 ks.kasdlhh..pvV...sheygnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmi 407
+                     k  + + l++  + V   s++    ++   +  Gt        + a+l+++++   gi++ir+  + l+ e  e + +  g  +    +      
+           1_247 213 KGiEIRPLKSggSGVqsySKRHPRQMP-TALEAGTLNAHGIAGLHAALDYLTE--TGIDTIREKEQALMWEFYEKVRKIPGVIVYGDFSGKERCP 304
+                     *75556666555444322344444444.34579*****************988..5**************************9877777777888 PP
+
+  lcd_K22207_msa 408 mVgLPaklgissdedalkLrthLreefkvevp..iyyrapkegevea.itgYvRiShqvYnkvddyyklrdavnqlv 481
+                     +V L       +d d ++L + L +e+++++   +++ +  ++ +++   g vR S   Yn+ ++ +   +a ++l+
+           1_247 305 IVTLN-----FEDVDSAELSDALFTEYGISTRpgVHCAPLMHEALGTvEQGAVRFSFSHYNTEKEILTAVEALKELA 376
+                     89998.....5888999************9863356654445444443789*************9998888888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2460  (792810 residues searched)
+Passed MSV filter:                       111  (0.045122); expected 49.2 (0.02)
+Passed bias filter:                       84  (0.0341463); expected 49.2 (0.02)
+Passed Vit filter:                         6  (0.00243902); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000813008); expected 0.0 (1e-05)
+Initial search space (Z):               2460  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 13661.53
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Ruminococcus-lactaris-ATCC-29176-MAF-2_lcdcustom.sto
+[ok]

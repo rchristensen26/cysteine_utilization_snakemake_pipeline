@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus-ruminis-ATCC-25644-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   4.6e-106  351.6   0.1   5.2e-106  351.4   0.1    1.0  1  1_23      # 30187 # 31113 # 1 # ID=1_23;partial=00;start_type
+    8.6e-12   41.4   1.1    1.4e-06   24.2   0.1    2.2  2  1_831     # 880330 # 881520 # 1 # ID=1_831;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_23  # 30187 # 31113 # 1 # ID=1_23;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.487
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  351.4   0.1    5e-109  5.2e-106      30     322 ..       5     307 ..       1     308 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 351.4 bits;  conditional E-value: 5e-109
+  cysM_K12339_msa  30 yktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpen 123
+                      y+++++liG+TP+v+l+++ +++ +++++KlE++NPaGS+KdR+alsm+++a+++g++k+g t+iE+TSGNTGi Lam+aa+kgy++ +vmpe+
+             1_23   5 YDSVDQLIGKTPIVKLNHVVPEDAADVYVKLEFFNPAGSIKDRIALSMLEAAKKSGKLKDGGTIIEPTSGNTGIGLAMVAAAKGYHLIIVMPET 98 
+                      7899****************************************************************************************** PP
+
+  cysM_K12339_msa 124 aseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqte..gkvthfVsgmGTtGTimGvsryL 215
+                      +s er++ m+ yGAelilt+ +egm g++ +a++la+++ yf++ Qf+Np+Np+ H + Tg+Ei++  +  +  + fVsg+GT+GT++G++++L
+             1_23  99 MSIERRKLMQGYGAELILTPGAEGMKGSIAKATQLAEDNGYFMPMQFENPANPDVHEQETGQEIIEAFGkdDLPDAFVSGVGTGGTLTGIGHAL 192
+                      *******************************************************************7644889******************** PP
+
+  cysM_K12339_msa 216 keqnpavqivglqPee....gssipGirrw...peaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea 302
+                      ke ++++++++l+P+e    ++++ G  ++   ++ ++p+i d++ +D +++v ++eA+++ar++a++eg++ G+S+G+++++a+++a++l ++
+             1_23 193 KELDQEIKVYALEPSEspvlKDGVAGKHKIqgiSAGFVPEILDRQIYDGIIEVPSDEAVKTAREVAHKEGFLPGISAGANIYGAIEIAKKLGKG 286
+                      **************8823334677887776554789******************************************************9655 PP
+
+  cysM_K12339_msa 303 .viVaivcDrgdrYlstgvfe 322
+                        +V++ +D gdrYlst++f+
+             1_23 287 kKVVTVSPDGGDRYLSTELFN 307
+                      49*****************97 PP
+
+>> 1_831  # 880330 # 881520 # 1 # ID=1_831;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.457
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.1   1.4e-09   1.4e-06      48     148 ..      64     165 ..      16     187 .. 0.76
+   2 !   15.9   0.1   4.7e-07   0.00048     254     314 ..     320     381 ..     312     388 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 1.4e-09
+  cysM_K12339_msa  48 lagk.kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpenaseer...kaamrayGA 137
+                      ++++  g+++++K E  N +G  K   +l          ++ +++++ E   G  G+A a +aa++g++++++m e   + +      m+ +GA
+            1_831  64 MTKDlGGAKVYLKREDLNHTGAHKINNVLGQC---LLAKKMGKKRVIAETGAGQHGVATATVAALMGMECEIFMGEIDCKRQalnVYRMKLLGA 154
+                      54443599*************99977666655...555777789******************************997665541115689***** PP
+
+  cysM_K12339_msa 138 eliltdkeegm 148
+                      +++ ++  +g+
+            1_831 155 KVHSVSTGTGT 165
+                      ****9765543 PP
+
+  == domain 2  score: 15.9 bits;  conditional E-value: 4.7e-07
+  cysM_K12339_msa 254 rvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea.viVaivcDrgdr 314
+                      +  + + ++++eA+++ + l r+egi+  + s+ ava a ++  ++++  ++++ ++ rgd+
+            1_831 320 KRAKYVPITDDEAVDAFEYLSRTEGIIPAIESAHAVAYAKKIVPKMRKDqIVIVTLSGRGDK 381
+                      45577899************************************996661555557788887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2053  (609007 residues searched)
+Passed MSV filter:                        78  (0.0379932); expected 41.1 (0.02)
+Passed bias filter:                       50  (0.0243546); expected 41.1 (0.02)
+Passed Vit filter:                         6  (0.00292255); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000974184); expected 0.0 (1e-05)
+Initial search space (Z):               2053  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 13918.81
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysMcustom.sto
+[ok]

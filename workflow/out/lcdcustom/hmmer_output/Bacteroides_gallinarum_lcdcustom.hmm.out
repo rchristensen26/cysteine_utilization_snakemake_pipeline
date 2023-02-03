@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides_gallinarum_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bacteroides_gallinarum_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bacteroides_gallinarum_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bacteroides_gallinarum_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.1e-29  100.6   0.0      4e-29   99.7   0.0    1.4  1  NZ_KB894123.1_40   # 37597 # 38808 # 1 # ID=94_40;partial=00;
+    3.7e-10   37.1   0.1    4.7e-10   36.7   0.1    1.2  1  NZ_KB894116.1_146  # 163662 # 164750 # -1 # ID=101_146;partia
+  ------ inclusion threshold ------
+      0.033   10.8   0.2       0.11    9.2   0.1    1.8  2  NZ_KB894135.1_34   # 36672 # 39521 # -1 # ID=82_34;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB894123.1_40  # 37597 # 38808 # 1 # ID=94_40;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.55
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.7   0.0   2.8e-32     4e-29      93     480 ..      24     399 ..       4     402 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 99.7 bits;  conditional E-value: 2.8e-32
+    lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgD 182
+                       + +nG+    p++v++a  +    +   ++   +f  ++ ++  ++sr++++++ina + de+ ++  +t  ++  + +++ +f     q+gD
+  NZ_KB894123.1_40  24 YFDNGATTQKPRQVIDAITDEYYSVnanVHRGVHFLSQQATELHEASRETVRKFINAGSTDEIIFTRGTTESINLLVSSFGEEFM----QEGD 112
+                       5677777778888888765544332223566799********************************************8887776....9*** PP
+
+    lcd_K22207_msa 183 avlmlhyaYgaVkksieayvtraggsvievelpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdq 274
+                        v++  +  ++     + + + + g  i+v   +p+++  e   +e+++ +++      + +++ + H++ +   v PVke+++  +e+gv  
+  NZ_KB894123.1_40 113 EVILSVMEHHSNIVPWQLL-AAKRGIAIKV---IPMSDeGELLLDEYKRLFSE------RTKIVGVAHVSNVLGTVNPVKEMIRYAHEQGV-P 194
+                       *998888777644444444.4444555554...45555156677888777766......8999999*************************.9 PP
+
+    lcd_K22207_msa 275 vfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.ey....gnglaiesawiGtrDysaqlvvp 357
+                       v+VD+A+ai +++vdv+e++AdfY+   HK ++ P +v++Ly +++  +++        ++ h ++     n l+ ++   Gt Dy   + + 
+  NZ_KB894123.1_40 195 VLVDGAQAIPHMPVDVRELDADFYVFSGHK-VYGPTGVGVLYGKEEWLDRMPPyqgggEMIQHvSFerttFNELPFKF-EAGTPDYIGTTGLA 285
+                       ******************************.9************9633333224455544432134111144555444.58************ PP
+
+    lcd_K22207_msa 358 avleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkeg 448
+                       ++l++v+ +  g+e+i ++ hel   +   L e  g ++    +   s+i        +    +          ++ ++ v +  ++ +p  +
+  NZ_KB894123.1_40 286 KALDYVSAV--GMEAIAAHEHELTTYATACLREIPGMRIFGEAKEKGSVISFLVGDIHHFDMGTLL--------DRLGIAVRTghHCAQPLMQ 368
+                       ********7..***************************8777777777777666643333333333........5555655552122333333 PP
+
+    lcd_K22207_msa 449 eveaitgYvRiShqvYnkvddyyklrdavnql 480
+                       ++  i g vR S  +Yn++++   l  a+ ++
+  NZ_KB894123.1_40 369 RL-GIEGTVRASFGMYNTKEEIDTLVAAIGRV 399
+                       43.578889*************9999999765 PP
+
+>> NZ_KB894116.1_146  # 163662 # 164750 # -1 # ID=101_146;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.7   0.1   3.3e-13   4.7e-10     233     338 ..     127     225 ..      78     287 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 36.7 bits;  conditional E-value: 3.3e-13
+     lcd_K22207_msa 233 ekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasd 324
+                        ++    ++++  + + H   ++ v+ P ke+ +i++ +g  + +VDa  + G v++dv+e+g df +s   K +   p+ +f+ +rks+   
+  NZ_KB894116.1_146 127 AH----NAEITHVSVVHCETTTGVLNPLKEIAHIVKMHGK-KLIVDAMSSFGGVPLDVQELGIDFLISSANKCIQGVPGFGFIIARKSE--L 211
+                        44....4455555556999999*****************8.9*********************************************44..3 PP
+
+     lcd_K22207_msa 325 lhhpvVsheygngl 338
+                        +h   Vs++   ++
+  NZ_KB894116.1_146 212 MHCKGVSKSLSLDI 225
+                        45566766655444 PP
+
+>> NZ_KB894135.1_34  # 36672 # 39521 # -1 # ID=82_34;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0      0.16   2.3e+02     137     171 ..     123     156 ..      91     171 .. 0.75
+   2 ?    9.2   0.1   7.3e-05      0.11     261     311 ..     661     711 ..     655     713 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.16
+    lcd_K22207_msa 137 rtaikdlinaddvdevslvdNattAaaivLqqvaw 171
+                       +ta+ dl +     + sl+d at+Aa +v    a+
+  NZ_KB894135.1_34 123 QTAVCDLTGMP-LANCSLLDEATAAAEAVTMMYAL 156
+                       55666666655.6789**********999776654 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 7.3e-05
+    lcd_K22207_msa 261 keLvkicreegvdqvfVDaAhaiGqvev.dvkeigAdfYtsNlHKWffcPps 311
+                        e+++i ++ g  qv  D+A    qv + +   igAd    NlHK f +P++
+  NZ_KB894135.1_34 661 VEICRIIHACGA-QVYMDGANMNAQVGLtNPGFIGADVCHLNLHKTFASPHG 711
+                       355555567888.*************77266779****************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4346  (1459640 residues searched)
+Passed MSV filter:                       147  (0.0338242); expected 86.9 (0.02)
+Passed bias filter:                      114  (0.026231); expected 86.9 (0.02)
+Passed Vit filter:                         9  (0.00207087); expected 4.3 (0.001)
+Passed Fwd filter:                         3  (0.00069029); expected 0.0 (1e-05)
+Initial search space (Z):               4346  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.05
+# Mc/sec: 12761.94
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bacteroides_gallinarum_lcdcustom.sto
+[ok]

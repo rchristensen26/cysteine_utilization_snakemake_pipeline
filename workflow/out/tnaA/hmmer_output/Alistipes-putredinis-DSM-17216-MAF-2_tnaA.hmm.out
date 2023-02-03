@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-putredinis-DSM-17216-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   1.8e-253  841.3   0.2     2e-253  841.1   0.2    1.0  1  1_1292    # 1374503 # 1375876 # 1 # ID=1_1292;partial=00;star
+    3.2e-49  165.6   0.0    3.8e-49  165.3   0.0    1.0  1  1_994     # 1028712 # 1029188 # -1 # ID=1_994;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1292  # 1374503 # 1375876 # 1 # ID=1_1292;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.468
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  841.1   0.2  1.7e-256    2e-253      11     464 ..       3     456 ..       1     457 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 841.1 bits;  conditional E-value: 1.7e-256
+  tnaA_K01677_msa  11 ip..epfrikvvepiklttreeReeaLkeagyNpFlLksedVfiDllTDSGTgAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyeyviP 102
+                      +p  e+++ik+vepi+++tr+eRe+++kea+yN+F+Lk+++V+iD+lTDSGTgAmsdrqwAa+m+GDE+Yags+s++ L++++++++g+eyviP
+           1_1292   3 LPfaESWKIKMVEPIRKSTRQEREKWIKEAHYNLFQLKADQVYIDCLTDSGTGAMSDRQWAAMMMGDESYAGSSSFFLLKDTITRLTGFEYVIP 96 
+                      5555****************************************************************************************** PP
+
+  tnaA_K01677_msa 103 tHQGRgAEqiLfpvlikregkvvisNthFDTTrahvelagaeavdlvikeafdteseapFKGNfDleklealieevgaenvplivlTiTnNsaG 196
+                      tHQGR+AE++Lf+ l++ +g++v++N+hFDTT++h+e ++a a+d++++ea+dt+ e pFKGN+D +kle+++++++ +++p+i++T+TnN+aG
+           1_1292  97 THQGRAAENVLFSHLVH-NGDIVPGNSHFDTTKGHIESRKAVALDCTVDEAKDTQLEVPFKGNVDPAKLETALKQYK-DKIPFIIVTVTNNTAG 188
+                      *****************.**********************************************************7.99************** PP
+
+  tnaA_K01677_msa 197 GQPVSmaNlravaeiakkygipvvlDaARFAENAyFIkqrEegyadksikeIvremfsyaDgltmSaKKDglvniGGliafrddeelfeevktr 290
+                      GQPVSm+Nlr+v+++a+kyg  v++D+ARF ENAyFIk+rE+gyadk+ikeIv+emfs+aDg+tmS+KKDglvn+GG+ia+r +e+++e +k++
+           1_1292 189 GQPVSMQNLREVRALADKYGKRVIFDSARFVENAYFIKTREDGYADKTIKEIVKEMFSLADGMTMSSKKDGLVNMGGFIATR-HEDWYEGAKKF 281
+                      *********************************************************************************9.78********* PP
+
+  tnaA_K01677_msa 291 cilmeGFptYGGlaGrDlealAvGLeEgvdedyLayRieqveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaLaceLYleaG 384
+                      ci++eG+ tYGG++GrD++alAvGLeE +++d +++Ri+qv+yL+ rL+e+G+p+q+P+GgHA+fvDa+k+l  +p+e+Fpaq+La+eLYleaG
+           1_1292 282 CIPFEGYLTYGGMNGRDMAALAVGLEENTEFDNIETRIKQVQYLAARLDEYGIPYQRPVGGHALFVDADKVLSSVPKEEFPAQTLAIELYLEAG 375
+                      ********************************************************************************************** PP
+
+  tnaA_K01677_msa 385 iRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtqehmdyvaealkevkeraesik.glrityeppvLRhFtarLep 464
+                      iR++EiG +l++rdp t+e++   l+L+RL i RrvYt++hmd++a+alk+v++r+++ik g++i++e +++RhFt++Le+
+           1_1292 376 IRGCEIGYILADRDPVTRENRFGGLDLLRLCIARRVYTNNHMDVIAAALKNVYDRRDEIKrGVKIVWETELMRHFTVKLER 456
+                      *******************************************************************************96 PP
+
+>> 1_994  # 1028712 # 1029188 # -1 # ID=1_994;partial=00;start_type=GTG;rbs_motif=TAA;rbs_spacer=6bp;gc_cont=0.623
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.3   0.0   3.2e-52   3.8e-49     330     482 ..       5     156 ..       3     158 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 165.3 bits;  conditional E-value: 3.2e-52
+  tnaA_K01677_msa 330 qveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaLaceLYleaGiRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtq 423
+                       ++yL++ L+  G+p+++P+G+ + ++Da k+ +hip+e++pa aLa +LYl +G+R++E G+++  rd+ +g++  a++ELvRLa PRrv+t 
+            1_994   5 DIRYLVNTLDPKGIPVVTPAGVLGGHLDAMKFCEHIPQEEYPAGALAAALYLCSGVRGMERGTVSSVRDE-NGKEILADVELVRLACPRRVFTL 97 
+                      689***************************************************************9988.88888****************** PP
+
+  tnaA_K01677_msa 424 ehmdyvaealkevkeraesikglrityeppvLRhFtarLepveeekeekaaaekaklge 482
+                      ++++yv++ l++++e+++ i glr+tyeppvLR F   Lep++++ ++ +++ ++++g+
+            1_994  98 SQIKYVIDRLEWLYENRHLIGGLRFTYEPPVLRFFMGGLEPTTDWPARLMEKFRKDFGD 156
+                      *********************************************99999999998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       2367  (733584 residues searched)
+Passed MSV filter:                        84  (0.035488); expected 47.3 (0.02)
+Passed bias filter:                       48  (0.0202788); expected 47.3 (0.02)
+Passed Vit filter:                         5  (0.00211238); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000844951); expected 0.0 (1e-05)
+Initial search space (Z):               2367  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 19541.29
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_tnaA.sto
+[ok]

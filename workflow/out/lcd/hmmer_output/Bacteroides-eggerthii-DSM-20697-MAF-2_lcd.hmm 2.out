@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-eggerthii-DSM-20697-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Bacteroides-eggerthii-DSM-20697-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Bacteroides-eggerthii-DSM-20697-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Bacteroides-eggerthii-DSM-20697-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.6e-26   89.6   0.0    1.5e-25   87.6   0.0    1.8  1  1_702     # 850079 # 851329 # 1 # ID=1_702;partial=00;start_t
+    0.00071   16.0   0.0     0.0011   15.4   0.0    1.2  1  1_1958    # 2391627 # 2392817 # -1 # ID=1_1958;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_702  # 850079 # 851329 # 1 # ID=1_702;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=3bp;gc_cont=0.493
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.6   0.0   8.4e-29   1.5e-25     113     417 ..      37     335 ..      12     415 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 87.6 bits;  conditional E-value: 8.4e-29
+  K22207 113 riNnGSFGscpksvleaqqe..w.qlkflrqPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYg 212
+             + +nG+    p++v++a  +  +  +   ++  +f  ++ ++   +sr++++++ina++ +e+++   +T+ ++  + + +    +  +q+gd v++  +   
+   1_702  37 YFDNGATTQKPRQVVDAITDeyYsVNANVHRGVHFLSQQATELHEASRETVRKFINARSTNEIVFTRGTTESINLLVSSFG----DEFMQEGDEVILSVMEHH 135
+             5666666677777766644311212344567789999999999999************************99999887777....666899*****9988888 PP
+
+  K22207 213 aVKksieayvtraggeVievelpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeiga 315
+             +     + +++++g ++       P++++ e+++   k+L      ++r++++ + h++ + + v Pv+e+++ ++ +gv+ v+vD+A++i +++vdv++++a
+   1_702 136 SNIVPWQLLAAKKGITIKV----IPMNDKGELLQDEYKQLF-----SERTKIVSVAHVSNVLGTVNPVREMIRYAHGQGVP-VLVDGAQSIPHMPVDVQDLDA 228
+             8777778888887765444....58899*****99999995.....457789999*************************8.********************* PP
+
+  K22207 316 dfytsnlhKWffcPksvAfLyvrkssk.........ssdlhhPvvsheYgnglaiesawiGtrDysaqlvvpealeFvnrfegGiegikkrnhelvvemgemL 409
+             dfy+   hK +++P++v +Ly +++            + ++h    +   n+l+ ++   Gt Dy     + +al++v+ +  G+e+i +  hel + + + L
+   1_702 229 DFYVFSGHK-VYGPTGVGVLYGKEEWLekippyqggGEMIQHVSFEQTTFNELPFKFE-AGTPDYIGTTGLAKALDYVSAI--GMENIATHEHELTAYAMHRL 327
+             *********.9***********994323445554433333354444445588888876.7*********************..9************9999999 PP
+
+  K22207 410 aeawgtel 417
+              e  g ++
+   1_702 328 KEIPGMRI 335
+             99888777 PP
+
+>> 1_1958  # 2391627 # 2392817 # -1 # ID=1_1958;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=9bp;gc_cont=0.474
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   6.3e-07    0.0011     245     322 ..     157     239 ..     151     246 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 6.3e-07
+  K22207 245 ieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkei........gadfytsnl 322
+             ++e++k L++++a+  r+r+ v D + Sm + v P  ++  ++ +++   v+vD  H+ G v    + +        ++d yt+ l
+  1_1958 157 MTELEKCLQEAQAQ--RFRIIVTDGVFSMDGNVAPMDKICDLAEKYDA-LVMVDESHSAGVVGATGHGVselydtygRVDIYTGTL 239
+             56889999887776..9**************************99999.6*******99988544333322266666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3478  (1266192 residues searched)
+Passed MSV filter:                       105  (0.0301898); expected 69.6 (0.02)
+Passed bias filter:                       89  (0.0255894); expected 69.6 (0.02)
+Passed Vit filter:                        12  (0.00345026); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000575043); expected 0.0 (1e-05)
+Initial search space (Z):               3478  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
+# Mc/sec: 18928.98
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Bacteroides-eggerthii-DSM-20697-MAF-2_lcd.sto
+[ok]

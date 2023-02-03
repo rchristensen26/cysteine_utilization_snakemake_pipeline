@@ -1,0 +1,198 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Actinobacillus_capsulatus_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Actinobacillus_capsulatus_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Actinobacillus_capsulatus_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Actinobacillus_capsulatus_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    3.1e-94  312.9   3.6    8.7e-94  311.5   3.6    1.6  1  NZ_KB893935.1_122  # 122180 # 123130 # -1 # ID=41_122;partial
+    2.5e-92  306.7   0.0    3.2e-92  306.3   0.0    1.0  1  NZ_KB893939.1_82   # 90601 # 91500 # -1 # ID=37_82;partial=00
+      3e-21   72.8   0.0    3.7e-20   69.2   0.0    2.0  2  NZ_KB893942.1_6    # 5059 # 6585 # 1 # ID=34_6;partial=00;sta
+    4.5e-14   49.2   0.0    4.4e-08   29.5   0.0    2.3  2  NZ_KB893941.1_84   # 79302 # 80492 # 1 # ID=35_84;partial=00;
+    4.4e-11   39.3   0.0    4.2e-10   36.1   0.0    1.9  2  NZ_KB893944.1_59   # 62731 # 63564 # -1 # ID=32_59;partial=00
+      0.002   14.2   0.0     0.0059   12.6   0.0    1.7  2  NZ_KB893934.1_82   # 86865 # 88148 # -1 # ID=42_82;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB893935.1_122  # 122180 # 123130 # -1 # ID=41_122;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  311.5   3.6   2.1e-96   8.7e-94      34     322 ..       8     312 ..       1     316 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 311.5 bits;  conditional E-value: 2.1e-96
+    cysM_K12339_msa  34 edliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpenas 125
+                        + +iGnTPLvrl+++ +  + ++l+K+E  NP+ SVK R+  +m+ +ae++g +++g+ +++aTSGNTGiALa +aa++gyk++l mpe++s
+  NZ_KB893935.1_122   8 SYTIGNTPLVRLKNFGQ--NGNLLVKIESRNPSFSVKCRIGANMVWQAEKDGILTEGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMS 97 
+                        569************65..6789********************************************************************* PP
+
+    cysM_K12339_msa 126 eerkaamrayGAeliltdkeegmegardlaeelaaeg..kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsryL 215
+                         erk+ +r +G +l+lt+ ++gm ga+ +aee++a++  +y++l+Qf+Np+Np  H +tTgpEiw+ t+g+v+ +V+g+GT+GTi+G+sry+
+  NZ_KB893935.1_122  98 TERKRLLRGLGVNLVLTEGAKGMKGAIAKAEEIVASDpnRYVILKQFENPANPAIHQQTTGPEIWNATGGHVDVIVAGVGTGGTITGISRYI 189
+                        ************************************99****************************************************** PP
+
+    cysM_K12339_msa 216 keqn.pavqivglqPeegssi..........pGirrw...peaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaal 293
+                        k+ + +++  v+++P+e   i          pG  ++    + + pk  d s++Drv +vs+eeA+ +arr+++eegi+vG+SsG+avaaa 
+  NZ_KB893935.1_122 190 KQDQgKQILSVAVEPKESPVItqtlsgkevkPGPHKIqgiGAGFIPKNLDLSLIDRVEQVSSEEAIITARRIMAEEGILVGISSGAAVAAAD 281
+                        *755169999*****998766555555555567666533367899*********************************************** PP
+
+    cysM_K12339_msa 294 rlaeel..eeaviVaivcDrgdrYlstgvfe 322
+                        rla+     ++ iVai++   +rYlst +fe
+  NZ_KB893935.1_122 282 RLAKLPefADKQIVAILPSASERYLSTLLFE 312
+                        ***97622667****************9997 PP
+
+>> NZ_KB893939.1_82  # 90601 # 91500 # -1 # ID=37_82;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  306.3   0.0   7.5e-95   3.2e-92      32     316 ..       3     295 ..       1     297 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 306.3 bits;  conditional E-value: 7.5e-95
+   cysM_K12339_msa  32 tledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpena 124
+                       +le++ GnTPLv+++++ g+k +++++KlE +NPaGS+K R+a++mi +ae++g++kpg  l+EaT+GNTG+ La i +++gy+++lv+p+n 
+  NZ_KB893939.1_82   3 NLEEYMGNTPLVKIKNIFGDKYANVYVKLEEFNPAGSIKSRVAYQMIIDAENKGKLKPGMALLEATGGNTGMGLAFISSMRGYDLTLVIPDNF 95 
+                       699****************************************************************************************** PP
+
+   cysM_K12339_msa 125 seerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsryLk 216
+                       s+e+ +++++yGA++il d+++g+   ++la++l +e+  +++ldQf+N +Np+aHy +Tg+Ei+ q +g++ +fV+g+G +GTi G+s++Lk
+  NZ_KB893939.1_82  96 SQEKINVLKQYGAKIILSDHKTGVGSHIRLANKLLEEDkSFYHLDQFHNFSNPRAHYLGTGKEIISQLNGNIHCFVAGIGSGGTIGGISKRLK 188
+                       **********************************9999899**************************************************** PP
+
+   cysM_K12339_msa 217 eqnpavqivglqPeegssip..Girrwpeaylpki....fdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea. 302
+                       e n+++ i+g+qP+  + ++   i +  ea+  +i    f++s ++ +++v+ +e  e +  la ++gifvG SsG+++ a l+l+++ +++ 
+  NZ_KB893939.1_82 189 EFNSQIAIYGVQPDGCDYLNnkTISHKIEAISVGIesvfFNKSILNGMISVRYDEVLELISILAMNQGIFVGLSSGANILASLKLSRQFPKSy 281
+                       *************99888862245555555555544444*************************************************96665 PP
+
+   cysM_K12339_msa 303 viVaivcDrgdrYl 316
+                        iV++ +D+g+ Yl
+  NZ_KB893939.1_82 282 NIVTVAPDSGKSYL 295
+                       9************8 PP
+
+>> NZ_KB893942.1_6  # 5059 # 6585 # 1 # ID=34_6;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.2   0.0   8.8e-23   3.7e-20      32     233 ..      20     214 ..       4     219 .. 0.92
+   2 ?    1.3   0.0     0.037        16     253     308 ..     253     310 ..     246     362 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 69.2 bits;  conditional E-value: 8.8e-23
+  cysM_K12339_msa  32 tledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpenas 125
+                      ++ dl   TPL ++++l+++ g++il+K E  +P  S K R a++mi++       ++   +i a+ GN +  +a+ a+ +g++  +vmp+n+ 
+  NZ_KB893942.1_6  20 NIYDLAQVTPLQKMEKLSERLGNQILIKREDRQPVHSFKLRGAFAMISNLS---ASQKAAGVITASAGNHAQGVALSAKHLGLRALIVMPQNTP 110
+                      67777778***************************************8885...4567899********************************* PP
+
+  cysM_K12339_msa 126 eerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsryLkeqn 219
+                      + + +a+r +G+e  l      +++a  +a el++e    ++  f  p  + a   t g E+++q +  +++++  +G +G   G++  +k+  
+  NZ_KB893942.1_6 111 AIKVDAVRGFGGEALLFG--ANFDEAKAKALELSEELGMTFVPPFDHPM-VIAGQGTIGMELVQQRS-DLDYVFVPVGGGGLAAGIAVLIKQVL 200
+                      ****************96..68***************9999999*****.99***********9975.7999999******************* PP
+
+  cysM_K12339_msa 220 pavqivglqPeegs 233
+                      p+v+++g+++++ +
+  NZ_KB893942.1_6 201 PNVKVIGVESKDSA 214
+                      *********98765 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.037
+  cysM_K12339_msa 253 srvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeel..eeaviVaiv 308
+                      + +D+v+ v++++  ++++++ ++ + ++ +S + ++a+  ++ +e   e +   +++
+  NZ_KB893942.1_6 253 QYIDEVVLVDNDQICAAMKDIFENVRAVAEPSGATSLAGLKKYVKEHqlEGKNLACVL 310
+                      679***********************************99999988522555555555 PP
+
+>> NZ_KB893941.1_84  # 79302 # 80492 # 1 # ID=35_84;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.0     1e-10   4.4e-08      33     231 ..      50     260 ..      23     266 .. 0.82
+   2 !   17.1   0.0   6.1e-07   0.00026     258     314 ..     325     383 ..     316     392 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 1e-10
+   cysM_K12339_msa  33 ledliGn.TPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpena 124
+                       l+++ G+ T L   ++l++ ++ ++++K E    +G  K   +   + +a    ++ +++++ E   G  G+A a+++a++++++++ m ++ 
+  NZ_KB893941.1_84  50 LKNYAGRpTALTLCRNLTKGSKTKLYLKREDLLHGGAHKTNQV---LGQALLAKRMGKTRIIAETGAGQHGVATALACAMLDLPCVIYMGAKD 139
+                       555666668888888999999***************9998765...5677778889999******************************9887 PP
+
+   cysM_K12339_msa 125 seerka...amrayGAelilt......dkeegmegardlaeelaaeg..kyfvldQfaNpdNpkaHyetTgpEiwrq....tegkvthfVsgm 202
+                        e +      mr +GAe+i +       k+   e++rd a +++  +   +  +  +  p  ++   +  g+Ei rq     ++  + +++++
+  NZ_KB893941.1_84 140 VERQSPnvfRMRLMGAEVIPVqkgscsLKDACCEAMRDWAANYETTHylIGTAAGPHPFPTMVREFQKMIGEEIKRQilekEKRLPDVVIAAV 232
+                       66554322379**********7777765677889999999999999988677777777788899*************6553346679999*** PP
+
+   cysM_K12339_msa 203 GTtGTimGvsryLkeqnpavqivglqPee 231
+                       G +   +G+   + e ++ vq +g++P+ 
+  NZ_KB893941.1_84 233 GGGSNAIGMFADFIE-EKGVQLIGVEPAG 260
+                       *********999985.559********75 PP
+
+  == domain 2  score: 17.1 bits;  conditional E-value: 6.1e-07
+   cysM_K12339_msa 258 vldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeel..eeaviVaivcDrgdr 314
+                        ++++++eA e+ ++la++egi+    s  a+a al+l +++  +e++ V+ ++ rgd+
+  NZ_KB893941.1_84 325 YVSITDQEALEAFQALAQHEGIIPALESSHALAYALKLIAQNpeKEQLLVVNLSGRGDK 383
+                       5799**********************************999833445899999999998 PP
+
+>> NZ_KB893944.1_59  # 62731 # 63564 # -1 # ID=32_59;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.1   0.0     1e-12   4.2e-10      91     216 ..      24     146 ..       5     165 .. 0.88
+   2 ?    1.1   0.0     0.044        18     269     297 ..     227     255 ..     209     270 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 36.1 bits;  conditional E-value: 1e-12
+   cysM_K12339_msa  91 dtliEaTSGNTGiALamiaaikgykvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetT 183
+                       d ++  +SGN+G ++a+ +a  g+++++++pe +s ++ ++++a GA+  +++  ++ +++ d++++ ++++  ++++   Np  ++   +t 
+  NZ_KB893944.1_59  24 DSVVQDSSGNAGNSVAAYCAKAGIQCEIFVPEGTSPKKINMIEAHGAKANVIK--GSRDHCADVCRAKVENEGVYYANHVYNPF-FYEGTKTY 113
+                       789999*******************************************9996..899**************999999999999.55556666 PP
+
+   cysM_K12339_msa 184 gpEiwrqtegkvthfVsgmGTtGTimGvsryLk 216
+                         E ++q ++  +h+V  +G +  ++Gv + L 
+  NZ_KB893944.1_59 114 IYETFEQLGRIPKHIVVPVGNGTLFIGVIKGLE 146
+                       6788888888889********999999998886 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.044
+   cysM_K12339_msa 269 marrlareegifvGvSsGgavaaalrlae 297
+                       +ar+  +++gi +  ++++++aa l++ e
+  NZ_KB893944.1_59 227 AARNALAKKGIYCEHTTAANYAAYLHYCE 255
+                       577778889**************999876 PP
+
+>> NZ_KB893934.1_82  # 86865 # 88148 # -1 # ID=42_82;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.0   1.4e-05    0.0059      80     160 ..     114     196 ..      93     207 .. 0.82
+   2 ?   -1.7   0.0      0.31   1.3e+02     309     327 ..     274     292 ..     225     322 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.4e-05
+   cysM_K12339_msa  80 eaeergeikpgdtliEaTSGNTGiALami.aaikgykvklvmpe.naseerkaamrayGAeliltdkeegmegardlaeelaa 160
+                       +a ++ + + + t++ aTSG TG A+a +   + +++v+++ p+ + s  +++    +G++++++  e+ +++++ l+++  +
+  NZ_KB893934.1_82 114 QALASVRGDGKITILTATSGDTGAAVAHAfYGLENINVVILYPKgKISPLQEKLFCTLGGNIRTVAIESDFDACQALVKQAFD 196
+                       5556666677889*************97625688999**999983567778888899********999999999999888655 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.31
+   cysM_K12339_msa 309 cDrgdrYlstgvfeeeeak 327
+                        D+  rYl++g +e +++ 
+  NZ_KB893934.1_82 274 NDTVPRYLKSGKWEPNATV 292
+                       3555566666666555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2532  (773878 residues searched)
+Passed MSV filter:                        91  (0.03594); expected 50.6 (0.02)
+Passed bias filter:                       71  (0.0280411); expected 50.6 (0.02)
+Passed Vit filter:                        11  (0.00434439); expected 2.5 (0.001)
+Passed Fwd filter:                         6  (0.00236967); expected 0.0 (1e-05)
+Initial search space (Z):               2532  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.02
+# Mc/sec: 9980.73
+//
+# Alignment of 7 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Actinobacillus_capsulatus_cysMcustom.sto
+[ok]

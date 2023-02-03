@@ -1,0 +1,115 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Faecalitalea_cylindroides_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Faecalitalea_cylindroides_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Faecalitalea_cylindroides_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Faecalitalea_cylindroides_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+   1.8e-115  382.4   1.9     2e-115  382.2   1.9    1.0  1  NZ_NFHU01000008.1_85  # 78271 # 79194 # -1 # ID=34_85;partial
+      1e-25   87.0   0.1    1.5e-23   79.9   0.0    2.2  2  NZ_NFHU01000014.1_15  # 16322 # 17518 # 1 # ID=28_15;partial=
+    0.00023   16.8   0.5      0.041    9.3   0.0    2.3  2  NZ_NFHU01000015.1_13  # 9126 # 10331 # 1 # ID=27_13;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_NFHU01000008.1_85  # 78271 # 79194 # -1 # ID=34_85;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  382.2   1.9  3.3e-118    2e-115      28     322 ..       1     307 [.       1     307 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 382.2 bits;  conditional E-value: 3.3e-118
+       cysM_K12339_msa  28 mtyktledliGnTPLvrlqrlagkk..gveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgy 114
+                           m y+++++liGnTPLv+l++l++++  ++++ aK+E++NPaGS+KdR+al+mi+eae++g ik+g t+iE+TSGNTGi La +aa+kgy
+  NZ_NFHU01000008.1_85   1 MIYSKITELIGNTPLVELTNLEKEEnlDARVIAKVEFFNPAGSIKDRIALEMIEEAEKQGLIKKGATIIEPTSGNTGIGLACVAATKGY 89 
+                           56789****************996424899*********************************************************** PP
+
+       cysM_K12339_msa 115 kvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgm 202
+                           k  l mpe++s er++ ++ayGA+++l + ++gm+ga+d+a+ela+e  + f++ Qf+Np+Np++Hy+tTgpEiw++te+k++ +V+g+
+  NZ_NFHU01000008.1_85  90 KTILTMPETMSIERRNLLKAYGAKVVLSPGSKGMQGAVDMANELAKEIeNSFIPSQFENPANPNTHYKTTGPEIWKETERKIDILVAGI 178
+                           ***********************************************989*************************************** PP
+
+       cysM_K12339_msa 203 GTtGTimGvsryLkeqnpavqivglqPeegssi.......pGirrwpeaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvS 284
+                           GT+GTi G+++yLke+np++qivg++P++   +        Gi+ + ++++p+  + + +D++l+v++e+A+++ r +a++eg++vG+S
+  NZ_NFHU01000008.1_85 179 GTGGTISGIGKYLKEKNPEIQIVGVEPASSPLLtehkagpHGIQGIGANFVPNTLNTKIYDEILTVKDEDAYKTGRMMAHKEGMLVGIS 267
+                           ***************************87654433333337************************************************ PP
+
+       cysM_K12339_msa 285 sGgavaaalrlaeeleea..viVaivcDrgdrYlstgvfe 322
+                           sG++v+aa++la++ e++  +iVai++D+g+rYlst +fe
+  NZ_NFHU01000008.1_85 268 SGASVYAAMQLAKREENKgkMIVAILPDTGERYLSTPMFE 307
+                           *************9876556****************9985 PP
+
+>> NZ_NFHU01000014.1_15  # 16322 # 17518 # 1 # ID=28_15;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.9   0.0   2.4e-26   1.5e-23      38     234 ..      19     206 ..       3     213 .. 0.92
+   2 !    4.7   0.1    0.0018       1.1     252     308 ..     243     299 ..     224     315 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 79.9 bits;  conditional E-value: 2.4e-26
+       cysM_K12339_msa  38 GnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpenase 126
+                            +T L+   ++  ++++++++K E  + +GS K R a+  i++  ++   ++++ +i  + GN +  +a++a+  +++  +++p+ a  
+  NZ_NFHU01000014.1_15  19 RKTDLIYAPKI--DPESNVYLKTENLQNTGSFKLRGAYYKISQLSKE---EKERGVIACSAGNHAQGVALAATKNNIPSIICLPDGAPI 102
+                           56778877777..46899***********************998554...57999********************************** PP
+
+       cysM_K12339_msa 127 erkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsryL 215
+                            + +a ++yGA++ l++  + ++ a ++a el +++ y +++ f ++d + a   t g Ei++q    v+ +V  +G +G i G++ +L
+  NZ_NFHU01000014.1_15 103 SKVEATKEYGAKVCLVP--GVYDDAYNKAIELRDKEGYTFIHPFDDED-VIAGQGTIGLEILDQL-PDVEAVVVPVGGGGLISGIAYAL 187
+                           ****************9..89***************************.99*************9.58********************* PP
+
+       cysM_K12339_msa 216 keqnpavqivglqPeegss 234
+                           k+ np+++++g+q++  +s
+  NZ_NFHU01000014.1_15 188 KSLNPNIKVYGVQAQGAAS 206
+                           *************987655 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.0018
+       cysM_K12339_msa 252 psrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaee.leeaviVaiv 308
+                           ++ vD++++vs++e  +++ +l +++++ +   +G+  +aa+ + +  ++ + +V+++
+  NZ_NFHU01000014.1_15 243 KKYVDDIVTVSDDEVASAILALIEQHKL-ITEGAGAVSVAAVMFNKVpVKGKNVVCLL 299
+                           5789*********************995.55566666666666665524666777765 PP
+
+>> NZ_NFHU01000015.1_13  # 9126 # 10331 # 1 # ID=27_13;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.3   0.0   6.9e-05     0.041     276     342 ..       3      71 ..       1      97 [. 0.75
+   2 !    5.6   0.1   0.00092      0.55      81     119 ..     194     232 ..     187     267 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 6.9e-05
+       cysM_K12339_msa 276 eegifvGvSsGgavaaalrlaeeleea..viVaivcDrgdrYlstgvfeeeeakkeaskkaelalaaal 342
+                           +++i+vGvS G a++ a+ l ++l+++   + +i+  ++++++s+  fe+ +++  ++   + + ++ +
+  NZ_NFHU01000015.1_13   3 KKRIVVGVSGGIAAYKACDLVSKLSKKdyEVKVILTKHAEKFVSKLTFEALCHNYVETDLFDESNEDPI 71 
+                           789********************9665559999*********999999998777655554444444444 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.00092
+       cysM_K12339_msa  81 aeergeikpgdtliEaTSGNTGiALamiaaikgykvklv 119
+                             +++ ++p + + + +SG  G A+a +a+++g +v lv
+  NZ_NFHU01000015.1_13 194 GPTQEAMDPVRFISNHSSGKQGYAIAKAAKAMGANVILV 232
+                           5566777888888999********************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       1803  (553241 residues searched)
+Passed MSV filter:                        72  (0.0399334); expected 36.1 (0.02)
+Passed bias filter:                       50  (0.0277316); expected 36.1 (0.02)
+Passed Vit filter:                         8  (0.00443705); expected 1.8 (0.001)
+Passed Fwd filter:                         3  (0.00166389); expected 0.0 (1e-05)
+Initial search space (Z):               1803  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13364.78
+//
+# Alignment of 5 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Faecalitalea_cylindroides_cysMcustom.sto
+[ok]

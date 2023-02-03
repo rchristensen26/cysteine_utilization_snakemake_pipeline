@@ -1,0 +1,143 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-uniformis-ATCC-8492-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   1.2e-110  367.5   0.0   1.4e-110  367.3   0.0    1.0  1  1_850     # 1105910 # 1106857 # -1 # ID=1_850;partial=00;star
+   4.6e-110  365.6   0.0     6e-110  365.2   0.0    1.0  1  1_1900    # 2440138 # 2441211 # 1 # ID=1_1900;partial=00;star
+    1.8e-12   44.5   0.0    6.5e-08   29.5   0.0    2.4  2  1_3136    # 3853428 # 3854606 # 1 # ID=1_3136;partial=00;star
+    5.8e-08   29.7   0.1      4e-06   23.6   0.0    2.3  2  1_3487    # 4269883 # 4271250 # 1 # ID=1_3487;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_850  # 1105910 # 1106857 # -1 # ID=1_850;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont=0.533
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  367.3   0.0  1.5e-113  1.4e-110      31     323 ..       6     310 ..       1     314 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 367.3 bits;  conditional E-value: 1.5e-113
+  cysM_K12339_msa  31 ktledliGnTPLvrlqrlagkk..gveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpe 122
+                      ++l+dl+GnTPL++l++ +++k  ++++ aKlE +NPaGSVKdR+al+mi++ae++g +kpg t+iE+TSGNTG+ La +aa+kgyk+ l mp+
+            1_850   6 ERLTDLVGNTPLLELNNYNKNKglKARVIAKLEYFNPAGSVKDRVALAMIEDAEAKGLLKPGATIIEPTSGNTGVGLAFVAAAKGYKLILTMPD 99 
+                      5799**************998645899******************************************************************* PP
+
+  cysM_K12339_msa 123 naseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsryL 215
+                      ++s er++ ++a+GAel+lt+ ++gm ga+  aeel+a++   ++l+Qf Np+Np  H +tTg+Eiwr+t+g+v+ fV+g+GT+GT+ Gv+ +L
+            1_850 100 TMSLERRNLLKALGAELVLTSGADGMKGAIARAEELKAANpGSLILQQFDNPANPAMHERTTGQEIWRDTDGRVDIFVAGVGTGGTVSGVGAAL 193
+                      ****************************************9999************************************************** PP
+
+  cysM_K12339_msa 216 keqnpavqivglqPeegssipGirrwpeay.......lpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea 302
+                      k +np+v+iv+++Pe+   + G +  p+++       +pk ++++++D+vl+vs+++A+++ r+la+ eg++vG+SsG+avaaa rla+  e++
+            1_850 194 KANNPKVKIVAVEPEDSPVLSGGKPGPHKIqgigagfVPKNYNSAVIDEVLQVSNDDAIRTGRELAKYEGLLVGISSGAAVAAATRLARLPENE 287
+                      ******************99997765544322222229**************************************************986554 PP
+
+  cysM_K12339_msa 303 ..viVaivcDrgdrYlstgvfee 323
+                        +iVa+++D+g+rYlst +++ 
+            1_850 288 gkTIVALLPDTGERYLSTLLYAF 310
+                      44****************98765 PP
+
+>> 1_1900  # 2440138 # 2441211 # 1 # ID=1_1900;partial=00;start_type=TTG;rbs_motif=TAA;rbs_spacer=3bp;gc_cont=0.503
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  365.2   0.0  6.3e-113    6e-110      18     323 ..      32     351 ..      16     355 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 365.2 bits;  conditional E-value: 6.3e-113
+  cysM_K12339_msa  18 laaalleaalmt..yktledliGnTPLvrlqrlagk..kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALam 107
+                      + +++l++++m+   k+l++liG+TPL++l + + k   + +i aKlE +NP GSVKdR+a++mi++ae+rg +kpg t+iE+TSGNTG+ Lam
+           1_1900  32 YGKNVLDSEIMAkiAKNLTELIGHTPLMELAEYSRKygLKRNIVAKLESFNPVGSVKDRVAFAMIEDAEARGALKPGATIIEPTSGNTGVGLAM 125
+                      34445555666544569***************9997445889**************************************************** PP
+
+  cysM_K12339_msa 108 iaaikgykvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVs 200
+                      +a+ikgy++ l mpe++s er++ ++a+GAe++ltd   gm g++ +a+el ++    ++l+Qf+Np+N kaH +tTg+Eiw++t+gkvt fV+
+           1_1900 126 VATIKGYHLILTMPETMSVERRNLLKALGAEIVLTDGLAGMAGSIAKAKELRDAIpGAVILQQFENPSNAKAHEHTTGEEIWTDTDGKVTVFVA 219
+                      *****************************************************99899************************************ PP
+
+  cysM_K12339_msa 201 gmGTtGTimGvsryLkeqnpavqivglqPeegssipG.......irrwpeaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGg 287
+                      g+GT+GT+ Gv+r+Lk++np+v +v+++P++   ++G       i+ + +++ p+i+d+s+vD+++ v ++eA++  r+la++eg+++G+SsG+
+           1_1900 220 GVGTGGTVCGVARALKKHNPDVYVVAVEPASSPVLEGgedaphrIQGIGANFIPSIYDASVVDEIIPVPDDEAIRGGRELASTEGLLAGISSGA 313
+                      *************************************5555555555577889***************************************** PP
+
+  cysM_K12339_msa 288 avaaalrlaeel..eeaviVaivcDrgdrYlstgvfee 323
+                      av+aa  lae+    +++iVa+++D+g+rYlst++f+ 
+           1_1900 314 AVYAARLLAERPefADKMIVALLPDTGERYLSTELFAF 351
+                      **********9733566******************975 PP
+
+>> 1_3136  # 3853428 # 3854606 # 1 # ID=1_3136;partial=00;start_type=ATG;rbs_motif=AATAA;rbs_spacer=4bp;gc_cont=0.578
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.0   6.9e-11   6.5e-08      26     144 ..      43     163 ..      17     182 .. 0.76
+   2 !   12.4   0.0     1e-05    0.0099     258     320 ..     327     388 ..     315     392 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 6.9e-11
+  cysM_K12339_msa  26 almtyk.tledliGn.TPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvk 117
+                       + +y+  l d++G+  PL   +rl++k g++i++K E  N +G  K       i +     ++ + +++ E   G  G+A a ++a++++++ 
+           1_3136  43 FKREYDqLLRDYVGRpSPLYLAHRLSEKYGCRIYLKREDLNHTGAHKINNS---IGQVLLARRMGKRRIIAETGAGQHGVATATVCALMNMECI 133
+                      23335525789***989***************************9996655...55556667788999************************** PP
+
+  cysM_K12339_msa 118 lvmpenaseerk...aamrayGAeliltdk 144
+                      + m ++  e ++   + m+ +GA+++ +++
+           1_3136 134 VYMGKTDVERQRvnvEKMKMLGATVVPVTS 163
+                      ***887665543233689*******98853 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 1e-05
+  cysM_K12339_msa 258 vldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleeaviVaivcDrgdrYlstgv 320
+                      vl v+++eA+++a +l r egi+    s+ a  +al+ ++  +  v+V+ v+ rgd+ ++t +
+           1_3136 327 VLAVNDDEAIRAAYELTRLEGIIPALESAHA-LGALEKMRFKPTDVVVLTVSGRGDKDIETYL 388
+                      789***********************99766.5778878888888***********9766654 PP
+
+>> 1_3487  # 4269883 # 4271250 # 1 # ID=1_3487;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.546
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   0.0   4.3e-09     4e-06      38     144 ..      81     189 ..      51     300 .. 0.80
+   2 !    3.9   0.0    0.0042         4     257     325 ..     360     439 ..     338     453 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 4.3e-09
+  cysM_K12339_msa  38 GnTPLvrlqrlagk..kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklv...mpenase 126
+                       +TPLvr   l+++  + ++i+ K E   P GS K   a+      +++g    +++  E   G  G +La +a++ g++  +    +  ++  
+           1_3487  81 RSTPLVRAYGLEKAlgTPAHIYFKNESVSPMGSHKLNSAIPQAYYCKQEGV---TNVTTETGAGQWGASLAYAARLFGLEAAVYqvkISYEQKP 171
+                      57******99999655889****************9888776666655554...566679*******************987652226777889 PP
+
+  cysM_K12339_msa 127 erkaamrayGAeliltdk 144
+                      +r+++m+ +GA+++  ++
+           1_3487 172 YRRSIMQTFGAQVTPSPS 189
+                      9************98853 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0042
+  cysM_K12339_msa 257 rvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeel....eeaviVaivcDrg.......drYlstgvfeeee 325
+                      + +d++q e++++    a+ egi+  + s  a+aa +r a++     ee+vi + ++ +g       d+Yls ++++ e 
+           1_3487 360 EAVDIKQLESFDAGCLFAQAEGIIPAPESCHAIAATIREANKCketgEEKVILFNLSGHGlidmasyDKYLSGDLVNYEL 439
+                      6789********************************99999873333555888877665544444446777777776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       3789  (1401963 residues searched)
+Passed MSV filter:                       126  (0.0332542); expected 75.8 (0.02)
+Passed bias filter:                      110  (0.0290314); expected 75.8 (0.02)
+Passed Vit filter:                        13  (0.00343098); expected 3.8 (0.001)
+Passed Fwd filter:                         4  (0.00105569); expected 0.0 (1e-05)
+Initial search space (Z):               3789  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 14453.08
+//
+# Alignment of 6 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_cysMcustom.sto
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_micans_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Prevotella_micans_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Prevotella_micans_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Prevotella_micans_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+   1.9e-257  854.2   0.4   2.1e-257  854.1   0.4    1.0  1  NZ_JH594522.1_186  # 217983 # 219359 # 1 # ID=11_186;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JH594522.1_186  # 217983 # 219359 # 1 # ID=11_186;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=13bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  854.1   0.4    1e-260  2.1e-257      10     464 ..       2     456 ..       1     458 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 854.1 bits;  conditional E-value: 1e-260
+    tnaA_K01677_msa  10 rip..epfrikvvepiklttreeReeaLkeagyNpFlLksedVfiDllTDSGTgAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyey 99 
+                        +ip  e+++ik++epik++tre+Re++Lkea+yN+F+Lk+e+V+iDllTDSGTgAmsdrqwA lm GDE+Yag+ s+y++e +v++i+g +y
+  NZ_JH594522.1_186   2 KIPfaESWKIKMIEPIKKSTREQREQWLKEAHYNVFQLKAEQVYIDLLTDSGTGAMSDRQWAELMLGDESYAGATSFYKFEATVQKILGLKY 93 
+                        56677*************************************************************************************** PP
+
+    tnaA_K01677_msa 100 viPtHQGRgAEqiLfpvlikregkvvisNthFDTTrahvelagaeavdlvikeafdteseapFKGNfDleklealieevgaenvplivlTiT 191
+                        +iPtHQGR+AE++Lf+ l+k +g+v+++N hFDTT++h+e ++a+a+d+++++a+dt++e pFKGN++lekle++++e+  +nvp++vlT+T
+  NZ_JH594522.1_186  94 IIPTHQGRAAENVLFSYLVK-AGNVIPGNAHFDTTKGHIESRKAHAIDVTTDDAKDTQKEVPFKGNVSLEKLEKVLKENP-NNVPFMVLTVT 183
+                        ********************.*********************************************************85.9********** PP
+
+    tnaA_K01677_msa 192 nNsaGGQPVSmaNlravaeiakkygipvvlDaARFAENAyFIkqrEegyadksikeIvremfsyaDgltmSaKKDglvniGGliafrddeel 283
+                        nN++GGQPVSm+N++++  +++ky++pv++D+ARFAENAyFIk rEegya+ksikeIvrem+   D+ tmSaKKDg+vn+GG+ia++ +e++
+  NZ_JH594522.1_186 184 NNTVGGQPVSMKNIKETCTLCHKYNVPVIMDSARFAENAYFIKVREEGYANKSIKEIVREMYADVDAATMSAKKDGIVNMGGFIATN-REDW 274
+                        **************************************************************************************7.779* PP
+
+    tnaA_K01677_msa 284 feevktrcilmeGFptYGGlaGrDlealAvGLeEgvdedyLayRieqveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaL 375
+                        fe +k +ci+ eG++tYGG++GrDl+alA+GL+E +++d+L++Ri+qv+yL+e+L+e+G+p+q+P+GgHA+fvDa+k+l+h+p+e+Fpaq+L
+  NZ_JH594522.1_186 275 FEGAKLFCIPIEGYVTYGGMSGRDLNALAQGLNENTEFDMLETRIHQVKYLAEKLDEYGIPYQRPAGGHAIFVDADKVLTHVPKEEFPAQTL 366
+                        ******************************************************************************************** PP
+
+    tnaA_K01677_msa 376 aceLYleaGiRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtqehmdyvaealkevkeraesik.glrityeppvLRhFtarLep 464
+                        +ceLYleaGiR+vE+G +l++rdp+t+e++ + l+L+RLaiPRrvYt++hmd++a+alk+v++r+e+i+ g+ i++e+p++RhFt++L++
+  NZ_JH594522.1_186 367 TCELYLEAGIRGVEVGFMLADRDPETKENRFNGLDLLRLAIPRRVYTDNHMDVIAAALKNVYDRREQITrGVAIEWEAPLMRHFTVKLKR 456
+                        ********************************************************************99******************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       2072  (717954 residues searched)
+Passed MSV filter:                        65  (0.0313707); expected 41.4 (0.02)
+Passed bias filter:                       35  (0.0168919); expected 41.4 (0.02)
+Passed Vit filter:                         4  (0.0019305); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000482625); expected 0.0 (1e-05)
+Initial search space (Z):               2072  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 15081.42
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Prevotella_micans_tnaA.sto
+[ok]

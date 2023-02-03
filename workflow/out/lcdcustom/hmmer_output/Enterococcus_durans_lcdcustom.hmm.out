@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Enterococcus_durans_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Enterococcus_durans_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Enterococcus_durans_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Enterococcus_durans_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.4e-22   77.4   0.1    3.8e-22   76.0   0.1    1.7  1  NZ_CP022930.1_1447  # 1630720 # 1631955 # 1 # ID=2_1447;parti
+    3.2e-08   30.0   0.0    6.2e-08   29.1   0.0    1.4  1  NZ_CP022930.1_383   # 408127 # 409269 # -1 # ID=2_383;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP022930.1_1447  # 1630720 # 1631955 # 1 # ID=2_1447;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.0   0.1   2.8e-25   3.8e-22      90     479 ..      22     401 ..       1     406 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 76.0 bits;  conditional E-value: 2.8e-25
+      lcd_K22207_msa  90 svarinnGsfgscpasvleaqqrwq...lkflrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegk 177
+                          +++++n +    p+ vl+a  ++       ++   +   ++ +++ +++r++++++ina++  ev ++  +tt  + v ++++ +f    
+  NZ_CP022930.1_1447  22 PLVYLDNAATTQKPKAVLDALTDYYeheNANVHRGVHTLAERATHSYEAAREKVRSFINASETAEVLFTRGTTTSLNWVARSFGEQFI--- 109
+                         456677777777777777777766532233356667888889999999***************************9999997776665... PP
+
+      lcd_K22207_msa 178 fqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicr 268
+                          ++gD +l+  +  ++     ++++++ g+s+  +el      +e     ++ka e     +++ +++ i H++ +  v+ PV+eL ++ +
+  NZ_CP022930.1_1447 110 -HEGDEILISYMEHHSNVIPWQQLAKKTGASLKYIELT-----EEG-FLDMEKAREL---INSNTKIVSIAHVSNVLGVINPVEELAQMIH 190
+                         .9*******99999998889999999999995555443.....333.3333444222...3679999************************ PP
+
+      lcd_K22207_msa 269 eegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvV.sheygnglaiesaw...iGtrDy 350
+                         e+g    +VD+A++  ++ +dv++i++df++   HK ++ P ++++Ly +++  ++++       ++   e   +  +e  w    Gt   
+  NZ_CP022930.1_1447 191 EQGG-ILVVDGAQSTPHMAIDVQQIDCDFFAFSGHK-MCGPTGIGVLYGKRKWLEQMEPvefggEMIdFVELYDSTWKELPWkfeAGTPNI 279
+                         ***8.89*****************************.9***********9953355554444554444444455666666663336***** PP
+
+      lcd_K22207_msa 351 saqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi. 440
+                         +  +++ +++++++ +  g+e+i+++  elv      L +  g  +  p++  +   ++ +    g++ ++ a+ L        +v v   
+  NZ_CP022930.1_1447 280 AGAIALGHAIDYLEAI--GMENIHHYEEELVAYVLPKLQQIEGLTIYGPQDPAKRTGVIAFNL-DGLHPHDVATALD-----MEGVAVRAg 362
+                         ***************8..***************************999999999888888873.4555554444443.....334444441 PP
+
+      lcd_K22207_msa 441 .yyrapkegeveaitgYvRiShqvYnkvddyyklrdavnq 479
+                          ++ +p   ++ ++ + +R S   Yn+++d  +l da++ 
+  NZ_CP022930.1_1447 363 hHCAQPLL-KYLQVAATARASFYFYNTKQDADRLVDAILA 401
+                         14444433.34468999********************975 PP
+
+>> NZ_CP022930.1_383  # 408127 # 409269 # -1 # ID=2_383;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.0   4.6e-11   6.2e-08     126     320 ..      38     217 ..      11     228 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 29.1 bits;  conditional E-value: 4.6e-11
+     lcd_K22207_msa 126 fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfp 217
+                         n+ ++ ++++r++i++li+    de+ ++   t + + vL+ ++ + +    + g+ +++  +   aV +++e++ +      +ev ++  
+  NZ_CP022930.1_383  38 GNQANRLLQQARKQIAELIEVT-PDEIYFTSGGTEGDNWVLKGTMIEKR----EYGNHMIISGIEHPAVSETAEQL-KSL---GVEVSVAPV 120
+                        478889999***********99.6******************9987766....789**************999994.444...478999998 PP
+
+     lcd_K22207_msa 218 vksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkei.gAdfYtsNlHKWffc 308
+                         k+   iv+e++k ++k+        +Av   + S    + P+ e+ ++++++   +  VDa +aiG+v++       +df t   HK f  
+  NZ_CP022930.1_383 121 DKKGFVIVEELKKLIRKE--TVLISIMAVNNEVGS----IQPIMEISELLKDHPKIHFHVDAVQAIGKVPLSTWLTdRVDFATFSAHK-FHG 205
+                        999999*****9999982..222223455555555....679***********999***************99877679*********.89* PP
+
+     lcd_K22207_msa 309 PpsvAfLyvrks 320
+                        P++++f+y +k 
+  NZ_CP022930.1_383 206 PRGIGFIYWKKG 217
+                        *********994 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2731  (831245 residues searched)
+Passed MSV filter:                       110  (0.0402783); expected 54.6 (0.02)
+Passed bias filter:                       78  (0.028561); expected 54.6 (0.02)
+Passed Vit filter:                        11  (0.00402783); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000732332); expected 0.0 (1e-05)
+Initial search space (Z):               2731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 11343.59
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Enterococcus_durans_lcdcustom.sto
+[ok]

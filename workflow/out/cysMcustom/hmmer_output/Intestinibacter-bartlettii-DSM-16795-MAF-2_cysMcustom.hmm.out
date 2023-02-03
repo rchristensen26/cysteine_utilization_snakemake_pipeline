@@ -1,0 +1,208 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Intestinibacter-bartlettii-DSM-16795-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+   2.4e-105  349.6   0.1   2.7e-105  349.4   0.1    1.0  1  scaffold_Scaffolds_0.cp.600_1362  # 1542218 # 1543114 # 1 # ID=1_1
+   2.9e-105  349.3   0.4   3.2e-105  349.2   0.4    1.0  1  scaffold_Scaffolds_0.cp.600_465   # 525158 # 526087 # 1 # ID=1_465
+    1.1e-29  100.6   7.1    2.3e-28   96.3   2.2    2.1  2  scaffold_Scaffolds_0.cp.600_897   # 1033685 # 1034902 # 1 # ID=1_8
+    2.1e-09   33.9   0.0    3.2e-08   30.0   0.0    2.3  3  scaffold_Scaffolds_0.cp.600_2058  # 2283052 # 2284440 # -1 # ID=1_
+    9.4e-09   31.8   0.1    1.1e-06   25.0   0.0    2.2  2  scaffold_Scaffolds_0.cp.600_929   # 1068085 # 1069314 # -1 # ID=1_
+    0.00012   18.3   0.0    0.00017   17.7   0.0    1.2  1  scaffold_Scaffolds_0.cp.600_1380  # 1557922 # 1559403 # -1 # ID=1_
+     0.0017   14.5   0.5      0.011   11.7   0.1    2.0  2  scaffold_Scaffolds_0.cp.600_1102  # 1259885 # 1261096 # 1 # ID=1_1
+
+
+Domain annotation for each sequence (and alignments):
+>> scaffold_Scaffolds_0.cp.600_1362  # 1542218 # 1543114 # 1 # ID=1_1362;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  349.4   0.1  7.2e-108  2.7e-105      28     321 ..       1     298 [.       1     298 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 349.4 bits;  conditional E-value: 7.2e-108
+                   cysM_K12339_msa  28 mtyktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiA 104
+                                       m y++ +dliGnTP+++l++       ++++KlE  NP+GS+KdRaal mi+ aee+g ++++++l+EaTSGNTGiA
+  scaffold_Scaffolds_0.cp.600_1362   1 MIYNNALDLIGNTPILNLKEAGY---PNVFVKLEKANPGGSIKDRAALYMINGAEEKGILNKDSVLVEATSGNTGIA 74 
+                                       5577899*********9999843...479************************************************ PP
+
+                   cysM_K12339_msa 105 LamiaaikgykvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHy 180
+                                       Lam++++kgykv ++mp+++s er++ ++a+GAel+lt+ ++gm g++++a+el +++ +y++l Qf N+dNp+aHy
+  scaffold_Scaffolds_0.cp.600_1362  75 LAMAGKLKGYKVIIIMPDTMSIERRQLVKAFGAELMLTEGAKGMAGSIEKANELLDKNpNYICLGQFDNEDNPRAHY 151
+                                       **********************************************************9****************** PP
+
+                   cysM_K12339_msa 181 etTgpEiwrqtegkvthfVsgmGTtGTimGvsryLkeqnpavqivglqPeegssip....Girrw...peaylpkif 250
+                                       etTgpEi+++++  v  +V+g+G +GTi+G +++Lke+n++++++g++P++   i     G  ++    +++ pki+
+  scaffold_Scaffolds_0.cp.600_1362 152 ETTGPEILKEVK-DVSFIVAGIGSGGTIVGAGKFLKEKNKEIKVIGIEPKSSPLITenksGPHKIqgiGANFIPKIY 227
+                                       ***********7.7***********************************998777522225444433267899**** PP
+
+                   cysM_K12339_msa 251 dpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleeaviVaivcDrgdrYlstgvf 321
+                                       d++ vD+v++vs+e+++e++r +a++ gi++G+SsG+++++a++l+ e+++++iV++ +D  d+Y+s g+f
+  scaffold_Scaffolds_0.cp.600_1362 228 DKDIVDKVITVSDEDSYETVRLIANKLGILIGISSGANIFGAMKLSDENPDKIIVTVAPDGVDKYMSMGIF 298
+                                       *******************************************************************9987 PP
+
+>> scaffold_Scaffolds_0.cp.600_465  # 525158 # 526087 # 1 # ID=1_465;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  349.2   0.4  8.5e-108  3.2e-105      30     322 ..       5     309 ..       1     309 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 349.2 bits;  conditional E-value: 8.5e-108
+                  cysM_K12339_msa  30 yktledliGnTPLvrlqrlagkk..gveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiAL 105
+                                       k+l+dliG TPL++l +  +++  ++++ aK+E +NP GSVKdR+a +mi++a+++g+i++++++iE+TSGNTGi L
+  scaffold_Scaffolds_0.cp.600_465   5 AKKLTDLIGDTPLLELGTYRDENnlEANLIAKVEYFNPLGSVKDRVANAMIETAIKEGKINKDTVIIEPTSGNTGIGL 82 
+                                      3589**************8885424789************************************************** PP
+
+                  cysM_K12339_msa 106 amiaaikgykvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyet 182
+                                      a + a+kg+++ l mpe++s er+++++a+GAe++lt+ +egm ga+ +ae+l++e  + f+++Qf+N++Npk H+et
+  scaffold_Scaffolds_0.cp.600_465  83 AFVTATKGLHLILTMPETMSIERRRIVAALGAEVVLTPGAEGMKGAIAKAEALKEEYgNAFIPQQFENEANPKIHFET 160
+                                      ********************************************************99******************** PP
+
+                  cysM_K12339_msa 183 TgpEiwrqtegkvthfVsgmGTtGTimGvsryLkeqnpavqivglqPeegssipGirrwpeay.......lpkifdps 253
+                                      TgpEiwr+t+gkv+ fV+g+GT+GT++G+++y+k+qnp+ +iv+++P+  + + G +  p+++       +pk+ d +
+  scaffold_Scaffolds_0.cp.600_465 161 TGPEIWRDTDGKVDIFVAGVGTGGTVTGIGKYIKSQNPNAKIVAVEPATSAVLSGKKPGPHKIqgigagfVPKVLDLD 238
+                                      *****************************************************998766554322222229******* PP
+
+                  cysM_K12339_msa 254 rvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea..viVaivcDrgdrYlstgvfe 322
+                                       vD+++ v++++A+++ r++a+ eg++vG+S+G++++aa +la++ e++   iV++++D+g+rYlst++fe
+  scaffold_Scaffolds_0.cp.600_465 239 IVDEIIPVENDDAFNASRAVAKAEGLLVGISAGASIYAATELAKRPENKgkNIVILLPDTGERYLSTTLFE 309
+                                      *********************************************877666*****************995 PP
+
+>> scaffold_Scaffolds_0.cp.600_897  # 1033685 # 1034902 # 1 # ID=1_897;partial=00;start_type=ATG;rbs_motif=None;rbs_spac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.3   2.2   6.1e-31   2.3e-28      31     239 ..      14     213 ..       2     239 .. 0.90
+   2 !    7.0   0.2   0.00085      0.32     253     308 ..     249     305 ..     240     318 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 96.3 bits;  conditional E-value: 6.1e-31
+                  cysM_K12339_msa  31 ktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALami 108
+                                      + l++++ +TPL + ++l++k g++++ K+E  + +GS K R a + i++     + ++ + +i ++ GN +  +a+ 
+  scaffold_Scaffolds_0.cp.600_897  14 EVLKSIVKETPLQESKELSAKLGANVYYKCENLQKTGSFKIRGACNKISNLT---DEEKAKGVIASSAGNHAQGVALG 88 
+                                      457788899***************************************8884...4467899**************** PP
+
+                  cysM_K12339_msa 109 aaikgykvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpE 186
+                                      a++ g+k ++vmpe+a   + +a + yGAe++l      ++ a  +a e+++e    +l+ f ++  + a   t g E
+  scaffold_Scaffolds_0.cp.600_897  89 AKMTGIKATIVMPETAPLAKVTATKSYGAEVVLNG--AVYDDAYAKAVEIQKETGATFLHPFDDEY-VIAGQGTIGLE 163
+                                      *********************************86..78************************999.99********* PP
+
+                  cysM_K12339_msa 187 iwrqtegkvthfVsgmGTtGTimGvsryLkeqnpavqivglqPeegssipGir 239
+                                      i++q +++v+ + + +G +G i G++ + k  np+v+i+g+q ++   ip ++
+  scaffold_Scaffolds_0.cp.600_897 164 IFKQLNENVDTILCPIGGGGIIAGIAVAAKGLNPNVKIIGVQTSN---IPSMK 213
+                                      ******************************************876...55555 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.00085
+                  cysM_K12339_msa 253 srvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeel..eeaviVaiv 308
+                                      ++vD+v++vs+ee  + +  l+++++ +v   +G+  +aal   +    +++ +V+++
+  scaffold_Scaffolds_0.cp.600_897 249 ELVDEVITVSEEEIAQGMLFLMEHQK-VVAEGAGAVTTAALLSGKYKpqKDENVVCVI 305
+                                      79********************9999.5556777777777765555322444777776 PP
+
+>> scaffold_Scaffolds_0.cp.600_2058  # 2283052 # 2284440 # -1 # ID=1_2058;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0   0.0   8.5e-11   3.2e-08      39     147 ..      82     192 ..      47     206 .. 0.80
+   2 ?   -3.1   0.0      0.97   3.7e+02     265     289 ..     247     271 ..     241     275 .. 0.87
+   3 ?    0.9   0.0     0.058        22     237     298 ..     340     401 ..     326     420 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 8.5e-11
+                   cysM_K12339_msa  39 nTPLvrlqrlagk..kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikg 113
+                                         PL r  +l+++  + ++i+ K EgnN +GS K   a++    a+++g +k   +  E   G  G AL+ +++  g
+  scaffold_Scaffolds_0.cp.600_2058  82 PSPLCRAYNLEKAlgTPAKIYYKFEGNNTSGSHKLNSAIAQAYYAKKEG-LKG--VTTETGAGQWGTALSEACSYFG 155
+                                       579999999988655789******************9999999997777.444..4459****************** PP
+
+                   cysM_K12339_msa 114 ykvklvmpe...naseerkaamrayGAeliltdkeeg 147
+                                       +++++ m +   ++   rk++m+ +GA+++  +++++
+  scaffold_Scaffolds_0.cp.600_2058 156 LPLNVYMVKvsyEQKPDRKNIMKVFGADVTPSPSNTT 192
+                                       ******987222456689***********98875544 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.97
+                   cysM_K12339_msa 265 eAeemarrlareegifvGvSsGgav 289
+                                       eA +++ +l +   i++G   Gg+ 
+  scaffold_Scaffolds_0.cp.600_2058 247 EAKAAMDKLEEYPDIVIGCAGGGSN 271
+                                       899999*************999975 PP
+
+  == domain 3  score: 0.9 bits;  conditional E-value: 0.058
+                   cysM_K12339_msa 237 Girrw.peaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaee 298
+                                       G+r    + +l k+++   + + ++v+q++ +e+a   a+ e i+  + s  a+ +a+  a +
+  scaffold_Scaffolds_0.cp.600_2058 340 GLRYHgMSPILSKLYHDGYM-EAISVEQTKVFEAATLFAKVETILPAPESSHAIRVAIDEALK 401
+                                       66655455677888887666.5689********************999888877776654433 PP
+
+>> scaffold_Scaffolds_0.cp.600_929  # 1068085 # 1069314 # -1 # ID=1_929;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_sp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.7   0.0     0.004       1.5      28      62 ..      35      70 ..       8      74 .. 0.68
+   2 !   25.0   0.0   2.8e-09   1.1e-06      92     167 ..     120     194 ..      90     252 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.004
+                  cysM_K12339_msa 28 mtyktledliGnTPLvrlqrlagkkgve.ilaKlEg 62
+                                      +++t  d   +TPLv+l++la+k gv+ i++K E 
+  scaffold_Scaffolds_0.cp.600_929 35 EKFHTSIDEYKKTPLVKLDNLASKLGVKnIFVKDES 70
+                                     334555555678*********998765439999886 PP
+
+  == domain 2  score: 25.0 bits;  conditional E-value: 2.8e-09
+                  cysM_K12339_msa  92 tliEaTSGNTGiALamiaaikgykvklvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvl 167
+                                      + + aT GN G  +a +a+ +g k +++mp+ +   r +a++ +G   ++++ +  ++ a+++a +la+e+ ++++
+  scaffold_Scaffolds_0.cp.600_929 120 VFVTATDGNHGKGIAWAANKLGCKSVVFMPKGSVLARAKAIESMGNSTVTIT-DLNYDDAVRKAASLADENGWYLV 194
+                                      5689*****************************************9988886.67999999999999999966543 PP
+
+>> scaffold_Scaffolds_0.cp.600_1380  # 1557922 # 1559403 # -1 # ID=1_1380;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   0.0   4.6e-07   0.00017      77     142 ..     120     187 ..     100     211 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 4.6e-07
+                   cysM_K12339_msa  77 mikeaeergeikpgdtliEaTSGNTGi.ALamiaaikgykvklvmpena.seerkaamrayGAelilt 142
+                                       ++k+a+e++++k++ +++ aTSG TG  AL+ +  +  +k++++ pen  s+ +k +m+  G++ + +
+  scaffold_Scaffolds_0.cp.600_1380 120 LLKTAIEKNNLKEEVVILTATSGDTGKaALEGFKDVDKIKIVVFFPENGvSNIQKLQMKTTGGNNTCV 187
+                                       5899**********************7369*****************961566677899999876555 PP
+
+>> scaffold_Scaffolds_0.cp.600_1102  # 1259885 # 1261096 # 1 # ID=1_1102;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.0     0.061        23     277     328 ..       5      58 ..       1     100 [. 0.67
+   2 !   11.7   0.1     3e-05     0.011      81     120 ..     195     234 ..     183     245 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 0.061
+                   cysM_K12339_msa 277 egifvGvSsGgavaaalrlaeelee..aviVaivcDrgdrYlstgvfeeeeakk 328
+                                       + +++GvS G av+ ++ + ++l++  a + +i+   + +++    f++ +++ 
+  scaffold_Scaffolds_0.cp.600_1102   5 KTVVIGVSGGIAVYKVCDVVSRLKKlnANVHVIMTKGACEFVAPLTFQTMSQNY 58 
+                                       568899999999999999999985411566666666666676666666555444 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 3e-05
+                   cysM_K12339_msa  81 aeergeikpgdtliEaTSGNTGiALamiaaikgykvklvm 120
+                                         + ++i+p + l + +SG  G A+a +aa++g +v+l+ 
+  scaffold_Scaffolds_0.cp.600_1102 195 GPTIESIDPVRYLTNRSSGKMGYAIARVAAARGAEVTLIS 234
+                                       44557889999**************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2668  (843986 residues searched)
+Passed MSV filter:                       114  (0.0427286); expected 53.4 (0.02)
+Passed bias filter:                       84  (0.0314843); expected 53.4 (0.02)
+Passed Vit filter:                        10  (0.00374813); expected 2.7 (0.001)
+Passed Fwd filter:                         7  (0.00262369); expected 0.0 (1e-05)
+Initial search space (Z):               2668  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
+# Mc/sec: 12022.98
+//
+# Alignment of 9 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Intestinibacter-bartlettii-DSM-16795-MAF-2_cysMcustom.sto
+[ok]

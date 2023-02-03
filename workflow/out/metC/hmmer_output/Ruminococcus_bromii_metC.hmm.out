@@ -1,0 +1,187 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metC.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Ruminococcus_bromii_prodigal.faa
+# output directed to file:         workflow/out/metC/hmmer_output/Ruminococcus_bromii_metC.hmm.out
+# MSA of all hits saved to file:   workflow/out/metC/hmmer_output/Ruminococcus_bromii_metC.sto
+# per-dom hits tabular output:     workflow/out/metC/hmmer_output/Ruminococcus_bromii_metC.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01324  [M=377]
+Accession:   TIGR01324
+Description: cysta_beta_ly_B: cystathionine beta-lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+    5.6e-61  203.1   0.3    3.4e-34  115.0   0.4    2.0  2  NZ_NNSR01000042.1_19  # 15089 # 16390 # -1 # ID=42_19;partial
+    8.8e-56  186.0   0.1    7.8e-31  103.9   0.0    2.0  2  NZ_NNSR01000025.1_10  # 5967 # 7238 # 1 # ID=25_10;partial=00
+    1.8e-45  152.1   0.0    7.5e-30  100.7   0.0    2.0  2  NZ_NNSR01000069.1_80  # 84762 # 86009 # -1 # ID=69_80;partial
+    2.9e-05   19.8   0.0    5.6e-05   18.8   0.0    1.4  2  NZ_NNSR01000063.1_14  # 19042 # 20220 # -1 # ID=63_14;partial
+    0.00056   15.5   0.0    0.00081   15.0   0.0    1.2  1  NZ_NNSR01000026.1_70  # 73478 # 74644 # 1 # ID=26_70;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_NNSR01000042.1_19  # 15089 # 16390 # -1 # ID=42_19;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.0   0.4   8.5e-37   3.4e-34       3     210 ..      15     227 ..      13     236 .. 0.87
+   2 !   86.2   0.0   4.8e-28   1.9e-25     225     376 ..     275     430 ..     256     431 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 115.0 bits;  conditional E-value: 8.5e-37
+             TIGR01324   3 lihsGrekrrlqgs..vnPpvqrastvllds.daasar..akdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallafv 86 
+                            +h G+e ++        P+   +s v+++s +aa +   ++   +yG+   +t++ +++ +a+leG+++++++ sG aav+ al a+ 
+  NZ_NNSR01000042.1_19  15 QLHIGQETADPVTDarAVPIYATTSYVFHNSqHAADRFalKDAGNIYGRLTNPTEDVFEKRIAALEGGTAALAVASGAAAVSYALQALA 103
+                           5677777766443200335555555555555778776511566789******************************************* PP
+
+             TIGR01324  87 kaGdevlvvdsaykPtrrfcdivlkrlgveveyydPkigediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidntwa 175
+                           kaGd+++ + ++y  t ++ +  +   gv++++ dP   ++    i  ntk vf+e+ +    ++ di  +a++a+++ + ++id t+a
+  NZ_NNSR01000042.1_19 104 KAGDNIVAAKTIYGGTYNWLEHTFSEYGVTTKFVDPDEENAFENAIDENTKAVFIESLGNPNSNIIDIEEVANIAHSHKIPLVIDSTFA 192
+                           ***************************************************************************************** PP
+
+             TIGR01324 176 agllfkalehgvdisiqaatkylaGhsdvllGtva 210
+                           ++ l++++e+g di +++atk+++Gh   l G ++
+  NZ_NNSR01000042.1_19 193 TPYLLRPFEYGADIVVHSATKFIGGHGTALGGVIV 227
+                           **************************998877665 PP
+
+  == domain 2  score: 86.2 bits;  conditional E-value: 4.8e-28
+             TIGR01324 225 llGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdf.sGssGlfsvvlkrlsqkevhaf 312
+                           + G + ++  a+  l+Gl tl+ r++rh e+al++  +l+++++v++v hP+lP +   +l+k+ f  G+  +f++++k+ + +  ++f
+  NZ_NNSR01000042.1_19 275 DTGATLSPFHAFMFLQGLETLSLRVERHVENALKVVDFLSKNPKVENVNHPSLPDSKYNALYKKYFpKGAGSIFTFEIKGDA-ETAKKF 362
+                           5688899999********************************************************558888******9765.67899* PP
+
+             TIGR01324 313 ldalklfglgyswGGyeslaln....vqpelairrsikrdleGplirlhiGledvddlkadlkaGlea 376
+                           +d+l++f+l       +sla+     ++ +l++++ +++ ++ + irl iG e++dd++ dl++ +++
+  NZ_NNSR01000042.1_19 363 IDHLEVFSLLANVADVKSLAIHpastTHSQLSEAELAEQGIKPNTIRLSIGTENIDDIIYDLQEAFDS 430
+                           *******************9952222456799999999*************************99975 PP
+
+>> NZ_NNSR01000025.1_10  # 5967 # 7238 # 1 # ID=25_10;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  103.9   0.0     2e-33   7.8e-31       1     220 [.       5     227 ..       5     246 .. 0.86
+   2 !   80.3   0.0   2.8e-26   1.1e-23     222     376 ..     264     422 ..     255     423 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 103.9 bits;  conditional E-value: 2e-33
+             TIGR01324   1 trlihsGrekrrlqgsvnPpvqrastvlldsdaasar....akdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallaf 85 
+                           t+ +hsG  +++ +     p+ +++t  +ds+ a+ r    ++  ++y +   ++++  +  +a+leG+ +++l  sG aa   al+ +
+  NZ_NNSR01000025.1_10   5 TKCLHSGYVPKNGEPR-QMPIYQSTTFKYDSSDAMGRlfdlEDSGYFYTRLQNPSNDMTAAKIADLEGGVAAMLTSSGQAANFFALFNI 92 
+                           5667888888776554.4567788999999966664323336889******************************************** PP
+
+             TIGR01324  86 vkaGdevlvvdsaykPtrrfcdivlkrlgveveyydPkig.ediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidnt 173
+                            ++G +++ + ++y  t ++  + +k++g++v++ d ++  e++a   +pnt+ +f e+ +  t+ v di   a+ a+++gv +++dnt
+  NZ_NNSR01000025.1_10  93 CETGSHIVASSAIYGGTYNLLGVTMKKMGIDVTFVDQNLPeEELAKAFRPNTRAMFGETITNPTVSVLDIEKFARLAHSHGVPLIVDNT 181
+                           ***************************************9899********************************************** PP
+
+             TIGR01324 174 waagllfkalehgvdisiqaatkylaGhsdvllGtvaanesavekll 220
+                           +a+++  ++++ g di  +++tky+ Gh   + G+      +++ l+
+  NZ_NNSR01000025.1_10 182 FATPVNCQPIKWGADIVTHSTTKYMDGHGVSVGGA-IVDSGNFDWLK 227
+                           ****************************8555444.44444444444 PP
+
+  == domain 2  score: 80.3 bits;  conditional E-value: 2.8e-26
+             TIGR01324 222 alyllGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdf.sGssGlfsvvlkrlsqkev 309
+                            + +lG + ++ +a+ v+ Gl +l vr++rh ++al+ia++l+ + +va v +P l  d  h+l  + +  Gs+G++s+ +k++ +   
+  NZ_NNSR01000025.1_10 264 LMRDLGSIQSPQNAFYVMNGLESLHVRMERHCKNALEIARFLKANDKVAWVDYPDLEDDKYHALAEKYLpNGSCGVLSFAVKGGRD-CA 351
+                           5789************************************************************9998747*********998765.55 PP
+
+             TIGR01324 310 hafldalklfglgyswGGyeslaln....vqpelairrsikrdleGplirlhiGledvddlkadlkaGlea 376
+                            +f+d+lkl  +       ++ +l     ++ ++++ + i++ +   lirl +Gle+vddl+ad+ + l++
+  NZ_NNSR01000025.1_10 352 VKFMDSLKLCDIETHVADAKTCILHpashTHRQMTDEQLIEAGVAPDLIRLSVGLENVDDLIADISQALDK 422
+                           69**********999999999988522224556889999**************************999876 PP
+
+>> NZ_NNSR01000069.1_80  # 84762 # 86009 # -1 # ID=69_80;partial=00;start_type=ATG;rbs_motif=3Base/5BMM;rbs_spacer=13-15
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.7   0.0   1.9e-32   7.5e-30       1     210 [.       5     217 ..       5     231 .. 0.92
+   2 !   49.6   0.0   6.1e-17   2.4e-14     216     375 ..     244     406 ..     239     408 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 100.7 bits;  conditional E-value: 1.9e-32
+             TIGR01324   1 trlihsGrekrrlqgsvnPpvqrastvllds....daasarakdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallaf 85 
+                           t l+h G + ++++gs   p+ + s+  ++s    +    ++   + y + G +t +++++ +a +e + g+++  sG+aavt all +
+  NZ_NNSR01000069.1_80   5 TALLHKGFNGEKVFGSTLTPIYQVSAFSHSSaeqlEKVFNNRAPGYAYSRIGNPTVTSFENRIASIENGVGAVACSSGMAAVTMALLNI 93 
+                           7899*************99****9999988755554555667788******************************************** PP
+
+             TIGR01324  86 vkaGdevlvvdsaykPtrr.fcdivlkrlgveveyydPkigediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidnt 173
+                           +++Gdev+ +   +  t   f d  l+ +g+ ++y +   +e+i  li+ +tk vf e  +   le+ d+ a+ +  +++gv ++id t
+  NZ_NNSR01000069.1_80  94 LESGDEVIASTGLFGGTIDlFGD--LEPFGIVTRYVNKVTAEEIEPLINEKTKAVFAELIGNPGLEIADLDAVSELVHSHGVPLIIDST 180
+                           ***************99762555..89**********9999************************************************ PP
+
+             TIGR01324 174 waagllfkalehgvdisiqaatkylaGhsdvllGtva 210
+                            a++ l +++ehg di +++++ky+ G  + + G ++
+  NZ_NNSR01000069.1_80 181 TATPYLIQPFEHGADIVVHSSSKYINGGGNSISGIIV 217
+                           **************************99888777665 PP
+
+  == domain 2  score: 49.6 bits;  conditional E-value: 6.1e-17
+             TIGR01324 216 vekllealy.llGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdfsGssGlfsvvlkr 303
+                           v+kl++ ++ ++G++  + +a+    Gl tlg r++r   +al++ak++e q +++ v +Pal ++p + l ++ + G  G   + ++ 
+  NZ_NNSR01000069.1_80 244 VAKLRNGIWrNIGCCLAPFNAFMNSVGLETLGLRMERLCYNALELAKFFETQDGIE-VNYPALEASPYYSLCQKLLKGKGGAI-LTIRA 330
+                           78999888746*****************************************9985.899*******************9975.67789 PP
+
+             TIGR01324 304 lsqkevhafldalklfglgyswGGyeslalnvqpela..irrsikrd..leGplirlhiGledvddlkadlkaGle 375
+                           +s+++  +++++lk  + +   G   +l++  +  +     ++ kr+  +    ir+ +G+ed++dlk+d+k+ ++
+  NZ_NNSR01000069.1_80 331 GSKERAFKLINNLKYATNATNIGDTRTLVIHPSSTIYahGTEEQKRNagVFDDTIRISVGIEDIEDLKSDFKQAVD 406
+                           999999************************999886422233333331134568*****************99876 PP
+
+>> NZ_NNSR01000063.1_14  # 19042 # 20220 # -1 # ID=63_14;partial=00;start_type=GTG;rbs_motif=AGGAG/GGAGG;rbs_spacer=11-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.0   1.4e-07   5.6e-05      69     175 ..      96     208 ..      87     221 .. 0.80
+   2 ?   -3.4   0.0      0.81   3.2e+02     347     373 ..     366     392 ..     363     392 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 1.4e-07
+             TIGR01324  69 ilyPsGlaavtnallafvkaGdevlvvd...saykPtrrfcdivlkrlgveveyydPkigediaalikpntkvvfl...eaPasltlev 151
+                           ++   G  a+   + +++  Gdev++ +     y+P   ++d v   ++ + e    + + d+ a i+p+tk+++l   + P+   +e 
+  NZ_NNSR01000063.1_14  96 LVTVGGSEAIDLVFRTLLDPGDEVIIPEpsfVCYEPLTVMADGVPVIINTKNEDNFRLKASDLRAAITPKTKLLVLpfpNNPTGAIMER 184
+                           4555678899999999**********87322579*********987666655555455569*************983335677788*** PP
+
+             TIGR01324 152 qdiPaiakaaraagvvvlidntwa 175
+                           +d+  ia++ r++++ vl d+ ++
+  NZ_NNSR01000063.1_14 185 KDLEEIAEVIREHNLFVLSDEIYC 208
+                           ******************998775 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.81
+             TIGR01324 347 rdleGplirlhiGledvddlkadlkaG 373
+                           + +  ++  l+i le ++++  +lk+G
+  NZ_NNSR01000063.1_14 366 VSYSYSIKHLKIALERIKEFLEELKKG 392
+                           667778888999999999999999887 PP
+
+>> NZ_NNSR01000026.1_70  # 73478 # 74644 # 1 # ID=26_70;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.0     2e-06   0.00081      59     192 ..      54     196 ..      27     218 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 2e-06
+             TIGR01324  59 laeleGaag...vilyPsGlaavtnallafvkaGdevlvv....dsaykPtrrfcdivlkrlgveveyydPkig.ediaalikpntkvv 139
+                            a+l G+a+   vi     ++a+ + +  ++k+Gd+ +++    +++ +P + + +  ++    +   yd + + e+     k+ntk+v
+  NZ_NNSR01000026.1_70  54 AAKLFGSANpenVIFTLNCTSALNTVIKGILKSGDHAVISslehNAVVRPLEALKKNKIEYSVAKCVPYDEEQTiENFRNEFKANTKLV 142
+                           56666766422266666788999999***********99823224566666665544444333344456666555************98 PP
+
+             TIGR01324 140 fleaPasltlevq.diPaiakaaraagvvvlidntwaagllfkal.ehgvdisiq 192
+                           +  + as+ + v+  i  ia+  r +g++  +d + +ag+    l +  +d    
+  NZ_NNSR01000026.1_70 143 IC-THASNVFGVKlPIERIAALCRINGILFCVDAAQSAGIADINLsDSSIDYLCT 196
+                           76.568889998746999*********************9765552345555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (377 nodes)
+Target sequences:                       1989  (627858 residues searched)
+Passed MSV filter:                        57  (0.0286576); expected 39.8 (0.02)
+Passed bias filter:                       47  (0.02363); expected 39.8 (0.02)
+Passed Vit filter:                         6  (0.00301659); expected 2.0 (0.001)
+Passed Fwd filter:                         5  (0.00251383); expected 0.0 (1e-05)
+Initial search space (Z):               1989  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10890.26
+//
+# Alignment of 8 hits satisfying inclusion thresholds saved to: workflow/out/metC/hmmer_output/Ruminococcus_bromii_metC.sto
+[ok]

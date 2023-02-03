@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-ihumii-AP11-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.4e-14   50.7   0.0    6.5e-07   25.5   0.0    2.8  3  1_1041    # 1277210 # 1278433 # -1 # ID=1_1041;partial=00;sta
+  ------ inclusion threshold ------
+      0.017   10.9   0.2      0.049    9.4   0.0    1.8  2  1_1998    # 2464195 # 2467053 # 1 # ID=1_1998;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1041  # 1277210 # 1278433 # -1 # ID=1_1041;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=13bp;gc_cont=0.645
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.0   1.5e-08   1.7e-05      91     193 ..      24     125 ..       4     148 .. 0.85
+   2 !   25.5   0.0   5.7e-10   6.5e-07     262     319 ..     185     240 ..     182     339 .. 0.92
+   3 ?    1.0   0.0     0.015        17     430     474 ..     350     395 ..     342     403 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 1.5e-08
+  lcd_K22207_msa  91 varinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgD 182
+                     +a+++ G+    p+ v+++  ++++++   ++   +++ ++ +++ +++r+a++++i+a +  e++++  at+ ++ v  +++ +f     ++gD
+          1_1041  24 LAYLDSGATAQKPRAVIDKVDWLHRRMnanVHRGLHYMSETCTDEYEAAREAVRRFIGAGSTREIVFTSGATASINLVAYSFGGRFV----REGD 114
+                     578889999999999**9999999877555567899*******************************************99998887....89** PP
+
+  lcd_K22207_msa 183 avlmlhyaYga 193
+                      v+++++  ++
+          1_1041 115 NVITTEMEHHS 125
+                     ***99987666 PP
+
+  == domain 2  score: 25.5 bits;  conditional E-value: 5.7e-10
+  lcd_K22207_msa 262 eLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                       v + +++gv  v+VD+ ++i +  vdv ++++dfY+   HK ++ P ++++Ly ++
+          1_1041 185 AVVDAAHRKGV-PVLVDGCQGIVHGGVDVTALDCDFYAFSGHK-LYGPTGIGVLYGKE 240
+                     578999*****.9******************************.9**********987 PP
+
+  == domain 3  score: 1.0 bits;  conditional E-value: 0.015
+  lcd_K22207_msa 430 Lreefkvevpi..yyrapkegeveaitgYvRiShqvYnkvddyyklr 474
+                     + ++ ++ v +  ++ +p   ++  it  vR S  +Yn++ +   l 
+          1_1041 350 ILDKLGIAVRTgtHCAEPVMAHY-GITSMVRASLAMYNTFGEIDMLA 395
+                     55666666666223444444443.49*************98877665 PP
+
+>> 1_1998  # 2464195 # 2467053 # 1 # ID=1_1998;partial=00;start_type=ATG;rbs_motif=AAA;rbs_spacer=5bp;gc_cont=0.632
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0      0.16   1.8e+02     133     174 ..     120     160 ..     100     172 .. 0.74
+   2 ?    9.4   0.0   4.3e-05     0.049     260     311 ..     657     708 ..     656     710 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.16
+  lcd_K22207_msa 133 ilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfa 174
+                     +l+ +ta+ ++ + + v++ sl+d at+ a ++   +a++ +
+          1_1998 120 LLNFQTAVVSMTGME-VSNCSLLDEATATAEAMAMMFALRSR 160
+                     455566677776666.89999***999988887776766555 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 4.3e-05
+  lcd_K22207_msa 260 VkeLvkicreegvdqvfVDaAhaiGqvev.dvkeigAdfYtsNlHKWffcPps 311
+                     ++e+v i++++g  qv  D+A    qv + +   igAd    NlHK f  P++
+          1_1998 657 IREIVDIVHDNGG-QVYMDGANMNAQVGLtNPGYIGADVCHLNLHKTFAIPHG 708
+                     79**********9.*************7636789************9988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2273  (779138 residues searched)
+Passed MSV filter:                        68  (0.0299164); expected 45.5 (0.02)
+Passed bias filter:                       59  (0.0259569); expected 45.5 (0.02)
+Passed Vit filter:                         6  (0.00263968); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000879894); expected 0.0 (1e-05)
+Initial search space (Z):               2273  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 15031.73
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_lcdcustom.sto
+[ok]

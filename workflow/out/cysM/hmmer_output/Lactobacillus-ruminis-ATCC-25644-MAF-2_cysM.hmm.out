@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysM.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus-ruminis-ATCC-25644-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysM/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysM.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysM/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysM.sto
+# per-dom hits tabular output:     workflow/out/cysM/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysM.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01138  [M=290]
+Accession:   TIGR01138
+Description: cysM: cysteine synthase B
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.3e-84  278.4   0.2    9.5e-84  278.2   0.2    1.0  1  1_23      # 30187 # 31113 # 1 # ID=1_23;partial=00;start_type
+    3.9e-09   33.3   1.5      4e-06   23.4   0.2    2.1  2  1_831     # 880330 # 881520 # 1 # ID=1_831;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_23  # 30187 # 31113 # 1 # ID=1_23;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.487
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  278.2   0.2   9.2e-87   9.5e-84       2     290 .]       8     306 ..       7     306 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 278.2 bits;  conditional E-value: 9.2e-87
+  TIGR01138   2 ilklvGntplvrlkrllpeedsevlvklegnnpaGsvkdrpalsmiveaekrGeikeGdvlieatsGntGialamvaalkGykvkllmpdnvseerkaal 101
+                + +l+G tp+v+l+++ pe+ ++v+vkle +npaGs+kdr alsm+  a+k G++k+G ++ie tsGntGi lamvaa+kGy+++++mp+ +s er++ +
+       1_23   8 VDQLIGKTPIVKLNHVVPEDAADVYVKLEFFNPAGSIKDRIALSMLEAAKKSGKLKDGGTIIEPTSGNTGIGLAMVAAAKGYHLIIVMPETMSIERRKLM 107
+                6799************************************************************************************************ PP
+
+  TIGR01138 102 kayGaelilvdkeeGmeGardlarelvrkgeeklldqfnnpdnpkahytstGieiwqqtkGr.i.thfvsslGttGtimGvsrflkeqnpavqivGlqpa 199
+                + yGaelil+   eGm+G++  a++l++     +  qf+np+np+ h + tG ei +  +   +   fvs++Gt+Gt++G++  lke ++++++  l+p 
+       1_23 108 QGYGAELILTPGAEGMKGSIAKATQLAEDNGYFMPMQFENPANPDVHEQETGQEIIEAFGKDdLpDAFVSGVGTGGTLTGIGHALKELDQEIKVYALEPS 207
+                ***************************998888999*******************998654314268********************************9 PP
+
+  TIGR01138 200 egsa....ieG...lrrieseylpgifdaslvdrvvdveqedaediarelakkegifvGvssGgavaaalrlarelek.avvvaiicdrGdrylstgvf 290
+                e+      + G   ++ i + + p+i d  + d +++v  ++a ++are+a+keg + G+s+G+ +++a+++a++l k   vv++ +d+Gdrylst +f
+       1_23 208 ESPVlkdgVAGkhkIQGISAGFVPEILDRQIYDGIIEVPSDEAVKTAREVAHKEGFLPGISAGANIYGAIEIAKKLGKgKKVVTVSPDGGDRYLSTELF 306
+                8755212233433355677899******************************************************995579**************998 PP
+
+>> 1_831  # 880330 # 881520 # 1 # ID=1_831;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.457
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.4   0.2   3.9e-09     4e-06      15     129 ..      62     175 ..      48     190 .. 0.73
+   2 !    9.0   0.1   9.5e-05     0.098     227     285 ..     324     383 ..     314     387 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 23.4 bits;  conditional E-value: 3.9e-09
+  TIGR01138  15 krllpe.edsevlvklegnnpaGsvkdrpalsmiveaekrGeikeGdvlieatsGntGialamvaalkGykvkllmpdnvseerkaa.....lkayGael 108
+                k+++ +  +++v++k e  n +G+ k    l   + a+k G+     v+ e+ +G  G+a a vaal G++ ++ m +  +  +++a     +k  Ga++
+      1_831  62 KNMTKDlGGAKVYLKREDLNHTGAHKINNVLGQCLLAKKMGKK---RVIAETGAGQHGVATATVAALMGMECEIFMGEIDC--KRQAlnvyrMKLLGAKV 156
+                55566656789****************************9975...5999**************************87544..34440122255556665 PP
+
+  TIGR01138 109 ilvdkeeGmeGardlarelvr 129
+                  v+   G    +d ++e +r
+      1_831 157 HSVSTGTG--TLKDAVSETMR 175
+                55554333..34444444444 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 9.5e-05
+  TIGR01138 227 vvdveqedaediarelakkegifvGvssGgavaaalrla.relekavvvaiicdrGdryl 285
+                 v +  ++a d    l++ egi   + s  ava a ++  +  ++ +v+  ++ rGd+ +
+      1_831 324 YVPITDDEAVDAFEYLSRTEGIIPAIESAHAVAYAKKIVpKMRKDQIVIVTLSGRGDKDV 383
+                5778999*************************9988876155666788888999***976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (290 nodes)
+Target sequences:                       2053  (609007 residues searched)
+Passed MSV filter:                        86  (0.0418899); expected 41.1 (0.02)
+Passed bias filter:                       65  (0.031661); expected 41.1 (0.02)
+Passed Vit filter:                         6  (0.00292255); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000974184); expected 0.0 (1e-05)
+Initial search space (Z):               2053  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 9450.37
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/cysM/hmmer_output/Lactobacillus-ruminis-ATCC-25644-MAF-2_cysM.sto
+[ok]

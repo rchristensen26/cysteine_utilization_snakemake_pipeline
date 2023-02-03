@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Phocaeicola_vulgatus_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Phocaeicola_vulgatus_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Phocaeicola_vulgatus_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Phocaeicola_vulgatus_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.4e-27   94.5   0.0    3.1e-27   93.4   0.0    1.5  1  NZ_AP025240.1_1485  # 1867327 # 1868541 # 1 # ID=1_1485;parti
+    5.1e-09   33.3   0.1    6.5e-09   32.9   0.1    1.1  1  NZ_AP025240.1_3136  # 3760962 # 3762050 # -1 # ID=1_3136;part
+    0.00037   17.2   0.0    0.00059   16.6   0.0    1.2  1  NZ_AP025240.1_3267  # 3920975 # 3922162 # 1 # ID=1_3267;parti
+  ------ inclusion threshold ------
+      0.013   12.1   0.0      0.029   11.0   0.0    1.5  1  NZ_AP025240.1_3150  # 3780312 # 3783161 # -1 # ID=1_3150;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_AP025240.1_1485  # 1867327 # 1868541 # 1 # ID=1_1485;partial=00;start_type=ATG;rbs_motif=AATAA;rbs_spacer=6bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.4   0.0     3e-30   3.1e-27     112     500 ..      24     399 ..       4     403 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 93.4 bits;  conditional E-value: 3e-30
+              K22207 112 ariNnGSFGscpksvleaqqe..w.qlkflrqPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfq 199
+                          +++nG+    p++v+ea  +  +  +   ++  +f  ++ ++   +sr++++++ina++ +e+++   +T+ ++     +a++Fa+++++
+  NZ_AP025240.1_1485  24 IYLDNGATTQKPRQVVEAITDeyYsVNANVHRGVHFLSQQATELHEASRETVRRFINARSSNEIVFTRGTTESINL----LASSFADSQMK 110
+                         67888888888888888754411213445677889999999999999******************99988888775....566799***** PP
+
+              K22207 200 kgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeii.eefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicre 289
+                         +gd v++  +   +     +  ++r+g  V++v    P++++ e++ +e++k        ++r++L+ + h++ + + v P ke+++++++
+  NZ_AP025240.1_1485 111 EGDEVIVSVMEHHSNIVPWQLQAARKGI-VLKV---IPMNDRGELLlDEYEKLF------SERTKLVSFAHVSNVLGTVNPAKEMIATAHA 191
+                         ******9877776644444444455553.5555...588999998714444433......56899************************** PP
+
+              K22207 290 egvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk.ssdlh......hPvvsheYgnglaiesaw...iGtrD 370
+                         +gv+ v++D+A+++ +++vdv++++adf++   hK +++P++v +Ly ++  +  ++l       + + s ++ +    e  +    Gt D
+  NZ_AP025240.1_1485 192 HGVP-VLIDGAQSVPHMKVDVQDLDADFFAFSGHK-IYGPTGVGVLYGKE--EwLDKLPpyqgggEMIQSVSFEKTTFNELPFkfeAGTPD 278
+                         ***8.******************************.9***********99..33455556668876666666766666665442237**** PP
+
+              K22207 371 ysaqlvvpealeFvnrfegGiegikkrnhelvvemgemLaeawgtelgappemcasmvmvgLPaalgissdddalkLrthLreefkveVpi 461
+                         y    ++ +al++v+ +  G+e+i +  hel   + + L e  g ++   +e  +s++              + l + t+L ++ ++ V +
+  NZ_AP025240.1_1485 279 YIGTTALAKALDYVSAI--GMENIAAHEHELTLYAMQRLKEINGMRIFGEAEHKSSVISFLVGNI-------HHLDMGTLL-DRLGIAVRT 359
+                         *****************..9*************************99666666777666555532.......223333333.334555655 PP
+
+              K22207 462 ..yyrapkdgeveqvtgyvRiShqvYnkveDyeklrdAvnk 500
+                           +  +p + ++  + g vR S  +Yn+ e++  l   +++
+  NZ_AP025240.1_1485 360 ghHCAQPLMIRM-GIEGTVRASFGLYNTKEEIDMLAAGIER 399
+                         312222224443.6679999999999999999999888776 PP
+
+>> NZ_AP025240.1_3136  # 3760962 # 3762050 # -1 # ID=1_3136;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=14bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.9   0.1   6.2e-12   6.5e-09     262     342 ..     133     211 ..     110     285 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 32.9 bits;  conditional E-value: 6.2e-12
+              K22207 262 vrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk 342
+                         +++av+ h     +++ P ke++++++ +g  + +vDa  ++G v++dv+e+g df +s + K + + ++  f+ +rks+ 
+  NZ_AP025240.1_3136 133 THVAVV-HCETTTGILNPLKEIAHMVKMHGK-KLIVDAMSSFGGVPLDVEELGIDFMISSANKCIQGVPGFGFIIARKSEL 211
+                         445554.8888999****************9.7*******************************************99543 PP
+
+>> NZ_AP025240.1_3267  # 3920975 # 3922162 # 1 # ID=1_3267;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.0   5.6e-07   0.00059     241     304 ..     154     214 ..     139     219 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 5.6e-07
+              K22207 241 neeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiG 304
+                         +++ +e+++k+L+k k +  +v+L v+D + Sm + +    e+v++  ++    ++vD AH++G
+  NZ_AP025240.1_3267 154 KHNDMEALEKELQKCKPE--SVKLIVVDGVFSMEGDLANLPEIVRLKDKYNA-SIMVDEAHGLG 214
+                         556678899999988887..6****************9999****9988888.6*********9 PP
+
+>> NZ_AP025240.1_3150  # 3780312 # 3783161 # -1 # ID=1_3150;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   2.8e-05     0.029     280     331 ..     660     711 ..     650     713 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2.8e-05
+              K22207 280 vkeLvkicreegvdqvfvDaAHaiGqvdv.dvkeigadfytsnlhKWffcPks 331
+                         + e+ ki+++ g  qv +D+A    qv + +   igad    nlhK f +P++
+  NZ_AP025240.1_3150 660 IAEICKIIHKCGA-QVYMDGANMNAQVGLtNPGTIGADVCHLNLHKTFASPHG 711
+                         6789999999**9.8************77266789***************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       4172  (1479382 residues searched)
+Passed MSV filter:                       138  (0.0330777); expected 83.4 (0.02)
+Passed bias filter:                      103  (0.0246884); expected 83.4 (0.02)
+Passed Vit filter:                         9  (0.00215724); expected 4.2 (0.001)
+Passed Fwd filter:                         4  (0.000958773); expected 0.0 (1e-05)
+Initial search space (Z):               4172  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
+# Mc/sec: 18118.68
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Phocaeicola_vulgatus_lcd.sto
+[ok]

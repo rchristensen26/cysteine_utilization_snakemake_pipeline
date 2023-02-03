@@ -1,0 +1,97 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Actinomyces_neuii_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Actinomyces_neuii_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Actinomyces_neuii_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Actinomyces_neuii_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+   7.3e-108  357.6   2.7   8.4e-108  357.4   2.7    1.0  1  NZ_PKKO01000006.1_45  # 48387 # 49319 # -1 # ID=6_45;partial=
+    2.5e-11   39.9   0.3    1.3e-06   24.4   0.1    2.5  3  NZ_PKKO01000005.1_69  # 77334 # 78599 # 1 # ID=7_69;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_PKKO01000006.1_45  # 48387 # 49319 # -1 # ID=6_45;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  357.4   2.7  7.7e-111  8.4e-108      31     323 ..       5     307 ..       1     310 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 357.4 bits;  conditional E-value: 7.7e-111
+       cysM_K12339_msa  31 ktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklv 119
+                            ++++l+G+TPLvrl+++ ++ g+ei aK+E +NPa SVKdR+a++++++ae++g++  g t++E+TSGNTG+ALam++a++gy+v++ 
+  NZ_PKKO01000006.1_45   5 ANVTELVGKTPLVRLNKIGADAGAEIVAKVESFNPASSVKDRIAVAIVDAAEASGQLPAGGTIVESTSGNTGVALAMVGAARGYNVVVT 93 
+                           4799************************************************************************************* PP
+
+       cysM_K12339_msa 120 mpenaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGT 207
+                           mpe++s+er+  mra+GAel+lt+++egm+g +d a+++++e+   +++ Qf+N++Np  H +tTg+Eiw++t+gkv+ fV+g+GT+GT
+  NZ_PKKO01000006.1_45  94 MPESMSKERRILMRAFGAELVLTPASEGMQGTVDAANKIVSERrGAVLASQFTNEANPAIHRKTTGEEIWADTDGKVDAFVAGVGTGGT 182
+                           *******************************************5556679*************************************** PP
+
+       cysM_K12339_msa 208 imGvsryLkeqnpavqivglqPeegssi....pGirrw...peaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgav 289
+                           + Gv++ Lk++np++++ +++P+e   +     G  ++    ++++pk +++++vD++++vs ++A+++ ++lar eg++vG+SsG+a+
+  NZ_PKKO01000006.1_45 183 VSGVAETLKKHNPEIKVFAVEPKESPLLsegkAGPHKIqgiGANFVPKNYNADVVDEIITVSGDDAIATSQKLARDEGLLVGISSGAAA 271
+                           **********************9875553222343443222789********************************************* PP
+
+       cysM_K12339_msa 290 aaalrlaeeleea..viVaivcDrgdrYlstgvfee 323
+                           +aa ++a++ e a   +Va+++D+g+rYlst +f++
+  NZ_PKKO01000006.1_45 272 WAAAQVAKRPEFAgkRVVALLPDTGERYLSTPLFAQ 307
+                           *********865444******************986 PP
+
+>> NZ_PKKO01000005.1_69  # 77334 # 78599 # 1 # ID=7_69;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.4   0.1   1.2e-09   1.3e-06      52     146 ..      76     170 ..      51     187 .. 0.82
+   2 ?   -2.5   0.0      0.18   1.9e+02     187     229 ..     223     264 ..     218     272 .. 0.81
+   3 !   12.7   0.0   4.2e-06    0.0046     257     319 ..     330     398 ..     321     407 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 24.4 bits;  conditional E-value: 1.2e-09
+       cysM_K12339_msa  52 kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpenaseer...kaamrayGA 137
+                            +v++++K E  N +G  K     +++ +a    ++ +++++ E   G  G+A a +aa++g+++++ m ++ ++ +    a m+ +GA
+  NZ_PKKO01000005.1_69  76 GNVRVFLKREDLNHTGAHK---INNVLGQALLAKRMGKTRIIAETGAGQHGVATATAAALMGLDCTIYMGAEDTRRQalnVARMELLGA 161
+                           5899************988...5677888899999999*******************************88877664222689****** PP
+
+       cysM_K12339_msa 138 eliltdkee 146
+                           +++ +++ +
+  NZ_PKKO01000005.1_69 162 QVVSVTAGS 170
+                           ***997543 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.18
+       cysM_K12339_msa 187 iwrqtegkvthfVsgmGTtGTimGvsryLkeqnpavqivglqP 229
+                           i+++t+   + + +++G +   +G+ +++   +++v+ +g+++
+  NZ_PKKO01000005.1_69 223 ILDKTGSLPEAVCACLGGGSNAIGMFTAFI-DDEDVELIGCEA 264
+                           6667777778889999*99999**999998.667999999987 PP
+
+  == domain 3  score: 12.7 bits;  conditional E-value: 4.2e-06
+       cysM_K12339_msa 257 rvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea......viVaivcDrgdrYlstg 319
+                           +   ++++eA+++   l r+egi+  + s+ a+a+a+r  ++  e+      +i++ ++ rgd+ ++t 
+  NZ_PKKO01000005.1_69 330 TCYAITDKEAMDAFSLLCRTEGIIPAIESAHALAGAIRWGRQKAEQgfdrppTIIVNLSGRGDKDVQTA 398
+                           567899*********************************999755558899999999999999987775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2181  (736951 residues searched)
+Passed MSV filter:                        93  (0.042641); expected 43.6 (0.02)
+Passed bias filter:                       67  (0.0307199); expected 43.6 (0.02)
+Passed Vit filter:                         7  (0.00320954); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000917011); expected 0.0 (1e-05)
+Initial search space (Z):               2181  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17196.39
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Actinomyces_neuii_cysMcustom.sto
+[ok]

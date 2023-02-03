@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Tyzzerella-nexilis-DSM-1787-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.7e-09   33.2   0.6    5.5e-08   29.7   0.6    2.1  1  1_1494    # 1560709 # 1561890 # 1 # ID=1_1494;partial=00;star
+    1.5e-08   31.6   0.0    7.9e-08   29.2   0.0    2.0  1  1_2820    # 2939517 # 2940683 # -1 # ID=1_2820;partial=00;sta
+  ------ inclusion threshold ------
+      0.025   11.0   0.0      0.035   10.6   0.0    1.1  1  1_417     # 471805 # 472611 # 1 # ID=1_417;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1494  # 1560709 # 1561890 # 1 # ID=1_1494;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.41
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   0.6   4.4e-11   5.5e-08     128     322 ..      43     221 ..       9     229 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 4.4e-11
+  lcd_K22207_msa 128 elkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksne 222
+                     + k++i+++r++i+d ++a+ ++e+ ++   +   +  L+++a + +    +kg+ ++++++  +a+ ++ + y+++ g +v  +++     +++
+          1_1494  43 KNKDAITKQREIIADALGAN-ANEIYFTAGGSESDNWALKATAEAYK----NKGNHIITTKIEHHAILHTGD-YLEKNGYEVTYLDV-----DEN 126
+                     55677888888888888887.67888888888888888887775555....788888888888888886654.56777766653332.....233 PP
+
+  lcd_K22207_msa 223 eivs..efrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfL 315
+                      +v+  e+++a++      +++ + v  +       + P+ke+ +i +e+g+     Da +a Gqv+++v+e  +d   +  HK +  P++++fL
+          1_1494 127 GVVKleELKAAIR-----PTTILISV-MYANNEIGTIQPIKEIGEIAHEHGI-LFHTDAVQAFGQVPINVDECHVDMLSASGHK-LNGPKGIGFL 213
+                     3443003333333.....24444444.47777778899**************.889****************************.89******** PP
+
+  lcd_K22207_msa 316 yvrks.ka 322
+                     y+rk  k 
+          1_1494 214 YIRKGvKI 221
+                     ***96444 PP
+
+>> 1_2820  # 2939517 # 2940683 # -1 # ID=1_2820;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=3-4bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.0   6.4e-11   7.9e-08     132     483 ..      54     387 ..      47     388 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 29.2 bits;  conditional E-value: 6.4e-11
+  lcd_K22207_msa 132 gilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivs 226
+                      i+ +r++++d+++a++  +++++ N t   +i ++ +        +++ D ++++ +  ++V + + ++    + + +e+ +    ++ +   +
+          1_2820  54 VIYDTRELLADFFDAENPKQIVFTSNSTESLNIAIKGI--------LNPKDHAITTMLEHNSVLRPLYEM----EERGVELSIVKSDRKGNISYE 136
+                     68899*****************************9955........6999*********99998777664....444445444443333333344 PP
+
+  lcd_K22207_msa 227 efrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks. 320
+                     e+++ +++      + +  +  H +  +  ++ +k+  +i +++g    +VDa +  G  ++dv+e+  d      HK +  P++++ +yvr+  
+          1_2820 137 EIEHEIRQ------NTKAIICTHGSNLTGNMIDIKRVGEIAKKHGL-LFVVDASQTAGVYPIDVQEMHIDILCFTGHKSLLGPQGTGGMYVREGv 224
+                     55555444......67888999************************.899*******************************************75 PP
+
+  lcd_K22207_msa 321 kasdlhh..pvVsheygnglaiesa...wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVg 410
+                     k + l+   + V ++y++  + e+      Gt        + a l++++    gie+irkr  e + +  + +++  g ++    +      +V 
+          1_2820 225 KVRPLKTggSGV-QTYNKKHPAEMPtalEAGTLNGHGIAGLHASLSYLKT--EGIEKIRKRELEHMWKFYRGVKNIPGVKVYGDFDTENRCPIVT 316
+                     556555543444.55666666655422378*****************999..7***************************999999999999999 PP
+
+  lcd_K22207_msa 411 LPaklgissdedalkLrthLreefkvevpi..yyrapk.egevea.itgYvRiShqvYnkvddyyklrdavnqlved 483
+                     L        + d +++ + L   +++++    ++ ap  ++ +++   g vR S   Yn+ ++++    a+++l+e+
+          1_2820 317 LN-----IGEYDSSEVSDELLVTYGISTRPgaHC-APLmHEALGTvEQGAVRFSFSHYNTEEEVETAIRAIEELAEE 387
+                     99.....3678999999*********98763244.45424444443789***********************99875 PP
+
+>> 1_417  # 471805 # 472611 # 1 # ID=1_417;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.454
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   2.8e-05     0.035      93     189 ..      25     125 ..      18     128 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.8e-05
+  lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwqlkfl.rqPdefyfnelkkgilesrtaikdlinaddvdevslvdNatt...AaaivLqqvawsfaegkfqkgDa 183
+                      i nG fg    + l+aq+++++  + + P ef +++++  ++  r +  ++   ++++ +s +  + +   A +iv+  v+++++ +k+ k+Da
+           1_417  25 MIMNGVFGMSAVTALTAQNTTKVTGImEVPPEFLEKQIQAVFEDIRPDAVKIGMVASSELISTIAGCLKkygADNIVVDPVMVATSGSKLLKNDA 119
+                     689*******************8765277*****************9999998888899999998875445599********************* PP
+
+  lcd_K22207_msa 184 vlmlhy 189
+                     v +l++
+           1_417 120 VHTLEC 125
+                     *99887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3715  (1162819 residues searched)
+Passed MSV filter:                       167  (0.0449529); expected 74.3 (0.02)
+Passed bias filter:                      114  (0.0306864); expected 74.3 (0.02)
+Passed Vit filter:                        14  (0.00376851); expected 3.7 (0.001)
+Passed Fwd filter:                         3  (0.000807537); expected 0.0 (1e-05)
+Initial search space (Z):               3715  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
+# Mc/sec: 14596.18
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_lcdcustom.sto
+[ok]

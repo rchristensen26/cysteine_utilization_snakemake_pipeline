@@ -1,0 +1,103 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Blautia_luti_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Blautia_luti_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Blautia_luti_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Blautia_luti_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
+    9.1e-11   38.8   0.0    1.3e-10   38.2   0.0    1.2  1  NZ_JADPGV010000019.1_30  # 28641 # 29828 # -1 # ID=55_30;part
+    1.9e-09   34.4   0.1    1.7e-08   31.3   0.1    2.0  1  NZ_JADPGV010000009.1_12  # 12731 # 13912 # -1 # ID=65_12;part
+    0.00011   18.7   0.1      0.014   11.8   0.1    2.4  2  NZ_JADPGV010000019.1_53  # 57336 # 58529 # 1 # ID=55_53;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JADPGV010000019.1_30  # 28641 # 29828 # -1 # ID=55_30;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   0.0   1.1e-13   1.3e-10     129     319 ..      45     218 ..      27     240 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 38.2 bits;  conditional E-value: 1.1e-13
+           lcd_K22207_msa 129 lkkgilesrtaikdlinadd..vdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsviev 212
+                               +++i e+r+++ +l++ ++    +v ++ N+tt  ++ L+        g +++gD vl++++  +aV    + +v+  g  vi  
+  NZ_JADPGV010000019.1_30  45 TEEQIFETREQLLKLFHFSSgkGKNVIFTPNITTSLNVLLK--------GLLKPGDHVLVTSMEHNAVM---RPLVQLTGQGVIFD 119
+                              5788999999999998876544789***************9........5579***************7...56677889888865 PP
+
+           lcd_K22207_msa 213 elpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfY 298
+                              ++  p +s+ +   e  k L +      + rl v  H + ++  ++P +e+ + cre+g    ++D A+  G ++vd+++ +    
+  NZ_JADPGV010000019.1_30 120 RI--PCTSDGSLLLEQAKKLLT-----PRTRLLVCLHASNVCGTIMPAREIGQFCREHGL-LFILDTAQTAGTIPVDMEDFQISAL 197
+                              55..667766665555444444.....69*******************************.8999**************9887777 PP
+
+           lcd_K22207_msa 299 tsNlHKWffcPpsvAfLyvrk 319
+                              +   HK +  P++++ + +r+
+  NZ_JADPGV010000019.1_30 198 AFTGHKGLRGPQGTGGFLIRS 218
+                              777799999999887666666 PP
+
+>> NZ_JADPGV010000009.1_12  # 12731 # 13912 # -1 # ID=65_12;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.3   0.1   1.4e-11   1.7e-08     126     322 ..      41     221 ..       9     229 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 31.3 bits;  conditional E-value: 1.4e-11
+           lcd_K22207_msa 126 fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvie 211
+                                + k+++++ r++i+++++a+  +e+ ++   +   +  L+++  + +    +kg+ ++++++  +a+ +++e  +++ g+++  
+  NZ_JADPGV010000009.1_12  41 AGKSKEAVTKGREQIAEVLGAK-KEEIYFTAGGSESDNWALKATFEAYK----SKGNHIITTKIEHHAILHTCEY-LEKRGAKITY 120
+                              45678899999*********99.699****999*******998875555....899**************99986.7999999887 PP
+
+           lcd_K22207_msa 212 velpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdf 297
+                              v+++     ++ iv+   + Lek     +++ + v+ +       + P+ke+ +i +e+gv     Da +a  qv+++v+e + d 
+  NZ_JADPGV010000009.1_12 121 VDVD-----ENGIVKL--DELEK-AITPETILISVM-FANNEIGSIQPIKEIGRIAKEHGV-LFHTDAVQAFCQVPINVDECNIDM 196
+                              7764.....5666653..34454.233356666665.5566666678**************.889********************* PP
+
+           lcd_K22207_msa 298 YtsNlHKWffcPpsvAfLyvrks.ka 322
+                                s  HK +  P++++fLy+rk  k 
+  NZ_JADPGV010000009.1_12 197 LSSSGHK-INGPKGIGFLYIRKGvKI 221
+                              *******.99***********96444 PP
+
+>> NZ_JADPGV010000019.1_53  # 57336 # 58529 # 1 # ID=55_53;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.8   0.0    0.0016       1.8     127     167 ..      40      79 ..      12      98 .. 0.84
+   2 !   11.8   0.1   1.2e-05     0.014     263     319 ..     184     238 ..     178     389 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.0016
+           lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLq 167
+                               + k++++ +r++++ l++a++ +e+ ++  at  ++ +++
+  NZ_JADPGV010000019.1_53  40 ANAKSAVEDAREKVAMLLGAKH-EEIIFTAGATESTNFIIK 79 
+                              45788999*************7.8999*********99987 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 1.2e-05
+           lcd_K22207_msa 263 LvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                              + +ic+ +++  +  D  +++G++++dvk +g d+     HK ++ P++v+  y + 
+  NZ_JADPGV010000019.1_53 184 ISEICHTKDI-AMHSDITQSLGKIPIDVKRLGIDYASCSAHK-LYGPKGVGAAYLKA 238
+                              5689999999.8999***************************.99****99888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3539  (1088675 residues searched)
+Passed MSV filter:                       136  (0.0384289); expected 70.8 (0.02)
+Passed bias filter:                       97  (0.0274089); expected 70.8 (0.02)
+Passed Vit filter:                         7  (0.00197796); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000847697); expected 0.0 (1e-05)
+Initial search space (Z):               3539  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9142.81
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Blautia_luti_lcdcustom.sto
+[ok]

@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_veroralis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Prevotella_veroralis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Prevotella_veroralis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Prevotella_veroralis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.3e-22   77.3   0.0    3.5e-22   76.0   0.0    1.6  1  NZ_CP072330.1_1527  # 1756239 # 1757456 # -1 # ID=3_1527;part
+     0.0095   11.8   0.0      0.015   11.2   0.0    1.2  1  NZ_CP072330.1_199   # 225777 # 226964 # -1 # ID=3_199;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP072330.1_1527  # 1756239 # 1757456 # -1 # ID=3_1527;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.0   0.0   2.8e-25   3.5e-22      93     473 ..      25     394 ..       6     403 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 76.0 bits;  conditional E-value: 2.8e-25
+      lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqk 180
+                         + +nG+    p +vl+a ++  l++   ++   +++ ++ ++  +++r ++k++ina++  ev+++  +t   + v      sf+eg +++
+  NZ_CP072330.1_1527  25 YFDNGATTQKPLCVLDAMREEYLNVnanVHRGVHWMSQQATDLHEAARGTVKKFINARSTTEVVFTRGTTESLNLVAS----SFTEGCMRE 111
+                         578888888999999998877766644456789*********************************999999999876....778****** PP
+
+      lcd_K22207_msa 181 gDavlmlhyaYgaVkksieayvtraggsvi.evelpfpvksneeivs..efrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicr 268
+                         gD v++  +  ++  +++ + ++++   ++ +v   +p+++ e + +  +++k        +++ +l+ +  ++ +   + PVke+++i +
+  NZ_CP072330.1_1527 112 GDEVIVSVMEHHS--NIVPWQLQEQRKGIVlKV---IPMTD-EGVLDlhAYEK------LFSKRTKLVSVTQVSNVLGTINPVKEMIRIAH 190
+                         ****998887776..777777777775544043...34444.44443104444......45569*************************** PP
+
+      lcd_K22207_msa 269 eegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.eygnglaie...sawiGtrDy 350
+                         e +v  v+VD+A++i +  vdv+++++df +   HK ++ P +v++Ly +++  +++        ++ h ++g+   +     +  Gt Dy
+  NZ_CP072330.1_1527 191 ECDV-PVMVDGAQSIPHFAVDVQDLDCDFLAFSGHK-VYGPTGVGVLYGKEKWLDKMPPyqgggEMIEHvSFGKTTFERpplKFEAGTPDY 279
+                         ****.9******************************.9************963344433456667775537888554441214589***** PP
+
+      lcd_K22207_msa 351 saqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi. 440
+                          a   + ++l++v+ +  g+++i ++ +el + + + L e  g ++   ++  a  +++ +        d + + L t+L ++ ++ v + 
+  NZ_CP072330.1_1527 280 IATHGLAKALDYVSSL--GMDNIFQHEQELTHYALQRLREIDGMHI-YGHHQDAGDAVISFNV-----GDIHHMDLGTLL-DQLGIAVRTg 361
+                         ***************8..***************************7.3445555666666662.....344567788777.8889999884 PP
+
+      lcd_K22207_msa 441 .yyrapkegeveaitgYvRiShqvYnkvddyykl 473
+                          ++ +p  +++  + g vR S   Yn+ +++ +l
+  NZ_CP072330.1_1527 362 hHCAQPLMDRL-GVLGTVRASFGLYNTCEEVDAL 394
+                         23333444444.58999**********9998777 PP
+
+>> NZ_CP072330.1_199  # 225777 # 226964 # -1 # ID=3_199;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0   1.2e-05     0.015     232     286 ..     164     215 ..     157     243 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.2e-05
+     lcd_K22207_msa 232 LekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                        L++  a+ ++ r+ v D + Sm   v P+ +++ + ++ +   v+VD  h+ G v
+  NZ_CP072330.1_199 164 LKE--AQAQRFRIIVTDGVFSMDGNVAPIDKICDLAEKYDA-LVMVDESHSAGVV 215
+                        444..56799******************************9.9*******99877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2508  (838246 residues searched)
+Passed MSV filter:                        94  (0.0374801); expected 50.2 (0.02)
+Passed bias filter:                       65  (0.0259171); expected 50.2 (0.02)
+Passed Vit filter:                         8  (0.00318979); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000797448); expected 0.0 (1e-05)
+Initial search space (Z):               2508  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 5861.32
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Prevotella_veroralis_lcdcustom.sto
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Gemmiger_formicilis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Gemmiger_formicilis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Gemmiger_formicilis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Gemmiger_formicilis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    3.5e-17   59.5   0.2    6.2e-17   58.7   0.2    1.3  1  NZ_CABIYV010000003.1_142  # 152926 # 154137 # -1 # ID=22_142;
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CABIYV010000003.1_142  # 152926 # 154137 # -1 # ID=22_142;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.7   0.2   2.4e-20   6.2e-17     133     476 ..      64     393 ..      20     400 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 58.7 bits;  conditional E-value: 2.4e-20
+            lcd_K22207_msa 133 ilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfp 217
+                                + +r+++++++na+d de+++++N+t   + v  + +++f     ++ D +++     ++     +++++  g++++     +p
+  NZ_CABIYV010000003.1_142  64 HEGARHTVAQFFNAED-DEIVFTQNTTESLNLVAYSYGMNFL----HESDEIVISVAEHHSNMVPWQRVAKATGAKLV---YMYP 140
+                               45679**********6.9*********************999....77799888888888877788998888899988...5689 PP
+
+            lcd_K22207_msa 218 vksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNl 302
+                                ++ +   +e++k ++       k +++ +  ++ +  +  PV+e+vk  ++ g   v++D A++  +++vdvk++++df +   
+  NZ_CABIYV010000003.1_142 141 GENGRLTTEELDKKITP------KTKVVAVAMVSNVLGLRAPVEEIVKRAHAVGA-VVVLDCAQSAPHTPVDVKKLDVDFAACSA 218
+                               99999999999999887......56666666777888999**************9.9**************************** PP
+
+            lcd_K22207_msa 303 HKWffcPpsvAfLyvrkskasdlhhpvVsheygnglaiesa..........wiGtrDysaqlvvpavleFvnrfeggiegirkrn 377
+                               HK +++P +v+ Ly+r     +   p +s     g  +es             Gtr     +   a++++++ +  g e+++++ 
+  NZ_CABIYV010000003.1_142 219 HK-LYAPMGVGALYARAG-LLEKMPPFMSGGDMIGAVHESGatwadgprkfEAGTRNVGGEVGFAAAIDYMKGI--GWEAMETHE 299
+                               **.9*************3.3344457777766666666666565555556578********************8..9******** PP
+
+            lcd_K22207_msa 378 helvvemge.mLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapk.egeveaitgYvRiS 460
+                               h l+ +m   m a  w t  g p        +V +    +++       + t+L +  +v v   ++  +   e   i   +R S
+  NZ_CABIYV010000003.1_142 300 HALLDRMLAgMRAMPWLTVYGEP-VAEGRYGVVSFNV-NDVHP----HDVATIL-DAGGVAVRAGHHCAQpLMEFLGIGSCCRAS 377
+                               ******965277889*****977.4555677888884.44444....4456666.78888888855423223344459999**** PP
+
+            lcd_K22207_msa 461 hqvYnkvddyyklrda 476
+                                 +Yn+ +d+ +l + 
+  NZ_CABIYV010000003.1_142 378 VAIYNTPEDVDALLEN 393
+                               *********9888665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2623  (874107 residues searched)
+Passed MSV filter:                        95  (0.0362181); expected 52.5 (0.02)
+Passed bias filter:                       87  (0.0331681); expected 52.5 (0.02)
+Passed Vit filter:                        13  (0.00495616); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000381243); expected 0.0 (1e-05)
+Initial search space (Z):               2623  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 14183.79
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Gemmiger_formicilis_lcdcustom.sto
+[ok]

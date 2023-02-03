@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Cutibacterium_acnes_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Cutibacterium_acnes_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Cutibacterium_acnes_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Cutibacterium_acnes_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+   3.7e-262  870.0   0.0   4.1e-262  869.9   0.0    1.0  1  NC_021085.1_1131  # 1211973 # 1213349 # -1 # ID=2_1131;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_021085.1_1131  # 1211973 # 1213349 # -1 # ID=2_1131;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  869.9   0.0  1.7e-265  4.1e-262       8     465 ..       1     457 [.       1     458 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 869.9 bits;  conditional E-value: 1.7e-265
+   tnaA_K01677_msa   8 mkripepfrikvvepiklttreeReeaLkeagyNpFlLksedVfiDllTDSGTgAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyeyv 100
+                       mk+ipepf+ik+vepi +t+reeR ++L++a+yN+F L++e V+iDllTDSGTgAmsd+qwAa+mrGDEaY+g rsy++L ++  +ifgy+y+
+  NC_021085.1_1131   1 MKYIPEPFKIKMVEPIAMTSREERANILARAHYNMFGLPAESVYIDLLTDSGTGAMSDAQWAAVMRGDEAYSGGRSYMHLMDVAGSIFGYSYI 93 
+                       699****************************************************************************************** PP
+
+   tnaA_K01677_msa 101 iPtHQGRgAEqiLfpvlikregkvvisNthFDTTrahvelagaeavdlvikeafdteseapFKGNfDleklealieevgaenvplivlTiTnN 193
+                       +P+HQGR+AE++L+p+l++r+g++v+ Nt+FDTTrahv lag+++vd v++e  d ++ apFKGN+D++ le+li+e+g +++++iv+T+TnN
+  NC_021085.1_1131  94 QPVHQGRAAEKVLMPLLVSRPGQLVVANTFFDTTRAHVGLAGGRPVDNVCSEGLDSAKVAPFKGNMDVAGLEKLIAEHG-DDIAAIVMTVTNN 185
+                       ******************************************************************************9.88*********** PP
+
+   tnaA_K01677_msa 194 saGGQPVSmaNlravaeiakkygipvvlDaARFAENAyFIkqrEegyadksikeIvremfsyaDgltmSaKKDglvniGGliafrddeelfee 286
+                       s+GGQPVS++N+r+++e+a+ky ipv+lDaAR+AENAyFI++rEeg++d+s+++Iv emf+y+D+++mSaKKD++vn+GGl+++r+d el+e+
+  NC_021085.1_1131 186 SVGGQPVSLQNMRETYEVAHKYAIPVCLDAARYAENAYFIHEREEGCQDRSLRDIVAEMFRYGDMFVMSAKKDAIVNMGGLLGVREDGELAEK 278
+                       ********************************************************************************************* PP
+
+   tnaA_K01677_msa 287 vktrcilmeGFptYGGlaGrDlealAvGLeEgvdedyLayRieqveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaLaceL 379
+                       vk+++i++eG+ tYGGlaGrDlealAvGLeEg+d+d+ +yR++q++yLg++LeeaGvp+q+P+GgHAvf+Da+++lph++++q+p++aLa +L
+  NC_021085.1_1131 279 VKSNVISFEGYLTYGGLAGRDLEALAVGLEEGLDMDWQRYRVGQIQYLGDQLEEAGVPFQSPVGGHAVFIDAGRMLPHLEWKQYPGHALATQL 371
+                       ********************************************************************************************* PP
+
+   tnaA_K01677_msa 380 YleaGiRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtqehmdyvaealkevkeraesikglrityeppvLRhFtarLepv 465
+                       Yl aGiR+++iGs+l++rdp t+e+++ap+E++RLa+PRrvYtq+hmd+vaea+++++++ e+++g+rit+eppvLRhFt+rLep+
+  NC_021085.1_1131 372 YLDAGIRSCDIGSYLMDRDPVTQEEQQAPFEFTRLAVPRRVYTQSHMDVVAEAVTKIAREPEKVPGYRITWEPPVLRHFTSRLEPI 457
+                       *************************************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       2398  (762195 residues searched)
+Passed MSV filter:                        49  (0.0204337); expected 48.0 (0.02)
+Passed bias filter:                       37  (0.0154295); expected 48.0 (0.02)
+Passed Vit filter:                         4  (0.00166806); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000417014); expected 0.0 (1e-05)
+Initial search space (Z):               2398  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 24453.81
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Cutibacterium_acnes_tnaA.sto
+[ok]

@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lachnospira-eligens-ATCC-27750-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Lachnospira-eligens-ATCC-27750-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Lachnospira-eligens-ATCC-27750-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Lachnospira-eligens-ATCC-27750-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.4e-15   53.0   0.7    7.2e-15   51.9   0.4    1.7  2  2_249     # 233045 # 234274 # -1 # ID=2_249;partial=00;start_
+    3.7e-12   42.9   0.7    2.1e-11   40.5   0.7    1.9  1  1_284     # 336815 # 337945 # 1 # ID=1_284;partial=00;start_t
+    2.4e-11   40.2   0.2    5.2e-11   39.2   0.2    1.4  1  2_464     # 453692 # 454891 # 1 # ID=2_464;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 2_249  # 233045 # 234274 # -1 # ID=2_249;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.39
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.9   0.4   8.4e-18   7.2e-15     109     339 ..      21     238 ..       2     327 .. 0.86
+   2 ?   -1.9   0.0      0.16   1.4e+02     473     496 ..     373     396 ..     343     402 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 51.9 bits;  conditional E-value: 8.4e-18
+  K22207 109 pgvariNnGSFGscpksvleaqqewqlkflrqPdefyfn..el.kkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLh 208
+             +++a+++n +    p+ vl+a +++ +++ + P +  ++  e+ +++  ++r++++++i+a+d  ++++  naT+  + ++ + +++F    +++gd +v+  
+   2_249  21 SNIAYLDNAATTQKPQAVLDAVNKYYQEMNANPFRGVYElsEIaTESYENARKAVAQFIGAKDASQIVFTRNATESLNLIAYSYGMNF----IKEGDEIVVSV 119
+             689******************************775543113314567789**********************************988....689******99 PP
+
+  K22207 209 yaYgaVKksieayvtraggeVievelpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvk 311
+             +   +     ++++++ g+ V++ +l     +n ei+++  + +   +    ++rL+ +  ++ + + v  +k+++++++++g   ++ D+A+++ +++v+v+
+   2_249 120 MEHHSNFLPWKQVAEKCGA-VLK-QLTP--DENGEITDKSLEVI---T---DKTRLVAVTQVSNVLGRVNDIKHIAEVAHAHGA-VIVADGAQSVPHMPVNVT 211
+             9999988888887777776.444.4444..79*****6666655...4...468******************************.6999************** PP
+
+  K22207 312 eigadfytsnlhKWffcPksvAfLyvrk 339
+             ++++df +   hK + +P ++  Ly +k
+   2_249 212 DLDVDFLVFSGHK-MLAPMGIGALYGKK 238
+             *************.899********988 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.16
+  K22207 473 qvtgyvRiShqvYnkveDyeklrd 496
+             +v    R S + Yn+ e+++++ +
+   2_249 373 KVNSTTRASFAFYNTEEEVQHFIE 396
+             566778999********9999876 PP
+
+>> 1_284  # 336815 # 337945 # 1 # ID=1_284;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.406
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.5   0.7   2.4e-14   2.1e-11     148     340 ..      40     213 ..       3     224 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 40.5 bits;  conditional E-value: 2.4e-14
+  K22207 148 elkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrk 250
+             + k+ + +sr +i+++inad+ +e+++    T++ + ++++ +        +k+  +++ ++   aV +s    +++ g +V       Pv + + i+    +
+   1_284  40 KAKNVVEESRGIIADIINADR-NEIFFTSGGTEGDNWAVKAES------LKRKQGHIIVSSIEHHAVTESALW-LKNYGIDVTFA----PVDE-QGIV--KLE 127
+             557778899999999999997.999999999999888777655......356777888888999999888654.67777655444....4444.4455..245 PP
+
+  K22207 251 aLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrks 340
+             +Lek   n+  + L+ +       + + P++++ +i++e+g  +v  Da  a+G++dvdvk++g+df     hK +++Pk+v fLyvr  
+   1_284 128 QLEKMIRND--TFLVSVMLANNEIGTIQPIENVCEIAHEYGA-KVHSDAVAAFGHIDVDVKKLGVDFLNVSGHK-ICGPKGVGFLYVRGG 213
+             566555553..556666666777889****************.7******************************.9***********974 PP
+
+>> 2_464  # 453692 # 454891 # 1 # ID=2_464;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.409
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.2   0.2   6.1e-14   5.2e-11     114     343 ..       7     222 ..       2     234 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 39.2 bits;  conditional E-value: 6.1e-14
+  K22207 114 iNnGSFGscpksvleaqqewqlkflrqPdefy..fnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaV 214
+             ++n +  s+   v++a   +  ++   P + y   ++ k +i ++r++i++ i+a + +e+ +    ++  + +l+++a     g  +kg+ ++  ++   a+
+   2_464   7 MDNAATTSTAPEVVSAMLPFFTEYYGNPSSVYnfAQKSKMAIEDAREIIADSIGAAKSNEIYFTGGGSESDNWALKSAAF----GLRDKGNHIITTKIEHHAI 105
+             5566666666666677777777777778766521356677899************************************6....7789*************** PP
+
+  K22207 215 KksieayvtraggeVievelpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadf 317
+              ++  ay+++ g e+    ++    +   ++e +++a+ ++      + L  + +     + + Pv+e+ +i++++g+     Da +a+ +v+++v+e++ d 
+   2_464 106 LNTC-AYLEKNGFEITYLDVDS---EGFVSLEDVENAITDK------TILISVMFANNEIGTIEPVCEIGEIAHKHGI-LFHTDAVQAMCHVPINVTEMNIDL 197
+             *997.78*********999986...5666777888888543......345555677888899****************.5889******************** PP
+
+  K22207 318 ytsnlhKWffcPksvAfLyvrkssks 343
+               + +hK f +Pk+v f+y+++s+k 
+   2_464 198 LSASAHK-FHGPKGVGFMYMKNSAKL 222
+             *******.99************8873 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2556  (830571 residues searched)
+Passed MSV filter:                        97  (0.0379499); expected 51.1 (0.02)
+Passed bias filter:                       65  (0.0254304); expected 51.1 (0.02)
+Passed Vit filter:                         5  (0.00195618); expected 2.6 (0.001)
+Passed Fwd filter:                         3  (0.00117371); expected 0.0 (1e-05)
+Initial search space (Z):               2556  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.08
+# Mc/sec: 5433.77
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Lachnospira-eligens-ATCC-27750-MAF-2_lcd.sto
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metC.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Desulfovibrio_piger_prodigal.faa
+# output directed to file:         workflow/out/metC/hmmer_output/Desulfovibrio_piger_metC.hmm.out
+# MSA of all hits saved to file:   workflow/out/metC/hmmer_output/Desulfovibrio_piger_metC.sto
+# per-dom hits tabular output:     workflow/out/metC/hmmer_output/Desulfovibrio_piger_metC.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01324  [M=377]
+Accession:   TIGR01324
+Description: cysta_beta_ly_B: cystathionine beta-lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    1.3e-60  202.3   0.1    1.4e-38  129.7   0.1    2.0  2  NZ_CABKOD010000044.1_222  # 217465 # 218730 # 1 # ID=44_222;p
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CABKOD010000044.1_222  # 217465 # 218730 # 1 # ID=44_222;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  129.7   0.1   5.7e-42   1.4e-38       4     209 ..       8     217 ..       5     228 .. 0.91
+   2 !   70.8   0.0   4.3e-24   1.1e-20     221     375 ..     261     419 ..     243     421 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 129.7 bits;  conditional E-value: 5.7e-42
+                 TIGR01324   4 ihsGrekrrlqgsvnPpvqrastvlldsdaasar....akdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnalla 84 
+                               +h+G  +++ +  v P+vq ++t  +ds a  a+    +   ++y + G +t +a+++ +a+leG+ g++   sG aa  +a+l 
+  NZ_CABKOD010000044.1_222   8 LHAGYTPKNGEPRVLPIVQ-STTFTYDSTAEVAKlfdlETSGFFYTRLGNPTVDAVEQKIAALEGGVGALCTSSGQAANLIAILN 91 
+                               6999999999999998776.67899999665443222256789****************************************** PP
+
+                 TIGR01324  85 fvkaGdevlvvdsaykPtrrfcdivlkrlgveveyydPkig.ediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvv 168
+                               + ++Gd+v+ + s+y  t ++  + lk++g+ev++ d +   ++i   i+pnt+ vf e+ +  +++v di  ia+ a+ +g+ +
+  NZ_CABKOD010000044.1_222  92 LARSGDHVVSMASIYGGTFNLFAVTLKKMGIEVTFVDQRADdAEIEKAIRPNTRAVFGETLTNPSMDVLDIERIAALAHRHGLPL 176
+                               ***************************************99899***************************************** PP
+
+                 TIGR01324 169 lidntwaagllfkalehgvdisiqaatkylaGhsdvllGtv 209
+                               ++dnt+a+++l ++++ g di ++++tky+ Gh+  + G +
+  NZ_CABKOD010000044.1_222 177 IVDNTFATPVLCRPFDFGADIVVHSTTKYMDGHALQMGGVI 217
+                               *********************************97665554 PP
+
+  == domain 2  score: 70.8 bits;  conditional E-value: 4.3e-24
+                 TIGR01324 221 ealyllGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdf.sGssGlfsvvlkrl 304
+                               + + +lG++  +  a+ + +Gl tl  r++rh ++a a+a +l ++ +v+ v +P lP + +++l  + +  G+sG+ s+ lk+ 
+  NZ_CABKOD010000044.1_222 261 QLMRDLGCCQTPQGAFYINQGLETLPLRMERHCRNAEAVATFLAGHDKVESVCYPWLPDSHDKALAEKYLpKGCSGVISFSLKG- 344
+                               56889************************************************************99987469*********87. PP
+
+                 TIGR01324 305 sqkevhafldalklfglgyswGGyeslaln....vqpelairrsikrdleGplirlhiGledvddlkadlkaGle 375
+                               ++++  +f+d+lk+ +l        + +l     ++ +l++ +  ++ ++  ++rl +Gle++ddl  dl + l+
+  NZ_CABKOD010000044.1_222 345 GRDAGARFIDSLKMVSLQVHVADIRTCVLHpassTHRQLSDEQLTEAGITPGMVRLSVGLENIDDLLEDLSQALA 419
+                               577899*****************999988522224567999999999999********************99886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (377 nodes)
+Target sequences:                       2523  (821186 residues searched)
+Passed MSV filter:                        66  (0.0261593); expected 50.5 (0.02)
+Passed bias filter:                       60  (0.0237812); expected 50.5 (0.02)
+Passed Vit filter:                         4  (0.00158541); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000396354); expected 0.0 (1e-05)
+Initial search space (Z):               2523  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14187.17
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/metC/hmmer_output/Desulfovibrio_piger_metC.sto
+[ok]

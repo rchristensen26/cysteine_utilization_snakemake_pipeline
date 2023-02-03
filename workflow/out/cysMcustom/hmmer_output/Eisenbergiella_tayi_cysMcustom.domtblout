@@ -1,0 +1,24 @@
+#                                                                              --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name          accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#  ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NZ_MCGI01000001.1_949  -            313 cysM_K12339_msa      -            366  9.3e-111  368.6   0.1   1   1  9.7e-114    1e-110  368.5   0.1    31   323     6   311     1   312 0.94 # 1142905 # 1143843 # -1 # ID=11_949;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.535
+NZ_MCGI01000010.1_57   -            409 cysM_K12339_msa      -            366   1.1e-21   75.6   1.8   1   2   7.9e-24   8.5e-21   72.6   0.3    33   232    19   211     2   216 0.89 # 58431 # 59657 # 1 # ID=2_57;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.471
+NZ_MCGI01000010.1_57   -            409 cysM_K12339_msa      -            366   1.1e-21   75.6   1.8   2   2     0.024        25    2.0   0.1   250   308   248   304   244   319 0.82 # 58431 # 59657 # 1 # ID=2_57;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.471
+NZ_MCGI01000010.1_45   -            395 cysM_K12339_msa      -            366   4.6e-14   50.5   3.1   1   3   4.5e-10   4.8e-07   27.4   0.1    47   158    61   171    17   186 0.76 # 44551 # 45735 # 1 # ID=2_45;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.507
+NZ_MCGI01000010.1_45   -            395 cysM_K12339_msa      -            366   4.6e-14   50.5   3.1   2   3     0.074        79    0.4   0.0   189   230   216   256   204   278 0.80 # 44551 # 45735 # 1 # ID=2_45;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.507
+NZ_MCGI01000010.1_45   -            395 cysM_K12339_msa      -            366   4.6e-14   50.5   3.1   3   3   2.1e-08   2.3e-05   21.9   0.3   256   314   320   379   269   385 0.85 # 44551 # 45735 # 1 # ID=2_45;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.507
+NZ_MCGI01000004.1_840  -            462 cysM_K12339_msa      -            366   8.1e-12   43.1   0.0   1   2   6.3e-12   6.7e-09   33.5   0.0    40   144    85   191    52   204 0.83 # 953289 # 954674 # -1 # ID=8_840;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.511
+NZ_MCGI01000004.1_840  -            462 cysM_K12339_msa      -            366   8.1e-12   43.1   0.0   2   2   0.00054      0.57    7.4   0.0   237   306   342   415   332   435 0.78 # 953289 # 954674 # -1 # ID=8_840;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.511
+NZ_MCGI01000001.1_1338 -            938 cysM_K12339_msa      -            366   0.00048   17.5   0.0   1   2   6.7e-05     0.071   10.4   0.0    97   168   660   731   643   736 0.88 # 1611663 # 1614476 # -1 # ID=11_1338;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.531
+NZ_MCGI01000001.1_1338 -            938 cysM_K12339_msa      -            366   0.00048   17.5   0.0   2   2    0.0044       4.7    4.4   0.0   254   294   849   889   846   898 0.85 # 1611663 # 1614476 # -1 # ID=11_1338;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.531
+NZ_MCGI01000004.1_436  -            498 cysM_K12339_msa      -            366   0.00094   16.6   0.0   1   1   1.5e-06    0.0016   15.8   0.0    77   142   122   189   118   224 0.74 # 485911 # 487404 # -1 # ID=8_436;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.459
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      config/profileHMMs/cysMcustom.HMM
+# Target file:     workflow/out/prodigal/proteinSeq/Eisenbergiella_tayi_prodigal.faa
+# Option settings: hmmsearch -o workflow/out/cysMcustom/hmmer_output/Eisenbergiella_tayi_cysMcustom.hmm.out -A workflow/out/cysMcustom/hmmer_output/Eisenbergiella_tayi_cysMcustom.sto --domtblout workflow/out/cysMcustom/hmmer_output/Eisenbergiella_tayi_cysMcustom.domtblout config/profileHMMs/cysMcustom.HMM workflow/out/prodigal/proteinSeq/Eisenbergiella_tayi_prodigal.faa 
+# Current dir:     /Users/rebeccachristensen/Desktop/Cremer_Lab_2022/cysteine_utilization_project/main
+# Date:            Mon Aug  8 16:37:58 2022
+# [ok]

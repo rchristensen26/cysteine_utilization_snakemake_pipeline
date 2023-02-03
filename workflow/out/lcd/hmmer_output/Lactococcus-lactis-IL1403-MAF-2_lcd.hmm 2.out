@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactococcus-lactis-IL1403-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Lactococcus-lactis-IL1403-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Lactococcus-lactis-IL1403-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Lactococcus-lactis-IL1403-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.5e-15   54.1   0.6    1.7e-14   50.6   0.6    2.4  1  1_127     # 130247 # 131464 # 1 # ID=1_127;partial=00;start_t
+    2.3e-09   33.7   0.0    3.9e-09   32.9   0.0    1.5  1  1_57      # 51324 # 52298 # -1 # ID=1_57;partial=00;start_typ
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_127  # 130247 # 131464 # 1 # ID=1_127;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.370
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.6   0.6   1.3e-17   1.7e-14     150     402 ..      63     304 ..      22     401 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 50.6 bits;  conditional E-value: 1.3e-17
+  K22207 150 kkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneei.ieefrka 251
+             +++  ++r++++++ina++  ev +   +Tt ++ v+q ++     + ++ gd +v+  +   +     + ++++ g+      l+f + ++ ++ ++ +rk+
+   1_127  63 TEKYEAAREKVRQFINAKSTKEVLFTRGTTTSINWVAQFAG-----QILKTGDEIVISIMEHHSNIVPWQEVAKKTGAI-----LKFVYLKDGQLdMDDLRKK 155
+             5667789*****************************99777.....699********9999999888999999999984.....6666666666625556666 PP
+
+  K22207 252 LekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrksskssdlh....... 347
+             +       ++++ + i h++ + + + Pv+e++ki++e+g     vD+A++  ++ +d++++++df++   hK + +P+++ +Ly +++   ++         
+   1_127 156 IT------NQTKFVSIAHVSNVLGTINPVEEITKIAHEHGA-YMAVDGAQSTPHMAIDLQKMDVDFFAFSGHK-MMGPTGIGVLYGKEEL-LNQFEpvefgge 249
+             63......3578999**************************.6******************************.99**********9932.333333345544 PP
+
+  K22207 348 ..hPvv.sheYgnglaiesawiGtrDysaqlvvpealeFvnrfegGiegikkrnhelv 402
+               + v  sh+   +l+ ++   Gt      +++ +a+++++++  Gi++i +   el+
+   1_127 250 miDFVYeSHSTWTELPWKFE-AGTPNIAGAIALGAAIDYIQEL--GIDQIHQHEIELI 304
+             43443324444445555443.5888888888888888888888..8888877766665 PP
+
+>> 1_57  # 51324 # 52298 # -1 # ID=1_57;partial=00;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.364
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.9   0.0   3.1e-12   3.9e-09     276     407 ..     103     225 ..      15     245 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 32.9 bits;  conditional E-value: 3.1e-12
+  K22207 276 vvlPvkeLvkicreegvdqvf.vDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrksskssdlhhPvvsheYgnglaiesawiGtrDysaqlvv 377
+              +lPvke+ ++++++    vf vDa +++G++ v   ++ adf  + +hK f +Pk+v fLy ++     +lh  +  h+   g + e    Gt    +++ +
+    1_57 103 QLLPVKEVGELLKQHQA--VFhVDATQVMGKISVHPLDVSADFLSASAHK-FHGPKGVGFLYYNE-----KLHFDALIHG---GEQEEKRRAGTENLHSLVGL 194
+             589************99..555****************************.99**********99.....7888888888...77788888888888888888 PP
+
+  K22207 378 pealeFv.nrfegGiegikkrnhelvvemge 407
+              +ale   + +e   ++++k n  l  + +e
+    1_57 195 AKALELAlESIESNYQAVEKLNETLLTKLEE 225
+             8888874256777777777777777666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2473  (720782 residues searched)
+Passed MSV filter:                        76  (0.0307319); expected 49.5 (0.02)
+Passed bias filter:                       57  (0.0230489); expected 49.5 (0.02)
+Passed Vit filter:                         4  (0.00161747); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808734); expected 0.0 (1e-05)
+Initial search space (Z):               2473  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9021.59
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Lactococcus-lactis-IL1403-MAF-2_lcd.sto
+[ok]

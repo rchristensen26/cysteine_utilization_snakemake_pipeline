@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Helicobacter_pametensis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Helicobacter_pametensis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Helicobacter_pametensis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Helicobacter_pametensis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+    3.3e-12   42.2   0.0    4.9e-12   41.6   0.0    1.2  1  NZ_JADE01000011.1_26  # 26660 # 27823 # -1 # ID=4_26;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JADE01000011.1_26  # 26660 # 27823 # -1 # ID=4_26;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.6   0.0   3.5e-15   4.9e-12     128     319 ..      41     218 ..      21     228 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 41.6 bits;  conditional E-value: 3.5e-15
+        lcd_K22207_msa 128 elkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpf 216
+                           e +k+i  + +++ + i+a+d d+v ++   t   + vL+ +   f e   ++ + ++++++   a++++++  ++  g +v      +
+  NZ_JADE01000011.1_26  41 ETHKAISDAIDKLYAGIGAKDEDDVIITSCSTESNNWVLKGIY--FDEILGKNKNHIITTEVEHPAIRSTCAF-LESLGVEVT----YL 122
+                           55667777777788889***********************776..77767778889************88866.788887776....45 PP
+
+        lcd_K22207_msa 217 pvksneei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHK 304
+                           p+ +++++  +++r+a+++      k  l+ i +    + +++P++e+ +ic+e+gv     Da +aiG+++vdv + ++d      HK
+  NZ_JADE01000011.1_26 123 PIDEDARVtANQVREAITD------KTALVSIMWANNETGIIFPIEEIGQICKERGV-LFHTDAVQAIGKIPVDVVKANVDLLSFSAHK 204
+                           5555555516789999988......88999999************************.889**************************** PP
+
+        lcd_K22207_msa 305 WffcPpsvAfLyvrk 319
+                            f  P++++ Ly+rk
+  NZ_JADE01000011.1_26 205 -FHGPKGIGGLYIRK 218
+                           .89***********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1380  (453465 residues searched)
+Passed MSV filter:                        46  (0.0333333); expected 27.6 (0.02)
+Passed bias filter:                       36  (0.026087); expected 27.6 (0.02)
+Passed Vit filter:                         5  (0.00362319); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               1380  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13803.58
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Helicobacter_pametensis_lcdcustom.sto
+[ok]

@@ -1,0 +1,115 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Blautia-hansenii-DSM-20583-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   4.9e-108  358.6   1.0   5.6e-108  358.4   1.0    1.0  1  1_123     # 139908 # 140843 # 1 # ID=1_123;partial=00;start_t
+    1.1e-25   87.7   1.2    6.2e-24   81.9   0.4    2.3  2  1_1582    # 1650623 # 1651834 # -1 # ID=1_1582;partial=00;sta
+     0.0052   13.0   0.1     0.0052   13.0   0.1    1.5  2  1_1193    # 1286066 # 1287553 # 1 # ID=1_1193;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_123  # 139908 # 140843 # 1 # ID=1_123;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.426
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  358.4   1.0  5.7e-111  5.6e-108      30     322 ..       6     310 ..       1     311 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 358.4 bits;  conditional E-value: 5.7e-111
+  cysM_K12339_msa  30 yktledliGnTPLvrlqrlag..kkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmp 121
+                      y+++++liG+TPL++ +++++  + ++++l+KlE  NPaGSVKdR+a +mi +ae++g++kpg t+iE+TSGNTGi La iaa kgyk+ l mp
+            1_123   6 YRNVQELIGKTPLMEATNIEKmlDLKARLLVKLEYLNPAGSVKDRIAKNMILTAEQEGKLKPGATIIEPTSGNTGIGLASIAASKGYKLILTMP 99 
+                      5689***************9954579******************************************************************** PP
+
+  cysM_K12339_msa 122 enaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsry 214
+                      e++s er+++++ayGAe++lt+ ++gm ga+++a+ela++    f++ Qf Np+Np aH+ +TgpEiw++t+g+v+ fV+g+GT+GTi+Gv+ y
+            1_123 100 ETMSVERRNILKAYGAEIVLTEGAKGMTGAIEKAKELAERIsGSFLAGQFDNPANPAAHIVSTGPEIWEDTDGNVDVFVAGVGTGGTITGVGGY 193
+                      ****************************************97789999********************************************** PP
+
+  cysM_K12339_msa 215 LkeqnpavqivglqPeeg....ssipGirrw...peaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeelee 301
+                      Lke++++v+iv+++P++     ++  G  ++    + ++p++ + + +D+++ +++e+++e+a+  a++egi+vG+SsG+a++aa++ a++ e+
+            1_123 194 LKEKKKSVKIVAVEPSDSpvlsKGTAGPHKIqgiGAGFVPTVLNTQIYDEIMPITAEKSFETAKLFAHKEGILVGISSGAALYAAIEQAKREEN 287
+                      ***************87622223445655553336799***************************************************99866 PP
+
+  cysM_K12339_msa 302 a..viVaivcDrgdrYlstgvfe 322
+                      +  +iVa+++D+gdrY st +fe
+            1_123 288 KgkTIVALLPDSGDRYYSTPLFE 310
+                      556*****************997 PP
+
+>> 1_1582  # 1650623 # 1651834 # -1 # ID=1_1582;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.9   0.4   6.3e-27   6.2e-24      33     232 ..      14     206 ..       2     211 .. 0.91
+   2 !    4.2   0.0    0.0026       2.5     250     308 ..     243     299 ..     233     318 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 81.9 bits;  conditional E-value: 6.3e-27
+  cysM_K12339_msa  33 ledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpenase 126
+                      ++++  +T Lv  + +++++g+++++K E ++ +G  K R a+  i++  e+   ++ + li a+ GN +  +a +a++ g k ++vmp+++  
+           1_1582  14 VKQVTQETKLVYSDYFSKSTGNKVYLKPENMQVTGAYKIRGAYYKISTLSEE---ERAKGLITASAGNHAQGVAYAAKAFGAKAVIVMPTTTPL 104
+                      34444469***99*********************************888555...56889********************************** PP
+
+  cysM_K12339_msa 127 erkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGTimGvsryLkeqnp 220
+                       + +  + yGAe+il    + +++a  +a ela+++ y +++ f +p+ + +   t + Ei+++    v+++   +G +G  +Gvs+  k  np
+           1_1582 105 IKVERTKSYGAEVILHG--DVYDEACAHAYELAEKHGYTFIHPFDDPA-VATGQGTIAMEIIKEL-PLVDYVLVPIGGGGLATGVSTLVKLLNP 194
+                      ***************85..79***************************.88889999******99.58************************** PP
+
+  cysM_K12339_msa 221 avqivglqPeeg 232
+                      +++++g++Pe  
+           1_1582 195 NIKVIGVEPEGA 206
+                      *********875 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0026
+  cysM_K12339_msa 250 fdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleeaviVaiv 308
+                      + ++ vD++++v++ee + +  +++++++++v   sG   +aal++ +  ++  +V i+
+           1_1582 243 YIQKNVDEIITVKDEELVVAFLDMVENHKMIVE-NSGLLTVAALKHLKFQNK-KVVSIL 299
+                      45799************************8776.567788888887765444.566665 PP
+
+>> 1_1193  # 1286066 # 1287553 # 1 # ID=1_1193;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.404
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.1   5.2e-06    0.0052      77     136 ..     122     184 ..     114     215 .. 0.76
+   2 ?   -3.8   0.3      0.67   6.6e+02     126     162 ..     342     378 ..     338     390 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 5.2e-06
+  cysM_K12339_msa  77 mikeaeergeikpgdtliEaTSGNTGi.ALamiaaikgykvklvmpenase..erkaamrayG 136
+                      ++++a +++ ++++ +++ aTSG TG  A+a +a + g ++ ++ p++     + k+++++ G
+           1_1193 122 LLTTAAKKNGVTNEIVILTATSGDTGKaAMAGFADVPGTRIIVFYPKDGVSpvQEKQMLTQKG 184
+                      57789999999***************736999**************98543114444555555 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 0.67
+  cysM_K12339_msa 126 eerkaamrayGAeliltdkeegmegardlaeelaaeg 162
+                      e+ ++ m+++GAe      ee  e+ r+   ++a+e+
+           1_1193 342 EKNRNFMEQLGAEGKYEITEEMKEKLREFYGNYANEE 378
+                      5667777888887766666666666666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2960  (919803 residues searched)
+Passed MSV filter:                       106  (0.0358108); expected 59.2 (0.02)
+Passed bias filter:                       78  (0.0263514); expected 59.2 (0.02)
+Passed Vit filter:                        11  (0.00371622); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.00101351); expected 0.0 (1e-05)
+Initial search space (Z):               2960  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.02
+# Mc/sec: 15659.23
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Blautia-hansenii-DSM-20583-MAF-2_cysMcustom.sto
+[ok]

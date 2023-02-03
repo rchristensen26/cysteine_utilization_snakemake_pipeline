@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysK.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella-buccalis-ATCC-35310-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysK/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysK.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysK/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysK.sto
+# per-dom hits tabular output:     workflow/out/cysK/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysK.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01139  [M=298]
+Accession:   TIGR01139
+Description: cysK: cysteine synthase A
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   1.7e-134  445.0   0.3     2e-134  444.9   0.3    1.0  1  1_1751    # 1988805 # 1989752 # 1 # ID=1_1751;partial=00;star
+    1.8e-11   41.1   0.0      3e-10   37.1   0.0    2.4  1  1_2680    # 3099657 # 3101021 # -1 # ID=1_2680;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1751  # 1988805 # 1989752 # 1 # ID=1_1751;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=11bp;gc_cont=0.528
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  444.9   0.3  1.4e-137    2e-134       2     298 .]       9     308 ..       8     308 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 444.9 bits;  conditional E-value: 1.4e-137
+  TIGR01139   2 seliGntPlvrLn...laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkl 98 
+                ++liG+tPlv Ln      + k+ +++k+e++nP++svkdrial m+e aek+g+lk+g ti+e+tsGntG++la+vaa +gykliltmpetms+err+l
+     1_1751   9 TDLIGKTPLVALNkysAFRGLKTPLVAKVEFFNPGGSVKDRIALGMVEAAEKDGTLKPGATIIEPTSGNTGVGLALVAAVKGYKLILTMPETMSVERRNL 108
+                799**********76556788999**************************************************************************** PP
+
+  TIGR01139  99 lkayGaelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvaveP 198
+                +kayGa++ Lt+g+egm+gai+ ae+l ++     ++l qf npanp+ h  tta e+++d+dg++d+fvagvGtGGt++G+g++lkekkpd+k+vaveP
+     1_1751 109 VKAYGAKVELTPGKEGMNGAIKAAEKLRDSIE-GAVILGQFTNPANPQKHYDTTAVELWNDTDGDIDIFVAGVGTGGTLSGIGKYLKEKKPDVKIVAVEP 207
+                ***************************99998.566**************************************************************** PP
+
+  TIGR01139 199 aespvlsggkpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakkle.kdkkivvilpdtgerYlstaL 297
+                ++spvlsggk gphkiqGigagfiP+    ev+de+++v++++ai+t+r+la++eG+lvGissGaa +aa ++a ++e kdkkiv++lpdtgerYlstaL
+     1_1751 208 STSPVLSGGKSGPHKIQGIGAGFIPQTYHAEVVDEILTVDNDDAIRTGRQLAQQEGLLVGISSGAAAFAAAELALRPEnKDKKIVTLLPDTGERYLSTAL 307
+                ****************************************************************************999********************9 PP
+
+  TIGR01139 298 f 298
+                +
+     1_1751 308 Y 308
+                8 PP
+
+>> 1_2680  # 3099657 # 3101021 # -1 # ID=1_2680;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=11bp;gc_cont=0.512
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.1   0.0   2.1e-13     3e-10       7     285 ..      82     413 ..      78     423 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 37.1 bits;  conditional E-value: 2.1e-13
+  TIGR01139   7 ntPlvr...LnlaeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpe.tmsle..rrkllk 100
+                +tPlvr   L+ a ++ a+++ k es+nP +s k   ala     ++eg+ +      e+ +G  G al++ a   g+++ +  ++ +m +   r ++++
+     1_2680  82 STPLVRayaLEKALDTPAHIYFKNESVNPLGSHKLNSALAQCYYCKQEGTTNVT---TETGAGQWGAALSYAAKIFGLEAAVYQVKiSMQQKpyRSSIMR 178
+                699999433456677889*******************************97755...799***********99988887665443325554344999*** PP
+
+  TIGR01139 101 ayGael.............vLt..dgaegm.kgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgk...ldafvagvGtGGtitGvg 181
+                ++Ga +             ++t  + ++g   +ai++a el+++tpn  + l    n    + h++  + e  k+++ +    d+++a +G G    G +
+     1_2680 179 TFGATVegspsmstragkdIITrdPHHQGSlGTAISEAIELATTTPNCKYTLGSVLNH--VALHQTVIGLEAEKQMEMAgeyPDVVIACFGGGSNFGGLT 276
+                ****982222222222222222212233331458************976555555554..689*********99998765578***************98 PP
+
+  TIGR01139 182 evlkekkp....dikvvavePaespvlsgg............................kpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrl 249
+                  + +++     + + +a+eP++ p l++g                            +  +  ++  gag i + L k+ + + + + + ea++ +   
+     1_2680 277 FPFMRHNIlegkKTEYIAAEPSSCPKLTRGkfeydfgdeagytpllpmytlghdfkpaNIHAGGLRYHGAGMIISQLAKDKLMHGVDIPQLEAFDAGILF 376
+                6554433223458999************999**********************9943333334566679********999999999************** PP
+
+  TIGR01139 250 akeeGilvGissGaavaaalkvakkle.kdkkivvil 285
+                 + eGi+    s  a+aa ++ a+k + ++++ v+++
+     1_2680 377 SRTEGIIPAPESCHAIAATIREAQKCKeSGEEKVILF 413
+                *********************9999875554444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (298 nodes)
+Target sequences:                       2849  (965468 residues searched)
+Passed MSV filter:                        95  (0.033345); expected 57.0 (0.02)
+Passed bias filter:                       74  (0.025974); expected 57.0 (0.02)
+Passed Vit filter:                         7  (0.002457); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000702001); expected 0.0 (1e-05)
+Initial search space (Z):               2849  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 11371.93
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysK/hmmer_output/Prevotella-buccalis-ATCC-35310-MAF-2_cysK.sto
+[ok]

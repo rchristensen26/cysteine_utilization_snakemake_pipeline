@@ -1,0 +1,201 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metC.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Collinsella_aerofaciens_prodigal.faa
+# output directed to file:         workflow/out/metC/hmmer_output/Collinsella_aerofaciens_metC.hmm.out
+# MSA of all hits saved to file:   workflow/out/metC/hmmer_output/Collinsella_aerofaciens_metC.sto
+# per-dom hits tabular output:     workflow/out/metC/hmmer_output/Collinsella_aerofaciens_metC.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01324  [M=377]
+Accession:   TIGR01324
+Description: cysta_beta_ly_B: cystathionine beta-lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    3.5e-66  220.2   0.6    3.6e-38  128.0   0.2    2.0  2  NZ_CP024160.1_207   # 241560 # 242870 # 1 # ID=1_207;partial=
+    8.6e-52  172.8   0.0      5e-34  114.4   0.0    2.0  2  NZ_CP024160.1_337   # 385931 # 387214 # 1 # ID=1_337;partial=
+      5e-12   42.0   0.1    1.3e-11   40.6   0.0    1.6  2  NZ_CP024160.1_428   # 511766 # 512770 # 1 # ID=1_428;partial=
+    1.1e-08   31.0   0.2    1.6e-08   30.5   0.2    1.3  1  NZ_CP024160.1_351   # 400700 # 401842 # 1 # ID=1_351;partial=
+    8.5e-06   21.5   0.0    1.3e-05   20.9   0.0    1.3  1  NZ_CP024160.1_281   # 322383 # 323507 # 1 # ID=1_281;partial=
+    9.8e-06   21.3   0.3    1.4e-05   20.8   0.3    1.1  1  NZ_CP024160.1_1042  # 1216175 # 1217311 # -1 # ID=1_1042;part
+    6.6e-05   18.5   0.0     0.0001   17.9   0.0    1.2  1  NZ_CP024160.1_1267  # 1477566 # 1478696 # -1 # ID=1_1267;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP024160.1_207  # 241560 # 242870 # 1 # ID=1_207;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.0   0.2   1.3e-40   3.6e-38       4     209 ..      19     229 ..      16     241 .. 0.89
+   2 !   90.7   0.0   2.9e-29   7.9e-27     226     376 ..     279     433 ..     266     434 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 128.0 bits;  conditional E-value: 1.3e-40
+          TIGR01324   4 ihsGrekrrlq.gsvnPpvqrastvllds..daasar..akdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallafvkaGd 90 
+                        +h G+e ++    s   p+ ++++ ++++  +aa +   a+   +yG+   st+  ++d +a+leG+ + +++ sG aa+t +l a+ +aGd
+  NZ_CP024160.1_207  19 LHVGQESADPAsDSRAVPIYQTTSYVFRNsqHAADRFglADAGNIYGRLTNSTQGVFEDRIAALEGGVAGLAVASGAAAITYTLQALAQAGD 110
+                        67787776543133344555555566665577887743378889************************************************ PP
+
+          TIGR01324  91 evlvvdsaykPtrrfcdivlkrlgveveyydPkigediaalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidntwaagllfka 182
+                        +v+   ++y  + ++ +  l ++gve+++ d +  e++ + ik nt v++le+ +    ++++i ai ++a+++g+ v++dnt+ ++ lf++
+  NZ_CP024160.1_207 111 HVVAQKTIYGGSYNLLEHTLSQFGVETTFVDAHNLEEVEGAIKDNTTVIYLETLGNPNSDIPNIDAISEVAKKHGLPVVVDNTFGTPYLFRP 202
+                        ******************************************************************************************** PP
+
+          TIGR01324 183 lehgvdisiqaatkylaGhsdvllGtv 209
+                        lehg +i +++atk+++Gh   l G +
+  NZ_CP024160.1_207 203 LEHGANIVVHSATKFIGGHGTSLGGVI 229
+                        *******************98776655 PP
+
+  == domain 2  score: 90.7 bits;  conditional E-value: 2.9e-29
+          TIGR01324 226 lGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdf.sGssGlfsvvlkrlsqkevhafldal 316
+                         G ++++ +a+ +l+G  tl+ r++rh e++ ++ ++l +   va+v hP+l  +p+hel+++ f  G + +f++++k+ +q++  +f+d+l
+  NZ_CP024160.1_207 279 EGACISPFNAWILLQGTETLSLRVDRHVENTKKVVEFLAGDSHVAKVNHPSLSEHPDHELYQKYFpNGGASIFTFEIKG-GQEAAWKFIDHL 369
+                        599**************************************************************559999*****985.7999******** PP
+
+          TIGR01324 317 klfglgyswGGyeslaln....vqpelairrsikrdleGplirlhiGledvddlkadlkaGlea 376
+                        ++f+l       +sl++     ++ +l+  + ++++++ + irl iG e+ +d++ dlk+ ++a
+  NZ_CP024160.1_207 370 QVFSLLANVADVKSLVVHpattTHSQLSAEELAEQNITPSTIRLSIGTENAEDIIWDLKQAFAA 433
+                        ***************995222245678889999****************************998 PP
+
+>> NZ_CP024160.1_337  # 385931 # 387214 # 1 # ID=1_337;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  114.4   0.0   1.8e-36     5e-34      38     212 ..      48     222 ..      20     248 .. 0.90
+   2 !   56.6   0.0   6.7e-19   1.8e-16     222     376 ..     268     426 ..     259     427 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 114.4 bits;  conditional E-value: 1.8e-36
+          TIGR01324  38 akdkltyGirGtsttvalqdalaeleGaagvilyPsGlaavtnallafvkaGdevlvvdsaykPtrrfcdivlkrlgveveyydPkig.edi 128
+                        ++  ++y +   +t + ++  ++e+eG+++++l  sG+aa   a++ +  aGd+v+ + ++y  t ++    ++r+gv+ ++  P  + e++
+  NZ_CP024160.1_337  48 EESGYFYSRLQNPTCDLVAAKICEMEGGTAAMLTSSGMAANFLAIFNVAGAGDHVVASSAIYGGTYNLLAHTMGRMGVTCTFVAPDCTdEEL 139
+                        46679*********************************************************************************9989** PP
+
+          TIGR01324 129 aalikpntkvvfleaPasltlevqdiPaiakaaraagvvvlidntwaagllfkalehgvdisiqaatkylaGhsdvllGtvaan 212
+                         a  +pntk+vf e+ a  +l v di   akaa+ +gv +++dnt+ ++++ +++e g di  +++tky+ Gh+  l G ++  
+  NZ_CP024160.1_337 140 EAAFEPNTKLVFGETIANPALAVLDIERFAKAAHDHGVPLMVDNTFPTPVMCRPFEWGADIVTHSTTKYMDGHAAYLGGVIV-D 222
+                        *************************************************************************987655544.4 PP
+
+  == domain 2  score: 56.6 bits;  conditional E-value: 6.7e-19
+          TIGR01324 222 alyllGqsvdaddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghelfkrdf.sGssGlfsvvlkrlsqkevhaf 312
+                         + +lG + ++  a+ +   l +l vr++rh e++la+ak+l+ +++v+ v +P l +d  + l ++ +  G++G+ s+ + + ++ + ++f
+  NZ_CP024160.1_337 268 LMRDLGPMQNPQAAFFLNSSLESLHVRMPRHCENGLAVAKFLQSHPKVRFVSYPGLEGDKYYGLAQKYMpNGTCGVVSFGFTG-GRAAAETF 358
+                        57799***********************************************************9887647********9975.5678899* PP
+
+          TIGR01324 313 ldalklfglgyswGGyeslal....nvqpelairrsikrdleGplirlhiGledvddlkadlkaGlea 376
+                        + +lkl  ++       +  l    +++ ++++ + i   +   ++rl  Gled  dl+adl + le+
+  NZ_CP024160.1_337 359 MKSLKLAQIATHVADARTCCLhpanATHRQMNDEELIACGISADMVRLSCGLEDTADLIADLEQALEQ 426
+                        *********999888777666222134456889999999************************99885 PP
+
+>> NZ_CP024160.1_428  # 511766 # 512770 # 1 # ID=1_428;partial=00;start_type=GTG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0      0.44   1.2e+02      63      93 ..      14      44 ..       4      52 .. 0.79
+   2 !   40.6   0.0   4.8e-14   1.3e-11     140     285 ..      95     252 ..      92     259 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.44
+          TIGR01324 63 eGaagvilyPsGlaavtnallafvkaGdevl 93
+                        Ga ++ l+ +     + ++l +v+ Gd+++
+  NZ_CP024160.1_428 14 AGARETCLVAASHVPAALSMLGIVQPGDRLV 44
+                       5778888888888888899********9976 PP
+
+  == domain 2  score: 40.6 bits;  conditional E-value: 4.8e-14
+          TIGR01324 140 fleaPasltlevqdiPaiakaaraagvvvlidntwaagllfkalehgvdisiqaatkylaGhsdvllGtvaanesavekll.ealy...... 224
+                        f+++ +   l v+d+ a+ +aar++ +++++dnt +     ++l  g  +s++a+ +  aG +   l +++ + s++++ + +a        
+  NZ_CP024160.1_428  95 FVNSIGGFGLRVPDLRALGRAARESHALLVVDNTVSGVFGCNPLRLGAVLSLEALDRVCAGVAPRKLVAASVARSQLKRHRvDAAAecahal 186
+                        56667778899*************************9999*********************9876665555555544444333322001111 PP
+
+          TIGR01324 225 ..llGqsv...daddaytvlrGlrtlgvrlkrhqesalaiakwleeqkevarvlhPalPsdpghel 285
+                          + G s+   +a+++  + rGl +l  r++ h + a a+a++l  ++ v++v +P l s+p+h++
+  NZ_CP024160.1_428 187 laDCGASAldlSAEETDVLERGLSSLDARMQAHFDRARALAEYLAANEMVRNVRYPGLTSHPDHAI 252
+                        11345443222566777789********************************************98 PP
+
+>> NZ_CP024160.1_351  # 400700 # 401842 # 1 # ID=1_351;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.5   0.2   5.6e-11   1.6e-08      66     180 ..      63     182 ..       6     205 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 30.5 bits;  conditional E-value: 5.6e-11
+          TIGR01324  66 agvilyPsGlaavtnallafvkaGdevlvvdsaykPtrrfcdivlkrlgveveyy..dP..kig.ediaalikpntkvvfleaPasltlevq 152
+                          v   P  +aa+ +a+  +v+ Gd+v+ +   ++   r  +++    gv+ve+   d    +  +++  l++p t+ v++   + +t +  
+  NZ_CP024160.1_351  63 DHVCFTPNSTAALNTAINGVVRPGDRVVTTVLEHNSVLRPLNRLAAERGVTVEHAgcDAngVLDyDKLERLVTPGTRAVVVTHASNVTGNAV 154
+                        457789*******************9987766666666666777777777777652243114557899************************ PP
+
+          TIGR01324 153 diPaiakaaraagvvvlidntwaagllf 180
+                        di  +a+ a+aag++v+id + +ag   
+  NZ_CP024160.1_351 155 DIARVAALAHAAGALVIIDASQSAGTAH 182
+                        *********************9999754 PP
+
+>> NZ_CP024160.1_281  # 322383 # 323507 # 1 # ID=1_281;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.0   4.6e-08   1.3e-05      38     173 ..      52     195 ..      39     225 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 4.6e-08
+          TIGR01324  38 akdkltyG.irGtsttvalqdalaeleGaagvilyPsG.laavtnallafvkaGdevlvvdsaykPtrrfcdivlkrlgveveyyd..Pkig 125
+                        + +k+ yG i G +   a    l   e   + il   G + a  na++a+v+ Gd+v+    +y P  +    + + lg evey++   ++g
+  NZ_CP024160.1_281  52 DREKMNYGwIEGSPEFKAEVAKLYRREVNPDHILQTNGcTGANLNAIMAVVEPGDHVIAEWPTYAPLYE----IPRTLGAEVEYWElrEELG 139
+                        566777774567777777777777778888888877773568889*************99999999765....6677899999987332344 PP
+
+          TIGR01324 126 .....ediaalikpntkvvflea...PasltlevqdiPaiakaaraagvvvlidnt 173
+                             e++  l++pntk++ ++    P    l+ + +  ia++ar+ g+ vl d+ 
+  NZ_CP024160.1_281 140 wkpdiEQLKRLVRPNTKLICINNasnPIGTVLDADMLGQIAEIARSVGAYVLCDEV 195
+                        4433478999*********99761225556777778899*************9986 PP
+
+>> NZ_CP024160.1_1042  # 1216175 # 1217311 # -1 # ID=1_1042;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.3   4.9e-08   1.4e-05      53     179 ..      72     206 ..      45     212 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 4.9e-08
+           TIGR01324  53 valqdalae..leG.aagvilyPsGlaavtnallafvkaGdevlvvdsaykPtrrf.cdivlkrlgveveyydPkig.ediaalikpntkv 138
+                         +al + +++  l   a +vil    + a++++++a+++ Gdev++   a+   +   +    k + +++e    +i  +++ a ++p+tk 
+  NZ_CP024160.1_1042  72 DALSKYMDDagLAFsADEVILTDGATEALSATFMAMLNPGDEVIIPTPAFGLYESIvVANHAKAVFLDTEPAQFQIDeDALRACVTPATKA 162
+                         556666654223330346778888899*******************999987665414555688899*********966799********* PP
+
+           TIGR01324 139 vfleaPaslt...levqdiPaiakaaraagvvvlidntwaagll 179
+                         +++ +P   t   l+   + a+a++a++ag+ v+ d+ +   ++
+  NZ_CP024160.1_1042 163 IVICSPNNPTgciLNTASLDAVARVAEEAGIYVVCDDVYNRLVY 206
+                         ***98876553337888999****************99887666 PP
+
+>> NZ_CP024160.1_1267  # 1477566 # 1478696 # -1 # ID=1_1267;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.0   3.7e-07    0.0001      71     174 ..      84     195 ..      52     203 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 3.7e-07
+           TIGR01324  71 yPsGlaavtna..llafvkaGdevlvvdsaykPtrrfcdiv...lkrlgveveyydPkig.ediaalikpntkvvfleaPaslt...levq 152
+                         +P+  a+ +n+  + ++v+ Gd+v+ v  +y+      ++    ++ l+++ +    ++  +++ al++ +tk++ ++ P   t   l+ +
+  NZ_CP024160.1_1267  84 VPTHGATGANSlvISTLVEPGDHVVSVKPTYQQLYSIPEMCgakVDILQLDRKN-GYHVDvDALDALVTDDTKLICINNPDNPTgalLDTD 173
+                         454444333431155799*************98776555550005555555443.335555899*************98877662226667 PP
+
+           TIGR01324 153 diPaiakaaraagvvvlidntw 174
+                          + ai+++ar++++ vl d+ +
+  NZ_CP024160.1_1267 174 TLKAIVEVARKHDAWVLCDEVY 195
+                         7899*************99865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (377 nodes)
+Target sequences:                       1930  (668590 residues searched)
+Passed MSV filter:                        67  (0.034715); expected 38.6 (0.02)
+Passed bias filter:                       49  (0.0253886); expected 38.6 (0.02)
+Passed Vit filter:                         8  (0.00414508); expected 1.9 (0.001)
+Passed Fwd filter:                         7  (0.00362694); expected 0.0 (1e-05)
+Initial search space (Z):               1930  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7366.63
+//
+# Alignment of 9 hits satisfying inclusion thresholds saved to: workflow/out/metC/hmmer_output/Collinsella_aerofaciens_metC.sto
+[ok]

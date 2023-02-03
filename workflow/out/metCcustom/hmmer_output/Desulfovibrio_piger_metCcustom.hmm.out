@@ -1,0 +1,237 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metCcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Desulfovibrio_piger_prodigal.faa
+# output directed to file:         workflow/out/metCcustom/hmmer_output/Desulfovibrio_piger_metCcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/metCcustom/hmmer_output/Desulfovibrio_piger_metCcustom.sto
+# per-dom hits tabular output:     workflow/out/metCcustom/hmmer_output/Desulfovibrio_piger_metCcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       metC_K01760_msa  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+   6.3e-116  385.0   0.7    6.8e-75  249.7   0.2    2.0  2  NZ_CABKOD010000044.1_222  # 217465 # 218730 # 1 # ID=44_222;p
+    6.6e-06   22.2   0.0    1.1e-05   21.4   0.0    1.3  1  NZ_CABKOD010000042.1_35   # 35320 # 36450 # 1 # ID=42_35;part
+    8.3e-06   21.8   0.0    2.7e-05   20.2   0.0    1.7  2  NZ_CABKOD010000043.1_164  # 176032 # 177174 # -1 # ID=43_164;
+    3.9e-05   19.6   0.0    7.4e-05   18.7   0.0    1.3  1  NZ_CABKOD010000039.1_166  # 217443 # 218624 # -1 # ID=39_166;
+     0.0001   18.2   0.0    0.00017   17.5   0.0    1.3  1  NZ_CABKOD010000039.1_414  # 507083 # 508372 # -1 # ID=39_414;
+    0.00023   17.1   0.0    0.00044   16.2   0.0    1.4  1  NZ_CABKOD010000039.1_67   # 80743 # 81921 # 1 # ID=39_67;part
+     0.0025   13.7   0.0      0.004   13.0   0.0    1.2  1  NZ_CABKOD010000041.1_48   # 56643 # 58043 # -1 # ID=41_48;par
+     0.0031   13.3   0.0     0.0047   12.7   0.0    1.2  1  NZ_CABKOD010000038.1_16   # 17255 # 18451 # 1 # ID=38_16;part
+  ------ inclusion threshold ------
+      0.014   11.2   0.0      0.021   10.6   0.0    1.2  1  NZ_CABKOD010000039.1_661  # 800085 # 801281 # 1 # ID=39_661;p
+      0.019   10.7   0.0       0.03   10.1   0.0    1.2  1  NZ_CABKOD010000045.1_21   # 27542 # 28729 # -1 # ID=45_21;par
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CABKOD010000044.1_222  # 217465 # 218730 # 1 # ID=44_222;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  249.7   0.2   2.7e-77   6.8e-75      50     257 ..       3     219 ..       1     227 [. 0.92
+   2 !  133.9   0.0   3.3e-42   8.4e-40     268     421 ..     261     420 ..     244     421 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 249.7 bits;  conditional E-value: 2.7e-77
+           metC_K01760_msa  50 leTklvhagrdp..tgavnppiyraSTvlfksvael....arr.geydYgrsgnptrealeeaiaeLeggarallfpSGlaAisa 127
+                                e+ ++hag  p   +    pi++++T+ ++s+ae     + + + ++Y+r gnpt +a+e++ia+Legg +al+++SG+aA  +
+  NZ_CABKOD010000044.1_222   3 TESLCLHAGYTPknGEPRVLPIVQSTTFTYDSTAEVaklfDLEtSGFFYTRLGNPTVDAVEQKIAALEGGVGALCTSSGQAANLI 87 
+                               578899***97775559999***********877774444223455*************************************** PP
+
+           metC_K01760_msa 128 vllallkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt.i.aeiealirpntklvylEsPgsptlevqDipaiaaiakah 210
+                               ++l+l ++GDhv+   ++Yg+t++l+   lk++gievtfvd +   aeie++irpnt++v+ E+ ++p ++v Di++iaa+a++h
+  NZ_CABKOD010000044.1_222  88 AILNLARSGDHVVSMASIYGGTFNLFAVTLKKMGIEVTFVDQRaDdAEIEKAIRPNTRAVFGETLTNPSMDVLDIERIAALAHRH 172
+                               *******************************************8789************************************** PP
+
+           metC_K01760_msa 211 galvavDNTwatpllfkPlelGvDivihsaTKYlgGhsDvlaGlvva 257
+                               g+ ++vDNT+atp+l++P+++G+Div+hs TKY+ Gh   + G++v 
+  NZ_CABKOD010000044.1_222 173 GLPLIVDNTFATPVLCRPFDFGADIVVHSTTKYMDGHALQMGGVIVD 219
+                               **************************************999999885 PP
+
+  == domain 2  score: 133.9 bits;  conditional E-value: 3.3e-42
+           metC_K01760_msa 268 elqnalGavlspddaylvlRglktLavRleqhqenAlkiaewLeehpevarVlyPalpshpghelwkrdf.kgagglfsfelk.s 350
+                               +l++ lG++  p+ a+ + +gl+tL++R+e+h++nA+++a++L+ h++v+ V yP lp++ + +l+++   kg++g++sf lk  
+  NZ_CABKOD010000044.1_222 261 QLMRDLGCCQTPQGAFYINQGLETLPLRMERHCRNAEAVATFLAGHDKVESVCYPWLPDSHDKALAEKYLpKGCSGVISFSLKgG 345
+                               56789*****************************************************************89***********98 PP
+
+           metC_K01760_msa 351 eeavkafvdalklfgigvSwGGveSlv.lpakmlrshasipk.eree.g.t..lvRlsvGlEdveDLiaDleqalar 421
+                               ++a ++f+d+lk++++ v    +++ v +pa+   +h++++  +  e g t  +vRlsvGlE+++DL++Dl+qala+
+  NZ_CABKOD010000044.1_222 346 RDAGARFIDSLKMVSLQVHVADIRTCVlHPASS--THRQLSDeQLTEaGiTpgMVRLSVGLENIDDLLEDLSQALAQ 420
+                               9999*****************************..****9987776779878***********************97 PP
+
+>> NZ_CABKOD010000042.1_35  # 35320 # 36450 # 1 # ID=42_35;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=3-4bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.0   4.4e-08   1.1e-05     123     218 ..      87     190 ..      54     193 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 4.4e-08
+          metC_K01760_msa 123 aAisavllallkaGDhvlvtddvYgptrrllekvlkrlgievtfv.........dptiaeiealirpntklvylEsPgspt...le 196
+                               Ai  +l  l+++G+hv+++   Y+  +++++      g e +             +++e+e+li+p+t+l++l +P +pt   l 
+  NZ_CABKOD010000042.1_35  87 EAIFGALNVLVEPGEHVICQFPTYQSLYEVARA----AGCELSLWplhqgkdgwYCDLDELERLITPKTRLLVLNTPNNPTgyaLS 168
+                              577777666789999998776666666555443....3444443322222211112258*********************966677 PP
+
+          metC_K01760_msa 197 vqDipaiaaiakahgalvavDN 218
+                                  ++i+++a++hg+ +++D 
+  NZ_CABKOD010000042.1_35 169 ADERQRICELARRHGLRILADE 190
+                              8889**************9995 PP
+
+>> NZ_CABKOD010000043.1_164  # 176032 # 177174 # -1 # ID=43_164;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.2   0.0   1.1e-07   2.7e-05     114     203 ..      91     184 ..      47     232 .. 0.77
+   2 ?   -1.2   0.0      0.32        80     117     163 ..     265     304 ..     251     310 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 20.2 bits;  conditional E-value: 1.1e-07
+           metC_K01760_msa 114 rallfpSGlaAisavllallkaGDhvlvtddvYgptrrllekv..lkrlgievtfvdpt.i.aeiealirpntklvylEsPgspt 194
+                               + l+fp    A+ + + all +GD+v++++  Y    ++++    ++ + ++++    +   ++++++i+p+t++v++ sP +pt
+  NZ_CABKOD010000043.1_164  91 QVLIFPGSSPAMMVLFSALLDPGDEVILSNPGYACYPNFVRYAggVPVWTLTHEEEGFQfRpEDVAKQITPRTRAVLINSPCNPT 175
+                               677888888899999999***********998876666665543368888888765555445**********************9 PP
+
+           metC_K01760_msa 195 levqDipai 203
+                                 v   +++
+  NZ_CABKOD010000043.1_164 176 GIVLEPERM 184
+                               777664444 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.32
+           metC_K01760_msa 117 lfpSGlaAisavllallkaGDhvlvtddvYgptrrllekvlkrlgie 163
+                               + + G+aA++++        + v   +  Y   rr+l   lkrlg +
+  NZ_CABKOD010000043.1_164 265 VQKAGIAALTCA-------DEDVARMHATYDERRRFLLGELKRLGFN 304
+                               445566666555.......7778889999*************99976 PP
+
+>> NZ_CABKOD010000039.1_166  # 217443 # 218624 # -1 # ID=39_166;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0   2.9e-07   7.4e-05     127     217 ..     107     204 ..      88     212 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 2.9e-07
+           metC_K01760_msa 127 avllallkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt..i.aeiealir...pntklvylEsPgsptlevqD...ipa 202
+                                  la+l++GD vl++d  Y   ++++  +++  +++   + p     ++++a+ +   p+ kl++l  P +pt ev+D    ++
+  NZ_CABKOD010000039.1_166 107 HLSLAMLSPGDVVLAPDPTYP-IHKYAP-IIAGADVRSVPIGPGrdFfEDLTAATKqawPRPKLLFLCYPHNPTTEVTDlafFEK 189
+                               4447799**********9984.444433.33444444444444332245555555522268******************666689 PP
+
+           metC_K01760_msa 203 iaaiakahgalvavD 217
+                               ++++ak+++++v+ D
+  NZ_CABKOD010000039.1_166 190 VVEFAKENNIWVIHD 204
+                               *************99 PP
+
+>> NZ_CABKOD010000039.1_414  # 507083 # 508372 # -1 # ID=39_414;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.0   6.6e-07   0.00017      96     223 ..     104     233 ..      13     237 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 6.6e-07
+           metC_K01760_msa  96 nptrealeeaiaeLeggarallfpSGlaAisavllallkaGDhvlvtddvYgpt.rrllekvlkrlgievtfvdpti.aeieali 178
+                                p +++le+a+a+  g + ++++ SG a   ++l  l+ + D +      Y +  ++ l +  +  g +   +d    +++e+++
+  NZ_CABKOD010000039.1_414 104 RPPHRQLERALADFYGVEDCIAYVSGHATNVSTLGFLFGHRDAIF-----YDGLaHNSLMQGARLSGADRYSYDHNDcDALEKML 183
+                               5889***********************999999566678999885.....44431445555556667787888888448888888 PP
+
+           metC_K01760_msa 179 rp.....ntklvylEsPgsptlevqDipaiaaiakahgalvavDNTwatp 223
+                               ++     +   +++E   s+  +++D+p+i+++ k+++++++vD   + +
+  NZ_CABKOD010000039.1_414 184 KEhrgkhKRACIVTEGLFSMDGNIPDLPRIIELKKKYDCMLLVDEAHSFG 233
+                               87666557999*********************************876655 PP
+
+>> NZ_CABKOD010000039.1_67  # 80743 # 81921 # 1 # ID=39_67;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.0   1.7e-06   0.00044     119     218 ..      97     203 ..      90     219 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 1.7e-06
+          metC_K01760_msa 119 pSGlaAisavllallkaGDhvlvtdd...vYgptrrllekvlkrlgiev.tfvdptiaeiealirpntklvylEsPgsptlevqD. 199
+                              + G  A+ + + a +++GD+vl++      Y  t +l+  v    + +  + ++ t + + a+ +++tkl++l +P++pt  v + 
+  NZ_CABKOD010000039.1_67  97 AGGKHALYNFMQASINPGDEVLLPAPywvSYPYTIQLAGGVPVIVQASLeQGFKVTPEMLDAKCTDKTKLLVLNTPSNPTGAVYNa 182
+                              5566677777777777777777776422246666666665544444444122455568999*******************999883 PP
+
+          metC_K01760_msa 200 ..ipaiaaiakahgalvavDN 218
+                                ++ai ++a ++++ v+ D 
+  NZ_CABKOD010000039.1_67 183 eeLAAILDWADSRDVYVLTDE 203
+                              33555555699999**99997 PP
+
+>> NZ_CABKOD010000041.1_48  # 56643 # 58043 # -1 # ID=41_48;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=3-4bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   1.6e-05     0.004     104     246 ..     136     299 ..     132     318 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 1.6e-05
+          metC_K01760_msa 104 eaiaeLeggarallfpSGlaAisavllallkaGDhvlvtddvY..gptrrllekvlkrlgievtfv...dpt.iaeiealirpntk 183
+                              e++++L g+++a+++   +aA+ +vl +++k G+ ++   ++   g+++r+  +v+++ g + + v   + + + + +++i++ t+
+  NZ_CABKOD010000041.1_48 136 ELLQRLTGAEAAMVVNNNAAAVLLVLDTFCKGGEVIVSRGELVeiGGSFRI-PEVMEKSGARLREVgatNRChLHDYATAINEDTR 220
+                              78999********************77777777766666666433788887.56778999877666222555458*********** PP
+
+          metC_K01760_msa 184 lvylEsPgsptl....evqDipaiaaiakahgalvavDNTwatpllfkPlel............GvDivihsaTKYlgG 246
+                              +++  + ++  +        +p +aa+a++hg+ v+ D   ++ + f    l            G+D+v  s+ K lgG
+  NZ_CABKOD010000041.1_48 221 ALMRVHTSNYRIvgfhSAVPLPDLAALAREHGLPVIEDLGSGSFMDFSSVGLpneptvpevvagGADVVTFSGDKVLGG 299
+                              ***99999987522224455*******************9999999999999999********************9999 PP
+
+>> NZ_CABKOD010000038.1_16  # 17255 # 18451 # 1 # ID=38_16;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   1.9e-05    0.0047     167     208 ..     157     198 ..     147     217 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.9e-05
+          metC_K01760_msa 167 vdptiaeiealirpntklvylEsPgsptlevqDipaiaaiak 208
+                              ++p+++++e++i ++t++v++ sP +pt  v   +a++++++
+  NZ_CABKOD010000038.1_16 157 FEPDLDALEEAIDEKTRVVLINSPHNPTGVVYSRKAVTSLCR 198
+                              789999**********************99999999988876 PP
+
+>> NZ_CABKOD010000039.1_661  # 800085 # 801281 # 1 # ID=39_661;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   8.4e-05     0.021     103     221 ..      97     217 ..      87     222 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 8.4e-05
+           metC_K01760_msa 103 eeaiaeLeggarallfpSGlaAisavllallkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt.iaeiealirpn..tkl 184
+                               ++a+a+  g a++l  pSG  A  a +++ll++G++  v   +   + r l    +r+    ++ d + ++ + + + p     +
+  NZ_CABKOD010000039.1_661  97 CRAVADYFGFAECLFLPSGYQANLACVTTLLQQGQEAFVDRRCHASVMRALPLAGARI-RAWSHLDYDhLERLLSSLPPDapQPV 180
+                               67888888999***********99999****************988888866555555.33455555534555555555444899 PP
+
+           metC_K01760_msa 185 vylEsPgsptlevqDipaiaaiakahgalvavDNTwa 221
+                               v+ Es  s+     D++++aa+ +++g  ++vD   a
+  NZ_CABKOD010000039.1_661 181 VMAESLYSMDGAALDLERMAALRRRYGFFLCVDEAHA 217
+                               999************************9999998655 PP
+
+>> NZ_CABKOD010000045.1_21  # 27542 # 28729 # -1 # ID=45_21;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   0.00012      0.03     117     237 ..      59     186 ..      38     191 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 0.00012
+          metC_K01760_msa 117 lfpSGlaAisavllallkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt.i.a....eiealir..pntklvylEsPgspt 194
+                              l  SG  A++a++ +l+ +G++vlv++    + r +  ++ +  g+e+t+  +    a    +++a++   p  + v++      t
+  NZ_CABKOD010000045.1_21  59 LSCSGSGAMTAAVYNLFAPGEKVLVAEAGKFGERWV--EIARSRGLECTVLSAPwGqAvkagDVAAALDadPDIRGVLIQMSETST 142
+                              4679***********************988887776..999999****99965322122334888888522689999999888888 PP
+
+          metC_K01760_msa 195 levqDipaiaaiakahgalvavDNTwatpllfkPlel...GvDivi 237
+                                ++ ++++aai + +++l +vD    +++   P  +   GvD  +
+  NZ_CABKOD010000045.1_21 143 GVLHPVREVAAITRTRNVLCVVDG--ISGVSLSPCPMdqwGVDCLV 186
+                              88999******************9..66666666654446888665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (479 nodes)
+Target sequences:                       2523  (821186 residues searched)
+Passed MSV filter:                        90  (0.0356718); expected 50.5 (0.02)
+Passed bias filter:                       80  (0.0317083); expected 50.5 (0.02)
+Passed Vit filter:                        20  (0.00792707); expected 2.5 (0.001)
+Passed Fwd filter:                        10  (0.00396354); expected 0.0 (1e-05)
+Initial search space (Z):               2523  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 9613.97
+//
+# Alignment of 9 hits satisfying inclusion thresholds saved to: workflow/out/metCcustom/hmmer_output/Desulfovibrio_piger_metCcustom.sto
+[ok]

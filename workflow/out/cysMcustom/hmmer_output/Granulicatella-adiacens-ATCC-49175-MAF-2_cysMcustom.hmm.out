@@ -1,0 +1,98 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Granulicatella-adiacens-ATCC-49175-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   2.4e-111  368.8   1.0   2.7e-111  368.7   1.0    1.0  1  1_1565    # 1652198 # 1653124 # 1 # ID=1_1565;partial=00;star
+     0.0011   14.5   0.2     0.0025   13.4   0.0    1.5  2  1_534     # 526091 # 527581 # -1 # ID=1_534;partial=00;start_
+     0.0026   13.4   0.1     0.0042   12.7   0.1    1.3  1  1_1389    # 1469161 # 1470378 # -1 # ID=1_1389;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1565  # 1652198 # 1653124 # 1 # ID=1_1565;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.435
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  368.7   1.0  4.3e-114  2.7e-111      30     323 ..       5     307 ..       1     308 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 368.7 bits;  conditional E-value: 4.3e-114
+  cysM_K12339_msa  30 yktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpen 123
+                      ++t+++liGnTPLv+l+rl +++++++++K+E +N +GSVKdR+al++i++ae++g++kpgdt+iEaTSGNTG+ L++i+a+kgykv  +mpe+
+           1_1565   5 VETITELIGNTPLVKLNRLVSDDSADVYVKVESFNAGGSVKDRIALNIIETAEKDGSLKPGDTIIEATSGNTGVGLSLIGAAKGYKVITIMPES 98 
+                      569******************************************************************************************* PP
+
+  cysM_K12339_msa 124 aseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqte.gkvthfVsgmGTtGTimGvsryLk 216
+                      +s er++ m+ayG+e+ lt++++g+ +a+ +aeelaa+  yf+++Qf N++Np  Hy+tTg+Ei++  + ++ +  +sg+GT+GTi+Gv+r+Lk
+           1_1565  99 MSIERRQLMKAYGTEVLLTPAADGFGAAVAKAEELAAQPGYFWARQFDNEANPAIHYQTTGQEIIKAFDgKTPDAYISGIGTGGTITGVGRALK 192
+                      *******************************************************************9945689******************** PP
+
+  cysM_K12339_msa 217 eqnpavqivglqPeegssi....pGirrw...peaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleea. 302
+                      e n++v+i+g++Pee   i    +G  r+   ++ ++p+i d++++D    v++++A+e+a++la++egi++G+SsG+av+aalr+a++l ++ 
+           1_1565 193 EVNKDVEIIGVEPEEAPFIskgqKGKHRIqgiSAGFKPSIIDRDVIDGFELVTSDDAIETAKNLAAKEGILAGISSGAAVTAALRVAKRLGKGk 286
+                      **************9998853333655554447899*****************************************************96554 PP
+
+  cysM_K12339_msa 303 viVaivcDrgdrYlstgvfee 323
+                       +V++++D+g+rYlstg+f e
+           1_1565 287 SVVVLLPDTGERYLSTGIFGE 307
+                      9*****************976 PP
+
+>> 1_534  # 526091 # 527581 # -1 # ID=1_534;partial=00;start_type=GTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.41
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0     4e-06    0.0025      78     162 ..     124     211 ..     116     220 .. 0.83
+   2 ?   -2.7   0.0      0.31   1.9e+02     262     308 ..     377     423 ..     375     467 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4e-06
+  cysM_K12339_msa  78 ikeaeergeikpgdtliEaTSGNTGi.ALamiaaikgykvklvmpen..aseerkaamrayGAeliltdkeegmegardlaeelaaeg 162
+                      +++a ++++ +++ +++ aTSG TG  ALa +a++   ++ ++ p+   ++ + ++++++ G +  +   e+ ++ a+ +++el a++
+            1_534 124 LTTAAKKNKSDKEIVILTATSGDTGKaALAGFANVPHTNIIVFYPKGgvSTIQERQMVTQAGDNTFVYGVEGNFDDAQTKVKELFADK 211
+                      6789999999***************736*****************9622456777888888888888888888888888888877765 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.31
+  cysM_K12339_msa 262 sqeeAeemarrlareegifvGvSsGgavaaalrlaeeleeaviVaiv 308
+                      sqee  +++ ++ ++e  +  + ++ a a+  ++ +e+e+a+  ++v
+            1_534 377 SQEETAQTIHDVFKSEHYLLDPHTAVADAVYAKYKKETEDATPTVVV 423
+                      67888888888888888888888888888888888888887433333 PP
+
+>> 1_1389  # 1469161 # 1470378 # -1 # ID=1_1389;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.1   6.7e-06    0.0042      78     123 ..     195     240 ..     192     285 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 6.7e-06
+  cysM_K12339_msa  78 ikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpen 123
+                      i++  ++++i+p + + + +SG  G ALa +a+i+g kv+lv  ++
+           1_1389 195 ITAGGTKERIDPVRYISNDSSGKMGYALAKAASILGAKVQLVSTTK 240
+                      6666778999999****************************96543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       1870  (575268 residues searched)
+Passed MSV filter:                        67  (0.0358289); expected 37.4 (0.02)
+Passed bias filter:                       42  (0.0224599); expected 37.4 (0.02)
+Passed Vit filter:                         6  (0.00320856); expected 1.9 (0.001)
+Passed Fwd filter:                         3  (0.00160428); expected 0.0 (1e-05)
+Initial search space (Z):               1870  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13237.42
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_cysMcustom.sto
+[ok]

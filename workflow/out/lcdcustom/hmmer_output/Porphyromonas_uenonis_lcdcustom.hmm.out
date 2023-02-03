@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Porphyromonas_uenonis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Porphyromonas_uenonis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Porphyromonas_uenonis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Porphyromonas_uenonis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    5.3e-17   58.4   0.0      1e-16   57.4   0.0    1.4  1  NZ_KI535307.1_36  # 35473 # 36699 # 1 # ID=5_36;partial=00;st
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KI535307.1_36  # 35473 # 36699 # 1 # ID=5_36;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.58
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.4   0.0   5.7e-20     1e-16      90     477 ..      25     400 ..      12     405 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 57.4 bits;  conditional E-value: 5.7e-20
+    lcd_K22207_msa  90 svarinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfq 179
+                       + ++++ G+    p++v++a  +   ++   ++       +e +++ +++r++++++i+a+d +ev ++  +t + +    +++    e    
+  NZ_KI535307.1_36  25 GWVYLDSGATTQKPQVVIDAITEGYTRYnanVHRGVYQLSREATDRHEAARATLAHFIGASDPNEVIFTRGTTEGLNLLASTAG----ETLVG 113
+                       55566666666666666666665555553333344555667788889999*************************999877666....56679 PP
+
+    lcd_K22207_msa 180 kgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegv 272
+                       ++D vl++ +  +a     ++++ r+g++   ++++  +++ +    +f++ L++      + +++ + H++ +   v PV++L ++ +++g 
+  NZ_KI535307.1_36 114 PDDEVLITAMEHHANLVPWQQLCLRKGAH---LRVAPLLADGSLDLPAFEALLSD------RTKIVSVAHVSNVLGTVNPVAQLARLAHDKGA 197
+                       *****************************...567777778888899**999998......89999999***********************9 PP
+
+    lcd_K22207_msa 273 dqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks..ka.sdlhh.....pvVsh.eygnglaiesa...wiGtrDysaq 353
+                         ++VD+A++  +++v+v+e+g d Y+   HK ++ P ++++ + r++  ++            ++ h ++++   +e       Gt D    
+  NZ_KI535307.1_36 198 -IIIVDGAQSAPHMSVNVQELGIDAYVCSSHK-VYGPTGIGIVWGRRKllEQiP---PyqyggEMIEHvSFEETTFNELPykfEAGTPDFIGS 285
+                       .9******************************.9************95322231...2333446664425555555554422247******** PP
+
+    lcd_K22207_msa 354 lvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgte.lgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyr 443
+                        +  +++e+++ +  g+++i+++ +el+ +  +++++    e lg+ p   a++  +        s++++a  L  +L ++ +v   +  ++ 
+  NZ_KI535307.1_36 286 HAFATAVEYISAI--GLDRIHAYETELLEHLTQIISQEPSLEiLGTAPGKGAVVTFI--------SHQAHAYDLGLLL-DQQGVALRTghHCA 367
+                       ************8..9**************999999887776677777766655444........3444444444333.44444444421111 PP
+
+    lcd_K22207_msa 444 apk.egeveaitgYvRiShqvYnkvddyyklrdav 477
+                        p  eg      + +R S   Yn+ +d + + +a 
+  NZ_KI535307.1_36 368 IPLiEGM--GHHATIRASLGLYNTHEDLEIFAKAL 400
+                       1212232..24466888888888888888888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1769  (658735 residues searched)
+Passed MSV filter:                        63  (0.0356133); expected 35.4 (0.02)
+Passed bias filter:                       53  (0.0299604); expected 35.4 (0.02)
+Passed Vit filter:                         7  (0.00395704); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000565291); expected 0.0 (1e-05)
+Initial search space (Z):               1769  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8194.68
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Porphyromonas_uenonis_lcdcustom.sto
+[ok]

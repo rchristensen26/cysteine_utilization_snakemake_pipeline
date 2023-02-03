@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-onderdonkii-DSM-19147-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.1e-13   48.3   0.1    1.5e-12   44.6   0.1    2.8  1  1_215     # 238087 # 239307 # -1 # ID=1_215;partial=00;start_
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_215  # 238087 # 239307 # -1 # ID=1_215;partial=00;start_type=ATG;rbs_motif=AAAAA;rbs_spacer=8bp;gc_cont=0.640
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.6   0.1   4.6e-16   1.5e-12     143     503 ..      58     402 ..      23     405 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 44.6 bits;  conditional E-value: 4.6e-16
+  K22207 143 efyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeii 245
+             ++  +e ++   ++r+ i  +i+a + +ev++   aT+  + v+ +    + e+ ++ gd +++ ++   +     + +++r+g+e+      +P  ++  + 
+   1_215  58 HYLSEEATTLYEAARERIGAFIGAAEKEEVVFTAGATASLNTVAYA----WGEKFVRAGDNILVSEMEHHSNIVPWQMLAERKGAEIRV----LPFDDEGRLC 152
+             55555556666789*****************866666666655555....5578899**************9999**********9764....45599***** PP
+
+  K22207 246 eefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkssk..ssdl 346
+             +e+  +L + k+    v +          + + P   ++  +++ g    +vD+ +++ +  vdv+++++dfy+   hK +f+P+++ +Ly ++         
+   1_215 153 TELLPSLLDDKTRI--VAVTQASNTLGTRPDLRP---VIDAAHAVGA-IAVVDGCQGVVHGGVDVQALDCDFYAFSGHK-LFGPTGIGVLYGKRALLeaM--- 245
+             *******8777642..333333333334444455...6667777887.578****************************.9***********99322330... PP
+
+  K22207 347 h.........hPvvshe..YgnglaiesawiGtrDysaqlvvpealeFvnrfegGiegikkrnhelvvemgemLaeawgtel.gappemcasmvmvgLPaalg 437
+                       + v+  +  Y   ++ ++   Gt  ++  +++ ea++Fv rf  +  ++++  ++l  ++ e L +  g ++ g+ p  ca+   v +    g
+   1_215 246 PpflgggdmvDTVTFAKttY-APVPLKFE-AGTANFTGAIALGEAVKFVGRF--DPAEVEAHEAALLHRATERLTAVDGLRIyGTTPGKCAI---VSFN-VEG 340
+             25555554446655444235.55566554.7*********************..7899*********************9998****99985...4444.456 PP
+
+  K22207 438 issdddalkLrthLreefkveVpi..yyrapkdgeveqvtgyvRiShqvYnkveDyeklrdAvnkLve 503
+             ++  d       ++ ++ ++ V +  +  +p + +  ++tg +R S ++Yn+  +  +l d v++ v+
+   1_215 341 VHPYDMG-----MILDKLGIAVRTgqHCAEPTMTHF-STTGMCRASFALYNTLAEADALADGVERAVR 402
+             7777754.....455678999999434444445554.99**********************9997665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       3154  (1154124 residues searched)
+Passed MSV filter:                        97  (0.0307546); expected 63.1 (0.02)
+Passed bias filter:                       83  (0.0263158); expected 63.1 (0.02)
+Passed Vit filter:                        10  (0.00317058); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000317058); expected 0.0 (1e-05)
+Initial search space (Z):               3154  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12136.07
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Alistipes-onderdonkii-DSM-19147-MAF-2_lcd.sto
+[ok]

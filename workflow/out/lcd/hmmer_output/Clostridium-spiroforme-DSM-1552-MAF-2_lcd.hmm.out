@@ -1,0 +1,98 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Clostridium-spiroforme-DSM-1552-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.5e-12   44.1   0.3    5.5e-12   42.2   0.1    1.9  2  1_1684    # 1776175 # 1777401 # -1 # ID=1_1684;partial=00;sta
+    0.00027   16.8   0.1    0.00041   16.3   0.1    1.3  1  1_1088    # 1204339 # 1205433 # 1 # ID=1_1088;partial=00;star
+     0.0045   12.8   0.1      0.007   12.2   0.1    1.2  1  1_1540    # 1636696 # 1637832 # -1 # ID=1_1540;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1684  # 1776175 # 1777401 # -1 # ID=1_1684;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.1     7e-15   5.5e-12     107     338 ..      20     238 ..       6     253 .. 0.80
+   2 ?   -1.7   0.0      0.15   1.2e+02     473     497 ..     371     395 ..     351     398 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 7e-15
+  K22207 107 hepgvariNnGSFGscpksvleaqqewqlkfl...rqPdefyfnelkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvm 206
+             h++ + + +nG+    p++v++a  ++  ++    ++ d    ++   ++ + r+l++++in d+  ev+     T + + v+   +      ++++gd +++
+  1_1684  20 HDQPLIYFDNGATTLKPQCVIDAVCNYLTNYSgnaHRGDYDLSHDVDVQFERTRELVSKFINCDS-KEVVYTYGSTDGLNLVAFGYGL----THLNEGDEILI 117
+             78888889999999999999999998888775222456666778888999999999999999996.9999988899998888777774....89999999998 PP
+
+  K22207 207 LhyaYgaVKksieayvtraggeVie.velpfPvksneeiieefrkaLekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdv 308
+               +a  a        v+++ g+V++ + l+    + +  +e++ ka+      + ++++  i  it + ++  P+ke+ ki++e+g+  v vD+A+++ + +v
+  1_1684 118 T-LAEHASNTLPWFEVSKQTGSVVKyIDLDE---DGRLTVENVIKAI------SDKTKIISIAQITNVLGFDSPIKEICKIAHEKGI-IVCVDGAQSVPHQRV 209
+             7.56555555555568888888887455553...2333333344444......44667788888899999999**************.7************** PP
+
+  K22207 309 dvkeigadfytsnlhKWffcPksvAfLyvr 338
+             dvk+++ df +   hK +++P+++ +Ly +
+  1_1684 210 DVKDLDLDFMVFSGHK-MCGPTGIGILYGK 238
+             ****************.***********76 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.15
+  K22207 473 qvtgyvRiShqvYnkveDyeklrdA 497
+             +v + +R S   Yn+ e++ k+ ++
+  1_1684 371 KVSQTLRASFYFYNTFEEIDKFIEV 395
+             66778999***********999875 PP
+
+>> 1_1088  # 1204339 # 1205433 # 1 # ID=1_1088;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.306
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.1   5.2e-07   0.00041     274     339 ..     143     207 ..      83     217 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 5.2e-07
+  K22207 274 psvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrk 339
+             ++++  +  ++k+++e+     +vDa  ++G vd++v ++g df +s + K + + ++  f+ ++k
+  1_1088 143 SGILNDIASVAKVVKERNR-IFIVDAMSSFGGVDIEVGKLGIDFTISSANKCIQGVPGFSFIIANK 207
+             5566668889999999987.5779*****************************9999999998776 PP
+
+>> 1_1540  # 1636696 # 1637832 # -1 # ID=1_1540;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.1   8.9e-06     0.007     151     324 ..      43     200 ..      35     223 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 8.9e-06
+  K22207 151 kgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrkaLe 253
+             + + +sr+li+e+++ ++ de+ +    ++  + +++ va +++    ++g  ++   +   +V ++ + + +  g eV   +++    + + +++e++++++
+  1_1540  43 RLMEHSRKLISEMLKVKE-DELIFTSCGSESNNLAIKGVAFQYQ----NRGKHIITTAIEHSSVYETCKELEKTFGFEVTYLKVDQ---KGRISLQELQDSIR 137
+             56789************8.9**999999***********97554....689*****************************999986...44455666666664 PP
+
+  K22207 254 kgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhK 324
+             +       + L+ i ++    +v+ P++e+ +i+++++  +   D  +a+G++++++++++   +   +hK
+  1_1540 138 DD------TILVSIMYVNNEIGVINPIEEIKQIVKKYDKIKLHFDMVQALGKLPINLTDVDLASF--SAHK 200
+             33......569999************************999****************99864333..3455 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2349  (731971 residues searched)
+Passed MSV filter:                        98  (0.0417199); expected 47.0 (0.02)
+Passed bias filter:                       58  (0.0246914); expected 47.0 (0.02)
+Passed Vit filter:                         5  (0.00212857); expected 2.3 (0.001)
+Passed Fwd filter:                         3  (0.00127714); expected 0.0 (1e-05)
+Initial search space (Z):               2349  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11830.17
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_lcd.sto
+[ok]

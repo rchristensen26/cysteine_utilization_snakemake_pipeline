@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Granulicatella-adiacens-ATCC-49175-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.6e-17   60.2   0.0    6.3e-17   58.2   0.0    1.8  1  1_1304    # 1383408 # 1384640 # -1 # ID=1_1304;partial=00;sta
+    3.5e-08   29.3   0.0      5e-08   28.8   0.0    1.1  1  1_885     # 920029 # 921135 # 1 # ID=1_885;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1304  # 1383408 # 1384640 # -1 # ID=1_1304;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.442
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.2   0.0   6.7e-20   6.3e-17      93     480 ..      24     401 ..       3     406 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 58.2 bits;  conditional E-value: 6.7e-20
+  lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwq...lkflrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDav 184
+                     +++n +    p+ v+ea +++       ++   +   +e ++  +++r+++ ++i+a +  ev ++  +tt  + + q     fa+g++qkgD +
+          1_1304  24 YLDNAATTQKPRPVVEALEKFYaihNANIHRGVHTLAQEATDLYEAARAKVTKFIHAGSTKEVLFTRGTTTSLNWIAQ----GFAQGRLQKGDEI 114
+                     5566666666666666666554322334566677788888999999*************************9999998....678*********9 PP
+
+  lcd_K22207_msa 185 lmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLek.gkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVD 278
+                      +     ++     ++ v+++ g v+     f ++++ e        Le+ gk+  +k +++ i H + +   v  Vk+  +++++ g    +VD
+          1_1304 115 WISPAEHHSNVVPWQQ-VAKQTGAVLR---YFSLTKEGEL------DLETaGKSLTEKAKIVSINHASNVLGTVTDVKRVAEMVHAVGG-ILVVD 198
+                     8887777776556666.6666677653...5777776665......33332788889******************************98.89*** PP
+
+  lcd_K22207_msa 279 aAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsheygn.glaiesaw...iGtrDysaqlvvpavleFvn 364
+                     +A+a  + +vdv+++++dfY+   HK + +P ++++Ly ++   ++++       ++   y++ +  +e  w    Gt   +  + ++a++++++
+          1_1304 199 GAQAAPHQRVDVQALDCDFYAFSGHK-MLAPTGIGILYGKEALLQEMNPvefggEMIDFVYDEeSTWNELPWkfeAGTPNIAGAIGLSAAIDYLE 292
+                     **************************.89***********953344444445667788888664666777774446******************* PP
+
+  lcd_K22207_msa 365 rfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapkegeveaitgYvRi 459
+                     ++  g+++i+++ +e v      + e  g  +  p++  +   ++ +    g++ ++ a+ L    +e f v    ++ +p       + + +R 
+          1_1304 293 EI--GMDNIHQHEQEIVAFLLPKMQEMEGVTVYGPSDPAQHSGVISFT-IDGLHPHDIATALD---MEGFAVRAGHHCAQPLMRW-LDVPATCRA 380
+                     *8..*****************999******999999999999999999.47888887777776...5789999999988776544.368899*** PP
+
+  lcd_K22207_msa 460 ShqvYnkvddyyklrdavnql 480
+                     S  +Yn++++ +k+ +a +++
+          1_1304 381 SLYIYNTLQEAEKFLEALEKV 401
+                     *****************9987 PP
+
+>> 1_885  # 920029 # 921135 # 1 # ID=1_885;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.374
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.8   0.0   5.4e-11     5e-08     127     319 ..      39     213 ..      16     226 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 28.8 bits;  conditional E-value: 5.4e-11
+  lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksn 221
+                     +e k++i++ r+ai + ++a+  d v ++   + + + v +++  +fae k      +++  +   +V+ks+e + ++ g    ev+   p ++ 
+           1_885  39 REQKQKIERVRKAILKELQASPHDAVIFTSSGSEGNNLVFESIREHFAEEK----GHIIISAVEHPSVRKSAEFL-EQDG---FEVTYLAPNRDG 125
+                     467899**************************************9999655....5899999*********9984.4434...477788898888 PP
+
+  lcd_K22207_msa 222 eeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLy 316
+                     +  vs+++kaL++      + rl+ i  +   +   +P++e+ +++++        Da +a  q e++v+ i  d+ t+  HK +++P++++fLy
+           1_885 126 SVEVSSVEKALRE------DTRLVSIMTVNNETGARFPIEEIAALLKNTPT-YFHTDAVQAFAQEEINVDGI--DYLTASGHK-IYAPKGIGFLY 210
+                     8889*******99......89****************************99.899***************66..9********.9********** PP
+
+  lcd_K22207_msa 317 vrk 319
+                       k
+           1_885 211 KSK 213
+                     777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1870  (575268 residues searched)
+Passed MSV filter:                        84  (0.0449198); expected 37.4 (0.02)
+Passed bias filter:                       62  (0.0331551); expected 37.4 (0.02)
+Passed Vit filter:                         6  (0.00320856); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00106952); expected 0.0 (1e-05)
+Initial search space (Z):               1870  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 8369.53
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcdcustom.sto
+[ok]

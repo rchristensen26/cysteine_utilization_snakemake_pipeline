@@ -1,0 +1,112 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-xylanisolvens-SD-CC-1b-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bacteroides-xylanisolvens-SD-CC-1b-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bacteroides-xylanisolvens-SD-CC-1b-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bacteroides-xylanisolvens-SD-CC-1b-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    7.4e-25   85.7   0.0    1.5e-24   84.7   0.0    1.5  1  1_1444    # 1882769 # 1883980 # 1 # ID=1_1444;partial=00;star
+  ------ inclusion threshold ------
+      0.015   12.2   0.0      0.023   11.5   0.0    1.2  1  1_4080    # 5104045 # 5105238 # 1 # ID=1_4080;partial=00;star
+       0.02   11.7   0.0       0.03   11.1   0.0    1.2  1  1_3521    # 4418482 # 4419666 # -1 # ID=1_3521;partial=00;sta
+      0.025   11.4   0.5      0.074    9.8   0.1    1.9  2  1_3314    # 4176559 # 4179408 # -1 # ID=1_3314;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1444  # 1882769 # 1883980 # 1 # ID=1_1444;partial=00;start_type=GTG;rbs_motif=TAA;rbs_spacer=12bp;gc_cont=0.476
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.7   0.0   1.3e-27   1.5e-24     119     477 ..      53     396 ..       4     402 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 84.7 bits;  conditional E-value: 1.3e-27
+  lcd_K22207_msa 119 rqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvieve 213
+                     +   ++  ++ ++  ++sr++++++ina++ +ev+++  +t  ++  + +++ +f     ++gD v++  +  ++     + +++r+g   i+v 
+          1_1444  53 HRGVHYLSQQATELHEASRETVRQFINARSTNEVVFTRGTTESINLLVSSFGDEFM----EEGDEVILSVMEHHSNIVPWQLLAARKGIA-IKV- 141
+                     4456788889999999*********************************9998888....89***9999888888777777777777744.333. PP
+
+  lcd_K22207_msa 214 lpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWff 307
+                       +p+++  e   +e++k +++      + +++ + H++ +   v PVke++++ +++gv  +++DaA++i +++vdv+e++Adf +   HK ++
+          1_1444 142 --IPMNDkGELLLDEYEKLFSE------RTKIVSVVHVSNVLGTVNPVKEMIATAHAHGV-PCLIDAAQSIPHMKVDVQELDADFLVFSAHK-IY 226
+                     ..45555156678999999887......88888889************************.9******************************.9* PP
+
+  lcd_K22207_msa 308 cPpsvAfLyvrkskasdlhh.....pvVsh.eygnglaiesa...wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawg 393
+                      P +v++Ly +++  ++l        ++ h ++++   +e       Gt Dy   + + ++l++vn    g+e+i ++ hel   + + L+e  +
+          1_1444 227 GPTGVGVLYGKEEWLDRLPPyqgggEMIQHvSFEKTTFNELPfkfEAGTPDYIGTTGLAKALDYVNGH--GLEQIAAHEHELTTYALQRLKEIPQ 319
+                     ***********963333333445554443324544444443311158*******************95..*******************999988 PP
+
+  lcd_K22207_msa 394 telgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYvRiShqvYnkvddyyklrdav 477
+                      ++          +++ +        d +   L t+L ++ ++ v +  ++ +p  +++  i g vR S  +Yn++++   l   +
+          1_1444 320 MRIFGE--AAERGAVISFL-----VGDIHHFDLGTLL-DRLGIAVRTghHCAQPLMQRL-GIEGTVRASFAMYNTKSEIDTLVAGI 396
+                     886333..23333333332.....2333455566655.666777777322233334343.47888888888888888877666555 PP
+
+>> 1_4080  # 5104045 # 5105238 # 1 # ID=1_4080;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=13bp;gc_cont=0.468
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.9e-05     0.023     228     286 ..     160     215 ..     153     243 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.9e-05
+  lcd_K22207_msa 228 frkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                     +++ L++  a+ ++ r++v D + Sm   v P  +++ + ++ +   v+VD  h+ G v
+          1_4080 160 LERCLQE--AQAQRFRIVVTDGVFSMDGNVAPMDQICDLAEKYDA-LVMVDESHSAGVV 215
+                     4555555..6789*******************************9.9*******99877 PP
+
+>> 1_3521  # 4418482 # 4419666 # -1 # ID=1_3521;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=9bp;gc_cont=0.450
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   2.5e-05      0.03     226     284 ..     159     214 ..     136     217 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.5e-05
+  lcd_K22207_msa 226 sefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiG 284
+                     + ++k L+k   n  +v+l ++D + Sm   +    e+v++ ++ +  +++VD Ah++G
+          1_3521 159 ADLEKQLQK--CNPDSVKLIIVDGVFSMEGDLANLPEIVRLKHKYNA-TIMVDEAHGLG 214
+                     566777776..899**************************9999988.9********99 PP
+
+>> 1_3314  # 4176559 # 4179408 # -1 # ID=1_3314;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.456
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.1      0.14   1.6e+02     138     173 ..     124     158 ..      91     172 .. 0.71
+   2 ?    9.8   0.1   6.2e-05     0.074     260     311 ..     660     711 ..     656     713 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.14
+  lcd_K22207_msa 138 taikdlinaddvdevslvdNattAaaivLqqvawsf 173
+                     ta+ dl  a    + sl+d at+Aa +v    a + 
+          1_3314 124 TAVCDLT-AMPLANCSLLDEATAAAEAVSMMYAIRS 158
+                     5555554.44478999*********99965544333 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 6.2e-05
+  lcd_K22207_msa 260 VkeLvkicreegvdqvfVDaAhaiGqvev.dvkeigAdfYtsNlHKWffcPps 311
+                     +ke++ i ++ g  qv  D+A    qv + +   igAd    NlHK f +P++
+          1_3314 660 IKEICDIIHACGA-QVYMDGANMNAQVGLtNPGFIGADVCHLNLHKTFASPHG 711
+                     79**********9.*************77266779****************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4824  (1802119 residues searched)
+Passed MSV filter:                       171  (0.0354478); expected 96.5 (0.02)
+Passed bias filter:                      127  (0.0263267); expected 96.5 (0.02)
+Passed Vit filter:                        12  (0.00248756); expected 4.8 (0.001)
+Passed Fwd filter:                         4  (0.000829187); expected 0.0 (1e-05)
+Initial search space (Z):               4824  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.05
+# Mc/sec: 17925.74
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bacteroides-xylanisolvens-SD-CC-1b-MAF-2_lcdcustom.sto
+[ok]

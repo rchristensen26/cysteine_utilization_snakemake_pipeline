@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Faecalitalea_cylindroides_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Faecalitalea_cylindroides_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Faecalitalea_cylindroides_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Faecalitalea_cylindroides_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+      5e-22   75.0   0.1    8.9e-21   70.9   0.2    2.0  2  NZ_NFHU01000004.1_80  # 82735 # 83976 # 1 # ID=38_80;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_NFHU01000004.1_80  # 82735 # 83976 # 1 # ID=38_80;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.9   0.2   4.9e-24   8.9e-21      88     329 ..      19     247 ..       2     305 .. 0.85
+   2 !    2.0   0.0    0.0036       6.4     455     475 ..     378     398 ..     355     408 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 70.9 bits;  conditional E-value: 4.9e-24
+        lcd_K22207_msa  88 dpsvarinnGsfgscpasvleaqqrwqlkfl....rqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvaws 172
+                           d+ +++++nG+    p++v++a  ++   +l    +  d  +  ++ ++++++r + +++ina+  +e++++   t + + +    a  
+  NZ_NFHU01000004.1_80  19 DKPLVYLDNGATTLKPQCVIDAVCNYYT-YLganaHRGDYQMSAQVDEAFENARITAQKFINAKYKEEIAFTSGSTMGLNEI----AIM 102
+                           45677899**************988865.66444455899*******************************98888776554....445 PP
+
+        lcd_K22207_msa 173 faegkfqkgDavlmlhyaYgaVkksieayvtrag.gsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPV 260
+                            +++ ++ +D+vl+++   ++  +++ +  ++ag ++ i+ve     ++ +  ++++++a+++       v++  + H++ +  +  P+
+  NZ_NFHU01000004.1_80 103 LTQQVLKSNDVVLTCESEHAS--NILPW--QQAGiAKNIQVEYIELDHEGKVTIEAVQNAIHD------GVKIITLAHVSNVLGFEAPI 181
+                           556678999***999887765..55554..678878888888666666677889999999998......4999999************* PP
+
+        lcd_K22207_msa 261 keLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpv 329
+                           +e++k+ +e+g+  v+VD+A++  ++++dv+++++df++   HK ++ P +v+++y +k k  d+ +pv
+  NZ_NFHU01000004.1_80 182 EEICKLAHEKGI-IVVVDGAQSTPHIDIDVQKLDCDFFVFSAHK-LCGPTGVGVMYGKK-KWMDMLEPV 247
+                           ************.9******************************.9***********99.556787787 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.0036
+        lcd_K22207_msa 455 gYvRiShqvYnkvddyyklrd 475
+                           g +R S  +Yn+++d+ kl +
+  NZ_NFHU01000004.1_80 378 GTCRASFYIYNTKEDVDKLVE 398
+                           668*************99976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1803  (553241 residues searched)
+Passed MSV filter:                        73  (0.0404881); expected 36.1 (0.02)
+Passed bias filter:                       55  (0.0305047); expected 36.1 (0.02)
+Passed Vit filter:                         3  (0.00166389); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000554631); expected 0.0 (1e-05)
+Initial search space (Z):               1803  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.04
+# Mc/sec: 7023.01
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Faecalitalea_cylindroides_lcdcustom.sto
+[ok]

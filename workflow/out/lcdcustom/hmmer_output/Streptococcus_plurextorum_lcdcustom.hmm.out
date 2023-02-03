@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Streptococcus_plurextorum_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Streptococcus_plurextorum_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Streptococcus_plurextorum_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Streptococcus_plurextorum_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    1.4e-20   70.4   0.1    3.3e-20   69.2   0.1    1.6  1  NZ_AUIO01000014.1_46   # 44311 # 45537 # -1 # ID=20_46;partia
+      0.003   13.2   0.0     0.0039   12.9   0.0    1.2  1  NZ_AUIO01000001.1_288  # 287332 # 288447 # 1 # ID=33_288;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_AUIO01000014.1_46  # 44311 # 45537 # -1 # ID=20_46;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.2   0.1   3.1e-23   3.3e-20      79     479 ..       6     399 ..       1     404 [. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 69.2 bits;  conditional E-value: 3.1e-23
+        lcd_K22207_msa  79 eirseFshhdp.....svarinnGsfgscpasvleaqqrwq...lkflrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNat 159
+                           +ir++F   d+      +++++n +    p++vlea q++       ++   +   ++ +   +++r++++++ina++  e+ ++  +t
+  NZ_AUIO01000014.1_46   6 KIRQDFGILDQiindePLVYLDNAATTQKPRQVLEALQHYYetnNTNVHRGVHTLAERATADYEAAREKVRAFINAASTKEILFTRGTT 94 
+                           56666655554444446678999999999*****999888744333477789999999******************************* PP
+
+        lcd_K22207_msa 160 tAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviD 248
+                           t+ + v q     fa+  +++gD vl+  +  ++     ++++++ g++++ v l+    + ++    + + L++      k +++ + 
+  NZ_AUIO01000014.1_46  95 TGLNWVAQ-----FAKEVLSEGDEVLISIMEHHSNIIPWQEVCKQTGAKLVYVYLKEGQLDMAD----LTAKLSS------KTKFVSLA 168
+                           ******99.....7788899*********9999999999***************9988777554....4445555......55555555 PP
+
+        lcd_K22207_msa 249 HitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh 332
+                            ++ +   + P+ke+ +  ++ g   ++VD+A++i ++ +dv+++++df++   HK ++ P ++++Ly +++  +++        ++  
+  NZ_AUIO01000014.1_46 169 QVSNVLGCLNPIKEIAERAHAVGA-YMVVDGAQSIPHMAIDVQDLDCDFFAFSGHK-MMGPTGIGVLYGKEELLNRMSPvefggEMIDF 255
+                           6777778899*************9.9******************************.89***********9533434334445577777 PP
+
+        lcd_K22207_msa 333 eygn.glaiesaw...iGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgi 417
+                            y++    +e  w    Gt   +  + + a++++++ +  g+e+i+++ +elv      L +  g  +  p++  +   ++ +    g+
+  NZ_AUIO01000014.1_46 256 VYEQeATWKELPWkfeAGTPNIAGAIGLGAAIDYLTSL--GMEKIHAYEQELVNYLLPKLQNITGLTVYGPQSPDQHTGVIAFNI-EGL 341
+                           77664566666673336********************8..***************************999999999999999983.566 PP
+
+        lcd_K22207_msa 418 ssdedalkLrthLreefkvevpi..yyrapkegeveaitgYvRiShqvYnkvddyyklrdavnq 479
+                           + ++ a+ L     +  +v v    ++ +p   ++  i   vR S  vYn+++d  kl da+++
+  NZ_AUIO01000014.1_46 342 HPHDVATAL-----DYEGVAVRAghHCAQPLIHSL-GISSAVRASFYVYNTKEDCDKLLDAIQK 399
+                           555554444.....445555555214444433333.48889*********************97 PP
+
+>> NZ_AUIO01000001.1_288  # 287332 # 288447 # 1 # ID=33_288;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   3.7e-06    0.0039     257     319 ..     154     214 ..      38     223 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.7e-06
+         lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                            + P+ e+ +++  +      VDa + +G+++v  ++ + df  +  HK f  P++v++Ly+++
+  NZ_AUIO01000001.1_288 154 LNPISEIGQVLSTHQA-AFHVDAVQTLGKIPVLPDQWQIDFLSASAHK-FHGPKGVGLLYAKP 214
+                            5699999999999999.899****************************.89*********998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2091  (624475 residues searched)
+Passed MSV filter:                        79  (0.037781); expected 41.8 (0.02)
+Passed bias filter:                       61  (0.0291726); expected 41.8 (0.02)
+Passed Vit filter:                         5  (0.0023912); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.00095648); expected 0.0 (1e-05)
+Initial search space (Z):               2091  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 12071.34
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Streptococcus_plurextorum_lcdcustom.sto
+[ok]

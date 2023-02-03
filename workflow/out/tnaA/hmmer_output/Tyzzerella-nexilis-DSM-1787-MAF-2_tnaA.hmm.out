@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Tyzzerella-nexilis-DSM-1787-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+     0.0018   14.9   0.1     0.0028   14.3   0.1    1.2  1  1_2820    # 2939517 # 2940683 # -1 # ID=1_2820;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2820  # 2939517 # 2940683 # -1 # ID=1_2820;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=3-4bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.1   7.5e-07    0.0028     160     224 ..     127     183 ..     121     186 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 7.5e-07
+  tnaA_K01677_msa 160 apFKGNfDleklealieevgaenvplivlTiTnNsaGGQPVSmaNlravaeiakkygipvvlDaA 224
+                       + KGN++ e++e+ i+++      +i++T  +N +G     m  +++v eiakk+g  +v Da+
+           1_2820 127 SDRKGNISYEEIEHEIRQNT----KAIICTHGSNLTGN----MIDIKRVGEIAKKHGLLFVVDAS 183
+                      5669*******999999876....78***********6....*********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       3715  (1162819 residues searched)
+Passed MSV filter:                       211  (0.0567968); expected 74.3 (0.02)
+Passed bias filter:                       87  (0.0234186); expected 74.3 (0.02)
+Passed Vit filter:                        11  (0.00296097); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000269179); expected 0.0 (1e-05)
+Initial search space (Z):               3715  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.05
+# Mc/sec: 18704.61
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Tyzzerella-nexilis-DSM-1787-MAF-2_tnaA.sto
+[ok]

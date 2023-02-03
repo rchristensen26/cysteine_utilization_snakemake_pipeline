@@ -1,0 +1,111 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metCcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Cutibacterium_acnes_prodigal.faa
+# output directed to file:         workflow/out/metCcustom/hmmer_output/Cutibacterium_acnes_metCcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/metCcustom/hmmer_output/Cutibacterium_acnes_metCcustom.sto
+# per-dom hits tabular output:     workflow/out/metCcustom/hmmer_output/Cutibacterium_acnes_metCcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       metC_K01760_msa  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    6.3e-06   22.2   0.0    1.1e-05   21.3   0.0    1.4  1  NC_021085.1_667   # 728041 # 729282 # 1 # ID=2_667;partial=00
+    6.1e-05   18.9   0.1    0.00022   17.1   0.0    1.8  2  NC_021085.1_36    # 33530 # 34588 # 1 # ID=2_36;partial=00;st
+    8.5e-05   18.4   0.3    0.00017   17.4   0.3    1.4  1  NC_021085.1_1851  # 1966172 # 1968133 # 1 # ID=2_1851;partial
+    0.00029   16.7   0.1    0.00045   16.0   0.1    1.2  1  NC_021085.1_147   # 167796 # 168908 # 1 # ID=2_147;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_021085.1_667  # 728041 # 729282 # 1 # ID=2_667;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.3   0.0   1.9e-08   1.1e-05     154     242 ..     130     227 ..      99     231 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 21.3 bits;  conditional E-value: 1.9e-08
+  metC_K01760_msa 154 ekvlkrlgievtfvdpt.i.a......eiealirpntklvylEsPgsptlevqDipaiaaiakahgalvavDNTwatpllfkPlel...GvDiv 236
+                      + + +r g + +++d t          e e li+ +tk+v l   ++++  +  i +ia+ a++ ga+++vD + a p  + P ++   G+D+v
+  NC_021085.1_667 130 QIICQRTGATLRWFDITdDgRldlekaEAEGLINGRTKVVSLTLASNVLGTINPIGMIAEQAHSVGAVMVVDASQAVP--QMPVDMttlGADLV 221
+                      55666666666666554222131212266778999**************************************88877..567766666***99 PP
+
+  metC_K01760_msa 237 ihsaTK 242
+                         + K
+  NC_021085.1_667 222 AFTGHK 227
+                      877666 PP
+
+>> NC_021085.1_36  # 33530 # 34588 # 1 # ID=2_36;partial=00;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   3.6e-07   0.00022     131     219 ..      94     186 ..      78     191 .. 0.76
+   2 ?   -1.1   0.0      0.12        72     396     410 ..     326     340 ..     313     351 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 3.6e-07
+  metC_K01760_msa 131 allkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt..i.aeiealirpntklvylEsPgsptlevqDipaiaaiaka..hgalvavDNT 219
+                      a+  aGD+++++   ++  + +l++v     + +  ++ +    ++++a+i+++t+l++l +P +pt  v    +++++  +  ++++v++D  
+   NC_021085.1_36  94 AFAGAGDEIIFPWRSFE-AYPILTQVAGATPVPAPLTKDLrhDlDAMSAAITDRTRLIFLCTPNNPTGTVLHTDEVVEFLARvpQNVVVVMDEA 186
+                      56666666666666654.45566666666666665554333334899*******************************98887789******75 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.12
+  metC_K01760_msa 396 gtlvRlsvGlEdveD 410
+                      g+ +Rls+Gl   +D
+   NC_021085.1_36 326 GEGIRLSIGLDAEND 340
+                      5679******99887 PP
+
+>> NC_021085.1_1851  # 1966172 # 1968133 # 1 # ID=2_1851;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.4   0.3   2.9e-07   0.00017      98     219 ..     342     463 ..     310     469 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 2.9e-07
+   metC_K01760_msa  98 trealeeaiaeLeggarallfpSGlaAisavllallkaGDhvlvtddvYgptrrlle..kvlkrlgievtfvdpt.iaeiealirpntklvyl 187
+                        +++ e++ia+  g  +a+ ++SG  A  a+ ++ll    hv v  d+ +   +l++  ++ +   + v + d + i+   + ++    lv++
+  NC_021085.1_1851 342 AHHQAEHEIAAWLGYPQAVFMASGYQANIAT-IQLLA-DPHVTVISDA-ENHASLIDgcRLARARTVVVPHADLDvIDTALDCVTTDRALVLT 431
+                       489999*********************9998.66664.3455555555.44444444114556667999999999668888999999****** PP
+
+   metC_K01760_msa 188 EsPgsptlevqDipaiaaiakahgalvavDNT 219
+                       E   s+  +v  + ++++ia++hgalv+vD+ 
+  NC_021085.1_1851 432 EGVYSMGGDVAPVGELVEIAHRHGALVVVDDA 463
+                       ******************************85 PP
+
+>> NC_021085.1_147  # 167796 # 168908 # 1 # ID=2_147;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.1   7.5e-07   0.00045      99     211 ..      36     150 ..      29     157 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 7.5e-07
+  metC_K01760_msa  99 realeeai.aeLeggarallfpSGlaAisavllal.lkaGDhvlvtddvYgptrrlle.kvlkrlgievtfvdpt.i.aeiealirpntklvyl 187
+                       +a+e+++ +++  g +++++ SG +A+++ lla  + +GD+v+v+   +  t + +     k    +v+ v  t   a+iea i+++t +++ 
+  NC_021085.1_147  36 VHAFEDEFsSQVVDGVHCVAVNSGTSALHIGLLASgIGEGDEVIVPSFTFAATGNSVAlSGAKPVFADVDPVTFTlDpASIEASITDKTAAIMP 129
+                      55666665246779****************9999669**********99999876544144555567777777775579999999999999974 PP
+
+  metC_K01760_msa 188 EsPgsptlevqDipaiaaiakahg 211
+                       +   +     ++++i+aia +hg
+  NC_021085.1_147 130 VHLYGLP---ANMAEIVAIATKHG 150
+                      4332222...34445555555665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (479 nodes)
+Target sequences:                       2398  (762195 residues searched)
+Passed MSV filter:                        88  (0.0366972); expected 48.0 (0.02)
+Passed bias filter:                       73  (0.030442); expected 48.0 (0.02)
+Passed Vit filter:                        12  (0.00500417); expected 2.4 (0.001)
+Passed Fwd filter:                         4  (0.00166806); expected 0.0 (1e-05)
+Initial search space (Z):               2398  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 14795.62
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/metCcustom/hmmer_output/Cutibacterium_acnes_metCcustom.sto
+[ok]

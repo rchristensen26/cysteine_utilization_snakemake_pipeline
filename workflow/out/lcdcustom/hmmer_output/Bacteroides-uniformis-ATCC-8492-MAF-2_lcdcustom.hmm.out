@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-uniformis-ATCC-8492-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.2e-29   99.4   0.0    6.6e-29   98.8   0.0    1.2  1  1_1189    # 1581003 # 1582268 # 1 # ID=1_1189;partial=00;star
+      4e-09   33.5   0.1    5.5e-09   33.0   0.1    1.2  1  1_3572    # 4357176 # 4358264 # -1 # ID=1_3572;partial=00;sta
+  ------ inclusion threshold ------
+      0.037   10.5   0.0      0.055    9.9   0.0    1.2  1  1_3342    # 4092077 # 4093264 # 1 # ID=1_3342;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1189  # 1581003 # 1582268 # 1 # ID=1_1189;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=12bp;gc_cont=0.513
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.8   0.0   5.2e-32   6.6e-29      93     473 ..      42     410 ..      29     419 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 98.8 bits;  conditional E-value: 5.2e-32
+  lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDav 184
+                     +++nG+    p++v++a  +    +   ++   +f  ++ ++  ++sr++++++ina++ +e++++  +t  ++  + +++ +f     q+gD v
+          1_1189  42 YLDNGATTQKPRQVVNAITDEYYSVnanVHRGVHFLSQQATELHEASRETVRRFINARSTNEIVFTRGTTESINLLVSSFGEEFM----QEGDEV 132
+                     5777888888888777765544322223566799********************************************8887776....9****9 PP
+
+  lcd_K22207_msa 185 lmlhyaYgaVkksieayvtraggsvievelpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVD 278
+                     ++  +  ++     + + + + g  i+v   +p+++  e   +e+r+ +++      + r++ + H++ +   v PVke+++  +e+gv  v+VD
+          1_1189 133 ILSVMEHHSNIVPWQLL-AAKRGITIKV---IPMNDkGELLLDEYRQLFSE------RTRIVSVAHVSNVLGTVNPVKEMIAFAHEQGV-PVLVD 216
+                     98888777744444444.4444554554...4555515678899*999888......99******************************.9**** PP
+
+  lcd_K22207_msa 279 aAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks..ka.sdlhh.....pvVsh.eygnglaiesa...wiGtrDysaqlvvpavle 361
+                     +A++i +++vdv++++Adf++   HK ++ P +v++Ly ++   +             ++ h ++++   +e       Gt Dy   + + ++l+
+          1_1189 217 GAQSIPHMPVDVQDLDADFFVFSAHK-VYGPTGVGVLYGKEGwlDRiP---PyqgggEMIQHvSFEKTTFNELPfkfEAGTPDYIGTTGLAKALD 307
+                     **************************.9************95322231...1334444443214444444443311158**************** PP
+
+  lcd_K22207_msa 362 FvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveait 454
+                     +v+ +  g+++i ++ hel + +++ L+e  g ++    e   s+i        +    +          ++ ++ v +  ++ +p  +++  i 
+          1_1189 308 YVSLV--GMDKIAAYEHELTQYAMQRLKEIPGMRIFGEAEDKGSVISFLVGDIHHFDMGTLL--------DRLGIAVRTghHCAQPLMQRL-GIE 391
+                     ***96..**************************99888888888777766643333333333........444555555212222333333.477 PP
+
+  lcd_K22207_msa 455 gYvRiShqvYnkvddyykl 473
+                     g vR S   Yn++++   l
+          1_1189 392 GTVRASFGLYNTREEIDVL 410
+                     8889999999999987666 PP
+
+>> 1_3572  # 4357176 # 4358264 # -1 # ID=1_3572;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont=0.534
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.1   4.3e-12   5.5e-09     228     333 ..     122     220 ..      98     285 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 4.3e-12
+  lcd_K22207_msa 228 frkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkska 322
+                     ++++L++   n +  ++Av+ H   ++ v  P ke+ ++++ +g  + +VDa  + G v++dv+e+g df +s   K +   p+ +f+ +r+s+ 
+          1_3572 122 VDDYLSH---NAEITHVAVV-HCETTTGVFNPLKEIAHLVKMHGK-KLIVDAMSSFGGVPLDVHELGIDFLISSANKCIQGVPGFGFIIARRSEL 211
+                     5555655...4444556665.9999*******************8.9********************************************9543 PP
+
+  lcd_K22207_msa 323 sdlhhpvVshe 333
+                       lh   Vs++
+          1_3572 212 --LHCKGVSKS 220
+                     ..444555554 PP
+
+>> 1_3342  # 4092077 # 4093264 # 1 # ID=1_3342;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont=0.552
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0   4.4e-05     0.055     229     286 ..     161     215 ..     153     236 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 4.4e-05
+  lcd_K22207_msa 229 rkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                     ++ L++  a+ ++ r++v D + Sm   v P  +++ + ++ +   v+VD  h+ G v
+          1_3342 161 ERCLQE--AQAQRFRIVVTDGVFSMDGNVAPMDRICDLAEKYDA-LVMVDESHSAGVV 215
+                     555666..6789*******************************9.9********9977 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3789  (1401963 residues searched)
+Passed MSV filter:                       132  (0.0348377); expected 75.8 (0.02)
+Passed bias filter:                      108  (0.0285036); expected 75.8 (0.02)
+Passed Vit filter:                        10  (0.00263922); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.000791766); expected 0.0 (1e-05)
+Initial search space (Z):               3789  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
+# Mc/sec: 18686.90
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bacteroides-uniformis-ATCC-8492-MAF-2_lcdcustom.sto
+[ok]

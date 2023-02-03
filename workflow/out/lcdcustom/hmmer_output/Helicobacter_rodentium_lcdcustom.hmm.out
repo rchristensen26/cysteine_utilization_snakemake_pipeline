@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Helicobacter_rodentium_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Helicobacter_rodentium_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Helicobacter_rodentium_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Helicobacter_rodentium_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+    5.4e-14   48.5   0.0    8.5e-14   47.8   0.0    1.3  1  NZ_JHWC01000007.1_97  # 100565 # 101740 # -1 # ID=23_97;parti
+      6e-13   45.0   0.2    4.7e-12   42.1   0.2    2.1  1  NZ_JHWC01000004.1_32  # 32422 # 33594 # -1 # ID=26_32;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JHWC01000007.1_97  # 100565 # 101740 # -1 # ID=23_97;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.8   0.0   9.4e-17   8.5e-14     133     320 ..      53     221 ..      46     288 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 47.8 bits;  conditional E-value: 9.4e-17
+        lcd_K22207_msa 133 ilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksn 221
+                           + ++r++++dl++ ++  ++ ++ Nat A+++ Lq +        +++gD v+++++  +a+k+ ++a+ ++   +v e    +p  s 
+  NZ_JHWC01000007.1_97  53 LFQTRKSLADLVGLKNCKHILFTLNATMAINTLLQGF--------LKEGDIVVVTQMEHNAIKRPLNALKNKLKLEVRE----IPCDSM 129
+                           6789*******************************44........699********************87776666554....455554 PP
+
+        lcd_K22207_msa 222 eeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkei..gAdfYtsNlHKWffc 308
+                           + +       L+++k+  +  +l    Hi  ++  ++P ++L ++ ++++v   ++D+A+++G+ve  +ke+  ++df +   HK + +
+  NZ_JHWC01000007.1_97 130 HAV------DLNSAKEMLKGAKLLACAHINNVSGAMIPPEDLSALAKAHNV-AFLLDGAQSVGCVE--MKEVmsQVDFLALSAHKGLLA 209
+                           433......45566666667899999*************************.9***********85..777777*************** PP
+
+        lcd_K22207_msa 309 PpsvAfLyvrks 320
+                           P +v+ L + ++
+  NZ_JHWC01000007.1_97 210 PMGVGALVIADD 221
+                           ****99987774 PP
+
+>> NZ_JHWC01000004.1_32  # 32422 # 33594 # -1 # ID=26_32;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.1   0.2   5.1e-15   4.7e-12     129     320 ..      47     224 ..      36     233 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 42.1 bits;  conditional E-value: 5.1e-15
+        lcd_K22207_msa 129 lkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfp 217
+                            +++i+e+ + + + ina+d d++ ++  at   + vL+ v   f   +f + + ++++++   a+  +++  ++  g +v      +p
+  NZ_JHWC01000004.1_32  47 THTAIREAFNHLYEGINAHDEDDIIITSCATESNNWVLKGVY--FDILRFGEKNHIITTQVEHPAILATCRF-LESLGVEVT----YLP 128
+                           556677777778888************************877..6666*******************99988.577776665....456 PP
+
+        lcd_K22207_msa 218 vksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWf 306
+                           v +n        k Le   a   k  l+ i +    + +++P++e+ +ic+++g+     Da +aiG+++vdv++ ++df     HK f
+  NZ_JHWC01000004.1_32 129 VGENGTL---SPKDLEV--AITDKTALVSIMWANNETGIIFPIEEIGAICKKHGI-LFHTDAVQAIGKIPVDVQKAQVDFLSFSGHK-F 210
+                           6665544...3455666..4456899999**************************.889****************************.8 PP
+
+        lcd_K22207_msa 307 fcPpsvAfLyvrks 320
+                            +P++++ Ly+rk 
+  NZ_JHWC01000004.1_32 211 HAPKGIGGLYIRKG 224
+                           9***********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1819  (545533 residues searched)
+Passed MSV filter:                        82  (0.0450797); expected 36.4 (0.02)
+Passed bias filter:                       54  (0.0296866); expected 36.4 (0.02)
+Passed Vit filter:                         8  (0.00439802); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00109951); expected 0.0 (1e-05)
+Initial search space (Z):               1819  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 15917.78
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Helicobacter_rodentium_lcdcustom.sto
+[ok]

@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Granulicatella-adiacens-ATCC-49175-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      2e-14   50.0   0.1    1.2e-12   44.1   0.1    2.6  2  1_1304    # 1383408 # 1384640 # -1 # ID=1_1304;partial=00;sta
+    3.9e-06   22.6   0.0    6.7e-06   21.8   0.0    1.3  1  1_885     # 920029 # 921135 # 1 # ID=1_885;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1304  # 1383408 # 1384640 # -1 # ID=1_1304;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.442
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   0.1   1.3e-15   1.2e-12     153     339 ..      67     238 ..      18     317 .. 0.80
+   2 !    2.5   0.0    0.0052       4.9     476     501 ..     376     401 ..     355     406 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 44.1 bits;  conditional E-value: 1.3e-15
+  K22207 153 ilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneei.ieefrkaLek 254
+               ++r+++ ++i+a +  ev +   +Tt  + ++q     Fa+g++qkgd + +      +     ++++++ g+ V+     f ++++ e+ +e++ k+L  
+  1_1304  67 YEAARAKVTKFIHAGSTKEVLFTRGTTTSLNWIAQ----GFAQGRLQKGDEIWISPAEHHSNVVPWQQVAKQTGA-VLR---YFSLTKEGELdLETAGKSL-- 159
+             5679*****************98888888777766....5779**********9999888888888887776666.544...4777777777234444444.. PP
+
+  K22207 255 gkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrk 339
+                  ++ +++ i+h + + + v  vk +++++++ g    +vD+A+a  + +vdv+++++dfy+   hK + +P+++ +Ly ++
+  1_1304 160 ----TEKAKIVSINHASNVLGTVTDVKRVAEMVHAVGG-ILVVDGAQAAPHQRVDVQALDCDFYAFSGHK-MLAPTGIGILYGKE 238
+             ....567889**************************98.699****************************.99*********988 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.0052
+  K22207 476 gyvRiShqvYnkveDyeklrdAvnkL 501
+             + +R S  +Yn+ ++ ek+ +A +k+
+  1_1304 376 ATCRASLYIYNTLQEAEKFLEALEKV 401
+             568*******************9886 PP
+
+>> 1_885  # 920029 # 921135 # 1 # ID=1_885;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.374
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.8   0.0   7.2e-09   6.7e-06     149     340 ..      41     214 ..      26     233 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 21.8 bits;  conditional E-value: 7.2e-09
+  K22207 149 lkkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrka 251
+              k++i + r++i + ++a+  d v +    +++ + v +++  +Fae k      +++  +   +V+ks e  +++ g eV       P ++ +  +++++ka
+   1_885  41 QKQKIERVRKAILKELQASPHDAVIFTSSGSEGNNLVFESIREHFAEEK----GHIIISAVEHPSVRKSAEF-LEQDGFEVTYL---APNRDGSVEVSSVEKA 135
+             578999999999999999999*********************9999864....5688889*********986.89999877654...5778888889999*** PP
+
+  K22207 252 LekgkangrrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrks 340
+             L+      + +rL+ i  +    +   P++e+++++++        Da +a+ q +++v  i  d+ t+  hK +++Pk++ fLy  k+
+   1_885 136 LR------EDTRLVSIMTVNNETGARFPIEEIAALLKNTPT-YFHTDAVQAFAQEEINVDGI--DYLTASGHK-IYAPKGIGFLYKSKD 214
+             *5......347999999*********************998.689**************965..9********.9**********8874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       1870  (575268 residues searched)
+Passed MSV filter:                        68  (0.0363636); expected 37.4 (0.02)
+Passed bias filter:                       46  (0.0245989); expected 37.4 (0.02)
+Passed Vit filter:                         4  (0.00213904); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00106952); expected 0.0 (1e-05)
+Initial search space (Z):               1870  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.16
+# Mc/sec: 1988.25
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Granulicatella-adiacens-ATCC-49175-MAF-2_lcd.sto
+[ok]

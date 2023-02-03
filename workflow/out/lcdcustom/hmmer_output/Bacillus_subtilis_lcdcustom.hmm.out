@@ -1,0 +1,133 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacillus_subtilis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bacillus_subtilis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bacillus_subtilis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bacillus_subtilis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    6.2e-24   82.5   0.1    1.2e-23   81.5   0.1    1.5  1  NC_000964.3_3370  # 3357444 # 3358664 # -1 # ID=1_3370;partia
+    9.9e-12   42.2   0.3    1.3e-10   38.6   0.3    2.1  1  NC_000964.3_270   # 287499 # 288611 # 1 # ID=1_270;partial=00
+    1.9e-06   24.8   0.0    3.1e-06   24.1   0.0    1.3  1  NC_000964.3_2884  # 2849569 # 2850756 # 1 # ID=1_2884;partial
+     0.0011   15.7   0.0     0.0027   14.4   0.0    1.4  1  NC_000964.3_1749  # 1771517 # 1772695 # 1 # ID=1_1749;partial
+  ------ inclusion threshold ------
+      0.018   11.7   0.0      0.027   11.1   0.0    1.2  1  NC_000964.3_3119  # 3092184 # 3093353 # -1 # ID=1_3119;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_000964.3_3370  # 3357444 # 3358664 # -1 # ID=1_3370;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.5   0.1   1.5e-26   1.2e-23     103     479 ..      34     397 ..       2     404 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 81.5 bits;  conditional E-value: 1.5e-26
+    lcd_K22207_msa 103 pasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYg 192
+                       p+ v+e   ++  ++   ++   +   ++ ++g + +r++++++ina+++ e+ ++  +tt  ++v  + a    + ++++gD v+++ +  +
+  NC_000964.3_3370  34 PRAVIETLDKYYNQYnsnVHRGVHTLGTRATDGYEGAREKVRKFINAKSMAEIIFTKGTTTSLNMVALSYA----RANLKPGDEVVITYMEHH 122
+                       5555555555554443333445556666777888889*************************999988766....6678************** PP
+
+    lcd_K22207_msa 193 aVkksieayvtraggsvievelpfpvksneei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiG 284
+                       a     ++ v+  g+++  ++l+    ++  i  + +r+         ++ +++ + H++ +   v P+ke+ ki +++g   ++VD+A++  
+  NC_000964.3_3370 123 ANIIPWQQAVKATGATLKYIPLQ----EDGTIsLEDVRETV------TSNTKIVAVSHVSNVLGTVNPIKEMAKIAHDNGA-VIVVDGAQSTP 204
+                       99989999999999996655554....33333133444444......4589999**************************9.9********** PP
+
+    lcd_K22207_msa 285 qvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvV.sheygnglaiesaw...iGtrDysaqlvvpavleFvnrfeg 368
+                       ++++dv+++++df++   HK ++ P +v++Ly +k   ++++       ++      ++  +e  w    Gt   +  + + a+++F++++  
+  NC_000964.3_3370 205 HMKIDVQDLDCDFFALSSHK-MCGPTGVGVLYGKKALLENMEPaefggEMIdFVGLYESTWKELPWkfeAGTPIIAGAIGLGAAIDFLEEI-- 294
+                       ********************.9*************53355555334443333222333444444453336********************8.. PP
+
+    lcd_K22207_msa 369 giegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYvRi 459
+                       g+++i+++ h+l+  + e   +  g  +   pe  a +++ +L    +++ ++    + t+L +  ++ v    ++ +p   ++  +t+ +R 
+  NC_000964.3_3370 295 GLDEISRHEHKLAAYALERFRQLDGVTVYG-PEERAGLVTFNLD---DVHPHD----VATVL-DAEGIAVRAghHCAQPLM-KWLDVTATARA 377
+                       *************************99955.5667788888888...565554....44444.555666666214443433.44479****** PP
+
+    lcd_K22207_msa 460 ShqvYnkvddyyklrdavnq 479
+                       S   Yn+ ++  kl +a ++
+  NC_000964.3_3370 378 SFYLYNTEEEIDKLVEALQK 397
+                       ***************99886 PP
+
+>> NC_000964.3_270  # 287499 # 288611 # 1 # ID=1_270;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.6   0.3   1.5e-13   1.3e-10     134     388 ..      59     296 ..      16     318 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 38.6 bits;  conditional E-value: 1.5e-13
+   lcd_K22207_msa 134 lesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvi.evelpfpvksneeivs 226
+                      + +r+  ++li+a+  dev++v  ++ A   v  +++ +f      k   v+ +++ + aV ++ +a  ++   svi  ++  +p+++      
+  NC_000964.3_270  59 EFARNEFAKLIGAE-PDEVAIVPSVSDALVSVASSLT-AFG-----K-KHVVYTDMDFPAVPHVWQA-HSDYTVSVIpSIDGVLPLEQ------ 137
+                      34599999999999.599****999999999999887.555.....3.469999*******999999.46666666645555555554...... PP
+
+   lcd_K22207_msa 227 efrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                       +++ +++      +  l  + H+      v  +k + +i +++g    fVDa ++ G++++dvke g+d  ++   K +   p+vAfLyvrk 
+  NC_000964.3_270 138 -YETHISD------ETVLTCVPHVHYRDGYVQDIKAIAEISQRKGS-LLFVDAYQSAGHIPIDVKEWGVDMLAAGTRKYLLGIPGVAFLYVRK- 222
+                      .5555544......5668899************************8.9*********************************************. PP
+
+   lcd_K22207_msa 321 kasdlhhpvVsheygn..glaiesa......wiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemL 388
+                      + +d  +p  s  +g   g+    a       +Gt    +  +  a+l+ +n++  g+++ir++ ++   ++ ++ 
+  NC_000964.3_270 223 ELADALKPKASAWFGResGFDGAYAkvarrfQTGTPAFISVYAAAAALSLLNHI--GVSHIRDHVKTICADAVQYA 296
+                      667888888888886544655555544455567777777777777777777776..66777666665555555554 PP
+
+>> NC_000964.3_2884  # 2849569 # 2850756 # 1 # ID=1_2884;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   0.0   3.6e-09   3.1e-06     244     335 ..     141     230 ..     127     264 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 3.6e-09
+    lcd_K22207_msa 244 lAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkska.sdlhhpvVsheyg 335
+                       l+ i H  S + ++ P+++L + ++++g+     Da +  G+++++ k++g+d      HK +  P++v+  y+r++    +   p+ +heyg
+  NC_000964.3_2884 141 LVSIQHANSETGIIQPIQHLSSYLHNKGI-LLHCDAVQTFGKIPINTKNLGVDALSMSSHK-IHGPKGVGAVYIRPD-VpWKPVYPLTTHEYG 230
+                       77799************************.899****************************.99************4.4367888999****8 PP
+
+>> NC_000964.3_1749  # 1771517 # 1772695 # 1 # ID=1_1749;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.0   3.2e-06    0.0027     230     285 ..     161     213 ..     144     215 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 3.2e-06
+    lcd_K22207_msa 230 kaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGq 285
+                       + L+  k+ + ++rl v D + Sm   + P  ++v++ ++ +   v+VD Aha G 
+  NC_000964.3_1749 161 RVLR--KSMNYRMRLIVTDGVFSMDGNIAPLPDIVELAEKYDA-FVMVDDAHASGV 213
+                       3443..57899*******************************9.9********985 PP
+
+>> NC_000964.3_3119  # 3092184 # 3093353 # -1 # ID=1_3119;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   3.2e-05     0.027     233     285 ..     163     212 ..     150     214 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 3.2e-05
+    lcd_K22207_msa 233 ekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGq 285
+                       ++  ++  + r+ v D + Sm   + P  +++++ ++     v+VD Aha G 
+  NC_000964.3_3119 163 NE--TQRYQRRFIVTDGVFSMDGTIAPLDQIISLAKRYHA-FVVVDDAHATGV 212
+                       44..334567999***********************9999.9********995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4226  (1237056 residues searched)
+Passed MSV filter:                       153  (0.0362044); expected 84.5 (0.02)
+Passed bias filter:                      106  (0.0250828); expected 84.5 (0.02)
+Passed Vit filter:                        15  (0.00354946); expected 4.2 (0.001)
+Passed Fwd filter:                         5  (0.00118315); expected 0.0 (1e-05)
+Initial search space (Z):               4226  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
+# Mc/sec: 13030.46
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bacillus_subtilis_lcdcustom.sto
+[ok]

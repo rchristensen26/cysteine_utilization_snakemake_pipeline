@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Eubacterium-siraeum-DSM-15702-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Eubacterium-siraeum-DSM-15702-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Eubacterium-siraeum-DSM-15702-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Eubacterium-siraeum-DSM-15702-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.8e-07   25.7   0.0    2.1e-06   23.8   0.0    1.8  2  1_1882    # 2157302 # 2158498 # 1 # ID=1_1882;partial=00;star
+    4.3e-06   22.8   0.0    1.1e-05   21.4   0.0    1.6  1  1_713     # 862397 # 863530 # 1 # ID=1_713;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1882  # 2157302 # 2158498 # 1 # ID=1_1882;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.8   0.0   1.8e-09   2.1e-06     257     320 ..     159     220 ..     142     230 .. 0.92
+   2 ?   -1.6   0.0     0.092   1.1e+02     453     481 ..     348     376 ..     341     387 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 23.8 bits;  conditional E-value: 1.8e-09
+  lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                     + P++e+ ++c+++gv     Da +aiG+v+++vke + d      HK + + +++++Lyv+k+
+          1_1882 159 IQPIAEIGELCKQKGV-IFHTDAVQAIGNVHINVKEQNIDMLSLSGHK-IHAQKGCGVLYVNKK 220
+                     56**************.7779***************************.89**********994 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.092
+  lcd_K22207_msa 453 itgYvRiShqvYnkvddyyklrdavnqlv 481
+                       g +RiS+  Y + ++  kl ++   +v
+          1_1882 348 AHGSLRISMSEYTTEEEIDKLLEVLPVIV 376
+                     56789************999987765554 PP
+
+>> 1_713  # 862397 # 863530 # 1 # ID=1_713;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.494
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.0   9.7e-09   1.1e-05     131     476 ..      45     371 ..      37     375 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 9.7e-09
+  lcd_K22207_msa 131 kgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgD.avlmlhyaYgaVkksieayvtraggsvievelpfpvksneei 224
+                     +++  +r++ +++++ +  ++v+ + N+t+A++  L+ v+ +       kg   v++ ++  ++V + ++a+ +++    i+  ++    s++e 
+           1_713  45 RQVFYAREKCAEFFGGETENTVFTL-NCTHAINFALKGVCNA-------KGHcHVITSDLEHNSVIRPLHALYKQK---QINYSIADSGGSDDEL 128
+                     5677789999999998866666555.9999999999988833.......344257888899999999999986664...5778999999999999 PP
+
+  lcd_K22207_msa 225 vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                      s+++k +++      +  ++++     +   v P +++ ++cr++++   + D A+a G +++++ + g +   +  HK ++ P ++++L +  
+           1_713 129 LSAVEKQIRR------DTAVVIMTAGCNVNGRVTPLARIAELCRKRNI-CLIADCAQAAGVIPLNLAD-GINIICAPGHKGLYGPMGTGVLVTDG 215
+                     9999999888......5566666666667788****************.8999*************99.999********************999 PP
+
+  lcd_K22207_msa 320 s.kasdlhh...pvVsheygn.glaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimV 409
+                     +   s l +      s e ++ ++  +s+  Gt      +++   +eFvn    gi++i ++  +l     + + +  + ++   pe ++s+ +V
+           1_713 216 KyPLSTLIEggtGSASGEIDQpDFLPDSFESGTINTPGAIALGRGVEFVNS--KGIDRIYAHEMSLCDLFIKRVENIGKIRV-YRPEKVKSLPVV 307
+                     6555766664445559999888****************************9..6******9999999888888776666666.7889999***** PP
+
+  lcd_K22207_msa 410 gLPaklgissdedalkLrt..hLreefkvevpiyyrapkegeveaitgYvRiShqvYnkvddyyklrda 476
+                      + a  + ss +  +  ++  +Lr   + +   +    k+g +   tg vR++  v+n+++d +kl + 
+           1_713 308 SFTAGDENSSVTADMLSKNgfYLRGGLHCNFLAH---KKQGTL--ETGTVRLAPSVFNTRSDIIKLTEL 371
+                     ***8777666544333333124444444444443...357765..89******************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2351  (776977 residues searched)
+Passed MSV filter:                        87  (0.0370055); expected 47.0 (0.02)
+Passed bias filter:                       63  (0.0267971); expected 47.0 (0.02)
+Passed Vit filter:                         7  (0.00297746); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000850702); expected 0.0 (1e-05)
+Initial search space (Z):               2351  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 18613.05
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Eubacterium-siraeum-DSM-15702-MAF-2_lcdcustom.sto
+[ok]

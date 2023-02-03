@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/tnaA.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Porphyromonas_asaccharolytica_prodigal.faa
+# output directed to file:         workflow/out/tnaA/hmmer_output/Porphyromonas_asaccharolytica_tnaA.hmm.out
+# MSA of all hits saved to file:   workflow/out/tnaA/hmmer_output/Porphyromonas_asaccharolytica_tnaA.sto
+# per-dom hits tabular output:     workflow/out/tnaA/hmmer_output/Porphyromonas_asaccharolytica_tnaA.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tnaA_K01677_msa  [M=839]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   1.1e-259  861.4   0.2   1.2e-259  861.3   0.2    1.0  1  NC_015501.1_336  # 412125 # 413504 # -1 # ID=1_336;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_015501.1_336  # 412125 # 413504 # -1 # ID=1_336;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  861.3   0.2  6.9e-263  1.2e-259      10     465 ..       2     458 ..       1     459 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 861.3 bits;  conditional E-value: 6.9e-263
+  tnaA_K01677_msa  10 rip..epfrikvvepiklttreeReeaLkeagyNpFlLksedVfiDllTDSGTgAmsdrqwAalmrGDEaYagsrsyyrLeeavkdifgyeyvi 101
+                      +ip  e +rik+vepi+++tre+Re+++k+a+yN+F+Lks++VfiD+lTDSGTgAmsdrqw+++m GDE+Yag++s+++L++av++i  ++ vi
+  NC_015501.1_336   2 EIPfsEAYRIKMVEPIHKSTREQREQWIKQAHYNLFSLKSSQVFIDVLTDSGTGAMSDRQWSGMMLGDESYAGASSFQNLKDAVEKICTFPLVI 95 
+                      57777***************************************************************************************** PP
+
+  tnaA_K01677_msa 102 PtHQGRgAEqiLfpvlikregkvvisNthFDTTrahvelagaeavdlvikeafdteseapFKGNfDleklealieevgaenvplivlTiTnNsa 195
+                      PtHQGR+AE++L+++ +k eg++v++N+hFDTT++h+e+++a avd++i+ a +te e pFKG++Dl+kle++ +++ +e++p++vlT+TnN+a
+  NC_015501.1_336  96 PTHQGRAAENVLYSATLK-EGDIVPGNSHFDTTKGHIEFRKAVAVDCTIDAASNTELELPFKGEMDLNKLEDCFKKYPKEQIPMCVLTVTNNTA 188
+                      ******************.*************************************************************************** PP
+
+  tnaA_K01677_msa 196 GGQPVSmaNlravaeiakkygipvvlDaARFAENAyFIkqrEegyadksikeIvremfsyaDgltmSaKKDglvniGGliafrddeelfeevkt 289
+                      GGQPVSm+N+r+++e+++kygip+ +D ARFAENAyFIk+rEegyadksikeIvrem+syaD++tmS+KKD++vn+GG++a+r deel+++++ 
+  NC_015501.1_336 189 GGQPVSMKNVRETSELCHKYGIPLQIDGARFAENAYFIKMREEGYADKSIKEIVREMLSYADIMTMSSKKDAVVNMGGFLAMR-DEELYHKCSM 281
+                      ***********************************************************************************.669******* PP
+
+  tnaA_K01677_msa 290 rcilmeGFptYGGlaGrDlealAvGLeEgvdedyLayRieqveyLgerLeeaGvpiqqPtGgHAvfvDakkllphipaeqFpaqaLaceLYlea 383
+                       +++ eGF tYGG++GrD++alA+GL+E +++d+L++Ri+qv+yLg++L+e+Gvp+q+P+GgHA+f+Dakk+l+h+p+eqF aq+L +eLYlea
+  NC_015501.1_336 282 YAVMNEGFLTYGGMNGRDMNALAIGLDENTEFDMLDTRIRQVAYLGSKLDEYGVPYQRPAGGHAIFLDAKKILTHVPKEQFIAQTLGIELYLEA 375
+                      ********************************************************************************************** PP
+
+  tnaA_K01677_msa 384 GiRavEiGslllgrdpktgeqkpaplELvRLaiPRrvYtqehmdyvaealkevkeraesik.glrityeppvLRhFtarLepv 465
+                      GiR+vEiGs+l++rdpktge+++++lEL+RLaiPRr+Yt++hmd++a+a+k+v++r+esi+ g+ it+e pvLRhFt++Lep 
+  NC_015501.1_336 376 GIRGVEIGSILADRDPKTGENRYPKLELLRLAIPRRTYTNNHMDVIAAACKNVYDRRESITrGYVITRELPVLRHFTVELEPA 458
+                      ************************************************************99*******************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (839 nodes)
+Target sequences:                       1731  (638119 residues searched)
+Passed MSV filter:                        71  (0.0410168); expected 34.6 (0.02)
+Passed bias filter:                       48  (0.0277296); expected 34.6 (0.02)
+Passed Vit filter:                         9  (0.00519931); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000577701); expected 0.0 (1e-05)
+Initial search space (Z):               1731  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 16761.41
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/tnaA/hmmer_output/Porphyromonas_asaccharolytica_tnaA.sto
+[ok]

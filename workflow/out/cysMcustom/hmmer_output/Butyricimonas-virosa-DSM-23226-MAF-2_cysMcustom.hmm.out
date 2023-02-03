@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Butyricimonas-virosa-DSM-23226-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Butyricimonas-virosa-DSM-23226-MAF-2_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Butyricimonas-virosa-DSM-23226-MAF-2_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Butyricimonas-virosa-DSM-23226-MAF-2_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.5e-11   39.7   0.0    4.6e-10   36.7   0.0    2.3  2  1_2109    # 2601643 # 2603004 # -1 # ID=1_2109;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2109  # 2601643 # 2603004 # -1 # ID=1_2109;partial=00;start_type=ATG;rbs_motif=TAAAA;rbs_spacer=8bp;gc_cont=0.490
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.7   0.0   1.1e-13   4.6e-10      35     231 ..      76     297 ..      49     302 .. 0.80
+   2 ?   -0.6   0.1     0.025        97     254     298 ..     355     399 ..     328     421 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 36.7 bits;  conditional E-value: 1.1e-13
+  cysM_K12339_msa  35 dliGnTPLvrlqrlagk..kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvklvmpe...n 123
+                      ++  +TPLvr + l+++  + ++i+ K Eg+ PaGS K  +a++      ++g    +++  E  +G  G AL+ +++  g+++k++m +   n
+           1_2109  76 KIWRSTPLVRAHALEKAldTPAKIYFKNEGTSPAGSHKPNTAIAQAYYNYKQG---IKRITTETGGGQWGTALSFACQHFGLDLKVFMVKvsyN 166
+                      44457*********9954489******************99977665555555...4566679999********************99653338 PP
+
+  cysM_K12339_msa 124 aseerkaamrayGAelilt................dkeegmegardlaeelaaeg..kyfvldQfaNpdNpkaHyetTgpEiwrqte...gkvt 196
+                      +  +rk +m+  G ++i                  d++++   a+  a elaa++  + + l    N+   + H +  g+E + q+e   ++ +
+           1_2109 167 QKPYRKLMMNTWGSDVIPSpsnlteagrkilreypDSAGSLGIAISEAVELAAQDpqTNYSLGSVLNHV--LLHQTIIGEEALLQMEkagDEPD 258
+                      8999*************9999999999999999987778888899999999999877556666666665..89999999999999776668999 PP
+
+  cysM_K12339_msa 197 hfVsgmGTtGTimGvs.....ryLkeqnpavqivglqPee 231
+                       ++ ++G +  + G+s     r Lke  ++ ++++++P++
+           1_2109 259 IVIGCFGGGSNFAGISfpfirRNLKE-GKHTRVIAVEPQS 297
+                      99999999999999874444355664.3578999999976 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.025
+  cysM_K12339_msa 254 rvDrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaee 298
+                      ++ + + + q e +e+    a++egi+  + s  a+a a+r a+ 
+           1_2109 355 KLMEAVAIPQLETFEAGILFAKTEGIIPAPESTHAIAQAIREAKI 399
+                      344567889999999999999999999999999999999997764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       3961  (1457077 residues searched)
+Passed MSV filter:                       128  (0.0323151); expected 79.2 (0.02)
+Passed bias filter:                      106  (0.0267609); expected 79.2 (0.02)
+Passed Vit filter:                        10  (0.00252461); expected 4.0 (0.001)
+Passed Fwd filter:                         1  (0.000252461); expected 0.0 (1e-05)
+Initial search space (Z):               3961  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 16080.89
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Butyricimonas-virosa-DSM-23226-MAF-2_cysMcustom.sto
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Desulfovibrio_piger_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Desulfovibrio_piger_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Desulfovibrio_piger_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Desulfovibrio_piger_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+  ------ inclusion threshold ------
+      0.013   11.4   0.1      0.054    9.4   0.0    1.9  2  NZ_CABKOD010000047.1_194  # 219823 # 220977 # -1 # ID=47_194;
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CABKOD010000047.1_194  # 219823 # 220977 # -1 # ID=47_194;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.0   2.2e-05     0.054     257     319 ..     155     215 ..     142     223 .. 0.94
+   2 ?   -1.7   0.0     0.047   1.2e+02     187     215 ..     342     370 ..     337     379 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 2.2e-05
+            lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                               v+P+ ++ ++  e+gv     Da +a+G+  +d+ +          HK + +P+++++Lyvrk
+  NZ_CABKOD010000047.1_194 155 VFPISRMAEMAAEKGV-LFHTDAVQAVGKEAIDLGKQPISMLSLSGHK-LHAPKGIGVLYVRK 215
+                               89**************.889***********************9****.99***********9 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.047
+            lcd_K22207_msa 187 lhyaYgaVkksieayvtraggsvievelp 215
+                               + ya g+V+ s+ +y t+ + +++  ++p
+  NZ_CABKOD010000047.1_194 342 FTYAHGSVRLSLSRYTTEEEVDFVVENMP 370
+                               789999********999999887766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2523  (821186 residues searched)
+Passed MSV filter:                        73  (0.0289338); expected 50.5 (0.02)
+Passed bias filter:                       68  (0.026952); expected 50.5 (0.02)
+Passed Vit filter:                         8  (0.00317083); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000396354); expected 0.0 (1e-05)
+Initial search space (Z):               2523  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 17896.12
+//
+# No hits satisfy inclusion thresholds; no alignment saved
+[ok]

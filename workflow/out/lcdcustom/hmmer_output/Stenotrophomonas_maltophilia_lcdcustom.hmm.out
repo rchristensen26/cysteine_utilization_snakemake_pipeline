@@ -1,0 +1,100 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Stenotrophomonas_maltophilia_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Stenotrophomonas_maltophilia_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Stenotrophomonas_maltophilia_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Stenotrophomonas_maltophilia_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    2.4e-34  116.8   0.0    2.9e-34  116.5   0.0    1.1  1  NZ_LS483377.1_3750  # 4160758 # 4162059 # -1 # ID=1_3750;part
+    1.1e-16   58.5   0.0    9.5e-16   55.4   0.0    2.1  2  NZ_LS483377.1_1013  # 1115996 # 1117252 # -1 # ID=1_1013;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_LS483377.1_3750  # 4160758 # 4162059 # -1 # ID=1_3750;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.5   0.0   1.4e-37   2.9e-34      81     480 ..      59     432 ..      26     433 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 116.5 bits;  conditional E-value: 1.4e-37
+      lcd_K22207_msa  81 rseFshhdpsvarinnGsfgscpasvleaqqrwqlkflrqPdefy.fnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqva 170
+                         +s F   d +v  ++nG +g + +  l++ qr+  ++ r  +++y ++ +  + ++ ++ +++l++   +de++l+  at A+ + +    
+  NZ_LS483377.1_3750  59 ASHFDITD-EVNHLENGYWGVMGRETLASYQRHTAEVNRG-NAWYgRRAFPAQYMAVQQEVAELLGVG-ADEIALTRGATEAMLALIGGYN 146
+                         55566554.78899*************9999999887777.66662566778889999********99.8************999998654 PP
+
+      lcd_K22207_msa 171 wsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVk 261
+                               ++q+gD vl  ++ Y +   +++++ +r g++v  + lp  v ++++i +++++a+++      + +l+++  ++    +vlPV+
+  NZ_LS483377.1_3750 147 ------RLQPGDQVLYADIDYDSMIGAMRWLQQRRGAQVERIALPA-VPDQAQILQAYEAAFAR----LPRLKLVLLTQVSHRHGLVLPVA 226
+                         ......99*******************************9999995.77889************....89********************* PP
+
+      lcd_K22207_msa 262 eLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpvVsheygnglaiesawiGtrDysa 352
+                         e+ +  r++g+  v+VDaAh+ Gq++  v ++ Adf   NlHKW+ +P +v+ +yvrk + +dl  p +  e + g     +++Gt   +a
+  NZ_LS483377.1_3750 227 EIAERARARGI-DVIVDAAHGFGQIDYAVPDLKADFVGINLHKWIAAPVGVGAMYVRKGRVADLD-PYMG-ETDDGRVGSRVHTGTVNFAA 314
+                         ***********.6*********************************************7777877.6654.6678999999********** PP
+
+      lcd_K22207_msa 353 qlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgte..lgsppemca.smimVgLPaklgissdedalkLrthLreefkvevpi 440
+                         +l++p+++  ++r+  g+ + ++   + + e  ++ a+++     l sp+   a +++  +L      +s +d++ L++ L +e+++ +  
+  NZ_LS483377.1_3750 315 YLALPEAIALHQRI--GVAN-KQARLRYLRERWTLPARQMAHIevLSSPNPALAsALASFRLRG---RTSVADNMALQKRLLDEHRIFTTY 399
+                         *************9..4444.3333344444444444444332456666554443788888885...4566889***********997654 PP
+
+      lcd_K22207_msa 441 yyrapkegeveaitgYvRiShqvYnkvddyyklrdavnql 480
+                              ++g      + vR+   v+   +++ +l +a   l
+  NZ_LS483377.1_3750 400 -RDGLESG------ACVRVTPSVFTRPEQMDALVNALSAL 432
+                         .4434444......45999999999999998888887766 PP
+
+>> NZ_LS483377.1_1013  # 1115996 # 1117252 # -1 # ID=1_1013;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.4   0.0   4.7e-19   9.5e-16     125     321 ..      74     254 ..      32     276 .. 0.80
+   2 ?    0.4   0.0     0.022        44     453     480 ..     386     413 ..     342     415 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 55.4 bits;  conditional E-value: 4.7e-19
+      lcd_K22207_msa 125 yfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelp 215
+                           +e +++ + +r+++++++n + + + +l   +t A++ v  ++  +    +++ gD++l++ +  +a     + +++r g+++   e+ 
+  NZ_LS483377.1_1013  74 LGSEATDAYEGARNKLARFLNVRPS-DLVLCSGTTFAINLVAYSW--ALP--RLKAGDVILITRMEHHANIVPWQLVAQRTGATIRVAEIT 159
+                         555666777788**********976.6678889999999998755..555..89***************9999999999999885444444 PP
+
+      lcd_K22207_msa 216 fpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWf 306
+                            +      +++r+a++       +v+l  + H++ +   v PV+e+++  r++g+   +VD+ +a+ + +vdv +ig+dfY+   HK +
+  NZ_LS483377.1_1013 160 PDGAL---DLDALRAAMT------PEVKLLAVTHVSNVLGTVNPVREICREARKRGI-ITVVDGSQAVPHRKVDVAAIGCDFYAITGHK-M 239
+                         33333...3455666654......59*******************************.999****************************.9 PP
+
+      lcd_K22207_msa 307 fcPpsvAfLyvrksk 321
+                         + P +++ L++r+++
+  NZ_LS483377.1_1013 240 CGPTGTGALWARREH 254
+                         ************943 PP
+
+  == domain 2  score: 0.4 bits;  conditional E-value: 0.022
+      lcd_K22207_msa 453 itgYvRiShqvYnkvddyyklrdavnql 480
+                         + + +R S   Yn+  + +++  a +++
+  NZ_LS483377.1_1013 386 VAATCRASLAFYNTHAEIERFMTALTKV 413
+                         5667899999999999999999998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4000  (1327663 residues searched)
+Passed MSV filter:                        95  (0.02375); expected 80.0 (0.02)
+Passed bias filter:                       88  (0.022); expected 80.0 (0.02)
+Passed Vit filter:                        13  (0.00325); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.0005); expected 0.0 (1e-05)
+Initial search space (Z):               4000  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 21126.56
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Stenotrophomonas_maltophilia_lcdcustom.sto
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Leuconostoc_mesenteroides_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Leuconostoc_mesenteroides_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Leuconostoc_mesenteroides_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Leuconostoc_mesenteroides_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    5.5e-21   71.7   0.3    8.3e-21   71.1   0.3    1.2  1  NZ_CP028251.1_1688  # 1736451 # 1737677 # 1 # ID=3_1688;parti
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP028251.1_1688  # 1736451 # 1737677 # 1 # ID=3_1688;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.1   0.3   4.1e-24   8.3e-21     129     480 ..      61     399 ..      39     404 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 71.1 bits;  conditional E-value: 4.1e-24
+      lcd_K22207_msa 129 lkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvk 219
+                          +++ +++r++++++i+a++ +ev ++  +t   +    + +      + ++gD +l+  +  ++     +++++r+g+++  vel     
+  NZ_CP028251.1_1688  61 ATQQYEQARDKVQKFIHAQKREEVLFTRGTTESLNWLASTYG----AENVKQGDEILISYMEHHSNIVPWQQLAQRVGAHLKYVEL----- 142
+                         5678899********************999999999888777....45679*********9999999999*********9666665..... PP
+
+      lcd_K22207_msa 220 sneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPp 310
+                         +++   ++    Le+  +   k +++ i H + +  vv P+k++ ki ++++   ++ D+A+++ +++vdv+++++df++   HK +  P 
+  NZ_CP028251.1_1688 143 NDDGTLNMA--DLER--KITDKTKIVSITHASNVLGVVNPIKKIAKIAHKHDA-IMIADGAQSVPHMRVDVQDMDVDFFAFSGHK-MLGPT 227
+                         455555553..4566..345699*****************************9.8899***************************.89*** PP
+
+      lcd_K22207_msa 311 svAfLyvrkskasdlhh.....pvV.sheygnglaiesaw...iGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeaw 392
+                         ++++Ly +++  ++++       ++   + ++   + s w    Gt   +  +++ +++++++++  g+++++++ ++lv  +   L++  
+  NZ_CP028251.1_1688 228 GIGVLYGKHDILENMKPaqfggEMIeLVDLQEATFQPSPWrfeAGTPNIAGAIALGSAIDYLTNI--GMKEVENYEQSLVDYALPKLKSIA 316
+                         ******99953355665334444443334455555555563347********************8..************************ PP
+
+      lcd_K22207_msa 393 gtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapk.egeveaitgYvRiShqvYnkvddyyklrdavnql 480
+                         g  +  p++  +   ++ +    g+    +a  L t L ++ ++ev   ++  +   ++ +i + vRiS  +Yn++++  ++  +++++
+  NZ_CP028251.1_1688 317 GVTIYGPQNSEQHSGVIAFNL-AGV----HAHDLATAL-DQEGIEVRAGHHCAQpLMKYLNIAATVRISLYIYNTREEIDRFISVIEDI 399
+                         ****99*99999888888873.455....556788888.78899999954433323344579********************9999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2010  (608628 residues searched)
+Passed MSV filter:                        89  (0.0442786); expected 40.2 (0.02)
+Passed bias filter:                       52  (0.0258706); expected 40.2 (0.02)
+Passed Vit filter:                         7  (0.00348259); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000497512); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 15626.26
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Leuconostoc_mesenteroides_lcdcustom.sto
+[ok]

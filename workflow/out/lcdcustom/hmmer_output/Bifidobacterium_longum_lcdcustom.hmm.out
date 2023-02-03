@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bifidobacterium_longum_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bifidobacterium_longum_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bifidobacterium_longum_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bifidobacterium_longum_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    5.8e-09   32.0   0.2    3.5e-08   29.4   0.2    2.1  1  NC_015067.1_756   # 943534 # 944808 # 1 # ID=1_756;partial=00
+    1.8e-06   23.8   0.0    2.7e-06   23.2   0.0    1.2  1  NC_015067.1_1243  # 1436016 # 1437263 # -1 # ID=1_1243;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_015067.1_756  # 943534 # 944808 # 1 # ID=1_756;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.4   0.2   3.6e-11   3.5e-08     130     383 ..      65     326 ..       7     419 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 29.4 bits;  conditional E-value: 3.6e-11
+   lcd_K22207_msa 130 kkgilesrtaikdlinadd...vdevslvdNattAaaivLqqvaws........faegkfqkgDavlmlhyaYgaVkksieayvtraggsviev 212
+                      + +++e+r+++++l++a+     +ev+++  at++ +    +++ +         ++  +++gD +++     ++V   ++++  r g+++  +
+  NC_015067.1_756  65 TMAFEEARAKVAKLVGANAaegEEEVVVTGGATAGLNLLATAFGNAslgrggeaAKRFALKPGDEIVVSRAEHHSVLLPFQELSYRTGATFKWI 158
+                      5567889999999999877555789999999999776666555433111111004445578999999999999999999999999999997777 PP
+
+   lcd_K22207_msa 213 elpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWf 306
+                      +l    +   +   ++++ +       ++ +++ + H+   +  +  ++ ++k  +e g    ++Da +++ +++vd++++++df +   HK +
+  NC_015067.1_756 159 DLTEDGRVRTD---NLDEVI------TERTKVVAVTHVGNATGAITNIAPIIKRAHEVGS-IFILDACQSVPHLKVDFHALDVDFAAWSAHK-M 241
+                      77554444333...233333......358999999******************9999997.6778***************************.9 PP
+
+   lcd_K22207_msa 307 fcPpsvAfLyvrks..ka...sdlhhpvV.....sheygnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvve 383
+                      + P +v+fLy +++  +a   ++   ++V      he +   +   +  Gtr  +  ++   + e++ ++  g+e+i+++ ++ + e
+  NC_015067.1_756 242 YGPTGVGFLYGKRDllEAlppANFGGSMVelaymDHEAQYMAPPARFEAGTRPVAQVVAAGVAAEWMMNI--GLENIEAHEKTIAAE 326
+                      **********999532223322333366622222444455555555578888887777777777888776..888887766655554 PP
+
+>> NC_015067.1_1243  # 1436016 # 1437263 # -1 # ID=1_1243;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   0.0   2.8e-09   2.7e-06     257     331 ..     191     260 ..     188     274 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 2.8e-09
+    lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpvVs 331
+                       v PV+eLv+i +++gv  + VDa +a Gq+++ +++ ++d      HK f +P++ + L vr    +   +pv+s
+  NC_015067.1_1243 191 VEPVEELVRIAHAHGV-PIHVDAVQAAGQIPIRFRDWDVDALSVSGHK-FGTPKGLGALLVRG---RTPIEPVLS 260
+                       56**************.9******************************.77899999999887...334456655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1952  (693969 residues searched)
+Passed MSV filter:                        49  (0.0251025); expected 39.0 (0.02)
+Passed bias filter:                       43  (0.0220287); expected 39.0 (0.02)
+Passed Vit filter:                         8  (0.00409836); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00102459); expected 0.0 (1e-05)
+Initial search space (Z):               1952  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 15308.50
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bifidobacterium_longum_lcdcustom.sto
+[ok]

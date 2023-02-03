@@ -1,0 +1,272 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/malY.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Anaerotruncus-colihominis-DSM-17241-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/malY/hmmer_output/Anaerotruncus-colihominis-DSM-17241-MAF-2_malY.hmm.out
+# MSA of all hits saved to file:   workflow/out/malY/hmmer_output/Anaerotruncus-colihominis-DSM-17241-MAF-2_malY.sto
+# per-dom hits tabular output:     workflow/out/malY/hmmer_output/Anaerotruncus-colihominis-DSM-17241-MAF-2_malY.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR04350  [M=384]
+Accession:   TIGR04350
+Description: C_S_lyase_PatB: putative C-S lyase
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   6.5e-129  427.8   0.0   7.5e-129  427.6   0.0    1.0  1  1_1728    # 1737456 # 1738619 # 1 # ID=1_1728;partial=00;star
+      4e-48  161.8   0.0    4.6e-48  161.6   0.0    1.0  1  1_1375    # 1392178 # 1393404 # -1 # ID=1_1375;partial=00;sta
+    4.1e-47  158.5   0.0    4.9e-47  158.2   0.0    1.0  1  1_966     # 955249 # 956418 # -1 # ID=1_966;partial=00;start_
+    9.4e-30  101.4   0.0    1.1e-29  101.1   0.0    1.0  1  1_306     # 316465 # 317631 # 1 # ID=1_306;partial=00;start_t
+    2.1e-23   80.5   0.0    2.7e-23   80.1   0.0    1.1  1  1_1886    # 1896224 # 1897423 # -1 # ID=1_1886;partial=00;sta
+    2.1e-15   54.1   0.0    2.7e-15   53.8   0.0    1.1  1  1_2784    # 2808720 # 2809913 # 1 # ID=1_2784;partial=00;star
+    2.8e-10   37.2   0.0    3.4e-10   36.9   0.0    1.1  1  1_1740    # 1753249 # 1754319 # 1 # ID=1_1740;partial=00;star
+    2.2e-09   34.3   0.0    2.7e-09   34.0   0.0    1.1  1  1_1805    # 1821934 # 1822986 # -1 # ID=1_1805;partial=00;sta
+  ------ inclusion threshold ------
+      0.038   10.5   0.0      0.056    9.9   0.0    1.2  1  1_1571    # 1609908 # 1611053 # 1 # ID=1_1571;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1728  # 1737456 # 1738619 # 1 # ID=1_1728;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.556
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  427.6   0.0  1.9e-131  7.5e-129       1     383 [.       4     383 ..       4     384 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 427.6 bits;  conditional E-value: 1.9e-131
+  TIGR04350   1 fdrvidRegtdseKydlreelfgredvlPlWvADmDlaapeavlealkkRleHpvlGYtllpdslleavvewlakrhdweiekedlvllpgvvpslsaav 100
+                fd++idR+g +s K+d r    g++ +lP+WvAD D+++ + v +al+k +eH+++GYtl p+ + +a+++w++ rh++ei++e++++l g+ +++s+av
+     1_1728   4 FDEAIDRRGHNSAKWDRRFIGEGKDALLPFWVADTDFRTLPEVNAALAKCVEHGIYGYTLPPEGCAAAAARWQKVRHEFEIQEEWVTFLAGIDCAISTAV 103
+                899*************999999999*************************************************************************** PP
+
+  TIGR04350 101 raltkpgeavivqtPvYpPflsavkkngRelveapLkldegkyeldleeleqkiaekarllllCsPhnPvGRvwtreEleklaelclehnvvvvsDeiHa 200
+                +a+t+pg++v++ tP+Y Pf+++v +ngR++v++p++l +g+ye+d+e+l++k++ +a+l+l+C+P+nP  R+ +reElek+ e+c+e n+v++sDeiH+
+     1_1728 104 QAFTQPGDEVLINTPIYTPFFEVVLENGRQVVSSPMRLVDGRYEFDFEDLSEKAK-TAKLFLFCNPQNPTSRALSREELEKIGEICAENNLVILSDEIHG 202
+                *****************************************************99.9******************************************* PP
+
+  TIGR04350 201 dlvykekkHiplaslseelaertvtllapgKtfnlaglnlsvvviankelrralkealervkiqeanllglvAteaAyregeewlealleylkenrelve 300
+                d+v+++++Hip+asls+ela+rt+t ++p+Ktf +agl  sv++i+nkelrr ++++ er+ + ++n lglvA++aAy++g+++ +++++yl+enr++  
+     1_1728 203 DIVFDGRRHIPIASLSPELAQRTITCTSPSKTFSVAGLVASVIIIPNKELRRRFEAVKERN-CINTNILGLVAMQAAYTHGDDYADQVTAYLQENRDFAI 301
+                ******************************************************9999888.7789********************************** PP
+
+  TIGR04350 301 evlakelpaikvtppeatyLaWldvrelglddeelkaflieeaglGlndGisfGkeGsgFmRlnlgvpretleealerlrqal 383
+                ++l++++pai+ + peat+L+W+d++ lg++ e+l++f+   agl l+ G+ + +    F+Rln+g+ r+tl+++lerl++a+
+     1_1728 302 RFLRERVPAINPIAPEATFLLWMDCSGLGIASENLESFFT-GAGLRLSGGTAYQEPTGQFVRLNFGCTRATLKAGLERLERAV 383
+                ***********************************99998.9**************99**********************996 PP
+
+>> 1_1375  # 1392178 # 1393404 # -1 # ID=1_1375;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  161.6   0.0   1.2e-50   4.6e-48      60     368 ..      79     381 ..      31     399 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 161.6 bits;  conditional E-value: 1.2e-50
+  TIGR04350  60 llpdslleavvewlakrhdweieke.dlvllpgvvpslsaavraltkpgeavivqtPvYpPflsavkkngRelveapLkldegkyeldleeleqkiaeka 158
+                + + +l + +++ ++k+++++++++ ++++ pg  ++l  a+    +pg++v+v +P Yp  +  ++  g + v++p    e+ y++ ++e+e+++++k+
+     1_1375  79 IGNPELKKLIAARIEKKYGFQLDPNrNIIINPGSDNGLIFAMMPWIEPGDEVMVHDPSYPSNFLNPELIGGATVRVPTY-PEDGYHIRIQEYEKRVTSKT 177
+                34567888899999********986379999**********************************************65.5678**************** PP
+
+  TIGR04350 159 rllllCsPhnPvGRvwtreEleklaelclehnvvvvsDeiHadlvykekkHiplaslseelaertvtllapgKtfnlaglnlsvvviankelrralkeal 258
+                +++ll +P+nP G v+tr+Ele+la++c+eh+++ v D+   d v++e++ + + +l   + ertvt+ +++K   l+g+ ++    +++   + + +a+
+     1_1375 178 KMVLLTNPNNPTGTVYTRKELEELAAFCVEHDLICVCDQAFEDTVFPEHEMVCICQLPG-MWERTVTVCSVSKGMGLSGFRVGWTYATDTIMDTYYGAAV 276
+                *****************************************************999986.99***************************99999999999 PP
+
+  TIGR04350 259 ervkiqeanllglvAteaAyregeewlealleylkenrelveevlakelpaikvtppeatyLaWldvrelglddeelkaflieeaglGlndGisfGkeGs 358
+                + +   ++++l+ +A+  A+r+ +  ++ +++y  + r++  + +++ +p ++++ pe ++ +W+d+++lg d +e++a+l +ea + lndG  +G+ G+
+     1_1375 277 NIQ--GATSTLAQLAVMPAFRDDSFIQDYMKKY-DNRRKYAYKLFNN-IPGVSMQMPESGFFVWIDISKLG-DSSEITAYLAKEALVSLNDGKFYGDMGN 371
+                888..88999***********987666666555.5666666666665.7*********************7.5566************************ PP
+
+  TIGR04350 359 gFmRlnlgvp 368
+                g +Rl  g+ 
+     1_1375 372 GHLRLIAGCF 381
+                *****99984 PP
+
+>> 1_966  # 955249 # 956418 # -1 # ID=1_966;partial=00;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.592
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.2   0.0   1.3e-49   4.9e-47      24     382 ..      30     385 ..      13     387 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 158.2 bits;  conditional E-value: 1.3e-49
+  TIGR04350  24 redvlPlWvADmDlaapeavlealkkRleHpvlGYtllpd..slleavvewlakrhdweieke.dlvllpgvvpslsaavraltkpgeavivqtPvYpPf 120
+                 +dv+ l v + D+++p  +  a  + le +   Yt ++   +l ea++ +l++r+  e +++ +l+++ g   ++ +a+ral +pg++v+v++P +  +
+      1_966  30 MDDVISLGVGEPDFKTPWNIRRAGIESLERGHTWYTANSGlmQLREAACGYLKRRFTLEYDPKkELLITVGGSEAIDIAIRALVEPGDEVLVVEPSFVCY 129
+                579**************************9999999887533789************999975268899999***********************99999 PP
+
+  TIGR04350 121 lsavkkngRelveapLklde.gkyeldleeleqkiaekarllllCsPhnPvGRvwtreEleklaelclehnvvvvsDeiHadlvykekkHiplaslseel 219
+                +  ++ +g   v +p+ + + + ++l  e+l+++i+ +++ll+l  P+nP G v +r  le++a + +  +++v+sDei a+l+y +++Hi++a +   +
+      1_966 130 TPITELTGG--VPVPIATRAeDAFRLTPEQLKAAITPRTKLLILPFPNNPTGAVMRRAHLEAIAGVLRGTDIMVLSDEIYAELTYGDERHISFAEIDG-M 226
+                888888876..556666555489************************************************************************997.* PP
+
+  TIGR04350 220 aertvtllapgKtfnlaglnlsvvviankelrralkealervkiqeanllglvAteaAyregeewlealleylkenrelveevlakelpaikvtppeaty 319
+                +ert+++++ +K++ ++g  l++++ + +  ++  k  +++ +i  a + +  A   A r+g++  e+++ +    r+l+ + l+++   +++ +pe+++
+      1_966 227 KERTILVQGFSKSYAMTGWRLGYAAGPAPVIKQMTK--IHQFSIMCAPTTSQYAAVEALRNGDADIEEMRGQYDMRRRLLVDGLNRM--GLDCFSPEGAF 322
+                ************************999998876544..44555777777788888889***************************97..9********** PP
+
+  TIGR04350 320 LaWldvrelglddeelkaflieeaglGlndGisfGkeGsgFmRlnlgvpretleealerlrqa 382
+                 ++  +r+ gl+ +++   l+e  ++ + +G  fG++G+gF+R+  + + + l eal+r+ + 
+      1_966 323 YVFPSIRSTGLSSSDFCMRLLEAERVAVVPGDAFGESGEGFVRISYSYSVNHLLEALKRIDRF 385
+                ***********************************************************9875 PP
+
+>> 1_306  # 316465 # 317631 # 1 # ID=1_306;partial=00;start_type=GTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.1   0.0   2.8e-32   1.1e-29      23     379 ..      28     381 ..       3     384 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 101.1 bits;  conditional E-value: 2.8e-32
+  TIGR04350  23 gredvlPlWvADmDlaapeavlealkk..RleHpvlGYtllp.dslleavvewlakrhdweiek.edlvllpgvvpslsaavraltkpgeavivqtPvYp 118
+                +   v+ l v   +++ ++ +++al +  R eH  + Y++ + ++l +av++w a+r++ ++++ +++v l g   +l  +    + +g+ v+v +P Yp
+      1_306  28 QGRHVVDLSVGTPNIPPAPHIIDALCEaaRDEHN-YVYAISDtEALSDAVAAWYARRYGVTLDPrSEVVSLLGSQEGLAHIALVAADEGDVVLVPDPCYP 126
+                45678888888889999999****9652377887.5677765156788999***********9725788999*******999999*************** PP
+
+  TIGR04350 119 PflsavkkngRelveapLkldegkyeldleeleqkiaekarllllCsPhnPvGRvwtreEleklaelclehnvvvvsDeiHadlvykekkHiplaslsee 218
+                 f   +  +g +l  +p ++ e+ y +dl+++ +++a+ a+l+++  P+nP   +   +  + l++++++++++v+ D+  ++lv+++++  ++      
+      1_306 127 VFGGGPLIAGAKLCYMPQRR-ENGYIIDLAAIPEEAARAAKLMVVSYPNNPTTAIAPDSFYRDLIAFARKYDIIVLHDNAYSELVFDGETCGSFLRFEG- 224
+                *****************765.567******************************************************************999987775. PP
+
+  TIGR04350 219 laertvtllapgKtfnlaglnlsvvviankelrralkealervkiqeanllglvAteaAyregeewlealleylkenrelveevlakelpaikvtppeat 318
+                +++  v  ++ +Kt+ lag  +++  + n+e  ++l +  +++      ++   A +aA +  ++  e+ ++  ++ r++++  l++      + +p at
+      1_306 225 ARDVGVEFNSLSKTYGLAGARIGFC-VGNREVVAKLAALKSNMDYGMFLPV-QKAAIAAVTGDQSCVETTRRAYQNRRDILCGRLNAI--GWPIDKPRAT 320
+                88999******************85.6888988888888888866655444.557778888888889999999999999999999885..77889***** PP
+
+  TIGR04350 319 yLaWldvrelglddeelkaflieeaglGlndGisfGkeGsgFmRlnlgvpretleealerl 379
+                + +W  +    ++ ++++  l+e+a + + +G  fG +G+g +Rl l   ++ ++ a++ +
+      1_306 321 MFVWAKLPPRFTNAQQFAVELLERADVLVTPGSAFGPSGEGHVRLALVQDEAEMRYAIDAI 381
+                ********99889999********************************9999999998776 PP
+
+>> 1_1886  # 1896224 # 1897423 # -1 # ID=1_1886;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1   0.0   6.8e-26   2.7e-23      15     381 ..      24     396 ..      18     399 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 6.8e-26
+  TIGR04350  15 ydlreelfgredvlPlWvADmDlaapeavlealkkRle.....HpvlGYtllpd.s.lleavvewlakrhdweiekedlvllpgvvpslsaavraltkpg 107
+                 d+ ++ + ++ ++ + + D  l+ ++av+ea++  ++         GY   +  + l ea+ ++   + + +++++++ ++ g  + +   ++ l + +
+     1_1886  24 VDTFAKAHPEKKIIRMGIGDVTLPLAPAVTEAMHTAADelgkaETFRGYGPEQGyAfLREAIRDY-YAKNGVRLQSDEIFVSDGAKSDVGN-ITDLFAVD 121
+                5666778888999********************98875222223566886544313144555555.56678*********99998777765.66666789 PP
+
+  TIGR04350 108 eavivqtPvYpPflsavkkngRelveapLkldegkyeldleeleqkiaekarllllCsPhnPvGRvwtreEleklaelclehnvvvvsDeiHadlvyk.e 206
+                ++v+v +PvYp ++ +    gR+++ +  ++d+g   +     +++++  a l+ lCsP+nP G v++re l++ ++ +le + v++ D     ++ + +
+     1_1886 122 NTVLVPDPVYPVYVDTNIMDGRRIIYMDANADNGFLPMP----DRSVH--ADLIYLCSPNNPTGAVYSREQLAEWVAYALENRAVILFDAAYEAFIGDeG 215
+                9**************************999999976665....33444..7799***********************************99988886625 PP
+
+  TIGR04350 207 kkHiplaslseelaertvtllapgKtfnlaglnlsvvviankelrra.......lkealervkiqeanllglvAteaA...yre.geewlealleylken 295
+                  H   a   + +++ ++   + +Kt  ++g  +++ v++ + +++a       l+++ +r + ++ n ++++  +aA   ++e g +  ++  +y k n
+     1_1886 216 LPHSIYAV--PGAEKCAIEFCSLSKTAGFTGTRCAYTVVPYALEQTAadgtllsLNRMWNRRQTTKFNGVSYIVQRAAaavFSEeGIRQAREAIAYYKGN 313
+                67777665..4468999**********************97766554222222266777888888999999885554433377668888999999***** PP
+
+  TIGR04350 296 relveevlakelpaikvtppeatyLaWldvrelglddeelkaflieeaglGlndGisfGkeGsgFmRlnlgvpretleealerlrq 381
+                ++++++++ +     ++     +  +W+++ +  ++  ++   l+e+a +   +G+ fG++G+g+ Rl    +re+ eea++r+r+
+     1_1886 314 AAVIAKTFDS--LGFRYFGGLHSPYIWMECPDG-MKSWDFFDLLLEKAAVVGTPGAGFGSNGEGYFRLTGFGSREQTEEAMQRMRA 396
+                ********98..5889988889999*****985.899999999****99999****************977788889******986 PP
+
+>> 1_2784  # 2808720 # 2809913 # 1 # ID=1_2784;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.578
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.8   0.0   6.9e-18   2.7e-15      65     379 ..      74     388 ..      62     392 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 53.8 bits;  conditional E-value: 6.9e-18
+  TIGR04350  65 lleavvewlakrhdweie.kedlvllpgvvpslsaavraltkpgeavivqtPvYpPflsavkkngRelveapLkldegkyeldleeleqkiaekarl.ll 162
+                l +a+ +++++++ + +   +dl++++g  +++ +a +a+ ++g++v+  +P +   l+  ++ + +lv + ++ d     l+ ++leq+i ++ ++ ll
+     1_2784  74 LRDALKRMVQTHYAIPLSaDDDLIVISGAQQGMDLAAKAFVNEGDTVLCEDPSFIGSLNCFRSYNCNLVGVGMESDG----LNTAKLEQAIIKNQKVkLL 169
+                55677788899999987615689************************************************999884....7788888885555554133 PP
+
+  TIGR04350 163 lCsP..hnPvGRvwtreEleklaelclehnvvvvsDeiHadlvykekkHiplaslseelaertvtllapgKtfnlaglnlsvvvianke.lrralkeale 259
+                +  P  +nP G   ++e  ++++++c+eh+v+v+ D+  +dl ++++   p+ s+    + +++ + + +K    +g+ +++v+ +++  ++ ++ ++++
+     1_2784 170 YTIPnfQNPTGITTSAEKRREILRICREHGVMVLEDNPYGDLRFSGEPVAPIKSMDT--DGAVIYVGSFSKIL-APGMRVGFVLAPKAViAKMTVGKQCA 266
+                3444338**********************************************9986..78899999999987.59********9988625778899999 PP
+
+  TIGR04350 260 rvkiqeanllglvAteaAyregeewlealleylkenrelveevlak.elpaikvtppeatyLaWldvrelglddeelkaflieeaglGlndGisfGkeGs 358
+                 v+ + ++++ +     A  + +++le+l+   ++  +l+ e++ +  +p ++ t+p+++  +W  + +   d  ++ +  +   ++ + +G+ f ++ s
+     1_2784 267 DVHTNMLAQMICDRW-LATCDLSAHLERLRGIYRRKCRLMLECIDReFAPCVTHTTPDGGLFLWCTLPDG-ADMLDFCSRAV-AQKVAVVPGVAFLANES 363
+                996655555544333.4555677889999998888888877777651689**************987654.33333333333.34677788888866554 PP
+
+  TIGR04350 359 ...gFmRlnlgvpr.etleealerl 379
+                      R+n+++p+ e + e+++rl
+     1_2784 364 dpcQSFRMNFSTPTdEAIVEGCKRL 388
+                2223568888887624566666665 PP
+
+>> 1_1740  # 1753249 # 1754319 # 1 # ID=1_1740;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.9   0.0   8.8e-13   3.4e-10      62     265 ..      60     251 ..      53     310 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 36.9 bits;  conditional E-value: 8.8e-13
+  TIGR04350  62 pdslleavvewlakrhdweiekedlvllpgvvpslsaavraltkpgeavivqtPvYpPflsavkkngRelveapLkldegkyeldleeleqk.iaekarl 160
+                pd +++ ++e +a    +++ ++++v  +g    + ++v+ +t+pg+ +i+++P +  ++   + +g  +++++L +d+ + eld ++l q+  +++arl
+     1_1740  60 PDPYCTELCEAFAGF--FSVAPSHVVAGNGSDELIGLIVNWFTNPGDVMITVSPDFSMYAFYAQPCG--VRHIALDKDAFSLELDADRLIQTaRENNARL 155
+                555566666655554..47888889999999999999*****************9987777777666..566789*************988735679*** PP
+
+  TIGR04350 161 lllCsPhnPvGRvwtreEleklaelclehnvvvvsDeiHadlvykekkHiplaslseelaertvtllapgKtfnlaglnlsvvviankelrralkealer 260
+                +++ +P nP     +++ +++++e     +++vv+De   d+        +l s +  + +++++l + +K+f +a++ l+++v a+++l  alk+a + 
+     1_1740 156 VMFSNPCNPTSLCASQDAVRRVVEAL--PGCLVVVDEAYMDFA-----EGSLLSKTG-TYRNMIVLKTFSKAFGMAAIRLGFAV-AHPTLAIALKAAKSP 246
+                *********************99965..689*********998.....334555554.6889*******************986.577888888777766 PP
+
+  TIGR04350 261 vkiqe 265
+                 ++++
+     1_1740 247 YNVNT 251
+                66655 PP
+
+>> 1_1805  # 1821934 # 1822986 # -1 # ID=1_1805;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.51
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.0   0.0   6.9e-12   2.7e-09      80     296 ..      63     269 ..      28     297 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 34.0 bits;  conditional E-value: 6.9e-12
+  TIGR04350  80 eiekedlvllpgvvpslsaavraltkpgeavivqtPvYpPflsavkkngRelveapLkldegkyeldleeleqkiaekarllllCsPhnPvGRvwtreEl 179
+                ++ k+++ + +g +  ++  v+al       +++ P +  + +a    g ++  ++L + ++ ++l  e++ +ki+    +++lC+P+nP G    +  l
+     1_1805  63 AVPKDWIHFGNGAADLIFRFVQALRP--RRALTLAPTFSEYERALAAVGCSISYHTLYE-KDAFRLT-ETIIKKINPALDVVILCNPNNPTGQPADQALL 158
+                56677888888888888888888753..3567888888888888888888888888865.4567774.788889999999******************** PP
+
+  TIGR04350 180 eklaelclehnvvvvsDeiHadlvykekkHiplaslseelaertvtllapgKtfnlaglnlsvvviankelrralkealervkiqeanllglvAteaAyr 279
+                 ++++ c++ +vv++ De    +  ++++ +    l+  +  ++ +l a +K + lagl l+++++a+ e  +a+      ++i+  ++++ vA  a   
+     1_1805 159 LRILKRCEACRVVLLIDECFISFLDDPNTQTMKEFLA--AYPNLAILRAFTKLYALAGLRLGYLLCADGERLHAMSICEPPWNISVPAQIAGVAALAD-- 254
+                ******************9999887777766555555..47788899**********************99999988888887776666666655442.. PP
+
+  TIGR04350 280 egeewlealleylkenr 296
+                  e +  ++++ ++++r
+     1_1805 255 --EGYVARVRQIVRQER 269
+                ..334444555555544 PP
+
+>> 1_1571  # 1609908 # 1611053 # 1 # ID=1_1571;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0   0.00014     0.056      82     196 ..      62     174 ..      15     179 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.00014
+  TIGR04350  82 ekedlvllpgvvpslsaavraltkpgeavivqtPvYpPflsavkk.ngRelveapLkldegkyeldleeleqkiaekarllllCsPhnPvGRvwtreEle 180
+                + ed+v++++   +l+++++ l + g++vi+ +     +l+ v++ + R +++ +  + + +    ++++++ i+ ++r +++ +  n  G +     ++
+     1_1571  62 DVEDVVFTQNCTYALNTVIKGLLRFGDHVIISDLEHNSVLRPVHTlATRGIITYSSACVSFDSDQTVASFRSLIRPNTRAIIVTHASNVFGTILP---IT 158
+                6899***************************987777766665542568888888888887778889999999******************9986...67 PP
+
+  TIGR04350 181 klaelclehnvvvvsD 196
+                +la+l++++++ +++D
+     1_1571 159 QLAQLARQYGLYLIVD 174
+                7788888899988888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (384 nodes)
+Target sequences:                       3516  (1040727 residues searched)
+Passed MSV filter:                        90  (0.0255973); expected 70.3 (0.02)
+Passed bias filter:                       79  (0.0224687); expected 70.3 (0.02)
+Passed Vit filter:                        15  (0.00426621); expected 3.5 (0.001)
+Passed Fwd filter:                         9  (0.00255973); expected 0.0 (1e-05)
+Initial search space (Z):               3516  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 11854.96
+//
+# Alignment of 8 hits satisfying inclusion thresholds saved to: workflow/out/malY/hmmer_output/Anaerotruncus-colihominis-DSM-17241-MAF-2_malY.sto
+[ok]

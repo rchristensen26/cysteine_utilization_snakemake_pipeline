@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysM.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-putredinis-DSM-17216-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysM/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysM.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysM/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysM.sto
+# per-dom hits tabular output:     workflow/out/cysM/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysM.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01138  [M=290]
+Accession:   TIGR01138
+Description: cysM: cysteine synthase B
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.6e-07   27.5   0.0    6.2e-06   23.0   0.0    2.1  2  1_2024    # 2194715 # 2196076 # 1 # ID=1_2024;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_2024  # 2194715 # 2196076 # 1 # ID=1_2024;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_cont=0.568
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.0   0.0   2.6e-09   6.2e-06       6     125 ..      77     198 ..      72     206 .. 0.83
+   2 !    2.3   0.0    0.0054        13     230     277 ..     362     410 ..     335     417 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 23.0 bits;  conditional E-value: 2.6e-09
+  TIGR01138   6 vGntplvrlkrllpe..edsevlvklegnnpaGsvkdrpalsmiveaekrGeikeGdvlieatsGntGialamvaalkGykvkllmpd...nvseerkaa 100
+                   tplvr   l     + ++++ k e+  p Gs k  +a+       k+G i++     e+ +G  G a++m++   G+ +k+ m +   n    rk +
+     1_2024  77 YRSTPLVRAYGLEKAldTPAKIYFKNESVSPVGSHKTNTAIPQAYYNYKQG-IRH--LTTETGAGQWGAAMSMATQHFGIDLKVFMVKvsfNQKPYRKLM 173
+                5679****987766443899*********************9999999988.564..567999*********************9976333667789*** PP
+
+  TIGR01138 101 lkayGaelilvdkeeGmeGardlar 125
+                ++++Ga+++    e    G   la+
+     1_2024 174 MNTWGADVYASPSEITAAGRAALAK 198
+                ********98877777777666665 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 0.0054
+  TIGR01138 230 veqedaediarelakkegifvGvssGgavaaalrlarel.ekavvvaii 277
+                v q ++      +a+ egi     s  a+a a+r a+   e++v  +i+
+     1_2024 362 VPQTETLAAGVLFARTEGIIPAPESAHAIAQAIREAKRAkEEGVSKTIL 410
+                44555555556689********************997651558877775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (290 nodes)
+Target sequences:                       2367  (733584 residues searched)
+Passed MSV filter:                        72  (0.0304183); expected 47.3 (0.02)
+Passed bias filter:                       54  (0.0228137); expected 47.3 (0.02)
+Passed Vit filter:                         8  (0.00337981); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000422476); expected 0.0 (1e-05)
+Initial search space (Z):               2367  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7477.27
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysM/hmmer_output/Alistipes-putredinis-DSM-17216-MAF-2_cysM.sto
+[ok]

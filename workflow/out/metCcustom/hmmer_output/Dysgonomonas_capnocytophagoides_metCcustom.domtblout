@@ -1,0 +1,24 @@
+#                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+# ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NZ_SOML01000006.1_166 -            432 metC_K01760_msa      -            479  5.1e-111  369.4   0.0   1   2   5.6e-66   2.2e-63  212.3   0.0    48   256     3   222     1   231 0.92 # 190076 # 191371 # 1 # ID=22_166;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=8bp;gc_cont=0.438
+NZ_SOML01000006.1_166 -            432 metC_K01760_msa      -            479  5.1e-111  369.4   0.0   2   2   1.1e-48   4.5e-46  155.3   0.0   272   421   275   430   269   431 0.95 # 190076 # 191371 # 1 # ID=22_166;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=8bp;gc_cont=0.438
+NZ_SOML01000001.1_429 -            417 metC_K01760_msa      -            479     7e-82  273.4   0.7   1   1   4.5e-84   1.8e-81  272.0   0.7    49   420    10   415     1   416 0.89 # 530255 # 531505 # -1 # ID=27_429;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=13bp;gc_cont=0.378
+NZ_SOML01000001.1_392 -            402 metC_K01760_msa      -            479   5.5e-07   26.4   0.0   1   1   1.9e-09   7.7e-07   25.9   0.0   115   217    92   202    84   265 0.83 # 482331 # 483536 # 1 # ID=27_392;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=4bp;gc_cont=0.386
+NZ_SOML01000007.1_215 -            407 metC_K01760_msa      -            479   1.2e-06   25.3   0.3   1   1   5.5e-09   2.2e-06   24.4   0.2   171   218   154   201   101   229 0.87 # 221882 # 223102 # -1 # ID=21_215;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.387
+NZ_SOML01000012.1_8   -            390 metC_K01760_msa      -            479   0.00019   18.0   0.0   1   1   6.9e-07   0.00027   17.5   0.0   128   228   113   220   108   235 0.70 # 7169 # 8338 # -1 # ID=16_8;partial=00;start_type=ATG;rbs_motif=TATAA;rbs_spacer=4bp;gc_cont=0.410
+NZ_SOML01000001.1_123 -            398 metC_K01760_msa      -            479   0.00042   16.9   0.0   1   1   1.6e-06   0.00063   16.3   0.0   125   217   104   204    94   207 0.72 # 139659 # 140852 # 1 # ID=27_123;partial=00;start_type=ATG;rbs_motif=AAGAA;rbs_spacer=13bp;gc_cont=0.399
+NZ_SOML01000007.1_56  -            343 metC_K01760_msa      -            479   0.00049   16.7   0.0   1   1   2.1e-06   0.00082   15.9   0.0    90   218    42   175    24   179 0.76 # 49918 # 50946 # -1 # ID=21_56;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.362
+NZ_SOML01000003.1_239 -            404 metC_K01760_msa      -            479     0.001   15.6   0.0   1   1   3.6e-06    0.0014   15.1   0.0    62   225    53   216     8   221 0.69 # 290865 # 292076 # -1 # ID=25_239;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=6bp;gc_cont=0.401
+NZ_SOML01000001.1_536 -            529 metC_K01760_msa      -            479     0.002   14.6   0.0   1   1   8.6e-06    0.0034   13.9   0.0   171   218   272   319   249   346 0.90 # 679224 # 680810 # 1 # ID=27_536;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=12bp;gc_cont=0.408
+NZ_SOML01000004.1_128 -            337 metC_K01760_msa      -            479     0.036   10.5   0.0   1   1   0.00012     0.049   10.1   0.0   176   221   120   166   109   222 0.87 # 119610 # 120620 # 1 # ID=24_128;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=15bp;gc_cont=0.397
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      config/profileHMMs/metCcustom.HMM
+# Target file:     workflow/out/prodigal/proteinSeq/Dysgonomonas_capnocytophagoides_prodigal.faa
+# Option settings: hmmsearch -o workflow/out/metCcustom/hmmer_output/Dysgonomonas_capnocytophagoides_metCcustom.hmm.out -A workflow/out/metCcustom/hmmer_output/Dysgonomonas_capnocytophagoides_metCcustom.sto --domtblout workflow/out/metCcustom/hmmer_output/Dysgonomonas_capnocytophagoides_metCcustom.domtblout config/profileHMMs/metCcustom.HMM workflow/out/prodigal/proteinSeq/Dysgonomonas_capnocytophagoides_prodigal.faa 
+# Current dir:     /Users/rebeccachristensen/Desktop/Cremer_Lab_2022/cysteine_utilization_project/main
+# Date:            Mon Aug  8 16:28:54 2022
+# [ok]

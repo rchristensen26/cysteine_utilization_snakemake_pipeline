@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Streptococcus_didelphis_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Streptococcus_didelphis_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Streptococcus_didelphis_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Streptococcus_didelphis_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+   5.7e-153  506.8   1.7   6.3e-153  506.6   1.7    1.0  1  NZ_KB904195.1_189  # 203975 # 204901 # -1 # ID=8_189;partial=
+    0.00027   16.6   0.0    0.00063   15.4   0.0    1.6  1  NZ_KB904188.1_292  # 291713 # 293041 # 1 # ID=15_292;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB904195.1_189  # 203975 # 204901 # -1 # ID=8_189;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  506.6   1.7    7e-156  6.3e-153      67     369 ..       1     305 [.       1     308 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 506.6 bits;  conditional E-value: 7e-156
+    cysK_K01738_msa  67 msriadnitelignTplvrlnrls.eg.aeiyaKlEflnPggSvKdRialsmiedAekkGllkpgttivEpTsGnTGiglAlvAaakGykli 156
+                        m +i+++itel+g+Tp+v+ln+++ eg aeiy+KlE++nPg+SvKdRial+m+e+Aek+Gl+kpg+ti+EpTsGnTGiglA+v+aakGyk+i
+  NZ_KB904195.1_189   1 MRNIYKSITELVGQTPIVKLNSIVpEGsAEIYVKLESFNPGSSVKDRIALAMLEAAEKDGLIKPGDTIIEPTSGNTGIGLAWVGAAKGYKVI 92 
+                        6679******************986888**************************************************************** PP
+
+    cysK_K01738_msa 157 lvmPetmsierrkllralGAelvltpgaegmkgaiekaeelaaetpnaflldQFeNpaNpeaHyettgpeIweqt.egkvdafVagvGTGGT 247
+                        +vmPetmsierr++++a+GAe++ltpg+egmkgai+kae la+e+ +++l+ QF+N aNp +H+  tg+eI++++ + ++dafVagvGTGGT
+  NZ_KB904195.1_189  93 IVMPETMSIERRQIIQAYGAEIILTPGSEGMKGAIKKAENLAKER-GGWLPLQFNNSANPHIHEISTGKEILNAFaDSTLDAFVAGVGTGGT 183
+                        *****************************************9999.*****************************6668************* PP
+
+    cysK_K01738_msa 248 itGvgryLkeknpdikivavePeespvlsggepgphkiqGiGagfipenldteliDeviqvsdeeaiamarrlareeGllvGiSsGanlaaA 339
+                        itGv++ Lk++ pd++++ave  es+vlsg+ep +hkiqGi agfipe+ldt+ +D++i+v++e+a+ + r++  +eG+lvGiSsGa+++aA
+  NZ_KB904195.1_189 184 ITGVSHSLKKHFPDLQVYAVEADESAVLSGKEPSSHKIQGISAGFIPEILDTKAYDHIIRVTSEDALITGRQIGSKEGFLVGISSGAAIYAA 275
+                        *****************************999************************************************************ PP
+
+    cysK_K01738_msa 340 lklakr..peagktivtilpDsgeRYlstelf 369
+                        l++a++  p  gk+++++lpDsgeRYlstel+
+  NZ_KB904195.1_189 276 LEVARKlgP--GKKVLALLPDSGERYLSTELY 305
+                        *****9655..********************9 PP
+
+>> NZ_KB904188.1_292  # 291713 # 293041 # 1 # ID=15_292;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0     7e-07   0.00063     132     211 ..     161     238 ..     157     367 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 7e-07
+    cysK_K01738_msa 132 ivEpTsGnTGiglAlvAaakGyklilvmPetmsierrkllralGAelvltpgaegmkgaiek..aeelaaetpnaflldQFe 211
+                        ++ +T+Gn Gi+  l++ + G+++i+ m+ +  + ++k lr +G  ++  +   ++++a+++  ae   + +p+++++d  +
+  NZ_KB904188.1_292 161 VMVGTTGNLGISVGLMGVSLGFEVIIHMSYDAKEWKKKYLRDHGVVVIEHK--TNFTEAVNQgrAES--DADPKSYFVDDEH 238
+                        5668****************************************9887664..33455555531333..5567777776555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       1803  (554664 residues searched)
+Passed MSV filter:                        72  (0.0399334); expected 36.1 (0.02)
+Passed bias filter:                       55  (0.0305047); expected 36.1 (0.02)
+Passed Vit filter:                        10  (0.00554631); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00110926); expected 0.0 (1e-05)
+Initial search space (Z):               1803  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 13245.99
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Streptococcus_didelphis_cysKcustom.sto
+[ok]

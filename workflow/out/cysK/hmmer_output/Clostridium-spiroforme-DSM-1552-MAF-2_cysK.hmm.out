@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysK.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Clostridium-spiroforme-DSM-1552-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysK/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_cysK.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysK/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_cysK.sto
+# per-dom hits tabular output:     workflow/out/cysK/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_cysK.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01139  [M=298]
+Accession:   TIGR01139
+Description: cysK: cysteine synthase A
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   4.5e-127  420.4   1.4   5.1e-127  420.3   1.4    1.0  1  1_572     # 668105 # 669019 # -1 # ID=1_572;partial=00;start_
+    2.9e-21   73.0   1.3    4.7e-21   72.3   1.3    1.4  1  1_2107    # 2269851 # 2271053 # -1 # ID=1_2107;partial=00;sta
+    4.8e-13   46.0   3.7    3.4e-06   23.5   0.0    2.2  2  1_1731    # 1830485 # 1831675 # 1 # ID=1_1731;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_572  # 668105 # 669019 # -1 # ID=1_572;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.297
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  420.3   1.4  6.5e-130  5.1e-127       2     298 .]       8     303 ..       7     303 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 420.3 bits;  conditional E-value: 6.5e-130
+  TIGR01139   2 seliGntPlvrLn...laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkl 98 
+                 e+iG+tPl++++    a+++k +++ k+e++nP++svkdr++l++i++a +++l+++++ti+e+tsGntGi+la+ +a  g kliltmpetms+er+kl
+      1_572   8 LETIGKTPLIEIDrfkEATNIKNNLYTKVEFFNPGGSVKDRVGLNLIKQAYQDKLIDENTTIIEPTSGNTGIGLAIACAIYGNKLILTMPETMSIERQKL 107
+                589*******99964455678899**************************************************************************** PP
+
+  TIGR01139  99 lkayGaelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvaveP 198
+                lkayGa+lvLt+g++gm+ga++ka++l++e  n++ ++ qf np np ih +tta ei+ d+++k+d fvag+GtGGtitGv++vlkek p+ik++aveP
+      1_572 108 LKAYGANLVLTEGKKGMQGAVDKANSLANEIENTF-IPGQFVNPNNPLIHIETTALEIIDDFNDKIDYFVAGIGTGGTITGVSKVLKEKYPEIKIIAVEP 206
+                ********************************999.**************************************************************** PP
+
+  TIGR01139 199 aespvlsggkpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakklekdkkivvilpdtgerYlstaLf 298
+                ++sp++s+gk+g+h iqGiga+fiP++Ld ++idevi+++ +ea++++r lak+eG+lvGissGaa+aaa k+   ++++k+ivv+lpdtgerYlstaLf
+      1_572 207 SDSPLISKGKAGSHGIQGIGANFIPEILDLNIIDEVITIDLDEAYQMSRLLAKKEGLLVGISSGAALAAASKL---PGENKNIVVLLPDTGERYLSTALF 303
+                **********************************************************************987...5678*******************9 PP
+
+>> 1_2107  # 2269851 # 2271053 # -1 # ID=1_2107;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.3   1.3     6e-24   4.7e-21       2     202 ..      15     207 ..      14     303 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 72.3 bits;  conditional E-value: 6e-24
+  TIGR01139   2 seliGntPlvrLn.laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkllk 100
+                 e+i +t l++ +   +e+  +v++k e l+ +++ k r a++ i + +++ ++k    ++ + +Gn   ++a+ a + g k++++mp+   l + +  k
+     1_2107  15 DEVIDETRLIHSEaFSNECGNDVYIKPENLQKTGAFKIRGAYNKIIKLDDDAKMK---GLIASSAGNHAQGVAYAAKKLGVKATICMPAHTPLIKVEATK 111
+                57899*******989999*******************************999986...48**************************************** PP
+
+  TIGR01139 101 ayGaelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvavePae 200
+                a+Ga++vL    e    a +ka el ++++  y +++ f+++   e  + t a eil++l +  d+++  +G GG i+G++ + k+ +p++k+++veP+ 
+     1_2107 112 AHGAKVVLHG--EVYDEAYAKAVELQKKEG--YTFIHPFDDEDIIE-GQGTIALEILEELPD-TDVILVPIGGGGLIAGIACAAKQINPNVKIYGVEPEG 205
+                ********75..45678999**********..767999*9986655.6899********986.599********************************86 PP
+
+  TIGR01139 201 sp 202
+                ++
+     1_2107 206 AA 207
+                54 PP
+
+>> 1_1731  # 1830485 # 1831675 # 1 # ID=1_1731;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.363
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   1.4   8.6e-09   6.7e-06      19     198 ..      69     257 ..      61     271 .. 0.74
+   2 !   23.5   0.0   4.4e-09   3.4e-06     233     291 ..     323     381 ..     308     386 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 22.6 bits;  conditional E-value: 8.6e-09
+  TIGR01139  19 akaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkl....lkayGaelv.Ltdgae 113
+                + a++++k e ln +++ k     +++ +a  ++++ k + i e+ +G  G+a a  aa  + + ++ m e  ++ +  l    ++ +Ga+++ +  g+ 
+     1_1731  69 NGAKIYLKREDLNHTGAHKI---NNVLGQALLAKKMGKTRLIAETGAGQHGVATATAAALMNMECVIFMGEEDTIRQA-LnvyrMRLLGAKVIpVKTGTA 164
+                56899999999999998775...47788899999999999*****************************998776543.22234899*****94556888 PP
+
+  TIGR01139 114 gmkgaieka.eelveetpnkylllkq.fenpanpei...hrkttapeilkdldgk....ldafvagvGtGGtitG.vgevlkekkpdikvvaveP 198
+                  k a+++a +e +++  ++++ l         p+i    ++  ++ei +++ +k     da++a vG G    G   + +kek  +ik++++e 
+     1_1731 165 TLKDAVSEAmREWTSQINDTHYCLGSvMGPHPFPTIvrdFQAIISKEIKEQILEKegrlPDAIIACVGGGSNAIGsFHHFIKEK--NIKLIGCEA 257
+                999***9994577777776655544404433445541115667789999987555455569*******9986555156677765..677788776 PP
+
+  == domain 2  score: 23.5 bits;  conditional E-value: 4.4e-09
+  TIGR01139 233 evikvsdeeaietarrlakeeGilvGissGaavaaalkvakklekdkkivvilpdtger 291
+                e +++sd+ea++    lak eGi+  i s  a+a a+k+a  + kdk ivv l+  g++
+     1_1731 323 EYVAISDDEAVNAFEYLAKTEGIIPAIESAHAIAYAMKIAPAMPKDKIIVVTLSGRGDK 381
+                56899**********************************************99988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (298 nodes)
+Target sequences:                       2349  (731971 residues searched)
+Passed MSV filter:                       118  (0.0502341); expected 47.0 (0.02)
+Passed bias filter:                       76  (0.0323542); expected 47.0 (0.02)
+Passed Vit filter:                         7  (0.00297999); expected 2.3 (0.001)
+Passed Fwd filter:                         3  (0.00127714); expected 0.0 (1e-05)
+Initial search space (Z):               2349  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4674.31
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/cysK/hmmer_output/Clostridium-spiroforme-DSM-1552-MAF-2_cysK.sto
+[ok]

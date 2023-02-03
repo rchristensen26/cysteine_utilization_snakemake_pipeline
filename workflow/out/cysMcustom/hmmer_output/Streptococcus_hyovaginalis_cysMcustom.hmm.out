@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Streptococcus_hyovaginalis_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Streptococcus_hyovaginalis_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Streptococcus_hyovaginalis_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Streptococcus_hyovaginalis_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+   1.2e-102  340.4   0.3   1.3e-102  340.2   0.3    1.0  1  NZ_ATVP01000008.1_104  # 87220 # 88140 # -1 # ID=30_104;parti
+     0.0012   14.6   0.1      0.002   13.9   0.1    1.2  1  NZ_ATVP01000013.1_34   # 20068 # 21552 # -1 # ID=25_34;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_ATVP01000008.1_104  # 87220 # 88140 # -1 # ID=30_104;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  340.2   0.3  1.3e-105  1.3e-102      30     321 ..       5     305 ..       1     306 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 340.2 bits;  conditional E-value: 1.3e-105
+        cysM_K12339_msa  30 yktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvk 117
+                            y+++++l+G+TP+v+l+rl +++ +e+++KlE +NP+ SVKdR+al+mi++ae++g+i+pgdt++E+TSGNTGi La ++a+kgyk++
+  NZ_ATVP01000008.1_104   5 YDNITKLVGQTPIVKLNRLVPEDAAEVYVKLESFNPGSSVKDRIALQMIEDAEKEGKITPGDTIVEPTSGNTGIGLAWVGAAKGYKIV 92 
+                            779************************************************************************************* PP
+
+        cysM_K12339_msa 118 lvmpenaseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqte.gkvthfVsgmGT 204
+                            +vmp+++s er++ ++ayGAel+lt+ +egm ga+ +a+e+a+e+ ++v+ Qf+Np+Npk H +tTg+Ei++  +   ++ +Vsg+GT
+  NZ_ATVP01000008.1_104  93 IVMPDTMSVERRKLIQAYGAELVLTPGSEGMKGAIAKAKEIAQERDGWVPLQFSNPSNPKVHEQTTGEEILDIFGeTGLDAVVSGVGT 180
+                            ***********************************************************************9977577********** PP
+
+        cysM_K12339_msa 205 tGTimGvsryLkeqnpavqivglqPeegssipG.......irrwpeaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSs 285
+                            +GTi+Gvs++Lk  np++ +v+++++e   + G       i+ +++ + p++ d + + ++ +v++++A ++ r + ++eg++vG+Ss
+  NZ_ATVP01000008.1_104 181 GGTITGVSKVLKAANPNIAVVAVEADESPVLSGgnpgphkIQGISAGFIPEVLDTAAYTEISRVKSDDALKTGRIVGEKEGFLVGISS 268
+                            **************************99999775555555556688999*************************************** PP
+
+        cysM_K12339_msa 286 Ggavaaalrlaeeleea.viVaivcDrgdrYlstgvf 321
+                            G+a++aa++ a+el ++  + ai++D+g+rYlst ++
+  NZ_ATVP01000008.1_104 269 GAAIYAAIEKAKELGSGkKVLAILPDNGERYLSTALY 305
+                            *************9666599**************986 PP
+
+>> NZ_ATVP01000013.1_34  # 20068 # 21552 # -1 # ID=25_34;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.1   1.9e-06     0.002      82     162 ..     127     210 ..     118     228 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 1.9e-06
+       cysM_K12339_msa  82 eergeikpgdtliEaTSGNTGi.ALamiaaikgykvklvmpenaseerk..aamrayGAeliltdkeegmegardlaeelaaeg 162
+                            +++ ++ + +++ aTSG TG  A+a +a + g ++ ++ p+n   + +  ++ ++ G + +++  ++ ++ a+  ++++ ++ 
+  NZ_ATVP01000013.1_34 127 AKKQGVDTKIVILTATSGDTGKaAMAGFADVPGTEIIVFYPKNGVSKIQelQMTTQKGQNTHVVAIDGNFDDAQTEVKRMFNDA 210
+                           4555577888999********736999****************87655411334566777777777888888888888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2060  (598707 residues searched)
+Passed MSV filter:                        82  (0.0398058); expected 41.2 (0.02)
+Passed bias filter:                       57  (0.0276699); expected 41.2 (0.02)
+Passed Vit filter:                         7  (0.00339806); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000970874); expected 0.0 (1e-05)
+Initial search space (Z):               2060  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 16332.06
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Streptococcus_hyovaginalis_cysMcustom.sto
+[ok]

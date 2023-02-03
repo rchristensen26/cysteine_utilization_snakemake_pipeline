@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Caldicoprobacter_faecalis_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Caldicoprobacter_faecalis_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Caldicoprobacter_faecalis_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Caldicoprobacter_faecalis_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+   4.3e-112  371.6   0.1   4.9e-112  371.5   0.1    1.0  1  NZ_FOXR01000053.1_5   # 4107 # 5042 # 1 # ID=35_5;partial=00;
+    8.8e-17   58.0   0.3    3.2e-10   36.4   0.1    2.7  2  NZ_FOXR01000002.1_65  # 71642 # 72826 # -1 # ID=86_65;partial
+    5.6e-05   19.2   0.0    8.3e-05   18.7   0.0    1.1  1  NZ_FOXR01000036.1_4   # 2879 # 4387 # 1 # ID=52_4;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_FOXR01000053.1_5  # 4107 # 5042 # 1 # ID=35_5;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  371.5   0.1    6e-115  4.9e-112      31     323 ..       6     310 ..       1     311 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 371.5 bits;  conditional E-value: 6e-115
+      cysM_K12339_msa  31 ktledliGnTPLvrlqrlagkk..gveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvkl 118
+                          k+l+dliGnTPL++l++ ++++  ++++ aKlE +NP+GSVKdR+ ++mi++ae+rg i++++t+iE+TSGNTGiALa++aa+kgy++ l
+  NZ_FOXR01000053.1_5   6 KKLTDLIGNTPLLELTNYNKANglKARLIAKLEYFNPGGSVKDRIGFAMIEDAERRGLIDKNSTIIEPTSGNTGIALALVAAAKGYRLIL 95 
+                          589**************9997544899*************************************************************** PP
+
+      cysM_K12339_msa 119 vmpenaseerkaamrayGAeliltdkeegmegardlaeelaaeg.kyfvldQfaNpdNpkaHyetTgpEiwrqtegkvthfVsgmGTtGT 207
+                           mp+++s er++ ++a+GAel+lt+ +egm ga+++aeelaa+    f+++Qf+Np+Np+ H +tT++Eiwr+t+g+v+ fV+g+GT+GT
+  NZ_FOXR01000053.1_5  96 TMPDTMSLERRSLLKALGAELVLTPGAEGMRGAIKKAEELAASIpGSFMPQQFKNPANPEIHRRTTAEEIWRDTDGEVDIFVAGVGTGGT 185
+                          *******************************************9999******************************************* PP
+
+      cysM_K12339_msa 208 imGvsryLkeqnpavqivglqPeegssipGirrwpeay.......lpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGgava 290
+                          ++Gv+++Lk+++p+v++++++P +   + G +  p+++        p++ + s +D+v++v++e+A+++ r+la++eg++vG+SsG+a++
+  NZ_FOXR01000053.1_5 186 LTGVGEVLKQRKPDVKVIAVEPFDSPVLSGGKPGPHKIqgigagfIPEVLNTSIIDEVITVKTEDAYNTSRTLAKTEGLLVGISSGAAAF 275
+                          **********************999999987766554311222228******************************************** PP
+
+      cysM_K12339_msa 291 aalrlaeeleea..viVaivcDrgdrYlstgvfee 323
+                          aa ++a++ e++  +iV+i++D+g+rYlst++f+e
+  NZ_FOXR01000053.1_5 276 AATQVAKRKENEgkTIVVILPDTGERYLSTDLFKE 310
+                          ******99755445*******************86 PP
+
+>> NZ_FOXR01000002.1_65  # 71642 # 72826 # -1 # ID=86_65;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   0.1     4e-13   3.2e-10      23     230 ..      36     258 ..      16     265 .. 0.78
+   2 !   18.4   0.0   1.2e-07    0.0001     256     316 ..     322     383 ..     274     389 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 36.4 bits;  conditional E-value: 4e-13
+       cysM_K12339_msa  23 leaalmt.yk.tledliGn.TPLvrlqrlagk.kgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALam 107
+                            ++  m+ y+  l ++ G+ TPL   q+l++k +g+++++K E  N +G  K   +l  i  a    ++ +++++ E   G  G+A a 
+  NZ_FOXR01000002.1_65  36 QDEDFMQeYRyYLREYAGRpTPLYFAQNLTEKlSGAKVYLKREDLNHTGAHKINNVLGQILLA---KRMGKKRVIAETGAGQHGVATAT 121
+                           34444543333588999988********998768*******************9999999888...5566899**************** PP
+
+       cysM_K12339_msa 108 iaaikgykvklvmpenaseerka...amrayGAelilt......dkeegmegardlaeelaaeg..kyfvldQfaNpdNpkaHyetTgp 185
+                            aa+ g++++++m ++  + +      mr +GA+++ +       k+   e+ rd ++++++     + v+  +  p  ++   +  g+
+  NZ_FOXR01000002.1_65 122 GAAMFGMQCEIFMGKEDVRRQALnvfRMRLLGAKVHSVesgtgtLKDAVNEAIRDWVTRIEDTFyvMGSVVGPHPYPTIVREFQKVIGE 210
+                           *************988766554322269**********666665445566777888888888777777777788888888999999999 PP
+
+       cysM_K12339_msa 186 Eiwrq...te.gkvthfVsgmGTtGTimGvsryLkeqnpavqivglqPe 230
+                           E  +q    e +  +++++++G +   mG+ + +  ++++v+ +g++++
+  NZ_FOXR01000002.1_65 211 EARAQileKEgRLPDYVIACVGGGSNAMGIFHPFY-HDKQVKLIGVEAA 258
+                           98888544232446888899999999999999998.7779999998875 PP
+
+  == domain 2  score: 18.4 bits;  conditional E-value: 1.2e-07
+       cysM_K12339_msa 256 DrvldvsqeeAeemarrlareegifvGvSsGgavaaalrlaeeleeaviVai.vcDrgdrYl 316
+                            + + v+++eA+e+  +l r+egi+    s+ ava al+l  +l++  iV++ ++ rgd+ +
+  NZ_FOXR01000002.1_65 322 AEYVAVTDREAVEAFVELSRTEGIIPALESAHAVAYALKLVPQLPKDKIVIVnLSGRGDKDV 383
+                           46789**************************************9887666553788888765 PP
+
+>> NZ_FOXR01000036.1_4  # 2879 # 4387 # 1 # ID=52_4;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0     1e-07   8.3e-05      77     162 ..     124     211 ..     102     220 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 1e-07
+      cysM_K12339_msa  77 mikeaeergeikpgdtliEaTSGNTGi.ALamiaaikgykvklvmpen..aseerkaamrayGAeliltdkeegmegardlaeelaaeg 162
+                          m+++a+++ge k++ +++ aTSG TG  AL+ +  + g +v+++ p++  +s ++ +++++ GA+++++  e+ ++ a+  ++++ a++
+  NZ_FOXR01000036.1_4 124 MVTAAKRTGE-KDDIVILVATSGDTGKaALEGFKDVSGTHVVVFYPKEgvSSMQQLQMITQEGANVHVVAVEGNFDSAQSGVKAIFADK 211
+                          7777777776.77778888*******736*****************9833567777899***********99999*9999988887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       2431  (733706 residues searched)
+Passed MSV filter:                       102  (0.041958); expected 48.6 (0.02)
+Passed bias filter:                       82  (0.033731); expected 48.6 (0.02)
+Passed Vit filter:                        12  (0.00493624); expected 2.4 (0.001)
+Passed Fwd filter:                         3  (0.00123406); expected 0.0 (1e-05)
+Initial search space (Z):               2431  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 8899.96
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Caldicoprobacter_faecalis_cysMcustom.sto
+[ok]

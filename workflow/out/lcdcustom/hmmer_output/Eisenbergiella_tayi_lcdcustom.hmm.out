@@ -1,0 +1,122 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Eisenbergiella_tayi_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Eisenbergiella_tayi_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Eisenbergiella_tayi_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Eisenbergiella_tayi_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence               Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------               -----------
+    1.8e-16   58.5   0.0    1.6e-15   55.3   0.0    2.1  2  NZ_MCGI01000006.1_73    # 84708 # 85940 # 1 # ID=6_73;partial
+    4.7e-08   30.7   0.1    1.7e-07   28.9   0.1    1.8  1  NZ_MCGI01000008.1_114   # 146032 # 147219 # 1 # ID=4_114;part
+     0.0054   14.0   0.0     0.0076   13.5   0.0    1.2  1  NZ_MCGI01000001.1_1761  # 2138031 # 2139137 # -1 # ID=11_1761
+  ------ inclusion threshold ------
+      0.049   10.8   0.0      0.058   10.6   0.0    1.1  1  NZ_MCGI01000004.1_514   # 578875 # 579900 # -1 # ID=8_514;par
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_MCGI01000006.1_73  # 84708 # 85940 # 1 # ID=6_73;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.3   0.0     1e-18   1.6e-15      80     320 ..      10     240 ..       3     249 .. 0.82
+   2 ?    0.1   0.0     0.053        85     453     480 ..     375     402 ..     349     406 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 55.3 bits;  conditional E-value: 1e-18
+        lcd_K22207_msa  80 irseFs..hhdpsvarinnGsfgscpasvleaqqrwqlkflrqPdefyfn...elkkgilesrtaikdlinaddvdevslvdNattAaa 163
+                            r++F    +++++++++n +    pa+vlea +++  k  ++P +  ++   e +++ +++r+ ++ +++a +++e+ ++ N+t A +
+  NZ_MCGI01000006.1_73  10 FRKDFPifQQKKELIYLDNAATSQRPACVLEAERNFYEKTNANPLRGLYElglEATDAYEKARKCVQGFLHAGKAEEIIFTRNTTEALN 98 
+                           55555411355688999**99999*************99999997754432225678899***************************** PP
+
+        lcd_K22207_msa 164 ivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvks..neeivsefrkaLekgkangrkvrlAviDHi 250
+                            v  + +     +++ +gD +l+  +  ++     + +  r g++     l+f       e   +++rka++       + rlA +  +
+  NZ_MCGI01000006.1_73  99 LVAYSYG----LNRLGPGDEILVSIMEHHSNLLPWQMVSRRTGAE-----LKFLECGqdGELTEEQIRKAFT------PRTRLAAVTQV 172
+                           **99888....4588********9999999887888766666665.....7775544103444455666655......59********* PP
+
+        lcd_K22207_msa 251 tSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                           + +     P+ke+v+i +e+g   v+ DaA++  +++++v+e+++df +   HK +++P ++++Ly +++
+  NZ_MCGI01000006.1_73 173 SNVFGRENPIKEIVRIAHEHGA-VVVADAAQSAPHIPINVQELDVDFLAFSGHK-LMAPMGIGVLYGKEE 240
+                           *********************9.9999***************************.88*********9883 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 0.053
+        lcd_K22207_msa 453 itgYvRiShqvYnkvddyyklrdavnql 480
+                           +   vR S   Yn+ ++  ++ +   q+
+  NZ_MCGI01000006.1_73 375 VPSTVRASISFYNTAEEIRAFTESLSQV 402
+                           55669**************999988877 PP
+
+>> NZ_MCGI01000008.1_114  # 146032 # 147219 # 1 # ID=4_114;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.1     1e-10   1.7e-07     127     320 ..      42     218 ..       4     227 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 1e-10
+         lcd_K22207_msa 127 nelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievel 214
+                            +e kk+i + r++i+  ++a+  +e+ ++   + A +  L++va + a    +kg  +++ ++  +aV +++e  +++ g ++  v++
+  NZ_MCGI01000008.1_114  42 TESKKAISQVRETIAGTLGAA-NNEIYFTAGGSEADNWALKAVAEAYA----SKGKHIITSKIEHHAVLHTCEY-LEKNGCEITYVNV 123
+                            567899*************99.58*****************9996666....99*****************986.8999999887776 PP
+
+         lcd_K22207_msa 215 pfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNl 302
+                                 +++ iv+   + Lek  a   +  l  i +       + P+ke+ +i r+++v     Da +a Gq++++v+e   d   +  
+  NZ_MCGI01000008.1_114 124 -----DENGIVKL--DELEK--AIRPDTILISIMYANNEIGTIQPIKEIGEIARKHNV-LFHTDAVQAYGQLPINVDECSIDMLSASG 201
+                            .....45667654..44555..44556777778899999*******************.889************************** PP
+
+         lcd_K22207_msa 303 HKWffcPpsvAfLyvrks 320
+                            HK +  P++++fLy+rk 
+  NZ_MCGI01000008.1_114 202 HK-LNGPKGIGFLYIRKG 218
+                            **.89***********95 PP
+
+>> NZ_MCGI01000001.1_1761  # 2138031 # 2139137 # -1 # ID=11_1761;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_space
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   4.7e-06    0.0076     266     375 ..     155     267 ..     141     286 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 4.7e-06
+          lcd_K22207_msa 266 icreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkska..sdlhhpvVshe.ygn..glaiesawiGt 347
+                             ++++ g  + +VDa  + G v++ v e+g df +s   K +   p+ +f+ ++++k   s+ +   +s + y++   + ++  w  t
+  NZ_MCGI01000001.1_1761 155 VVKKAGK-TFIVDAMSSFGGVDIPVGELGIDFLISSANKCIQGVPGFSFIIANREKLmeSKGKARSLSLDlYDQweTMEKDGKWRFT 240
+                             5566665.789***************************************9999755445555555544413333345555556666 PP
+
+          lcd_K22207_msa 348 rDysaqlvvpavleFvnrfeggiegirk 375
+                                   l+   +le +++ eggie+  +
+  NZ_MCGI01000001.1_1761 241 SPTHVVLAFARALEEMEE-EGGIEARNR 267
+                             666666666666664444.566665444 PP
+
+>> NZ_MCGI01000004.1_514  # 578875 # 579900 # -1 # ID=8_514;partial=00;start_type=GTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   3.6e-05     0.058     419     491 ..      18      97 ..      11     166 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3.6e-05
+         lcd_K22207_msa 419 sdedalkLrthLreefkvevpiyyrapkegevea.......itgYvRiShqvYnkvddyyklrdavnqlvedgftcklls 491
+                            s+ da  +r+ L e+++ e+p+ +r    g  +         t ++RiS     +++dy++  ++ n l+++g++++   
+  NZ_MCGI01000004.1_514  18 SQFDAEDIRKELLERYGMEMPVECRLFDYGMNDIyriktkkETYFLRISLAGLHTKKDYEEEMHILNILIQNGIKAAAPV 97 
+                            677999****************888665443222455666699***************************9998775333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       6402  (2239479 residues searched)
+Passed MSV filter:                       206  (0.0321774); expected 128.0 (0.02)
+Passed bias filter:                      171  (0.0267104); expected 128.0 (0.02)
+Passed Vit filter:                        22  (0.00343643); expected 6.4 (0.001)
+Passed Fwd filter:                         4  (0.000624805); expected 0.1 (1e-05)
+Initial search space (Z):               6402  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.06
+# Mc/sec: 18291.05
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Eisenbergiella_tayi_lcdcustom.sto
+[ok]

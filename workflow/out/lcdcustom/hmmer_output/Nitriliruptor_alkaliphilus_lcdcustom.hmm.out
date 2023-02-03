@@ -1,0 +1,148 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Nitriliruptor_alkaliphilus_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Nitriliruptor_alkaliphilus_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Nitriliruptor_alkaliphilus_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Nitriliruptor_alkaliphilus_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.8e-14   51.6   0.0    1.6e-13   48.4   0.1    2.2  2  NZ_KQ033901.1_3222  # 3486307 # 3487542 # 1 # ID=1_3222;parti
+      2e-09   34.9   0.0    2.9e-09   34.4   0.0    1.1  1  NZ_KQ033901.1_3168  # 3423612 # 3424790 # -1 # ID=1_3168;part
+      8e-05   19.7   0.2    0.00012   19.1   0.2    1.2  1  NZ_KQ033901.1_3862  # 4189249 # 4190406 # 1 # ID=1_3862;parti
+    0.00017   18.6   0.2    0.00021   18.4   0.2    1.1  1  NZ_KQ033901.1_1208  # 1278223 # 1278816 # 1 # ID=1_1208;parti
+  ------ inclusion threshold ------
+      0.024   11.6   0.0      0.033   11.1   0.0    1.1  1  NZ_KQ033901.1_2230  # 2384949 # 2386106 # 1 # ID=1_2230;parti
+      0.082    9.8   0.2       0.12    9.3   0.2    1.1  1  NZ_KQ033901.1_2271  # 2441678 # 2442916 # -1 # ID=1_2271;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KQ033901.1_3222  # 3486307 # 3487542 # 1 # ID=1_3222;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.4   0.1   1.9e-16   1.6e-13     113     319 ..      49     242 ..       6     255 .. 0.78
+   2 ?   -0.4   0.0      0.12     1e+02     430     474 ..     354     399 ..     350     404 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 48.4 bits;  conditional E-value: 1.9e-16
+      lcd_K22207_msa 113 wqlkflrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvt 203
+                         w +  ++       +e ++  +  rta++dl++ad+   v+l+ Nat A + v  ++     + ++++gDa+l++ +  +a    + +  +
+  NZ_KQ033901.1_3222  49 WSRSNVHRGVYALAEEATDLYEGGRTALADLVDADR-RGVVLTKNATEACNLVAYSWV----RRNLREGDALLTTGMEHHANLVPFLHASK 134
+                         444555555666667777777889**********95.69**************98776....5678***********99997777777677 PP
+
+      lcd_K22207_msa 204 raggsvievelpfpvksneei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvf.VDaAhaiGqvevdvke 292
+                         + g +v +    +p++++ +   ++ r+  +     + kvr+A + H++ +   +  V+   +i+re + d ++ VD+A+a+ q++v +++
+  NZ_KQ033901.1_3222 135 DLGFEVRQ----IPITEDGQLdLDAARDLVA-----DGKVRFAGVVHVSNVLGTINDVAAVAAIVREANPDCIVhVDGAQAVPQMPVSFRD 216
+                         77777654....4555554441444444444.....57*******************************997555**************** PP
+
+      lcd_K22207_msa 293 igAdfYtsNlHKWffcPpsvAfLyvrk 319
+                         +g+dfY+   HK ++ P +++ L +r+
+  NZ_KQ033901.1_3222 217 LGVDFYVVTGHK-MCGPTGIGALIARP 242
+                         ************.99*****9999888 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.12
+      lcd_K22207_msa 430 Lreefkvevpiyyrapk.egeveaitgYvRiShqvYnkvddyyklr 474
+                         + ++++v v + ++  k   ++  + + vR S   Yn  dd + l 
+  NZ_KQ033901.1_3222 354 MLDQHGVCVRVGHHCAKpLMRTLGVNATVRASLYLYNGEDDLQPLL 399
+                         4588888888855544432233358999*************88775 PP
+
+>> NZ_KQ033901.1_3168  # 3423612 # 3424790 # -1 # ID=1_3168;partial=00;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.4   0.0   3.3e-12   2.9e-09     135     319 ..      62     230 ..      47     247 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 34.4 bits;  conditional E-value: 3.3e-12
+      lcd_K22207_msa 135 esrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeiv 225
+                         + rt++++l++   ++ev++v+Na+ A +  + ++a      ++++   +l+  + Yg+  +++ea ++ ag + +ev +    ++ +   
+  NZ_KQ033901.1_3168  62 QVRTSLARLLGVT-AEEVAIVENASRAWQLTVGALA-----RRWRPAGRLLTWRTEYGS--NVMEA-LALAGRRDVEVAVLPDDAQGRVDL 143
+                         6699999999998.79***********999999887.....5677999**********8..67777.577899999999977777777779 PP
+
+      lcd_K22207_msa 226 sefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLy 316
+                         +++++aL++      +v +  + H  S+  vv P +e  +  r+ gv   ++D  +++Gq++v +   gAd  ++   K +  P++++fL 
+  NZ_KQ033901.1_3168 144 DALDDALDD------RVAMIALTHAPSIDGVVQPAAEVGRRARAAGV-PFVLDVCQSVGQLDVTLPGTGADVLVGTGRKFLRGPRGTGFLA 227
+                         999999998......89999999************************.8999**************************************9 PP
+
+      lcd_K22207_msa 317 vrk 319
+                         vr 
+  NZ_KQ033901.1_3168 228 VRG 230
+                         997 PP
+
+>> NZ_KQ033901.1_3862  # 4189249 # 4190406 # 1 # ID=1_3862;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.2   1.4e-07   0.00012     257     315 ..     161     217 ..     147     226 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 1.4e-07
+      lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfL 315
+                         + PV e  ++c + g     VDa +++Gqv + v ++gAd  t+   K f  P++v+fL
+  NZ_KQ033901.1_3862 161 IQPVVEVARACAHVGA-LLHVDACQSVGQVGLAVSDLGADLLTASAAK-FGGPRAVGFL 217
+                         56*************9.9******************************.7899999999 PP
+
+>> NZ_KQ033901.1_1208  # 1278223 # 1278816 # 1 # ID=1_1208;partial=00;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.2   2.4e-07   0.00021     274     329 ..      14      64 ..       2      83 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 2.4e-07
+      lcd_K22207_msa 274 qvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpv 329
+                           + Da +a G ++v       d  ++  +KW+ +P+++Af++vr+   ++lh+ v
+  NZ_KQ033901.1_1208  14 MTLADATQACGWLPVAASRF--DVVVAGAYKWLLSPRGTAFMFVRP---DRLHDLV 64 
+                         56778888888887776665..778999******************...5566532 PP
+
+>> NZ_KQ033901.1_2230  # 2384949 # 2386106 # 1 # ID=1_2230;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   3.8e-05     0.033     199     319 ..     108     220 ..      87     246 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 3.8e-05
+      lcd_K22207_msa 199 eayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevd 289
+                         + +++rag++v+ ve p     +    ++f +aL++    +   rl+ + H    +    P +eL +++r+ +    +VD   ++G v+++
+  NZ_KQ033901.1_2230 108 ADTAERAGADVVRVEEPWGRIIP---TDRFATALDA----HPGARLVAVVHAETSTGAHQPLEELGALLRDTDT-LLLVDTVTGLGGVPLE 190
+                         56678888888877766654443...3689999999....8889999999999999999**************9.9*************** PP
+
+      lcd_K22207_msa 290 vkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                         v++ g d  +s   K +  Pp+ A +    
+  NZ_KQ033901.1_2230 191 VDAWGLDVVYSGTQKCLSVPPGLAPITFSA 220
+                         **********************99665444 PP
+
+>> NZ_KQ033901.1_2271  # 2441678 # 2442916 # -1 # ID=1_2271;partial=00;start_type=GTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   0.2   0.00014      0.12     265     320 ..     186     241 ..     181     250 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00014
+      lcd_K22207_msa 265 kicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsv.AfLyvrks 320
+                         ++ ++ g    + D  h+ G + vd+++ +Ad  ++  +K +   p++ AfLy  ++
+  NZ_KQ033901.1_2271 186 RAAHDVGA-VTVWDLSHSTGALAVDLHAWDADLAVGCTYKYLDGGPGApAFLYLARR 241
+                         55555555.445599***************************8766544****9884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       5218  (1687558 residues searched)
+Passed MSV filter:                       150  (0.0287466); expected 104.4 (0.02)
+Passed bias filter:                      142  (0.0272135); expected 104.4 (0.02)
+Passed Vit filter:                        15  (0.00287466); expected 5.2 (0.001)
+Passed Fwd filter:                         6  (0.00114987); expected 0.1 (1e-05)
+Initial search space (Z):               5218  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
+# Mc/sec: 18346.41
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Nitriliruptor_alkaliphilus_lcdcustom.sto
+[ok]

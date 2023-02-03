@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Helicobacter_bilis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Helicobacter_bilis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Helicobacter_bilis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Helicobacter_bilis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    9.2e-15   51.4   0.0    1.4e-14   50.8   0.0    1.1  1  NZ_KB822505.1_187  # 203245 # 204411 # -1 # ID=17_187;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB822505.1_187  # 203245 # 204411 # -1 # ID=17_187;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.8   0.0   5.8e-18   1.4e-14     125     320 ..      39     220 ..      24     230 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 50.8 bits;  conditional E-value: 5.8e-18
+     lcd_K22207_msa 125 yfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgD.avlmlhyaYgaVkksieayvtraggsvievelp 215
+                        y +e +++i+e+ +++ + i+add d+v ++  at   + v++ v   f e   +kg   ++++++   aV+ ++   ++  g +v      
+  NZ_KB822505.1_187  39 YGTETHPAIAEAIEKLYKGIDADDNDDVIITSCATESNNWVIKGVY--FDEI-VKKGKkHIVTTEVEHPAVRATCSF-LESLGVEVT----Y 122
+                        5567788899999999999************************776..6644.5555527999*********99988.677777766....5 PP
+
+     lcd_K22207_msa 216 fpvksneeiv.sefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWf 306
+                        +p++ +  i  +++r+aL++      +  l+ i +    + +++P++e+ ++cr++gv     Da +aiG+++v vk+ ++df     HK f
+  NZ_KB822505.1_187 123 LPINAQGTITtEQVREALRE------DTALVSIMWANNETGLIFPIEEIGALCRQKGV-LFHTDAVQAIGKIPVSVKKANVDFLSFSAHK-F 206
+                        67777777761568999999......7899999*************************.889****************************.8 PP
+
+     lcd_K22207_msa 307 fcPpsvAfLyvrks 320
+                          P++v+ Ly+rk 
+  NZ_KB822505.1_187 207 HGPKGVGGLYIRKG 220
+                        9***********94 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2389  (717892 residues searched)
+Passed MSV filter:                       120  (0.0502302); expected 47.8 (0.02)
+Passed bias filter:                       54  (0.0226036); expected 47.8 (0.02)
+Passed Vit filter:                         4  (0.00167434); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000418585); expected 0.0 (1e-05)
+Initial search space (Z):               2389  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 19935.73
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Helicobacter_bilis_lcdcustom.sto
+[ok]

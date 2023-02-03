@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Veillonella-sp-6-1-27-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Veillonella-sp-6-1-27-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Veillonella-sp-6-1-27-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Veillonella-sp-6-1-27-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.3e-20   70.4   1.1    3.7e-20   68.9   1.1    1.7  1  1_1078    # 1222696 # 1223925 # -1 # ID=1_1078;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1078  # 1222696 # 1223925 # -1 # ID=1_1078;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.9   1.1   1.9e-23   3.7e-20      86     383 ..      18     309 ..       9     402 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 68.9 bits;  conditional E-value: 1.9e-23
+  lcd_K22207_msa  86 hhdpsvarinnGsfgscpasvleaqqrwqlkflrqPd...efyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegk 177
+                     h+ ++v++++ G+   +p+sv+++  ++  +   +P+   +    e  +  +++r+ + ++ina++ +ev ++ N t  ++ + ++ +++     
+          1_1078  18 HNGHRVIYLDSGATAQIPQSVIDRVVEHMTQRNGNPHrgsHILAIEASEDYENARDRVVEFINAREREEVIFTRNSTESMNLIAHSYGLHN---- 108
+                     677799*****************99888888876665222789999***************************************999655.... PP
+
+  lcd_K22207_msa 178 fqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkan..grkvrlAviDHitSmpsvvlPVkeLvkicree 270
+                      +kgD ++++    +a   + + ++++ g++     l++ + +++         L++g  n  ++k +++ + H++ +  + +PVkeL++  ++ 
+          1_1078 109 VKKGDKIVITVAEHHANLVTWQYVAEQTGAT-----LEYMYLDEH-------GHLKDGEINkiDEKTKIVAFAHVSNVLGMEFPVKELTEKAHSV 191
+                     59*******9999999888887777777776.....444444433.......2333333332268999*************************** PP
+
+  lcd_K22207_msa 271 gvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhhpvV....shey.......gnglaiesawiGtrDysaql 354
+                     g   v++D+A++  + ++dv+++++df++   HK +++ +++++Ly +++   +   p +      ey        n l+ ++   Gt      +
+          1_1078 192 GA-IVVLDGAQSTPHKKIDVQALDCDFFVFSGHK-MCASQGIGVLYGKRD-LLETMPPFLlggdMIEYvkeqtatFNELPYKF-EAGTPNADGAV 282
+                     *9.9******************************.9**********9993.32333333334444444322111223343333.57888888888 PP
+
+  lcd_K22207_msa 355 vvpavleFvnrfeggiegirkrnhelvve 383
+                     ++ a++++++ f  g+++i+++  elv  
+          1_1078 283 SLHAAIDYLESF--GMDAIEAYEEELVAY 309
+                     888888888888..888888888888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1914  (630937 residues searched)
+Passed MSV filter:                        69  (0.0360502); expected 38.3 (0.02)
+Passed bias filter:                       54  (0.0282132); expected 38.3 (0.02)
+Passed Vit filter:                         6  (0.0031348); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000522466); expected 0.0 (1e-05)
+Initial search space (Z):               1914  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6882.74
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Veillonella-sp-6-1-27-MAF-2_lcdcustom.sto
+[ok]

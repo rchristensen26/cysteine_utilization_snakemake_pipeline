@@ -1,0 +1,127 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/metCcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-ihumii-AP11-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/metCcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_metCcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/metCcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_metCcustom.sto
+# per-dom hits tabular output:     workflow/out/metCcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_metCcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       metC_K01760_msa  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   4.1e-101  336.0   0.1    3.9e-57  191.0   0.0    2.0  2  1_966     # 1182765 # 1184051 # -1 # ID=1_966;partial=00;star
+    8.7e-07   24.9   0.0    1.3e-06   24.3   0.0    1.2  1  1_1041    # 1277210 # 1278433 # -1 # ID=1_1041;partial=00;sta
+    4.1e-06   22.7   0.0    5.8e-06   22.2   0.0    1.2  1  1_1258    # 1539407 # 1540612 # 1 # ID=1_1258;partial=00;star
+  ------ inclusion threshold ------
+      0.017   10.8   0.0      0.023   10.3   0.0    1.2  1  1_185     # 226269 # 227432 # 1 # ID=1_185;partial=00;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_966  # 1182765 # 1184051 # -1 # ID=1_966;partial=00;start_type=ATG;rbs_motif=AAGAA;rbs_spacer=3bp;gc_cont=0.632
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  191.0   0.0   6.8e-60   3.9e-57      49     256 ..       7     223 ..       1     232 [. 0.93
+   2 !  143.3   0.0   1.9e-45   1.1e-42     271     419 ..     269     423 ..     260     428 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 191.0 bits;  conditional E-value: 6.8e-60
+  metC_K01760_msa  49 kleTklvhagrdp..tgavnppiyraSTvlfksvael....arr.geydYgrsgnptrealeeaiaeLeggarallfpSGlaAisavllallka 135
+                      ++eT  vhag  p  t++  +p+y+++ + f+s+++     a r +   Y+r +npt++ le+++a+Legg +al+++SG +A  ++l+++l++
+            1_966   7 EFETLQVHAGYTPdaTHSRVTPLYQTTAYTFDSAEHGadlfALReSGNIYTRLQNPTTDMLEKRVAALEGGPAALAVSSGHSAQLVALTSILSP 100
+                      589********766899***************88777656644554589********************************************* PP
+
+  metC_K01760_msa 136 GDhvlvtddvYgptrrllekvlkrlgievtfvdpti.aeiealirpntklvylEsPgsptlevqDipaiaaiakahgalvavDNTwat.pllfk 227
+                      GD+++ +  +Yg+t++ ++ vl+++g+e++f      + +e+li p+t+++y+E+ g+p + v+D  a+aa+a+++++ ++vDNT+++ ++l++
+            1_966 101 GDNFVSSPYLYGGTHNQFKIVLRNFGLECRFAPDNDpQHMESLIDPRTRAIYVETIGNPSFAVPDFGALAALARRYDLPLIVDNTFGAgGYLCR 194
+                      ********************************88855*************************************************8736**** PP
+
+  metC_K01760_msa 228 PlelGvDivihsaTKYlgGhsDvlaGlvv 256
+                      P+e+G+ +v++saTK+lgGh   + G++v
+            1_966 195 PIEYGAAVVVESATKWLGGHGTSMGGVIV 223
+                      **************************998 PP
+
+  == domain 2  score: 143.3 bits;  conditional E-value: 1.9e-45
+  metC_K01760_msa 271 nalGavlspddaylvlRglktLavRleqhqenAlkiaewLeehpevarVlyPalpshpghelwkrdfk.gagglfsfelk.seeavkafvdalk 362
+                      + lG+++sp++++++++g++tL++R+++ ++nAl++a+++++hp v++V+yP+l+++p+hel+ r  + g+g+++s++lk ++ +++ +vd+l+
+            1_966 269 RDLGCCISPFNSFMIMQGIETLSLRVQREADNALALARYFKAHPLVEQVFYPGLEDDPHHELAARYLRhGFGCVLSVVLKgDKRQTESLVDHLR 362
+                      679****************************************************************549************************ PP
+
+  metC_K01760_msa 363 lfgigvSwGGveSlv.lpakmlrshasipk.eree.g..t.lvRlsvGlEdveDLiaDleqal 419
+                      l++  +  G  ++l+ +pa +  +h+++++ e+++ g  + l+R+s G+E+++DLi+D+eqa+
+            1_966 363 LVSHLANVGDNRTLIiQPAAT--THSQLSEeEQRAaGvlPtLLRISAGIEHIDDLIRDFEQAF 423
+                      **************99*****..*****9875555575438*********************9 PP
+
+>> 1_1041  # 1277210 # 1278433 # -1 # ID=1_1041;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=13bp;gc_cont=0.645
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.3   0.0   2.3e-09   1.3e-06     111     217 ..      83     200 ..      45     213 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 24.3 bits;  conditional E-value: 2.3e-09
+  metC_K01760_msa 111 ggarallfpSGlaA.isavlla....llkaGDhvlvtddvYgptrrllekvlkrlgievtfvdpt.i.a....eiealirpntklvylEsPgsp 193
+                      g +r ++f+SG+ A i++v  +    ++++GD+v+ t+     +    + + +r g e ++   + + a     + +li ++t++v++ + +++
+           1_1041  83 GSTREIVFTSGATAsINLVAYSfggrFVREGDNVITTEMEHHSNIVPWQMLCERKGAELRVLPFDdAgAletgRLDELIDSRTRIVCVTQASNV 176
+                      348889999*986537777766334469**********999999999999999999999998655332233457889***************** PP
+
+  metC_K01760_msa 194 tlevqDipaiaaiakahgalvavD 217
+                      +   +D++a++++a+++g+ v+vD
+           1_1041 177 LGTRPDLRAVVDAAHRKGVPVLVD 200
+                      ***********************9 PP
+
+>> 1_1258  # 1539407 # 1540612 # 1 # ID=1_1258;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=9bp;gc_cont=0.604
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.2   0.0     1e-08   5.8e-06     116     217 ..      93     202 ..      45     206 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 22.2 bits;  conditional E-value: 1e-08
+  metC_K01760_msa 116 llfpSGlaAisavllallkaGDhvlvtddvYgptrrllekvlkrl.gievtfv....dptiaeiealirpntklvylEsPgsptlev...qDip 201
+                      +++  G  Ai ++++ +l++GD+vlv++  Y   + ++ +   ++  i+ t+      p ++e+e+li+ +tk++++ +P +pt  v   q  +
+           1_1258  93 VITVGGSEAIFMAMTICLNPGDEVLVPEPFYANYNGFAMEAGVNIkPISSTIAndfaLPPMEEFERLITTRTKAILICNPNNPTGYVyseQEYE 186
+                      6777899******999*********************9887655523444444211044459*********************97663336688 PP
+
+  metC_K01760_msa 202 aiaaiakahgalvavD 217
+                      ++ +i+ +h++ +++D
+           1_1258 187 QLKNIVLKHDLYLMAD 202
+                      8888888888888888 PP
+
+>> 1_185  # 226269 # 227432 # 1 # ID=1_185;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.607
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0     4e-05     0.023     116     217 ..      87     198 ..      45     211 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 4e-05
+  metC_K01760_msa 116 llfpSGla.AisavllallkaGDhvlvtddvYgptrrl.....lekvlkrlgievtfvdptiaeie.alirpntklvylEsPgsptlev...qD 199
+                      +l+++G+  A+sav+ al  +GD+v+v+  +Y+  ++      +e + +rl  e   +  + +++e ++  p+ kl++l +P +p  +v     
+            1_185  87 ILYTTGVVpALSAVIKALTVPGDRVIVQTPAYNCFYSSirnngCELLANRLRYEGGAYTIDFDDLEtKASDPKAKLLLLCNPHNPVGRVwtrEE 180
+                      5677775439******************999987765422222777889999999999988888884566799************999944456 PP
+
+  metC_K01760_msa 200 ipaiaaiakahgalvavD 217
+                      ++++ +i+ +hg+ v++D
+            1_185 181 LRRLGEICLRHGVRVVAD 198
+                      9999999*******9999 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (479 nodes)
+Target sequences:                       2273  (779138 residues searched)
+Passed MSV filter:                        78  (0.0343159); expected 45.5 (0.02)
+Passed bias filter:                       71  (0.0312363); expected 45.5 (0.02)
+Passed Vit filter:                        18  (0.00791905); expected 2.3 (0.001)
+Passed Fwd filter:                         4  (0.00175979); expected 0.0 (1e-05)
+Initial search space (Z):               2273  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8972.59
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/metCcustom/hmmer_output/Alistipes-ihumii-AP11-MAF-2_metCcustom.sto
+[ok]

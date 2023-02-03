@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Brachymonas_chironomi_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Brachymonas_chironomi_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Brachymonas_chironomi_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Brachymonas_chironomi_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    3.3e-09   33.1   0.0      1e-06   24.9   0.0    2.0  2  NZ_KB894771.1_120  # 116681 # 117895 # 1 # ID=29_120;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB894771.1_120  # 116681 # 117895 # 1 # ID=29_120;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.0   0.00019      0.46     130     206 ..      48     118 ..      40     138 .. 0.84
+   2 !   24.9   0.0   4.2e-10     1e-06     265     322 ..     168     223 ..     153     241 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00019
+     lcd_K22207_msa 130 kkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtrag 206
+                        ++++ ++r+++++linad + e+  +  at   +  ++ +a +f     ++g  ++++++  +aV  ++++ ++r+g
+  NZ_KB894771.1_120  48 EDAVDNAREQVAALINAD-AREIIWTSGATESDNLAIKGAA-QFY---KSRGKHLITVKTEHKAVLDTMRE-LERQG 118
+                        6778899**********9.57999999**********9877.565...36799999999999999988887.46665 PP
+
+  == domain 2  score: 24.9 bits;  conditional E-value: 4.2e-10
+     lcd_K22207_msa 265 kicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkska 322
+                        ++cre+g+    VDaA+a G++++dv+++  d      HK ++ P++++ Lyvr++  
+  NZ_KB894771.1_120 168 ALCREKGI-IFHVDAAQATGKTPIDVQSLPIDLMSLASHK-VYGPKGIGALYVRRKPR 223
+                        79******.788****************************.9************9743 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2380  (761601 residues searched)
+Passed MSV filter:                        61  (0.0256303); expected 47.6 (0.02)
+Passed bias filter:                       54  (0.0226891); expected 47.6 (0.02)
+Passed Vit filter:                         4  (0.00168067); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000420168); expected 0.0 (1e-05)
+Initial search space (Z):               2380  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 22508.06
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Brachymonas_chironomi_lcdcustom.sto
+[ok]

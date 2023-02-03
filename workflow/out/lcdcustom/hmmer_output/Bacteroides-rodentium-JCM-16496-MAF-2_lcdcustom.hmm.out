@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-rodentium-JCM-16496-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bacteroides-rodentium-JCM-16496-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bacteroides-rodentium-JCM-16496-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bacteroides-rodentium-JCM-16496-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.6e-28   97.6   0.0    2.6e-28   96.9   0.0    1.2  1  1_1131    # 1523184 # 1524446 # 1 # ID=1_1131;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_1131  # 1523184 # 1524446 # 1 # ID=1_1131;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=12bp;gc_cont=0.524
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.9   0.0   6.2e-32   2.6e-28      92     473 ..      40     409 ..      24     418 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 96.9 bits;  conditional E-value: 6.2e-32
+  lcd_K22207_msa  92 arinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDa 183
+                     ++++nG+    p++v++a  +    +   ++   +f  ++ ++  ++sr++++++ina++ +e++++  +t  ++  + +++ +f     q+gD 
+          1_1131  40 VYLDNGATTQKPRCVVDAITDEYYSVnanVHRGVHFLSQQATELHEASRETVRRFINARSTNEIVFTRGTTESINLLVSSFGEEFM----QEGDE 130
+                     4688888888888888887655433322367789*********************************************8887776....9**** PP
+
+  lcd_K22207_msa 184 vlmlhyaYgaVkksieayvtraggsvievelpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfV 277
+                     v++  +  ++     + + + + g  i+v   +p+++  e   +e+r+ +++      + r++ + H++ +   v PVke+++  +e+gv  v+V
+          1_1131 131 VILSVMEHHSNIVPWQLL-AAKRGIAIKV---IPMNDkGELLLDEYRQLFSE------RTRIVSVAHVSNVLGTVNPVKEMIAFAHEQGV-PVLV 214
+                     998888777744444444.4444555555...4566515677899*999888......99******************************.9*** PP
+
+  lcd_K22207_msa 278 DaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks.ka..sdlhh.....pvVsh.eygnglaiesa...wiGtrDysaqlvvpavl 360
+                     D+A++i +++vdv++++Adf++   HK ++ P +v++Ly +++  +             ++ h ++++   +e       Gt Dy   + + ++l
+          1_1131 215 DGAQSIPHMPVDVQDLDADFFVFSAHK-VYGPTGVGVLYGKEEwLDriP---PyqgggEMIQHvSFEKTTFNELPfkfEAGTPDYIGTTGLAKAL 305
+                     ***************************.9************96322231...2334554443324444444443311158*************** PP
+
+  lcd_K22207_msa 361 eFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveai 453
+                     ++v+ +  g+++i ++  el + +++ L+e  g ++    e   s+i        +    +          ++ ++ v +  ++ +p  +++  i
+          1_1131 306 DYVSLV--GMDKIAAYERELTQYAMQRLKEIPGMRIFGEAEDKGSVISFLVGDIHHFDMGTLL--------DRLGIAVRTghHCAQPLMQRL-GI 389
+                     ****96..**************************99888888888777766643333333333........444555555212222333333.47 PP
+
+  lcd_K22207_msa 454 tgYvRiShqvYnkvddyykl 473
+                      g vR S   Yn++++   l
+          1_1131 390 EGTVRASFGLYNTREEIDVL 409
+                     78889999999999987666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       4178  (1502980 residues searched)
+Passed MSV filter:                       129  (0.030876); expected 83.6 (0.02)
+Passed bias filter:                      101  (0.0241742); expected 83.6 (0.02)
+Passed Vit filter:                         9  (0.00215414); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000239349); expected 0.0 (1e-05)
+Initial search space (Z):               4178  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 18623.60
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bacteroides-rodentium-JCM-16496-MAF-2_lcdcustom.sto
+[ok]

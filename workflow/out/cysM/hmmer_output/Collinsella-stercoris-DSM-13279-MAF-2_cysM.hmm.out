@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysM.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Collinsella-stercoris-DSM-13279-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysM/hmmer_output/Collinsella-stercoris-DSM-13279-MAF-2_cysM.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysM/hmmer_output/Collinsella-stercoris-DSM-13279-MAF-2_cysM.sto
+# per-dom hits tabular output:     workflow/out/cysM/hmmer_output/Collinsella-stercoris-DSM-13279-MAF-2_cysM.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01138  [M=290]
+Accession:   TIGR01138
+Description: cysM: cysteine synthase B
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.6e-93  308.5   0.2    6.6e-93  308.2   0.2    1.0  1  1_62      # 79044 # 79982 # 1 # ID=1_62;partial=00;start_type
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_62  # 79044 # 79982 # 1 # ID=1_62;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.701
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  308.2   0.2   3.2e-96   6.6e-93       2     290 .]       8     310 ..       7     310 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 308.2 bits;  conditional E-value: 3.2e-96
+  TIGR01138   2 ilklvGntplvrlkrllpe..edsevlvklegnnpaGsvkdrpalsmiveaekrGeike..GdvlieatsGntGialamvaalkGykvkllmpdnvseer 97 
+                + +l+G tpl+ l  l  e   ++ vlvkle +npaGsvkdr al m+ eae  G i +  G ++ie tsGntG+ la +aa++Gy++ ++mpd +s+er
+       1_62   8 VDQLIGKTPLLELAGLEREldLKARVLVKLERQNPAGSVKDRVALNMLNEAEAAGLIAPhsGYTIIEPTSGNTGVGLAALAAARGYRLVIAMPDTMSAER 107
+                6799************999656789********************************764499************************************* PP
+
+  TIGR01138  98 kaalkayGaelilvdkeeGmeGardlarelvrkgeek.lldqfnnpdnpkahytstGieiwqqtkGrithfvsslGttGtimGvsrflkeqnpavqivGl 196
+                +a l ayGael+l+   +Gm+Ga+  a+el+r+ ++  +  qf+np+npkah t+tG+eiwq t+G +  fv+++Gt+Gti+Gv+r+lk qnpav++v +
+       1_62 108 RALLAAYGAELVLTPGAQGMKGAIARAEELARETPKSwIAGQFTNPSNPKAHETTTGPEIWQDTDGAVEVFVAGVGTGGTITGVGRYLKRQNPAVRVVAV 207
+                **********************************9986789*********************************************************** PP
+
+  TIGR01138 197 qpaegsaieG.......lrrieseylpgifdaslvdrvvdveqedaediarelakkegifvGvssGgavaaalrlarelek..avvvaiicdrGdrylst 287
+                +pa +  + G       ++ i + + p + d ++ d+++ v +eda  + r la+k g++ G+ssG+a +aa++la+  e+    +va+++d G+rylst
+       1_62 208 EPASSPVLSGgaagphaIQGIGAGFVPSVLDTAVYDEIIPVVNEDALATGRMLARKAGVLAGISSGAATWAAIELAKRPENagKTIVALLPDTGERYLST 307
+                **9876655434444448889999*****************************************************88874469*************** PP
+
+  TIGR01138 288 gvf 290
+                ++f
+       1_62 308 ALF 310
+                *98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (290 nodes)
+Target sequences:                       2048  (696697 residues searched)
+Passed MSV filter:                        79  (0.0385742); expected 41.0 (0.02)
+Passed bias filter:                       64  (0.03125); expected 41.0 (0.02)
+Passed Vit filter:                         4  (0.00195312); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488281); expected 0.0 (1e-05)
+Initial search space (Z):               2048  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6035.85
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysM/hmmer_output/Collinsella-stercoris-DSM-13279-MAF-2_cysM.sto
+[ok]

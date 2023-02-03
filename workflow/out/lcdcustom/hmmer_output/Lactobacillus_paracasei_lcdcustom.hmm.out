@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Lactobacillus_paracasei_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Lactobacillus_paracasei_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Lactobacillus_paracasei_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Lactobacillus_paracasei_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    3.4e-15   53.0   3.5    5.3e-12   42.5   3.3    2.4  2  NC_014334.2_1054  # 1137713 # 1138909 # 1 # ID=1_1054;partial
+    0.00093   15.3   0.1     0.0069   12.4   0.1    1.9  1  NC_014334.2_1157  # 1238227 # 1239390 # 1 # ID=1_1157;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_014334.2_1054  # 1137713 # 1138909 # 1 # ID=1_1054;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   3.3   3.9e-15   5.3e-12     131     319 ..      57     230 ..      49     239 .. 0.82
+   2 !    7.8   0.0   0.00013      0.18     443     478 ..     354     388 ..     289     392 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 42.5 bits;  conditional E-value: 3.9e-15
+    lcd_K22207_msa 131 kgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksnee 223
+                       ++ ++ r++++ +++a+++de+ ++  +t   + v  + + ++       g  ++++    ++     +++++r+ +++   +++   +   +
+  NC_014334.2_1054  57 EAYENVRQQVAGFLGAASADEIIFTRGTTDSLNLVASAYGPQVV----TAGSQIVVTGAEHHSNFIPWQQLAKRQQATFTVTPVKPDGTV--D 143
+                       55667788999999999999999999999999999888886666....888999999999998888889999999998776655544433..3 PP
+
+    lcd_K22207_msa 224 ivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLy 316
+                       i +     L++      + +++ +  +t +   +lP++++ +  ++ g   v+VD+A+a+ ++ vdv+++gAdfY+   HK ++ P ++++Ly
+  NC_014334.2_1054 144 IAA----LLAA---ITPQTKVVAVAQVTNVAGDTLPIAKIAAKAHAVGA-VVVVDGAQAVAHLAVDVQAMGADFYAFSGHK-IYGPTGIGVLY 227
+                       333....3333...355788889999**********************9.9******************************.9********** PP
+
+    lcd_K22207_msa 317 vrk 319
+                        r 
+  NC_014334.2_1054 228 GRA 230
+                       998 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.00013
+    lcd_K22207_msa 443 rapkegeveaitgYvRiShqvYnkvddyyklrdavn 478
+                        +p   ++  + + vR S  vYn+ dd+++l +av+
+  NC_014334.2_1054 354 AQPLMARL-GVPATVRASFGVYNNADDVERLIQAVQ 388
+                       33333333.367789*******************97 PP
+
+>> NC_014334.2_1157  # 1238227 # 1239390 # 1 # ID=1_1157;partial=00;start_type=ATG;rbs_motif=AGGAG/GGAGG;rbs_spacer=11-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.1   5.1e-06    0.0069     123     319 ..      37     216 ..      14     225 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 5.1e-06
+    lcd_K22207_msa 123 efyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelp 215
+                       +++ ++ ++ + +sr++++d i+a+   +++++  at   ++ + q+a+     + + g  ++++ +   +V + ++a +++ g +v      
+  NC_014334.2_1157  37 HWFGRTAHTVMDKSRKILADAIHAQP-GNMVITSGATESNNTAITQTAHT----RASLGKHIITTAIEHPSVLQPLKA-LEKEGFRVT----Y 119
+                       788888999999************96.7899999***********99955....4588999**************999.577777766....6 PP
+
+    lcd_K22207_msa 216 fpvksneei.vsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWff 307
+                       +pv +n +i  + f++aL++      +  l+ i          +P+ e+ + + ++       Da +a G +++dv++   d      HK + 
+  NC_014334.2_1157 120 LPVDENGRIsLADFDAALDD------DTILVTIMMGNNEVGSRMPISEIGARLVDHQA-WFHTDATQAFGLLDIDVQAQHIDMLSVSAHK-IN 204
+                       78888888856899999999......455666666667777789*****999999998.7899***************************.89 PP
+
+    lcd_K22207_msa 308 cPpsvAfLyvrk 319
+                        P++++fLy  +
+  NC_014334.2_1157 205 GPKGIGFLYRDP 216
+                       9********766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2708  (820039 residues searched)
+Passed MSV filter:                       101  (0.0372969); expected 54.2 (0.02)
+Passed bias filter:                       76  (0.028065); expected 54.2 (0.02)
+Passed Vit filter:                         8  (0.00295421); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000738552); expected 0.0 (1e-05)
+Initial search space (Z):               2708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 10745.05
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Lactobacillus_paracasei_lcdcustom.sto
+[ok]

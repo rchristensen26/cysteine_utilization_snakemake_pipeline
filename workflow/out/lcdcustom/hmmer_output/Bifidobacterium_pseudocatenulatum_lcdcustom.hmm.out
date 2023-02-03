@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bifidobacterium_pseudocatenulatum_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bifidobacterium_pseudocatenulatum_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bifidobacterium_pseudocatenulatum_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bifidobacterium_pseudocatenulatum_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    9.7e-13   44.3   0.0    2.5e-11   39.7   0.0    2.0  2  NZ_CP079233.1_851  # 1022359 # 1023633 # 1 # ID=2_851;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP079233.1_851  # 1022359 # 1023633 # 1 # ID=2_851;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.7   0.0   1.4e-14   2.5e-11      93     325 ..      25     256 ..       2     289 .. 0.79
+   2 !    2.6   0.0    0.0024       4.4     453     480 ..     390     417 ..     366     419 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 39.7 bits;  conditional E-value: 1.4e-14
+     lcd_K22207_msa  93 rinnGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinadd...vdevslvdNattAaaivLqqvawsfa.... 174
+                        +++  +    p++v++a +++ + +   ++   +    + + +++e+r+++++l++a++    +e++++  at++ +    +++ + +    
+  NZ_CP079233.1_851  25 YLDSAATSQKPQCVIDAESDFYRTInagVHRGAHELAARSTMAFEEARAKVARLVGANSaegEEEIVVTSGATAGLNLLATAFGNASQgrgg 116
+                        5566666666777777777776544333344556666666778899*********998866679**********999988888765432111 PP
+
+     lcd_K22207_msa 175 ..egk..fqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVke 262
+                            +   ++gD +++ +   ++V   ++++++r g+++      f + ++ +i ++  +   +     ++ +++ + H+  ++  +  ++ 
+  NZ_CP079233.1_851 117 eaARRfaVKPGDEIVVSKAEHHSVLLPFQELAARTGATLK----WFDLDDEGRILANTADEVIT-----ERTKIVAVTHVGNTTGAITDIAP 199
+                        1123322689***************************943....58999999**9999888777.....79999****************** PP
+
+     lcd_K22207_msa 263 LvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdl 325
+                        +vk  +e g   v++Da +++ ++++d++++++df +   HK ++ P +v+fLy ++    d+
+  NZ_CP079233.1_851 200 MVKRAHEVGA-VVVLDACQSVPHLKIDLHALDVDFAAWSAHK-MYGPTGVGFLYGKR----DM 256
+                        *********9.9******************************.9**********998....33 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.0024
+     lcd_K22207_msa 453 itgYvRiShqvYnkvddyyklrdavnql 480
+                        + +  R S  +Yn v+d ++l +a +++
+  NZ_CP079233.1_851 390 VYASNRASSGIYNSVEDAQALVEALKKV 417
+                        556679*****************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1805  (650706 residues searched)
+Passed MSV filter:                        59  (0.032687); expected 36.1 (0.02)
+Passed bias filter:                       49  (0.0271468); expected 36.1 (0.02)
+Passed Vit filter:                         6  (0.0033241); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000554017); expected 0.0 (1e-05)
+Initial search space (Z):               1805  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13774.89
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bifidobacterium_pseudocatenulatum_lcdcustom.sto
+[ok]

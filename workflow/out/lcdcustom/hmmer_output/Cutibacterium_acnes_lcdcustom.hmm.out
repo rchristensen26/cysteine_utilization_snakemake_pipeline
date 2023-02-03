@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Cutibacterium_acnes_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Cutibacterium_acnes_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Cutibacterium_acnes_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Cutibacterium_acnes_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    1.2e-10   37.9   0.0    2.8e-09   33.3   0.0    2.3  1  NC_021085.1_667   # 728041 # 729282 # 1 # ID=2_667;partial=00
+    6.2e-05   19.0   0.3    0.00011   18.2   0.3    1.2  1  NC_021085.1_1851  # 1966172 # 1968133 # 1 # ID=2_1851;partial
+
+
+Domain annotation for each sequence (and alignments):
+>> NC_021085.1_667  # 728041 # 729282 # 1 # ID=2_667;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.3   0.0   2.3e-12   2.8e-09     136     477 ..      72     401 ..      61     406 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 33.3 bits;  conditional E-value: 2.3e-12
+   lcd_K22207_msa 136 srtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpfpvksneeivsefr 229
+                       r+ ++++i+a++ +ev+ + Na+ A + +  +++      ++ +gD +++  +  ++     + +++r g+++             +i +  r
+  NC_021085.1_667  72 GRERLARFIGAARPEEVVALSNASEALNLCAYTLG-----ERLGPGDEIVISVMEHHSNLVPWQIICQRTGATL----------RWFDITDDGR 150
+                      68999999999999999999999999999999887.....5677999999999999999999999999999983..........3456677777 PP
+
+   lcd_K22207_msa 230 kaLekgkang...rkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrks 320
+                        Lek+ a+g    + +++ +   + +   + P+  + +  ++ g   ++VDa +a+ q++vd+  +gAd  +   HK ++ P ++++L+ r +
+  NC_021085.1_667 151 LDLEKAEAEGlinGRTKVVSLTLASNVLGTINPIGMIAEQAHSVGA-VMVVDASQAVPQMPVDMTTLGADLVAFTGHK-MCGPTGIGILWGRYD 242
+                      77777777744335677777777777888899*************9.899****************************.9************95 PP
+
+   lcd_K22207_msa 321 kasdlhh........pvVsheygn.glaiesawiGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaeawgtelgsppemcas 405
+                        ++l           vV  e  +   +   +  Gt   +   ++  + ++++ +  g+++i ++ hel+ +m e L    g ++  p++ +a 
+  NC_021085.1_667 243 LLAELPPflgggemiEVVRMEGSTyAEPPHRFEAGTPPIAQLAALGVAADYLDGI--GMQAIAEHEHELAARMLEELQTVKGVHILGPSDATAR 334
+                      3355554666777777884444333556677789***9999999999999***98..9**************************999******* PP
+
+   lcd_K22207_msa 406 mimVgLPaklgissdedalkLrthLreefkvevpiyyrapk..egeveaitgYvRiShqvYnkvddyyklrdav 477
+                        +V +    g++  +da+++    ++ ++v v   ++  +  ++++  i   +R S   Y ++d++ +l + v
+  NC_021085.1_667 335 TGTVSFTI-EGVH-PHDAMSI----MDGHGVAVRGGHHCARplHERL-GIQSSLRASSYLYSTTDEVDRLVESV 401
+                      ******94.5665.4566654....5677888877444333324444.689999************99998877 PP
+
+>> NC_021085.1_1851  # 1966172 # 1968133 # 1 # ID=2_1851;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.3     9e-08   0.00011     250     286 ..     434     469 ..     424     470 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 9e-08
+    lcd_K22207_msa 250 itSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqv 286
+                       + Sm   v PV eLv+i +++g   v+VD Ah+iG v
+  NC_021085.1_1851 434 VYSMGGDVAPVGELVEIAHRHGA-LVVVDDAHGIGTV 469
+                       7799999***************9.9**********98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       2398  (762195 residues searched)
+Passed MSV filter:                        59  (0.0246038); expected 48.0 (0.02)
+Passed bias filter:                       54  (0.0225188); expected 48.0 (0.02)
+Passed Vit filter:                         8  (0.00333611); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000834028); expected 0.0 (1e-05)
+Initial search space (Z):               2398  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 13079.46
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Cutibacterium_acnes_lcdcustom.sto
+[ok]

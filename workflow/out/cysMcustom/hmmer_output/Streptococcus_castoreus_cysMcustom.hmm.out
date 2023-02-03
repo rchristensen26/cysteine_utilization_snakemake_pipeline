@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysMcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Streptococcus_castoreus_prodigal.faa
+# output directed to file:         workflow/out/cysMcustom/hmmer_output/Streptococcus_castoreus_cysMcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysMcustom/hmmer_output/Streptococcus_castoreus_cysMcustom.sto
+# per-dom hits tabular output:     workflow/out/cysMcustom/hmmer_output/Streptococcus_castoreus_cysMcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM_K12339_msa  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+   7.9e-103  340.7   1.1   8.9e-103  340.6   1.1    1.0  1  NZ_AUKZ01000007.1_11  # 8284 # 9216 # 1 # ID=37_11;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_AUKZ01000007.1_11  # 8284 # 9216 # 1 # ID=37_11;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  340.6   1.1  4.9e-106  8.9e-103      30     324 ..       5     308 ..       1     310 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 340.6 bits;  conditional E-value: 4.9e-106
+       cysM_K12339_msa  30 yktledliGnTPLvrlqrlagkkgveilaKlEgnNPaGSVKdRaalsmikeaeergeikpgdtliEaTSGNTGiALamiaaikgykvkl 118
+                           y+++++l+G+TP+++l++la+k+ ++i++KlE +NP+ SVKdR+al+mi++ae++g ikpgdt+iE+TSGNTGi La ++a+kgy+v +
+  NZ_AUKZ01000007.1_11   5 YHNITELVGQTPIIKLNHLAPKNAADIYVKLEAFNPGSSVKDRIALAMIESAEAKGVIKPGDTIIEPTSGNTGIGLAWVGAAKGYRVII 93 
+                           679************************************************************************************** PP
+
+       cysM_K12339_msa 119 vmpenaseerkaamrayGAeliltdkeegmegardlaeelaaegkyfvldQfaNpdNpkaHyetTgpEiwrqte.gkvthfVsgmGTtG 206
+                           vmpe++s er+++++ayGAel+lt+ +egm ga+ +ae+l++e   +++ Qf+Np+Np+ H +tTg+Ei++  +  +++ fV+g+GT+G
+  NZ_AUKZ01000007.1_11  94 VMPETMSLERRQIIQAYGAELVLTPGSEGMKGAIAKAEDLVKELGAWMPMQFNNPANPRIHEKTTGKEILEAFDnMTLDAFVAGVGTGG 182
+                           ************************************************************************98689************ PP
+
+       cysM_K12339_msa 207 TimGvsryLkeqnpavqivglqPeegssipG.......irrwpeaylpkifdpsrvDrvldvsqeeAeemarrlareegifvGvSsGga 288
+                           Ti Gvs+ Lk   p++ +++++++e + + G       i+ +++ + p+  d + +D++++v++eeA ++ar   ++eg++vG+S+G+a
+  NZ_AUKZ01000007.1_11 183 TISGVSHTLKAVYPEIAVYAVEANESAVLSGkepgphkIQGISAGFIPNTLDTKAYDHIIRVDSEEALATARLTGAKEGFLVGISAGAA 271
+                           *************************9999875555555556688899****************************************** PP
+
+       cysM_K12339_msa 289 vaaalrlaeeleea.viVaivcDrgdrYlstgvfeee 324
+                           ++aa+ +a++l ++  + a+++D+g+rYlst++++++
+  NZ_AUKZ01000007.1_11 272 IYAAIDVAKKLGKGkRVLALLPDNGERYLSTSLYNTT 308
+                           **********96654999**************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (366 nodes)
+Target sequences:                       1826  (535143 residues searched)
+Passed MSV filter:                        59  (0.0323111); expected 36.5 (0.02)
+Passed bias filter:                       44  (0.0240964); expected 36.5 (0.02)
+Passed Vit filter:                         3  (0.00164294); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000547645); expected 0.0 (1e-05)
+Initial search space (Z):               1826  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14519.28
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysMcustom/hmmer_output/Streptococcus_castoreus_cysMcustom.sto
+[ok]

@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcd.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Eubacterium-ventriosum-ATCC-27560-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcd/hmmer_output/Eubacterium-ventriosum-ATCC-27560-MAF-2_lcd.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcd/hmmer_output/Eubacterium-ventriosum-ATCC-27560-MAF-2_lcd.sto
+# per-dom hits tabular output:     workflow/out/lcd/hmmer_output/Eubacterium-ventriosum-ATCC-27560-MAF-2_lcd.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       K22207  [M=583]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    7.5e-17   58.4   0.0    5.2e-13   45.7   0.0    2.3  2  1_36      # 37019 # 38194 # -1 # ID=1_36;partial=00;start_typ
+    5.6e-09   32.4   0.0    7.1e-09   32.1   0.0    1.2  1  1_1337    # 1555193 # 1556338 # 1 # ID=1_1337;partial=00;star
+    3.5e-08   29.8   0.4    5.6e-08   29.1   0.4    1.4  1  1_1241    # 1431640 # 1432827 # 1 # ID=1_1241;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_36  # 37019 # 38194 # -1 # ID=1_36;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.367
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.7   0.0   6.2e-16   5.2e-13     150     341 ..      52     228 ..      45     237 .. 0.86
+   2 !   10.2   0.0   3.6e-05      0.03     443     503 ..     325     389 ..     318     391 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 45.7 bits;  conditional E-value: 6.2e-16
+  K22207 150 kkgilksrtlikelinaddvdevslvdnaTtaaaivlqqvawaFaegkfqkgdavvmLhyaYgaVKksieayvtraggeVievelpfPvksneeiieefrkaL 252
+             ++ i + r++  +li+ +dv +++l   aT a ++++  + w       +  d   +  +  +aV + ++   ++ g + ie +l+    +  ei   f+k  
+    1_36  52 TEIIDRTREKALKLIKGKDVADIVLTPSATIAMNVIIGGLDW-------SGADICYVSPFEHNAVMRPLHLISEKYGFDLIELPLKS---ETLEID--FEKME 142
+             5779999**********************************9.......5567777778999*******************998876...444553..44444 PP
+
+  K22207 253 ekgkan.grrvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrkss 341
+                 +n   +   +   hi+ + + +lPvke++++++++   qv++Da +++G +d++++++ adf +   hK +++P ++  ++vrk +
+    1_36 143 YMFSMNpPTK---VFATHISNVTGYILPVKEITEMAKKYNS-QVIIDASQSLGLLDINMNNLMADFIAFAGHKNLYGPFGTSGFFVRKGT 228
+             4445552233...4557***********************9.8**************************************999999965 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 3.6e-05
+  K22207 443 dalkLrthLreefkveVpi.yyrapk.dgeve..qvtgyvRiShqvYnkveDyeklrdAvnkLve 503
+             +a+ + t+L +++++ V + y+ ap  + +++     g vR S+  Y +++++ekl +Av++L e
+    1_36 325 KAEDVGTILDQDYHIAVRTgYHCAPLiHKHLMdiEKGGVVRASVGRYTTRNEIEKLLEAVEELSE 389
+             56778899***********77777765555554577899***********************976 PP
+
+>> 1_1337  # 1555193 # 1556338 # 1 # ID=1_1337;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.1   0.0   8.5e-12   7.1e-09     261     340 ..     140     217 ..      39     225 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 32.1 bits;  conditional E-value: 8.5e-12
+  K22207 261 rvrLaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrks 340
+             r+ L+ i       + + P+++++ +++ +gv     Da +a+G++++dv+ +g+d   +  hK f +Pk+v fLyvr+ 
+  1_1337 140 RTSLVSIMLANNEIGTIEPIRNIAMVAHRKGV-LFHTDAVQAFGHIPIDVNYLGVDMLSASSHK-FNGPKGVGFLYVRNP 217
+             555555555555567788**************.5889***************************.99***********94 PP
+
+>> 1_1241  # 1431640 # 1432827 # 1 # ID=1_1241;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.365
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.4   6.7e-11   5.6e-08     264     340 ..     143     217 ..      11     225 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 29.1 bits;  conditional E-value: 6.7e-11
+  K22207 264 LaviDhitSmpsvvlPvkeLvkicreegvdqvfvDaAHaiGqvdvdvkeigadfytsnlhKWffcPksvAfLyvrks 340
+             L+ i +     + + P+ e+ +ic  +gv     Da +a+G+vd+dvk+ + d     +hK f +Pk+v +Ly++k+
+  1_1241 143 LVSIMYANNEIGTIEPITEIGEICERKGV-IFHTDAVQAVGHVDIDVKKQKIDMLSLSAHK-FHGPKGVGVLYANKK 217
+             555556666667889**************.3559***************************.99*********9984 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (583 nodes)
+Target sequences:                       2507  (827548 residues searched)
+Passed MSV filter:                       109  (0.0434783); expected 50.1 (0.02)
+Passed bias filter:                       67  (0.0267252); expected 50.1 (0.02)
+Passed Vit filter:                         6  (0.0023933); expected 2.5 (0.001)
+Passed Fwd filter:                         3  (0.00119665); expected 0.0 (1e-05)
+Initial search space (Z):               2507  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8088.23
+//
+# Alignment of 4 hits satisfying inclusion thresholds saved to: workflow/out/lcd/hmmer_output/Eubacterium-ventriosum-ATCC-27560-MAF-2_lcd.sto
+[ok]

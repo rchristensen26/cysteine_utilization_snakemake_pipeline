@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Enterococcus_gallinarum_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Enterococcus_gallinarum_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Enterococcus_gallinarum_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Enterococcus_gallinarum_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    7.5e-21   72.0   1.4    3.5e-20   69.8   1.4    2.0  1  NZ_KZ846567.1_717  # 773594 # 774838 # 1 # ID=1_717;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KZ846567.1_717  # 773594 # 774838 # 1 # ID=1_717;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.8   1.4     1e-23   3.5e-20     125     478 ..      60     400 ..      21     409 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 69.8 bits;  conditional E-value: 1e-23
+     lcd_K22207_msa 125 yfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievelpf 216
+                          ++ +++ +++r++++++i+a++  ev ++  +tt  + v ++++ +f     ++gD +++  +  ++     +++++r+ +      l++
+  NZ_KZ846567.1_717  60 LAERATHSYEAAREKVRHFIQAKETAEVLFTRGTTTSLNWVARSFGDQFV----NEGDEIVISYMEHHSNIIPWQQLAKRKKAI-----LKY 142
+                        556677888999*****************************999998888....9******99999998777778888888776.....666 PP
+
+     lcd_K22207_msa 217 pvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffc 308
+                           ++e i ++ ++a +   +   k  ++ i H++ +  v+ P++eL+++ +++    ++VD+A+a+ +++vdv+++++dfY+   HK ++ 
+  NZ_KZ846567.1_717 143 IQLTPEGILDM-DDARQ---QITDKTAVVAIAHVSNVLGVINPIAELTQLAHQHQA-VIVVDGAQAVPHMSVDVQALDCDFYAFSGHK-MCG 228
+                        66677777765.34422...23568889999************************9.9******************************.9** PP
+
+     lcd_K22207_msa 309 PpsvAfLyvrkskasdlhh.....pvV.sheygnglaiesaw...iGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaea 391
+                        P ++++Ly ++   ++++       ++   + +++  +e  w    Gt   +  + + a++++++++  g+ +i+++  elv      L   
+  NZ_KZ846567.1_717 229 PTGIGVLYGKRYWLDQMEPvefggEMIdFVHLQESTWKELPWkfeAGTPNIAGAIGLGAAVDYLSEL--GLAAIHQHEAELVAYVLPKLQAI 318
+                        ********99953344443333433332223355555555553336*******************98..9********************** PP
+
+     lcd_K22207_msa 392 wgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpiyyrapkegeveaitgYvRiShqvYnkvddyyklrdavn 478
+                         g  +  p+e  +   ++ +    gi+ ++ a+ L     e + v    ++ +p  +    + + +R S   Yn+++d  +l da++
+  NZ_KZ846567.1_717 319 DGLTIYGPQEAAKRTGVIAFN-IDGIHPHDVATALDM---EGVAVRAGHHCAQPLLNY-LHVPATARASFYLYNTREDADRLVDAIK 400
+                        **************99**999.588988877666652...334444444555554433.368889********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3425  (1045975 residues searched)
+Passed MSV filter:                       136  (0.039708); expected 68.5 (0.02)
+Passed bias filter:                       93  (0.0271533); expected 68.5 (0.02)
+Passed Vit filter:                         6  (0.00175182); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000291971); expected 0.0 (1e-05)
+Initial search space (Z):               3425  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 18098.01
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Enterococcus_gallinarum_lcdcustom.sto
+[ok]

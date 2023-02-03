@@ -1,0 +1,104 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Bacteroides-stercoris-ATCC-43183-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Bacteroides-stercoris-ATCC-43183-MAF-2_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Bacteroides-stercoris-ATCC-43183-MAF-2_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Bacteroides-stercoris-ATCC-43183-MAF-2_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.9e-27   92.4   0.0    8.2e-27   91.7   0.0    1.3  1  1_808     # 958994 # 960205 # 1 # ID=1_808;partial=00;start_t
+    1.4e-09   34.8   0.1    1.9e-09   34.4   0.1    1.2  1  1_3017    # 3547301 # 3548389 # -1 # ID=1_3017;partial=00;sta
+  ------ inclusion threshold ------
+      0.023   11.0   0.2        0.1    8.9   0.1    2.0  2  1_2564    # 3078953 # 3081802 # 1 # ID=1_2564;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_808  # 958994 # 960205 # 1 # ID=1_808;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=10bp;gc_cont=0.502
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   91.7   0.0   7.2e-30   8.2e-27      94     478 ..      25     397 ..       4     402 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 91.7 bits;  conditional E-value: 7.2e-30
+  lcd_K22207_msa  94 innGsfgscpasvleaqqrwqlkf...lrqPdefyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavl 185
+                      +nG+    p++v++a  +    +   ++   +f  ++ ++  ++sr++++++i+a + +e+ ++  +t  ++  + +++ +f     q+gD v+
+           1_808  25 FDNGATTQKPRQVVDAITDEYYSVnanVHRGVHFLSQQATELHEASRETVRKFIHAGSTNEIIFTRGTTESINLFVSSFGEEFM----QEGDEVI 115
+                     5666666666666666544432222225567899*******************************************8887776....9****99 PP
+
+  lcd_K22207_msa 186 mlhyaYgaVkksieayvtraggsvievelpfpvks.neeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDa 279
+                     +  +  ++     + + + + g  i+v   +p+++  e   +e+++ +++      + +++ + H++ +   v PVke+++  + +gv  v+VD+
+           1_808 116 LSVMEHHSNIVPWQLL-AAKRGIAIKV---IPMNDrGELLLDEYKQLFSE------RTKIVSVAHVSNVLGTVNPVKEMIRYAHGQGV-PVLVDG 199
+                     8888777744444444.4444555655...46666256678888888777......8999999*************************.9***** PP
+
+  lcd_K22207_msa 280 AhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVsh.ey....gnglaiesawiGtrDysaqlvvpavleFvn 364
+                     A++i +++vdv++++AdfY+   HK ++ P +v++Ly +++  +++        ++ h ++     n l+ ++   Gt Dy   + + ++l++v+
+           1_808 200 AQSIPHMPVDVQDLDADFYVFSGHK-VYGPTGVGVLYGKEEWLDKMPPyqgggEMIQHvSFerttFNELPFKF-EAGTPDYIGTTGLAKALDYVS 292
+                     *************************.9************9633333334455544432134111144555444.58******************* PP
+
+  lcd_K22207_msa 365 rfeggiegirkrnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYv 457
+                      +  g+e+i ++ hel   +++ L+e  g ++    e   s+i         i    +   + t+L ++ ++ v +  ++ +p  +++  i g v
+           1_808 293 AI--GMEKIAAHEHELTTYAMTRLKEIPGMRIFGEAEEKGSVISFLVDD---I----HHFDMGTLL-DRLGIAVRTghHCAQPLMQRL-GIEGTV 376
+                     *8..***************************977777777776655443...3....233333333.555666666222333334443.588889 PP
+
+  lcd_K22207_msa 458 RiShqvYnkvddyyklrdavn 478
+                     R S   Yn++++   l   ++
+           1_808 377 RASFGLYNTKEEINVLVAGIE 397
+                     99*99**99999888776665 PP
+
+>> 1_3017  # 3547301 # 3548389 # -1 # ID=1_3017;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_cont=0.455
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.4   0.1   1.6e-12   1.9e-09     232     323 ..     126     212 ..      97     286 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 34.4 bits;  conditional E-value: 1.6e-12
+  lcd_K22207_msa 232 LekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrkskas 323
+                     L++    ++++  + + H   ++ v+ P ke+ +i++ +g  + +VDa  + G v++dv+e+g df +s   K +   p+ +f+ +rks+  
+          1_3017 126 LAH----NAEITHVSVVHCETTTGVLNPLKEIAHIVKMHGK-KLIVDAMSSFGGVPLDVEELGIDFLISSANKCIQGVPGFGFIIARKSELM 212
+                     544....4455555556999999*****************8.9*********************************************7543 PP
+
+>> 1_2564  # 3078953 # 3081802 # 1 # ID=1_2564;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_cont=0.593
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0      0.11   1.2e+02     133     172 ..     119     157 ..      88     172 .. 0.75
+   2 ?    8.9   0.1     9e-05       0.1     261     311 ..     661     711 ..     657     713 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 0.11
+  lcd_K22207_msa 133 ilesrtaikdlinaddvdevslvdNattAaaivLqqvaws 172
+                     +l+ +ta+ dl +     + sl+d at+Aa +v    a++
+          1_2564 119 LLNFQTAVCDLTGMP-LANCSLLDEATAAAEAVTMMYALR 157
+                     455566777777766.7799***********997766544 PP
+
+  == domain 2  score: 8.9 bits;  conditional E-value: 9e-05
+  lcd_K22207_msa 261 keLvkicreegvdqvfVDaAhaiGqvev.dvkeigAdfYtsNlHKWffcPps 311
+                      e+++i ++ g  qv  D+A    qv + +   igAd    NlHK f +P++
+          1_2564 661 VEICQIIHACGA-QVYMDGANMNAQVGLtNPGFIGADVCHLNLHKTFASPHG 711
+                     578888899999.*************77266779****************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       3410  (1199770 residues searched)
+Passed MSV filter:                       107  (0.0313783); expected 68.2 (0.02)
+Passed bias filter:                       81  (0.0237537); expected 68.2 (0.02)
+Passed Vit filter:                         8  (0.00234604); expected 3.4 (0.001)
+Passed Fwd filter:                         3  (0.000879765); expected 0.0 (1e-05)
+Initial search space (Z):               3410  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
+# Mc/sec: 21365.59
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Bacteroides-stercoris-ATCC-43183-MAF-2_lcdcustom.sto
+[ok]

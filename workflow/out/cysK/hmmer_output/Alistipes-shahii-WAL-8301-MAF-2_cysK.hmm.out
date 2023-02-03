@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysK.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alistipes-shahii-WAL-8301-MAF-2_prodigal.faa
+# output directed to file:         workflow/out/cysK/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_cysK.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysK/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_cysK.sto
+# per-dom hits tabular output:     workflow/out/cysK/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_cysK.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR01139  [M=298]
+Accession:   TIGR01139
+Description: cysK: cysteine synthase A
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.4e-94  313.4   0.4    2.9e-94  313.1   0.4    1.1  1  1_853     # 990996 # 991901 # -1 # ID=1_853;partial=00;start_
+    2.5e-10   37.6   0.0    3.8e-09   33.7   0.0    2.5  1  1_3021    # 3606109 # 3607470 # 1 # ID=1_3021;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> 1_853  # 990996 # 991901 # -1 # ID=1_853;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.616
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  313.1   0.4   1.8e-97   2.9e-94       4     298 .]       9     296 ..       6     296 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 313.1 bits;  conditional E-value: 1.8e-97
+  TIGR01139   4 liGntPlvrLn.laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmslerrkllkay 102
+                +iG tP+vr+n l  + ++++++kle +nP++s+kdrial+mie ae++g l++gkti+e+tsGntGi+la+v+  +gy + ++m e++s+errk++++y
+      1_853   9 TIGTTPMVRINrLCPNPNVKIFAKLEGFNPTGSIKDRIALRMIEAAERDGRLTPGKTIIEPTSGNTGIGLAIVGIVKGYPVEIVMSEAVSIERRKIIRSY 108
+                8**********888999*********************************************************************************** PP
+
+  TIGR01139 103 GaelvLtdgaegmkgaiekaeelveetpnkylllkqfenpanpeihrkttapeilkdldgkldafvagvGtGGtitGvgevlkekkpdikvvavePaesp 202
+                Ga+++Lt+++eg  gai+ a++ v++ p +y+++ qf+n +n  +h ++ta ei++++ g++d +v ++Gt Gt+ G ++ lk +kpdikvv + P +  
+      1_853 109 GAKVILTPAEEGTDGAIRLARKKVADAPGRYFMPDQFANASNYLAHYQSTALEIWQQTGGNIDYLVCAIGTSGTLMGLSRFLKVMKPDIKVVCAQPIRGH 208
+                **************************************************************************************************99 PP
+
+  TIGR01139 203 vlsggkpgphkiqGigagfiPkvLdkevidevikvsdeeaietarrlakeeGilvGissGaavaaalkvakklekdkkivvilpdtgerYlstaLf 298
+                 ++g k+ +          +P++ d + id    +++eeai++ar+++++e i++G+ssGaa+ aa+++a+k e++ +ivv++pd +e+Ylst++f
+      1_853 209 YIQGLKNMEE-------AIVPDIYDPSQIDVQEMIESEEAISMAREIIRREAIFAGMSSGAAMLAAVRTAQKIERG-NIVVVFPDRAEKYLSTTMF 296
+                9999877655.......569*****************************************************776.68999***********998 PP
+
+>> 1_3021  # 3606109 # 3607470 # 1 # ID=1_3021;partial=00;start_type=ATG;rbs_motif=AAAA;rbs_spacer=12bp;gc_cont=0.623
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.7   0.0   2.4e-12   3.8e-09       8     208 ..      80     318 ..      75     418 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 33.7 bits;  conditional E-value: 2.4e-12
+  TIGR01139   8 tPlvrLn...laeeakaevlvkleslnPsssvkdrialamiedaekegllkkgktiveatsGntGialamvaaargykliltmpetmsle...rrkllka 101
+                tPlvr      a ++ a+++ k es+ P++s k  +a+       k+g     +   e+ +G  G ++a+ a + g  l + m++        rr ++++
+     1_3021  80 TPLVRATgleKALGTPAKIFFKNESVSPAGSHKPNTAVPQAYYNYKQGI---KHLTTETGAGQWGASIAFAAKHFGIDLQVFMVKVSYDQkpyRRLMMNT 176
+                9999965533677889******************999877776666664...3456799*********************9999753322244999**** PP
+
+  TIGR01139 102 yGaelv.....Ltdgaegmkg.............aiekaeelveetpnkylllkqfenpan.peihrkttapeilkdldgk...ldafvagvGtGGtitG 179
+                +Gae v     Lt++ +   +             ai++a e++ ++p+            n    h++  ++e + +++ +    d+++  +G G   +G
+     1_3021 177 WGAECVaspstLTESGRA--AlerdphcsgslglAISEAVEMALRRPEDT--RYCLGSVLNhVVLHQTVIGQEAATQMEMAdaePDMVIGCFGGGSNFAG 272
+                ****98333334443221..011222222233357999*****9999865..333333334156899999***999987654459*************** PP
+
+  TIGR01139 180 vge.vlkekkp...dikvvavePaespvlsgg.............k 208
+                +g   l+++++   +i+v+aveP+  p l++g              
+     1_3021 273 IGFpFLRKNFAegkKIRVIAVEPEGCPKLTRGefqydfgdvagftP 318
+                **6367776655779***************9944444444444440 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (298 nodes)
+Target sequences:                       3197  (1128781 residues searched)
+Passed MSV filter:                        90  (0.0281514); expected 63.9 (0.02)
+Passed bias filter:                       76  (0.0237723); expected 63.9 (0.02)
+Passed Vit filter:                        12  (0.00375352); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000625586); expected 0.0 (1e-05)
+Initial search space (Z):               3197  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 12589.89
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysK/hmmer_output/Alistipes-shahii-WAL-8301-MAF-2_cysK.sto
+[ok]

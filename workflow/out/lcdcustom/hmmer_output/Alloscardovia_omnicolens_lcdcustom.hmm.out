@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Alloscardovia_omnicolens_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Alloscardovia_omnicolens_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Alloscardovia_omnicolens_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Alloscardovia_omnicolens_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    2.7e-14   49.2   0.5    3.2e-13   45.7   0.5    2.0  1  NZ_PKGT01000001.1_188  # 205600 # 206868 # 1 # ID=14_188;part
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_PKGT01000001.1_188  # 205600 # 206868 # 1 # ID=14_188;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.7   0.5   2.1e-16   3.2e-13     130     480 ..      66     416 ..       3     419 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 45.7 bits;  conditional E-value: 2.1e-16
+         lcd_K22207_msa 130 kkgilesrtaikdlinadd...vdevslvdNattAaaivLqqvawsfaeg....kfqkgDavlmlhyaYgaVkksieayvtraggsvi 210
+                            +++ ++ r a+++li+a+    +de++++  at++ ++  +++ ++ ++g       + D +++     ++V   +++++ r g++  
+  NZ_PKGT01000001.1_188  66 TDAYENGRYAVARLIGAHYgegSDEIVVTGGATAGLNMLANAFDHASHDGiepfAVGPSDSIVTSRAEHHSVLLPFQELARRTGAR-- 151
+                            45667889*********887779********************99999874423345679************************99.. PP
+
+         lcd_K22207_msa 211 evelpf.pvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdf 297
+                               l+f  + ++ +iv+  ++ L++     ++ +++ + Hi+ ++  +  +  +v+  +e g   v++Da +++ ++++dv+e+++df
+  NZ_PKGT01000001.1_188 152 ---LDFfDLDDSGRIVTT-SESLAR--VITEHTKIVAVTHISNVTGATTDIPAIVRRAHEVGA-IVVLDACQSVPHLPIDVHELDVDF 232
+                            ...776256667777776.577777..56778899999************************9.9*********************** PP
+
+         lcd_K22207_msa 298 YtsNlHKWffcPpsvAfLyvrkskasdlhh.....pvVshey.....gnglaiesawiGtrDysaqlvvpavleFvnrfeggiegirk 375
+                             +   HK ++ P +v+fLy +++  ++l       ++V   +     +   +   +  Gt+  +  ++   + +++  +  g+e++ +
+  NZ_PKGT01000001.1_188 233 AAFSAHK-MYGPTGVGFLYGKREMLEKLPPmnfggSMVELAWldkpaQYMAPPAKFEAGTQPVAQVVASGVAANWMMDL--GMENLAA 317
+                            *******.9***********99644444444556699988884444233334444578998877666666666798887..9****** PP
+
+         lcd_K22207_msa 376 rnhelvvemgemLaeawgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYvRiSh 461
+                            + helv + +++        lg p + +  + +V +    +++ ++    + + + ++ ++ + +  ++ +p + +   + +  R+S 
+  NZ_PKGT01000001.1_188 318 HEHELVEHLMQIQDIDHVRILG-PTDTTDRIGTVAFEI-DDVHPHD----VGQFI-DSRGIAIRVghHCAQPIHRHF-GVYASNRVSL 397
+                            ****999998887777666665.999999999999984.4554443....34443.555555555213333333333.366778**** PP
+
+         lcd_K22207_msa 462 qvYnkvddyyklrdavnql 480
+                             vYn+ +d  +l +av ++
+  NZ_PKGT01000001.1_188 398 GVYNTHEDIDRLLEAVAEV 416
+                            ***************9886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1503  (521068 residues searched)
+Passed MSV filter:                        57  (0.0379242); expected 30.1 (0.02)
+Passed bias filter:                       38  (0.0252828); expected 30.1 (0.02)
+Passed Vit filter:                         5  (0.00332668); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000665336); expected 0.0 (1e-05)
+Initial search space (Z):               1503  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 9868.11
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Alloscardovia_omnicolens_lcdcustom.sto
+[ok]

@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/lcdcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Streptococcus_didelphis_prodigal.faa
+# output directed to file:         workflow/out/lcdcustom/hmmer_output/Streptococcus_didelphis_lcdcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/lcdcustom/hmmer_output/Streptococcus_didelphis_lcdcustom.sto
+# per-dom hits tabular output:     workflow/out/lcdcustom/hmmer_output/Streptococcus_didelphis_lcdcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lcd_K22207_msa  [M=523]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+      3e-18   62.5   0.1    7.7e-18   61.2   0.1    1.6  1  NZ_KB904199.1_59   # 62596 # 63822 # 1 # ID=4_59;partial=00;s
+    9.4e-06   21.3   0.1    5.7e-05   18.7   0.1    2.0  1  NZ_KB904188.1_433  # 444395 # 445537 # -1 # ID=15_433;partial
+    0.00043   15.8   0.0     0.0026   13.3   0.0    2.0  1  NZ_KB904188.1_355  # 365206 # 366348 # 1 # ID=15_355;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_KB904199.1_59  # 62596 # 63822 # 1 # ID=4_59;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.2   0.1   1.3e-20   7.7e-18     122     478 ..      57     398 ..       5     403 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 61.2 bits;  conditional E-value: 1.3e-20
+    lcd_K22207_msa 122 defyfnelkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtraggsvievel 214
+                        +   ++ +++ + sr++++++i+a++  e+ ++  +t A + v +     fa+g +++gD vl+  +  ++   s ++ +++ g++++ v l
+  NZ_KB904199.1_59  57 VHTLAERATHAYETSRKQVAQFIKASSTREILFTRGTTSALNWVAH-----FAKGILKEGDQVLISIMEHHSNIISWQEACKQTGAELVYVYL 144
+                       55666777888999*****************************987.....899******************999**************9999 PP
+
+    lcd_K22207_msa 215 pfpvksneeivsefrkaLekgkangrkvrlAviDHitSmpsvvlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWff 307
+                       +    +     + +++ L+       k +++ + Hi+ +   + P+ke+ ++ ++ g   ++VDaA+++ ++ vdv+++++df +   HK + 
+  NZ_KB904199.1_59 145 KDGELD----LEDLKAKLSF------KTKFVSLTHISNVLGTINPIKEIGELAHAVGA-YMVVDAAQSVPHIAVDVEDLDCDFLAFSGHK-ML 225
+                       755555....6666777766......899****************************9.9******************************.89 PP
+
+    lcd_K22207_msa 308 cPpsvAfLyvrkskasdlhh.....pvVsheygn.glaiesaw...iGtrDysaqlvvpavleFvnrfeggiegirkrnhelvvemgemLaea 391
+                        P ++++Ly +++  ++++       ++   y++    +e  w    Gt   +  + + +++++++++  g+e+i+++ +el++  +  L   
+  NZ_KB904199.1_59 226 GPTGIGVLYGKEDLLNKMEPvefggEMIDFVYEQeASWKELPWkfeAGTPNIAGAIGLGQAISYLEEV--GMEKIQQHTSELLSYVMPKLEAI 316
+                       ***********953355555555666777777663445555563336*****************9996..9************9999999998 PP
+
+    lcd_K22207_msa 392 wgtelgsppemcasmimVgLPaklgissdedalkLrthLreefkvevpi..yyrapkegeveaitgYvRiShqvYnkvddyyklrdavn 478
+                        g  +  p++     +++ +    g++ ++ a+ L     +  ++ v    ++ +p   ++  +   vR S   Yn+++d  +l da  
+  NZ_KB904199.1_59 317 EGLTIYGPSNKDLRSALISFNL-AGLHPHDVATAL-----DYEGIAVRAghHCAQPLL-RYLGVSSTVRASFYFYNTKEDCDHLVDALI 398
+                       8888777776666555555552.355555444444.....334444444113333322.233467779999999999999999999876 PP
+
+>> NZ_KB904188.1_433  # 444395 # 445537 # -1 # ID=15_433;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.1   9.5e-08   5.7e-05     257     319 ..     159     219 ..       2     227 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 9.5e-08
+     lcd_K22207_msa 257 vlPVkeLvkicreegvdqvfVDaAhaiGqvevdvkeigAdfYtsNlHKWffcPpsvAfLyvrk 319
+                        +lP++e+ ++++++      VDa + iG+++   +++g d   +  HK f  P++v+fLy + 
+  NZ_KB904188.1_433 159 LLPIEEIGQMLKNHQA-VFHVDAVQIIGKLPFYPQSLGIDLLSASGHK-FHGPKGVGFLYSNA 219
+                        79************99.677****************************.89*********875 PP
+
+>> NZ_KB904188.1_355  # 365206 # 366348 # 1 # ID=15_355;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   4.3e-06    0.0026     128     206 ..      40     112 ..      14     226 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 4.3e-06
+     lcd_K22207_msa 128 elkkgilesrtaikdlinaddvdevslvdNattAaaivLqqvawsfaegkfqkgDavlmlhyaYgaVkksieayvtrag 206
+                        +  + +++sr++i++l+n +  de++++   t   +  L+ +a  f++++f k   +++ ++   aVk+s++++ ++ g
+  NZ_KB904188.1_355  40 NASRILQASRKQIANLLNCQ-EDEIFFTSGGTESDNWALKGTA--FEKSSFGK--HIIISDIEHPAVKESAQWL-QKNG 112
+                        55667899**********98.6******************776..77777755..5**************9984.4444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (523 nodes)
+Target sequences:                       1803  (554664 residues searched)
+Passed MSV filter:                        71  (0.0393788); expected 36.1 (0.02)
+Passed bias filter:                       54  (0.0299501); expected 36.1 (0.02)
+Passed Vit filter:                         7  (0.00388242); expected 1.8 (0.001)
+Passed Fwd filter:                         3  (0.00166389); expected 0.0 (1e-05)
+Initial search space (Z):               1803  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 9359.82
+//
+# Alignment of 3 hits satisfying inclusion thresholds saved to: workflow/out/lcdcustom/hmmer_output/Streptococcus_didelphis_lcdcustom.sto
+[ok]

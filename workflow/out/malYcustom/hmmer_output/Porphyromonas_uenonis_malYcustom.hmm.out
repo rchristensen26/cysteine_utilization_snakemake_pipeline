@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/malYcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Porphyromonas_uenonis_prodigal.faa
+# output directed to file:         workflow/out/malYcustom/hmmer_output/Porphyromonas_uenonis_malYcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/malYcustom/hmmer_output/Porphyromonas_uenonis_malYcustom.sto
+# per-dom hits tabular output:     workflow/out/malYcustom/hmmer_output/Porphyromonas_uenonis_malYcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       malY_K14155_msa  [M=493]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+    9.3e-14   47.2   0.0      2e-13   46.1   0.0    1.4  1  NZ_AXVC01000026.1_37  # 42821 # 43840 # 1 # ID=23_37;partial=
+      8e-11   37.5   0.0    1.1e-10   37.1   0.0    1.1  1  NZ_AXVC01000024.1_10  # 8819 # 9847 # -1 # ID=25_10;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_AXVC01000026.1_37  # 42821 # 43840 # 1 # ID=23_37;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.1   0.0   2.3e-16     2e-13     132     422 ..      62     324 ..      32     331 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 46.1 bits;  conditional E-value: 2.3e-16
+       malY_K14155_msa 132 gweidpewivfvpgvvpalslairaftepgdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleaklaepkvkllllCn 220
+                           +w++dp+w+++++g   a++l+ + f   g + l++ P +    +a++    ++  +p             ++ ++ +   + ll    
+  NZ_AXVC01000026.1_37  62 HWRLDPDWLLVTSGSTEAFYLLAHLFA--GGETLITVPSFAEYEDACQLYRHHLTYIPTS-----------AIASQST--PADLLWSAL 135
+                           69***********************95..9999*************99999999999984...........6777765..4899999** PP
+
+       malY_K14155_msa 221 PhNPtGrvwtreeLeklaelcekh.dvlvisDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasyaiipneelrek 308
+                           P NP G +  r+ L   ++ c +h d +vi DE +a+l+ +    t + +++   + ++i++ s +K+F l+G++ +y+++ +++l ++
+  NZ_AXVC01000026.1_37 136 PNNPDGDISHRAAL---LNYCSAHpDSYVIVDEAYAELCAEP--VTLLDEVA--HHPNLILVRSLTKSFALPGIRLGYIVA-HPSLLAR 216
+                           ********999765...677888879**************75..77888886..468*********************987.5677888 PP
+
+       malY_K14155_msa 309 fkralkaeglsspnvlglvateaAYregeeWldellayleenrdllaeflaeelpglkvvkpeaTY.LaWlDcralglddeelkeflle 396
+                           ++  l++    s+n+l+l+a     ++ +  l +    ++e  +l a+++a+ + g+++++    Y La lD  +   + ++lke+l+ 
+  NZ_AXVC01000026.1_37 217 LEP-LRSPW--SVNALALEAGAYICQHYDRLLPDAAGLVREAQHL-AHEVAQ-IAGISLIPSPTPYfLACLDQGRG--TAAQLKEYLVA 298
+                           998.55433..5999999999888899999999988888777655.566665.9****998665553888887764..5789******* PP
+
+       malY_K14155_msa 397 kakvalsdGstFgeegegfvRlNlAc 422
+                           +++v + d ++F +   +++Rl +  
+  NZ_AXVC01000026.1_37 299 QHGVLIRDAANFRSLSPRHFRLSVQS 324
+                           *********************98755 PP
+
+>> NZ_AXVC01000024.1_10  # 8819 # 9847 # -1 # ID=25_10;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.1   0.0   1.2e-13   1.1e-10     120     408 ..      52     310 ..      32     325 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 37.1 bits;  conditional E-value: 1.2e-13
+       malY_K14155_msa 120 yeaiadwlkrrhgweidpewivfvpgvvpalslairaftepgdkVlvqtPvYppFlkaienngrevvevplvledgryeiDfedleakl 208
+                           y+ +   +++r g  +++++iv++pg   +++++ +af     ++l   P Y++   a+++ g ++  +p          D+e  e kl
+  NZ_AXVC01000024.1_10  52 YKTLRTMIAKRNG--LHADNIVITPGRTAGFYTIAEAFAGRRGAIL--VPSYQHYELAAKRYGWQLTYIPE---------DVETQEIKL 127
+                           5666777777777..56789******************87776665..599*****************997.........677878888 PP
+
+       malY_K14155_msa 209 aepkvkllllCnPhNPtGrvwtreeLeklaelcekhdvlvisDEIHadlvlpghkhtpfaslseeaaertitltspsKtFNlaGlkasy 297
+                             ++++   +C+P   tGr  +r+eL +l++     +v  i D  +a ++ +      ++ ++   + ++i ++s + t+ l+Gl+++y
+  NZ_AXVC01000024.1_10 128 --EGEEFCWICSPNSSTGRFRSRAELLELIKA--HPQVSFIVDQSYATFTTQP--TLTLSDVK--NHPNIIFVSSFTQTYGLPGLRIGY 208
+                           ..4899********************988764..55788899****9999964..44445553..4689******************** PP
+
+       malY_K14155_msa 298 aiipneelrekfkralkaeglsspnvlglvateaAYregeeWldellayleenrdllaeflaeelpglkvvkpeaTY.LaWlDcralgl 385
+                           + + ++++ +++++ ++ ++   +++++++ ++    + +++   +++  ++n   l++ l++ + g++v++ +a + L+ + c     
+  NZ_AXVC01000024.1_10 209 VTA-DKKVVKEIQKVIDPWS---VSTMAVEVAKYILIHPAQFTLPIRKW-QRNALELETKLRQ-IDGIEVMPSDAPFfLVQIHCATA-- 289
+                           866.6667777999998777...9****************999888775.6677777999987.**********9862667777654.. PP
+
+       malY_K14155_msa 386 ddeelkefllekakvalsdGstF 408
+                             +el ++lle++++a+ d +t 
+  NZ_AXVC01000024.1_10 290 --AELIKYLLEEHNIAVYDATTQ 310
+                           ..789999999999999887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (493 nodes)
+Target sequences:                       1769  (658735 residues searched)
+Passed MSV filter:                        78  (0.0440927); expected 35.4 (0.02)
+Passed bias filter:                       71  (0.0401357); expected 35.4 (0.02)
+Passed Vit filter:                        11  (0.0062182); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00113058); expected 0.0 (1e-05)
+Initial search space (Z):               1769  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 12393.99
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/malYcustom/hmmer_output/Porphyromonas_uenonis_malYcustom.sto
+[ok]

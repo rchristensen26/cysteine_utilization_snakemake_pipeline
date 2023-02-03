@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Prevotella_bivia_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Prevotella_bivia_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Prevotella_bivia_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Prevotella_bivia_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+   1.9e-161  535.0   5.1   2.1e-161  534.8   5.1    1.0  1  NZ_JH660660.1_1324  # 1559547 # 1560494 # 1 # ID=1_1324;parti
+     0.0087   11.9   0.3       0.13    8.0   0.0    2.3  2  NZ_JH660660.1_783   # 952004 # 953107 # 1 # ID=1_783;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_JH660660.1_1324  # 1559547 # 1560494 # 1 # ID=1_1324;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=15bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  534.8   5.1  1.9e-164  2.1e-161      67     373 ..       1     311 [.       1     315 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 534.8 bits;  conditional E-value: 1.9e-164
+     cysK_K01738_msa  67 msriadnitelignTplvrlnrlse..g..aeiyaKlEflnPggSvKdRialsmiedAekkGllkpgttivEpTsGnTGiglAlvAaakGy 153
+                         m++ia+++t+lignTpl+ l ++s+  g    i+aK+E++nPggSvKdRia++mi +AekkGllkpg+ti+EpTsGnTG+glAlv+a+kGy
+  NZ_JH660660.1_1324   1 MAKIAQQLTDLIGNTPLLALAKFSAtgGsdTPIIAKIEYFNPGGSVKDRIAFAMISAAEKKGLLKPGATIIEPTSGNTGVGLALVSAVKGY 91 
+                         889********************955447789*********************************************************** PP
+
+     cysK_K01738_msa 154 klilvmPetmsierrkllralGAelvltpgaegmkgaiekaeelaaetpnaflldQFeNpaNpeaHyettgpeIweqtegkvdafVagvGT 244
+                         klil+mPetmsierr+l +a+GA++ ltpg++gmkgai++aeel +++ ++++l+QFeN aNpe+Hy+ttgpe+w++tegk+d+fVagvGT
+  NZ_JH660660.1_1324  92 KLILTMPETMSIERRNLVKAYGATVKLTPGKDGMKGAIKAAEELRESIAGSVILQQFENMANPEIHYHTTGPEVWNDTEGKIDIFVAGVGT 182
+                         ********************************************9999******************************************* PP
+
+     cysK_K01738_msa 245 GGTitGvgryLkeknpdikivavePeespvlsggepgphkiqGiGagfipenldteliDeviqvsdeeaiamarrlareeGllvGiSsGan 335
+                         GGTi+G+++yLke+np+ik++aveP+es+vlsgg++g+hkiqGiGagfip++++ +l+De++qv++++ai ++r+la++eGllvGiSsGa+
+  NZ_JH660660.1_1324 183 GGTISGTAKYLKEQNPNIKVIAVEPTESAVLSGGQSGSHKIQGIGAGFIPSTYNGSLVDEIFQVENDQAILASRHLAQQEGLLVGISSGAA 273
+                         ******************************************************************************************* PP
+
+     cysK_K01738_msa 336 laaAlklakrpe.agktivtilpDsgeRYlstelfnewa 373
+                         ++aA ++akrpe +gktivt+lpD+geRYlst+l+ +++
+  NZ_JH660660.1_1324 274 AFAAREIAKRPEnKGKTIVTLLPDTGERYLSTALY-AFE 311
+                         **********************************9.553 PP
+
+>> NZ_JH660660.1_783  # 952004 # 953107 # 1 # ID=1_783;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=11bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.0   0.00013      0.13     236     273 ..       6      46 ..       1     116 [. 0.74
+   2 ?    1.5   0.0     0.012        12     322     377 ..     192     246 ..     175     325 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00013
+    cysK_K01738_msa 236 dafVagvGTGGTi...tGvgryLkeknpdikivavePeesp 273
+                          +++g GTGG+i     ++ +Lk+k p+ ki  v  e+  
+  NZ_JH660660.1_783   6 RFIISGGGTGGHIfpaVSIANALKAKCPNAKILFVGAEGRM 46 
+                        5669********95556899************999998863 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.012
+    cysK_K01738_msa 322 reeGllvGiSsGanlaaAlklakrpeagktivtilpDsgeRYlstelfnew.aekgl 377
+                        +++ l vG+S Ga  +    +       +t v i+  +g+RY+++   ne  + k+l
+  NZ_JH660660.1_783 192 KKTILIVGGSLGAQTVNSSIIEHLDLVQNTEVQIIWQTGKRYFDK--INEAlKGKEL 246
+                        6667889999999998887666653346678999999*****998..2332233322 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       2145  (728215 residues searched)
+Passed MSV filter:                        61  (0.0284382); expected 42.9 (0.02)
+Passed bias filter:                       48  (0.0223776); expected 42.9 (0.02)
+Passed Vit filter:                         3  (0.0013986); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000932401); expected 0.0 (1e-05)
+Initial search space (Z):               2145  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 15290.55
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Prevotella_bivia_cysKcustom.sto
+[ok]

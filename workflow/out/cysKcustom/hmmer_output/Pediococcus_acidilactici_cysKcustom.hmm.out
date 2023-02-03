@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  config/profileHMMs/cysKcustom.HMM
+# target sequence database:        workflow/out/prodigal/proteinSeq/Pediococcus_acidilactici_prodigal.faa
+# output directed to file:         workflow/out/cysKcustom/hmmer_output/Pediococcus_acidilactici_cysKcustom.hmm.out
+# MSA of all hits saved to file:   workflow/out/cysKcustom/hmmer_output/Pediococcus_acidilactici_cysKcustom.sto
+# per-dom hits tabular output:     workflow/out/cysKcustom/hmmer_output/Pediococcus_acidilactici_cysKcustom.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK_K01738_msa  [M=462]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.9e-33  112.3   2.0    3.9e-33  111.8   2.0    1.1  1  NZ_CP053421.1_692  # 735378 # 736430 # 1 # ID=1_692;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> NZ_CP053421.1_692  # 735378 # 736430 # 1 # ID=1_692;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.8   2.0     2e-36   3.9e-33      76     356 ..      28     321 ..       3     330 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 111.8 bits;  conditional E-value: 2e-36
+    cysK_K01738_msa  76 elign....Tplvrlnrlse...gaeiyaKlEflnPggSvKdRialsmiedAekkGllkpgttivEpTsGnTGiglAlvAaakGyklilvmP 160
+                        + ig+    Tplv+   ls+   +a++y+KlE ++ +gS K R a + i++  ++ + k g  ++ +++Gn + g Al ++  G+ +++vmP
+  NZ_CP053421.1_692  28 KVIGKyarrTPLVQSMFLSNnvaHADVYLKLENMQLTGSFKFRGANNKINHLSDEEK-KHG--VITASAGNHAQGVALTGKLSGIDTTVVMP 116
+                        456666667*****9999963545*************************98888754.456..9****************999********* PP
+
+    cysK_K01738_msa 161 etmsierrkllralGAelvltpgaegmkgaiekaeelaaetpnaflldQFeNpaNpeaHyettgpeIweqtegkvdafVagvGTGGTitGvg 252
+                        +   + +r+  r +GAe+     a  ++ a +  +e a+++ +  ++d F++   + a + t+g eI+e++  +v  +++ vG GG i+G++
+  NZ_CP053421.1_692 117 DEAPQMKRDATRGYGAEVDIHG-AT-FDDAHDWMHERAEKE-GKTIVDPFND-SLVCAGQGTIGLEILEDLV-DVETIIVPVGGGGLISGIA 203
+                        *******************986.44.567777788885555.99******98.7778999***********5.6****************** PP
+
+    cysK_K01738_msa 253 ryLkeknpdikivavePeespvl..s..gge.......pgphkiqGiGagfipe..nld...teliDeviqvsdeeaiamarrlareeGllv 328
+                         ++k+ np+i++v+v+ e+   +  s  +g+          +   G     +p+  +      +l+De++ vs+ee  +++++l++++ + +
+  NZ_CP053421.1_692 204 TAVKSINPSIHVVGVQSENVHGMkaSvdAGKivkhhddF--TLADGTDV-AVPGdiT-YgivSKLVDEIVLVSEEEISKAMKDLMQRTKIVA 291
+                        *******************65443224335544332220..33444433.3333221.1122459***********************9987 PP
+
+    cysK_K01738_msa 329 GiSsGanlaaAlklak..rpe.agktivtil 356
+                         + +Ga   aAl+  k  ++  +gk++v+++
+  NZ_CP053421.1_692 292 EG-AGALPTAALEAGKidKKWiEGKKVVALV 321
+                        54.5777788888888432336799999874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (462 nodes)
+Target sequences:                       1949  (589029 residues searched)
+Passed MSV filter:                        85  (0.0436121); expected 39.0 (0.02)
+Passed bias filter:                       68  (0.0348897); expected 39.0 (0.02)
+Passed Vit filter:                        10  (0.00513084); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000513084); expected 0.0 (1e-05)
+Initial search space (Z):               1949  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 17356.70
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: workflow/out/cysKcustom/hmmer_output/Pediococcus_acidilactici_cysKcustom.sto
+[ok]
